@@ -11,13 +11,13 @@ The best thing about this scraper is that the data is scraped in an organized fo
 
 ## Sample
 <p align="middle">
-  <img src="../master/images/main.png"/>
+  <img src="../master/images/main.png" width="700"/>
  </p>
 
 
 ## Screenshot
 <p align="middle">
-  <img src="../master/images/screenshot.png"/>
+  <img src="../master/images/screenshot.png" width="700"/>
  </p>
 
 
