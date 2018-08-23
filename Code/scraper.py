@@ -599,13 +599,11 @@ def login(email, password):
 
         #  Code to disable notifications pop up of Chrome Browser
         options.add_argument("--disable-notifications")
+        options.add_argument("--disable-infobars")
+        options.add_argument("--mute-audio")
         # options.add_argument("headless")
 
-        # initialization
-        if platform.system() != "Windows":
-            driver = webdriver.Chrome(executable_path=os.getcwd() + "/chromedriver", chrome_options=options)
-        else:
-            driver = webdriver.Chrome(executable_path=os.getcwd() + "/chromedriver.exe", chrome_options=options)
+        driver = webdriver.Chrome(chrome_options=options)
 
         driver.get("https://en-gb.facebook.com")
         driver.maximize_window()
