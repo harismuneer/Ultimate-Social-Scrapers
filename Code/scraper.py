@@ -615,8 +615,9 @@ def login(email, password):
         # clicking on login button
         driver.find_element_by_id('loginbutton').click()
 
-    except:
+    except Exception as e:
         print("There's some error in log in.")
+        print(sys.exc_info()[0])
         exit()
 
 
