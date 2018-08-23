@@ -31,7 +31,7 @@ You will need to install latest version of [Google Chrome](https://www.google.co
 pip install selenium
 ```
 
-Run the code using Python 3.
+Run the code using Python 3. Also, the code is multi-platform and is tested on both Windows and Linux.
 The tool uses latest version of [Chrome Web Driver](http://chromedriver.chromium.org/downloads). I have placed the webdriver along with the code but if that version doesn't work then replace the chrome web driver with the latest one.
 
 ### How to Run
