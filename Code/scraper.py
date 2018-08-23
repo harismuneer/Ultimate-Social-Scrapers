@@ -603,7 +603,15 @@ def login(email, password):
         options.add_argument("--mute-audio")
         # options.add_argument("headless")
 
-        driver = webdriver.Chrome(chrome_options=options)
+        try:
+            if platform.system() == 'Linux':
+                driver = webdriver.Chrome(executable_path="./chromedriver", chrome_options=options)
+            else:
+                driver = webdriver.Chrome(executable_path="./chromedriver.exe", chrome_options=options)
+        except:
+            print("Kindly replace the Chrome Web Driver with the latest one from"
+                  " http://chromedriver.chromium.org/downloads")
+            exit()
 
         driver.get("https://en-gb.facebook.com")
         driver.maximize_window()
