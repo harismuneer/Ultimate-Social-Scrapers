@@ -16,7 +16,7 @@ A bot which scrapes almost everything about a facebook user's profile including
 * friends list and their profile photos (including Followers, Following, Work Friends, College Friends etc)
 * and all public posts/statuses available on the user's timeline.
 
-The best thing about this scraper is that the data is scraped in an organized format so that it can be used for educational/research purpose by researchers.
+The best thing about this scraper is that the data is scraped in an organized format so that it can be used for educational/research purpose by researchers. Moreover, this scraper does not use Facebook's Graph API so there are no rate limiting issues as such. 
 
 ## Sample
 <p align="middle">
