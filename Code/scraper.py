@@ -421,8 +421,7 @@ def scrap_data(id, scan_list, section, elements_path, save_status, file_names):
     if save_status == 4:
         page.append(id)
 
-    for i in range(len(section)):
-        page.append(id + section[i])
+    page += [id + s for s in section]
 
     for i in range(len(scan_list)):
         try:
