@@ -571,7 +571,7 @@ def scrap_profile(ids):
         # setting parameters for scrap_data() to scrap posts
         scan_list = [None]
         section = []
-        elements_path = ["//div[@class='_4-u2 mbm _4mrt _5jmm _5pat _5v3q _4-u8']"]
+        elements_path = ['//div[@class="_5pcb _4b0l _2q8l"]']
 
         file_names = ["Posts.txt"]
         save_status = 4
@@ -605,9 +605,9 @@ def login(email, password):
 
         try:
             if platform.system() == 'Linux':
-                driver = webdriver.Chrome(executable_path="./chromedriver", chrome_options=options)
+                driver = webdriver.Chrome(executable_path="./chromedriver", options=options)
             else:
-                driver = webdriver.Chrome(executable_path="./chromedriver.exe", chrome_options=options)
+                driver = webdriver.Chrome(executable_path="./chromedriver.exe", options=options)
         except:
             print("Kindly replace the Chrome Web Driver with the latest one from"
                   " http://chromedriver.chromium.org/downloads")
