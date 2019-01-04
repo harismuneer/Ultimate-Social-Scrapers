@@ -150,7 +150,7 @@ def scroll():
 def get_status(x):
     status = ""
     try:
-        status = x.find_element_by_xpath(".//div[@class='_5pbx userContent']").text
+        status = x.find_element_by_xpath(".//div[@class='_5wj-']").text
     except:
         try:
             status = x.find_element_by_xpath(".//div[@class='userContent']").text
