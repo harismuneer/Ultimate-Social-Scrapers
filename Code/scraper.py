@@ -613,7 +613,7 @@ def login(email, password):
         except:
             print("Kindly replace the Chrome Web Driver with the latest one from"
                   "http://chromedriver.chromium.org/downloads"
-                  "your OS: {}".format(platform_)
+                  "\nYour OS: {}".format(platform_)
                  )
             exit()
 
