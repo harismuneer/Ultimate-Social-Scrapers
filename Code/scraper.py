@@ -1,3 +1,4 @@
+import getpass
 import calendar
 import os
 import platform
@@ -604,13 +605,16 @@ def login(email, password):
         # options.add_argument("headless")
 
         try:
-            if platform.system() == 'Linux':
+            platform_ = platform.system().lower()
+            if platform_ in ['linux', 'darwin']:
                 driver = webdriver.Chrome(executable_path="./chromedriver", options=options)
             else:
                 driver = webdriver.Chrome(executable_path="./chromedriver.exe", options=options)
         except:
             print("Kindly replace the Chrome Web Driver with the latest one from"
-                  " http://chromedriver.chromium.org/downloads")
+                  "http://chromedriver.chromium.org/downloads"
+                  "your OS: {}".format(platform_)
+                 )
             exit()
 
         driver.get("https://en-gb.facebook.com")
@@ -638,7 +642,7 @@ def main():
     if len(ids) > 0:
         # Getting email and password from user to login into his/her profile
         email = input('\nEnter your Facebook Email: ')
-        password = input('Enter your Facebook Password: ')
+        password = getpass.getpass('Enter your Facebook Password: ')
 
         print("\nStarting Scraping...")
 
@@ -653,6 +657,6 @@ def main():
 # -------------------------------------------------------------
 # -------------------------------------------------------------
 
-
-# get things rolling
-main()
+if __name__ == '__main__':
+    # get things rolling
+    main()
