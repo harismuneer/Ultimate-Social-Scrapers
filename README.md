@@ -18,6 +18,8 @@ A bot which scrapes almost everything about a facebook user's profile including
 
 The best thing about this scraper is that the data is scraped in an organized format so that it can be used for educational/research purpose by researchers. Moreover, this scraper does not use Facebook's Graph API so there are no rate limiting issues as such. 
 
+For details regarding citing this tool for your research, check the 'Citation' section below.
+
 ## Sample
 <p align="middle">
   <img src="../master/images/main.png" width="700"/>
@@ -64,7 +66,9 @@ photos_small_size = True
 ```
 
 ## Citation
+
 [![DOI](https://zenodo.org/badge/145763277.svg)](https://zenodo.org/badge/latestdoi/145763277)
+
 If you use this tool for your research, then kindly cite it. Click the above badge for more information regarding the complete citation for this tool and diffferent citation formats like IEEE, APA etc.
 
 
