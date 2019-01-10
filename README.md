@@ -64,6 +64,7 @@ Note: There are two modes to download Friends Profile Pics and the user's Photos
 friends_small_size = True
 photos_small_size = True
 ```
+----------------------------------------------------------------------------------------------------------------------------------------
 
 ## Citation
 
