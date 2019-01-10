@@ -63,6 +63,13 @@ friends_small_size = True
 photos_small_size = True
 ```
 
+## Citation
+[![DOI](https://zenodo.org/badge/145763277.svg)](https://zenodo.org/badge/latestdoi/145763277)
+If you use this tool for your research, then kindly cite it. Click the above badge for more information regarding the complete citation for this tool and diffferent citation formats like IEEE, APA etc.
+
+
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 ## Note
