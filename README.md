@@ -28,7 +28,7 @@ At its core, this tool uses xpaths of **'divs'** to extract data from them. Sinc
 
 The developers of this tool have devoted a lot of time and effort in developing and most importantly maintaining this tool for quite a lot time now. **In order to keep this amazing tool alive, we need support from you geeks.**
 
-The code is pretty intuitive and easy to understand, so you can update the relevant xpaths in the code when you feel that you have tried many profiles and the data isn't being scraped for any of them (that's a hint that Facebook has updated their site) and generate a pull request. Thanks!
+The code is pretty intuitive and easy to understand, so you can update the relevant xpaths in the code when you feel that you have tried many profiles and the data isn't being scraped for any of them (that's a hint that Facebook has updated their site) and generate a pull request. That's quite an easy thing to do. Thanks!
 
 ## Sample
 <p align="middle">
