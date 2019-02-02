@@ -19,7 +19,16 @@ A bot which scrapes almost everything about a facebook user's profile including
 
 The best thing about this scraper is that the data is scraped in an organized format so that it can be used for educational/research purpose by researchers. Moreover, this scraper does not use Facebook's Graph API so there are no rate limiting issues as such. 
 
+This tool is being used by thousands of developers weekly and we are pretty amazed at this response! Thankyou guys! :)
+
 For details regarding **citing/referencing** this tool for your research, check the 'Citation' section below.
+
+## Note
+At its core, this tool uses xpaths of 'divs' to extract data from them. Since Facebook keeps on updating its site frequently and the 'divs' get changed. Consequently, we have to update the divs accordingly to correctly scrape the data. 
+
+The developers of this tool have devoted a lot of time and effort in developing and most importantly maintaining this tool for quite a lot time now. In order to keep this amazing tool alive, we need support from you geeks.
+
+The code is pretty intuitive and easy to understand, so you can update the relevant xpaths in the code when you feel that you have tried many profiles and the data isn't being scraped for any of them (that's a hint that Facebook has updated their site) and generate a pull request. Thanks!
 
 ## Sample
 <p align="middle">
@@ -78,7 +87,7 @@ If you use this tool for your research, then kindly cite it. Click the above bad
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-## Note
+## Important Message
 This tool is for research purposes only. Hence, the developers of this tool won't be responsible for any misuse of data collected using this tool. 
 
 ----------------------------------------------------------------------------------------------------------------------------------------
