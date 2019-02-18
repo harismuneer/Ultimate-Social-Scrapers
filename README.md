@@ -96,11 +96,11 @@ This tool is for research purposes only. Hence, the developers of this tool won'
 You can get in touch with us on our LinkedIn Profiles:
 
 ##### Hassaan Elahi
-I am a part time Django & ReactJS Developer. Along with Web Development, I also did some amazing projects on Deep Learning and Machine Learning. For more, connect with me on linkdin. 
-[![LinkedIn Link](https://img.shields.io/github/followers/Hassaan-Elahi.svg?label=Follow&style=social)](https://www.linkedin.com/in/hassaan-elahi/)
+I am a part time Django & ReactJS Developer. Along with Web Development, I also did some amazing projects on Deep Learning and Machine Learning. For more, connect with me on linkdin.<br/>  
+[![LinkedIn Link](https://img.shields.io/badge/Connect-Hassaan--Elahi-blue.svg)](https://www.linkedin.com/in/hassaan-elahi/)
 
-or Follow me on github.
-[![GitHub Follow]()](https://github.com/harismuneer)
+or Follow me on github.<br/>
+[![GitHub Follow]()](https://github.com/Hassaan-Elahi)
 
 
 ##### Haris Muneer
