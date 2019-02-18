@@ -100,7 +100,7 @@ I am a part time Django & ReactJS Developer. Along with Web Development, I also 
 [![LinkedIn Link](https://img.shields.io/badge/Connect-Hassaan--Elahi-blue.svg?logo=linkedin&longCache=true&style=social&label=Connect)](https://www.linkedin.com/in/hassaan-elahi/)
 
 or Follow me on github.<br/>
-[![GitHub Follow]()](https://github.com/Hassaan-Elahi)
+[![GitHub Follow](https://img.shields.io/badge/Connect-Hassaan--Elahi-blue.svg?logo=Github&longCache=true&style=social&label=Follow)](https://github.com/Hassaan-Elahi)
 
 
 ##### Haris Muneer
