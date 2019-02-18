@@ -95,7 +95,7 @@ This tool is for research purposes only. Hence, the developers of this tool won'
 ## Authors
 You can get in touch with us on our LinkedIn Profiles:
 
-#### Hassaan Elahi
+##### Hassaan Elahi
 I am a part time Django & ReactJS Developer. Along with Web Development, I also did some amazing projects on Deep Learning and Machine Learning. For more, connect with me on linkdin. 
 [![LinkedIn Link](https://img.shields.io/badge/Connect-harismuneer-blue.svg?logo=linkedin&longCache=true&style=social&label=Connect
 )](https://www.linkedin.com/in/hassaan-elahi/)
