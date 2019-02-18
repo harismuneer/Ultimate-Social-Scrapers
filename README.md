@@ -95,15 +95,15 @@ This tool is for research purposes only. Hence, the developers of this tool won'
 ## Authors
 You can get in touch with us on our LinkedIn Profiles:
 
-##### Hassaan Elahi
+#### Hassaan Elahi
 I am a part time Django & ReactJS Developer. Along with Web Development, I also did some amazing projects on Deep Learning and Machine Learning. For more, connect with me on linkdin.<br/>  
 [![LinkedIn Link](https://img.shields.io/badge/Connect-Hassaan--Elahi-blue.svg?logo=linkedin&longCache=true&style=social&label=Connect)](https://www.linkedin.com/in/hassaan-elahi/)
 
-or Follow me on github.<br/>
+or Follow me for latest projects on github: 
 [![GitHub Follow](https://img.shields.io/badge/Connect-Hassaan--Elahi-blue.svg?logo=Github&longCache=true&style=social&label=Follow)](https://github.com/Hassaan-Elahi)
 
 
-##### Haris Muneer
+#### Haris Muneer
 [![LinkedIn Link](https://img.shields.io/badge/Connect-harismuneer-blue.svg?logo=linkedin&longCache=true&style=social&label=Connect
 )](https://www.linkedin.com/in/harismuneer)
 
