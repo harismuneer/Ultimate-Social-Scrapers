@@ -4,6 +4,7 @@ import os
 import platform
 import sys
 import urllib.request
+import time
 
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
@@ -393,11 +394,12 @@ def save_to_file(name, elements, status, current_section):
         if (status == 0) or (status == 1):
             for i in range(len(results)):
                 f.writelines(results[i])
-                f.write(',')
+                #f.write(',')
                 try:
                     f.writelines(img_names[i])
                 except:
-                    f.writelines("None")
+                	pass
+                #    f.writelines("None")
                 f.write('\n')
 
         elif status == 2:
@@ -507,8 +509,10 @@ def scrap_profile(ids):
         print("Friends..")
         # setting parameters for scrap_data() to scrap friends
         #scan_list = ["All", "Following", "Followers", "Work", "College", "Current City", "Hometown"]
-        scan_list = ["All", "Mutual Friends"]
-        section = ["/friends", "/friends_mutual"]
+        #scan_list = ["All", "Mutual Friends"]
+        #section = ["/friends", "/friends_mutual"]
+        scan_list = ["Mutual Friends"]
+        section = ["/friends_mutual"]
         #section = ["/friends", "/following", "/followers", "/friends_work", "/friends_college", "/friends_current_city",
         #           "/friends_hometown"]
         """
@@ -520,16 +524,19 @@ def scrap_profile(ids):
                          "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
                          "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a"]
         """
-        elements_path = ["//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
-        				"//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a"]
-
+        #elements_path = ["//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
+        #				"//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a"]
+        elements_path = ["//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a"]
         #file_names = ["All Friends.txt", "Following.txt", "Followers.txt", "Work Friends.txt", "College Friends.txt",
         #              "Current City Friends.txt", "Hometown Friends.txt"]
-        file_names = ["All Friends.txt","Mutual.txt"]
+        #file_names = ["All Friends.txt","Mutual.txt"]
+        file_names = ["Mutual.txt"]
         save_status = 0
 
         scrap_data(id, scan_list, section, elements_path, save_status, file_names)
         print("Friends Done")
+        time.sleep(5)
+
         # ----------------------------------------------------------------------------  
         """
         print("----------------------------------------")
