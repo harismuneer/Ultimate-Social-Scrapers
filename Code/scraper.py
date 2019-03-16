@@ -524,7 +524,6 @@ def scrap_profile(ids):
 
         scrap_data(id, scan_list, section, elements_path, save_status, file_names)
         print("Friends Done")
-        continue # ADDED BY GUY BECAUSE I DONT NEED ANYTHING ELSE
         # ----------------------------------------------------------------------------
 
         print("----------------------------------------")
