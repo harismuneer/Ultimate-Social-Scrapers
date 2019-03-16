@@ -1,5 +1,6 @@
-config.py
+/Code/config.py
 /Code/Data
 __pycache__/
 .DS_Store
 /Code/input.txt
+.idea/
