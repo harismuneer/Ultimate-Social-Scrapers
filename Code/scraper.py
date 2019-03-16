@@ -10,7 +10,7 @@ except ImportError:
     raise RuntimeError("Please create config.py based on config-sample.py")
 
 from selenium import webdriver
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -524,6 +524,7 @@ def scrap_profile(ids):
 
         scrap_data(id, scan_list, section, elements_path, save_status, file_names)
         print("Friends Done")
+        continue # ADDED BY GUY BECAUSE I DONT NEED ANYTHING ELSE
         # ----------------------------------------------------------------------------
 
         print("----------------------------------------")
@@ -593,6 +594,12 @@ def scrap_profile(ids):
 # -----------------------------------------------------------------------------
 # -----------------------------------------------------------------------------
 
+def safe_find_element_by_id(driver, elem_id):
+    try:
+        return driver.find_element_by_id(elem_id)
+    except NoSuchElementException:
+        return None
+
 def login(email, password):
     """ Logging into our own profile """
 
@@ -630,6 +637,21 @@ def login(email, password):
         # clicking on login button
         driver.find_element_by_id('loginbutton').click()
 
+        # multi factor authentication
+        mfa_code_input = safe_find_element_by_id(driver, 'approvals_code')
+        if mfa_code_input is None:
+            return
+        mfa_code_input.send_keys(input("MFA code: "))
+        driver.find_element_by_id('checkpointSubmitButton').click()
+
+        # there are so many screens asking you to verify things. Just skip them all
+        while safe_find_element_by_id(driver, 'checkpointSubmitButton') is not None:
+            dont_save_browser_radio = safe_find_element_by_id(driver, 'u_0_3')
+            if dont_save_browser_radio is not None:
+                dont_save_browser_radio.click()
+
+            driver.find_element_by_id('checkpointSubmitButton').click()
+
     except Exception as e:
         print("There's some error in log in.")
         print(sys.exc_info()[0])
@@ -646,7 +668,6 @@ def main():
         print("\nStarting Scraping...")
 
         login(config.email, config.password)
-        time.sleep(10)
         scrap_profile(ids)
         driver.close()
     else:
