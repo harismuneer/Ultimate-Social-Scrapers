@@ -136,7 +136,7 @@ def scroll():
 
             old_height = driver.execute_script("return document.body.scrollHeight")
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-            WebDriverWait(driver, scroll_time, 0.05).until(lambda driver: check_height())
+            WebDriverWait(driver, scroll_time, 0.5).until(lambda driver: check_height())
             current_scrolls += 1
         except TimeoutException:
             break
