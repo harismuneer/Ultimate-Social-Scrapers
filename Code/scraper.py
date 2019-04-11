@@ -136,7 +136,7 @@ def scroll():
 
             old_height = driver.execute_script("return document.body.scrollHeight")
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-            WebDriverWait(driver, scroll_time, 0.5).until(lambda driver: check_height())
+            WebDriverWait(driver, scroll_time, 0.05).until(lambda driver: check_height())
             current_scrolls += 1
         except TimeoutException:
             break
@@ -508,37 +508,27 @@ def scrap_profile(ids):
         print("----------------------------------------")
         print("Friends..")
         # setting parameters for scrap_data() to scrap friends
-        #scan_list = ["All", "Following", "Followers", "Work", "College", "Current City", "Hometown"]
-        #scan_list = ["All", "Mutual Friends"]
-        #section = ["/friends", "/friends_mutual"]
-        scan_list = ["Mutual Friends"]
-        section = ["/friends_mutual"]
-        #section = ["/friends", "/following", "/followers", "/friends_work", "/friends_college", "/friends_current_city",
-        #           "/friends_hometown"]
-        """
+        scan_list = ["All", "Mutual Friends", "Following", "Followers", "Work", "College", "Current City", "Hometown"]
+        section = ["/friends", "friends_mutual", "/following", "/followers", "/friends_work", "/friends_college", "/friends_current_city",
+                   "/friends_hometown"]
         elements_path = ["//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
+        				 "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
                          "//*[contains(@class,'_3i9')][1]/div/div/ul/li[1]/div[2]/div/div/div/div/div[2]/ul/li/div/a",
                          "//*[contains(@class,'fbProfileBrowserListItem')]/div/a",
                          "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
                          "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
                          "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
                          "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a"]
-        """
-        #elements_path = ["//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
-        #				"//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a"]
-        elements_path = ["//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a"]
-        #file_names = ["All Friends.txt", "Following.txt", "Followers.txt", "Work Friends.txt", "College Friends.txt",
-        #              "Current City Friends.txt", "Hometown Friends.txt"]
-        #file_names = ["All Friends.txt","Mutual.txt"]
-        file_names = ["Mutual.txt"]
+        file_names = ["All Friends.txt", "Mutual.txt", "Following.txt", "Followers.txt", "Work Friends.txt", "College Friends.txt",
+                      "Current City Friends.txt", "Hometown Friends.txt"]
         save_status = 0
 
         scrap_data(id, scan_list, section, elements_path, save_status, file_names)
         print("Friends Done")
-        time.sleep(5)
+
 
         # ----------------------------------------------------------------------------  
-        """
+        
         print("----------------------------------------")
         print("Photos..")
         print("Scraping Links..")
@@ -597,7 +587,7 @@ def scrap_profile(ids):
         print("Posts(Statuses) Done")
         print("----------------------------------------")
     # ----------------------------------------------------------------------------
-        """
+        
     print("\nProcess Completed.")
 
     return
