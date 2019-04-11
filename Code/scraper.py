@@ -4,7 +4,6 @@ import os
 import platform
 import sys
 import urllib.request
-import time
 
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
@@ -22,14 +21,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 driver = None
 
 # whether to download photos or not
-download_uploaded_photos = False 
-download_friends_photos = False 
+download_uploaded_photos = True 
+download_friends_photos = True 
 
 # whether to download the full image or its thumbnail (small size)
 # if small size is True then it will be very quick else if its false then it will open each photo to download it
 # and it will take much more time
-friends_small_size = False 
-photos_small_size = False 
+friends_small_size = True 
+photos_small_size = True 
 
 total_scrolls = 5000
 current_scrolls = 0
@@ -340,7 +339,6 @@ def save_to_file(name, elements, status, current_section):
 
                     folder_names = ["Friend's Photos", "Following's Photos", "Follower's Photos", "Work Friends Photos",
                                     "College Friends Photos", "Current City Friends Photos", "Hometown Friends Photos"]
-
                     print("Downloading " + folder_names[current_section])
 
                     img_names = image_downloader(img_links, folder_names[current_section])
@@ -394,12 +392,11 @@ def save_to_file(name, elements, status, current_section):
         if (status == 0) or (status == 1):
             for i in range(len(results)):
                 f.writelines(results[i])
-                #f.write(',')
+                f.write(',')
                 try:
                     f.writelines(img_names[i])
                 except:
-                	pass
-                #    f.writelines("None")
+                    f.writelines("None")
                 f.write('\n')
 
         elif status == 2:
@@ -419,7 +416,6 @@ def save_to_file(name, elements, status, current_section):
 
 def scrap_data(id, scan_list, section, elements_path, save_status, file_names):
     """Given some parameters, this function can scrap friends/photos/videos/about/posts(statuses) of a profile"""
-    ### fb.com/username/friends_mutual gives mutual friendslist page.
     page = []
 
     if save_status == 4:
