@@ -1,12 +1,16 @@
-import getpass
 import calendar
 import os
 import platform
 import sys
 import urllib.request
+import time
+try:
+    import config
+except ImportError:
+    raise RuntimeError("Please create config.py based on config-sample.py")
 
 from selenium import webdriver
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -313,7 +317,6 @@ def save_to_file(name, elements, status, current_section):
 
         # dealing with Friends
         if status == 0:
-
             results = [x.get_attribute('href') for x in elements]
             results = [create_original_link(x) for x in results]
 
@@ -392,6 +395,8 @@ def save_to_file(name, elements, status, current_section):
         if (status == 0) or (status == 1):
             for i in range(len(results)):
                 f.writelines(results[i])
+                f.write(',')
+                f.writelines(elements[i].find_element_by_tag_name("img").get_attribute("aria-label"))
                 f.write(',')
                 try:
                     f.writelines(img_names[i])
@@ -490,13 +495,11 @@ def scrap_profile(ids):
         print("\nScraping:", id)
 
         try:
-            if not os.path.exists(os.path.join(folder, id.split('/')[-1])):
-                os.mkdir(os.path.join(folder, id.split('/')[-1]))
-            else:
-                print("A folder with the same profile name already exists."
-                      " Kindly remove that folder first and then run this code.")
-                continue
-            os.chdir(os.path.join(folder, id.split('/')[-1]))
+            target_dir = os.path.join(folder, id.split('/')[-1])
+            while os.path.exists(target_dir):
+                input("A folder with the same profile name already exists. Kindly remove that folder first and press Return.")
+            os.mkdir(target_dir)
+            os.chdir(target_dir)
         except:
             print("Some error occurred in creating the profile directory.")
             continue
@@ -590,6 +593,12 @@ def scrap_profile(ids):
 # -----------------------------------------------------------------------------
 # -----------------------------------------------------------------------------
 
+def safe_find_element_by_id(driver, elem_id):
+    try:
+        return driver.find_element_by_id(elem_id)
+    except NoSuchElementException:
+        return None
+
 def login(email, password):
     """ Logging into our own profile """
 
@@ -611,7 +620,7 @@ def login(email, password):
             else:
                 driver = webdriver.Chrome(executable_path="./chromedriver.exe", options=options)
         except:
-            print("Kindly replace the Chrome Web Driver with the latest one from"
+            print("Kindly replace the Chrome Web Driver with the latest one from "
                   "http://chromedriver.chromium.org/downloads"
                   "\nYour OS: {}".format(platform_)
                  )
@@ -627,6 +636,21 @@ def login(email, password):
         # clicking on login button
         driver.find_element_by_id('loginbutton').click()
 
+        # multi factor authentication
+        mfa_code_input = safe_find_element_by_id(driver, 'approvals_code')
+        if mfa_code_input is None:
+            return
+        mfa_code_input.send_keys(input("MFA code: "))
+        driver.find_element_by_id('checkpointSubmitButton').click()
+
+        # there are so many screens asking you to verify things. Just skip them all
+        while safe_find_element_by_id(driver, 'checkpointSubmitButton') is not None:
+            dont_save_browser_radio = safe_find_element_by_id(driver, 'u_0_3')
+            if dont_save_browser_radio is not None:
+                dont_save_browser_radio.click()
+
+            driver.find_element_by_id('checkpointSubmitButton').click()
+
     except Exception as e:
         print("There's some error in log in.")
         print(sys.exc_info()[0])
@@ -640,13 +664,9 @@ def main():
     ids = ["https://en-gb.facebook.com/" + line.split("/")[-1] for line in open("input.txt", newline='\n')]
 
     if len(ids) > 0:
-        # Getting email and password from user to login into his/her profile
-        email = input('\nEnter your Facebook Email: ')
-        password = getpass.getpass()
-
         print("\nStarting Scraping...")
 
-        login(email, password)
+        login(config.email, config.password)
         scrap_profile(ids)
         driver.close()
     else:
