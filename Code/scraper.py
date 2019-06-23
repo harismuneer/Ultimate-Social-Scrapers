@@ -25,14 +25,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 driver = None
 
 # whether to download photos or not
-download_uploaded_photos = True
-download_friends_photos = True
+download_uploaded_photos = True 
+download_friends_photos = True 
 
 # whether to download the full image or its thumbnail (small size)
 # if small size is True then it will be very quick else if its false then it will open each photo to download it
 # and it will take much more time
-friends_small_size = True
-photos_small_size = True
+friends_small_size = True 
+photos_small_size = True 
 
 total_scrolls = 5000
 current_scrolls = 0
@@ -421,7 +421,6 @@ def save_to_file(name, elements, status, current_section):
 
 def scrap_data(id, scan_list, section, elements_path, save_status, file_names):
     """Given some parameters, this function can scrap friends/photos/videos/about/posts(statuses) of a profile"""
-
     page = []
 
     if save_status == 4:
@@ -508,24 +507,27 @@ def scrap_profile(ids):
         print("----------------------------------------")
         print("Friends..")
         # setting parameters for scrap_data() to scrap friends
-        scan_list = ["All", "Following", "Followers", "Work", "College", "Current City", "Hometown"]
-        section = ["/friends", "/following", "/followers", "/friends_work", "/friends_college", "/friends_current_city",
+        scan_list = ["All", "Mutual Friends", "Following", "Followers", "Work", "College", "Current City", "Hometown"]
+        section = ["/friends", "friends_mutual", "/following", "/followers", "/friends_work", "/friends_college", "/friends_current_city",
                    "/friends_hometown"]
         elements_path = ["//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
+        				 "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
                          "//*[contains(@class,'_3i9')][1]/div/div/ul/li[1]/div[2]/div/div/div/div/div[2]/ul/li/div/a",
                          "//*[contains(@class,'fbProfileBrowserListItem')]/div/a",
                          "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
                          "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
                          "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
                          "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a"]
-        file_names = ["All Friends.txt", "Following.txt", "Followers.txt", "Work Friends.txt", "College Friends.txt",
+        file_names = ["All Friends.txt", "Mutual.txt", "Following.txt", "Followers.txt", "Work Friends.txt", "College Friends.txt",
                       "Current City Friends.txt", "Hometown Friends.txt"]
         save_status = 0
 
         scrap_data(id, scan_list, section, elements_path, save_status, file_names)
         print("Friends Done")
-        # ----------------------------------------------------------------------------
 
+
+        # ----------------------------------------------------------------------------  
+        
         print("----------------------------------------")
         print("Photos..")
         print("Scraping Links..")
@@ -584,7 +586,7 @@ def scrap_profile(ids):
         print("Posts(Statuses) Done")
         print("----------------------------------------")
     # ----------------------------------------------------------------------------
-
+        
     print("\nProcess Completed.")
 
     return
