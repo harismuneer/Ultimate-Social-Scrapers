@@ -1,4 +1,5 @@
-# 🔥 Ultimate Facebook Scrapper
+# 🔥 Ultimate Facebook Scrapper 
+# UPDATE as of 26 June: working on resolving the bugs
 
 [![DOI](https://zenodo.org/badge/145763277.svg)](https://zenodo.org/badge/latestdoi/145763277)
 
