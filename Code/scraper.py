@@ -27,10 +27,10 @@ download_friends_photos = True
 # whether to download the full image or its thumbnail (small size)
 # if small size is True then it will be very quick else if its false then it will open each photo to download it
 # and it will take much more time
-friends_small_size = True
-photos_small_size = True
+friends_small_size = False
+photos_small_size = False
 
-total_scrolls = 5000
+total_scrolls = 0
 current_scrolls = 0
 scroll_time = 5
 
@@ -44,27 +44,21 @@ def get_facebook_images_url(img_links):
     urls = []
 
     for link in img_links:
-
         if link != "None":
             valid_url_found = False
             driver.get(link)
 
             try:
                 while not valid_url_found:
-                    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "spotlight")))
+                    WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.CLASS_NAME, "spotlight")))
                     element = driver.find_element_by_class_name("spotlight")
                     img_url = element.get_attribute('src')
 
                     if img_url.find('.gif') == -1:
                         valid_url_found = True
                         urls.append(img_url)
-
-            except EC.StaleElementReferenceException:
-                urls.append(driver.find_element_by_class_name("spotlight").get_attribute('src'))
-
             except:
-                print("Exception (facebook_image_downloader):", sys.exc_info()[0])
-
+                urls.append("None")
         else:
             urls.append("None")
 
@@ -82,12 +76,10 @@ def image_downloader(img_links, folder_name):
         parent = os.getcwd()
         try:
             folder = os.path.join(os.getcwd(), folder_name)
-            if not os.path.exists(folder):
-                os.mkdir(folder)
-
+            create_folder(folder)
             os.chdir(folder)
         except:
-            print("Error in changing directory")
+            print("Error in changing directory.")
 
         for link in img_links:
             img_name = "None"
@@ -95,6 +87,7 @@ def image_downloader(img_links, folder_name):
             if link != "None":
                 img_name = (link.split('.jpg')[0]).split('/')[-1] + '.jpg'
 
+                # this is the image id when there's no profile pic
                 if img_name == "10354686_10150004552801856_220367501106153455_n.jpg":
                     img_name = "None"
                 else:
@@ -302,7 +295,6 @@ def save_to_file(name, elements, status, current_section):
     # status 4 = dealing with posts
 
     try:
-
         f = None  # file pointer
 
         if status != 4:
@@ -313,34 +305,47 @@ def save_to_file(name, elements, status, current_section):
 
         # dealing with Friends
         if status == 0:
+            # get profile links of friends
             results = [x.get_attribute('href') for x in elements]
             results = [create_original_link(x) for x in results]
 
+            # get names of friends
+            people_names = [x.find_element_by_tag_name("img").get_attribute("aria-label") for x in elements]
+
+            # download friends' photos
             try:
                 if download_friends_photos:
-
                     if friends_small_size:
                         img_links = [x.find_element_by_css_selector('img').get_attribute('src') for x in elements]
                     else:
                         links = []
                         for friend in results:
-                            driver.get(friend)
-                            WebDriverWait(driver, 10).until(
-                                EC.presence_of_element_located((By.CLASS_NAME, "profilePicThumb")))
-                            l = driver.find_element_by_class_name("profilePicThumb").get_attribute('href')
+                            try:
+                                driver.get(friend)
+                                WebDriverWait(driver, 30).until(
+                                    EC.presence_of_element_located((By.CLASS_NAME, "profilePicThumb")))
+                                l = driver.find_element_by_class_name("profilePicThumb").get_attribute('href')
+                            except:
+                                l = "None"
+
                             links.append(l)
 
                         for i in range(len(links)):
-                            if links[i].find('picture/view') != -1:
+                            if links[i] is None:
+                                links[i] = "None"
+                            elif links[i].find('picture/view') != -1:
                                 links[i] = "None"
 
                         img_links = get_facebook_images_url(links)
 
-                    folder_names = ["Friend's Photos", "Following's Photos", "Follower's Photos", "Work Friends Photos",
+                    folder_names = ["Friend's Photos", "Mutual Friends' Photos", "Following's Photos",
+                                    "Follower's Photos", "Work Friends Photos",
                                     "College Friends Photos", "Current City Friends Photos", "Hometown Friends Photos"]
                     print("Downloading " + folder_names[current_section])
 
                     img_names = image_downloader(img_links, folder_names[current_section])
+                else:
+                    img_names = ["None"] * len(results)
             except:
                 print("Exception (Images)", str(status), "Status =", current_section, sys.exc_info()[0])
 
@@ -363,6 +368,8 @@ def save_to_file(name, elements, status, current_section):
                     print("Downloading " + folder_names[current_section])
 
                     img_names = image_downloader(background_img_links, folder_names[current_section])
+                else:
+                    img_names = ["None"] * len(results)
             except:
                 print("Exception (Images)", str(status), "Status =", current_section, sys.exc_info()[0])
 
@@ -388,16 +395,29 @@ def save_to_file(name, elements, status, current_section):
             extract_and_write_posts(elements, name)
             return
 
-        if (status == 0) or (status == 1):
+        """Write results to file"""
+        if status == 0:
             for i in range(len(results)):
+                # friend's profile link
                 f.writelines(results[i])
                 f.write(',')
-                f.writelines(elements[i].find_element_by_tag_name("img").get_attribute("aria-label"))
+
+                # friend's name
+                f.writelines(people_names[i])
                 f.write(',')
-                try:
-                    f.writelines(img_names[i])
-                except:
-                    f.writelines("None")
+
+                # friend's downloaded picture id
+                f.writelines(img_names[i])
+                f.write('\n')
+
+        elif status == 1:
+            for i in range(len(results)):
+                # image's link
+                f.writelines(results[i])
+                f.write(',')
+
+                # downloaded picture id
+                f.writelines(img_names[i])
                 f.write('\n')
 
         elif status == 2:
@@ -415,7 +435,7 @@ def save_to_file(name, elements, status, current_section):
 # ----------------------------------------------------------------------------
 # -----------------------------------------------------------------------------
 
-def scrap_data(id, scan_list, section, elements_path, save_status, file_names):
+def scrape_data(id, scan_list, section, elements_path, save_status, file_names):
     """Given some parameters, this function can scrap friends/photos/videos/about/posts(statuses) of a profile"""
     page = []
 
@@ -446,7 +466,7 @@ def scrap_data(id, scan_list, section, elements_path, save_status, file_names):
             save_to_file(file_names[i], data, save_status, i)
 
         except:
-            print("Exception (scrap_data)", str(i), "Status =", str(save_status), sys.exc_info()[0])
+            print("Exception (scrape_data)", str(i), "Status =", str(save_status), sys.exc_info()[0])
 
 
 # -----------------------------------------------------------------------------
@@ -471,13 +491,14 @@ def create_original_link(url):
 
 # -----------------------------------------------------------------------------
 # -----------------------------------------------------------------------------
-
-def scrap_profile(ids):
-    folder = os.path.join(os.getcwd(), "Data")
-
+def create_folder(folder):
     if not os.path.exists(folder):
         os.mkdir(folder)
 
+
+def scrap_profile(ids):
+    folder = os.path.join(os.getcwd(), "Data")
+    create_folder(folder)
     os.chdir(folder)
 
     # execute for all profiles given in input.txt file
@@ -491,10 +512,7 @@ def scrap_profile(ids):
 
         try:
             target_dir = os.path.join(folder, id.split('/')[-1])
-            while os.path.exists(target_dir):
-                input(
-                    "A folder with the same profile name already exists. Kindly remove that folder first and press Return.")
-            os.mkdir(target_dir)
+            create_folder(target_dir)
             os.chdir(target_dir)
         except:
             print("Some error occurred in creating the profile directory.")
@@ -503,9 +521,9 @@ def scrap_profile(ids):
         # ----------------------------------------------------------------------------
         print("----------------------------------------")
         print("Friends..")
-        # setting parameters for scrap_data() to scrap friends
+        # setting parameters for scrape_data() to scrape friends
         scan_list = ["All", "Mutual Friends", "Following", "Followers", "Work", "College", "Current City", "Hometown"]
-        section = ["/friends", "friends_mutual", "/following", "/followers", "/friends_work", "/friends_college",
+        section = ["/friends", "/friends_mutual", "/following", "/followers", "/friends_work", "/friends_college",
                    "/friends_current_city",
                    "/friends_hometown"]
         elements_path = ["//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
@@ -516,47 +534,46 @@ def scrap_profile(ids):
                          "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
                          "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
                          "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a"]
-        file_names = ["All Friends.txt", "Mutual.txt", "Following.txt", "Followers.txt", "Work Friends.txt",
+        file_names = ["All Friends.txt", "Mutual Friends.txt", "Following.txt", "Followers.txt", "Work Friends.txt",
                       "College Friends.txt",
                       "Current City Friends.txt", "Hometown Friends.txt"]
         save_status = 0
 
-        scrap_data(id, scan_list, section, elements_path, save_status, file_names)
-        print("Friends Done")
+        scrape_data(id, scan_list, section, elements_path, save_status, file_names)
+        print("Friends Done!")
 
         # ----------------------------------------------------------------------------
 
         print("----------------------------------------")
         print("Photos..")
         print("Scraping Links..")
-        # setting parameters for scrap_data() to scrap photos
+        # setting parameters for scrape_data() to scrap photos
         scan_list = ["'s Photos", "Photos of"]
         section = ["/photos_all", "/photos_of"]
         elements_path = ["//*[contains(@id, 'pic_')]"] * 2
         file_names = ["Uploaded Photos.txt", "Tagged Photos.txt"]
         save_status = 1
 
-        scrap_data(id, scan_list, section, elements_path, save_status, file_names)
-        print("Photos Done")
+        scrape_data(id, scan_list, section, elements_path, save_status, file_names)
+        print("Photos Done!")
 
         # ----------------------------------------------------------------------------
-
         print("----------------------------------------")
         print("Videos:")
-        # setting parameters for scrap_data() to scrap videos
+        # setting parameters for scrape_data() to scrap videos
         scan_list = ["'s Videos", "Videos of"]
         section = ["/videos_by", "/videos_of"]
         elements_path = ["//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul"] * 2
         file_names = ["Uploaded Videos.txt", "Tagged Videos.txt"]
         save_status = 2
 
-        scrap_data(id, scan_list, section, elements_path, save_status, file_names)
-        print("Videos Done")
+        scrape_data(id, scan_list, section, elements_path, save_status, file_names)
+        print("Videos Done!")
         # ----------------------------------------------------------------------------
 
         print("----------------------------------------")
         print("About:")
-        # setting parameters for scrap_data() to scrap the about section
+        # setting parameters for scrape_data() to scrap the about section
         scan_list = [None] * 7
         section = ["/about?section=overview", "/about?section=education", "/about?section=living",
                    "/about?section=contact-info", "/about?section=relationship", "/about?section=bio",
@@ -566,13 +583,13 @@ def scrap_profile(ids):
                       "Family and Relationships.txt", "Details About.txt", "Life Events.txt"]
         save_status = 3
 
-        scrap_data(id, scan_list, section, elements_path, save_status, file_names)
-        print("About Section Done")
+        scrape_data(id, scan_list, section, elements_path, save_status, file_names)
+        print("About Section Done!")
 
         # ----------------------------------------------------------------------------
         print("----------------------------------------")
         print("Posts:")
-        # setting parameters for scrap_data() to scrap posts
+        # setting parameters for scrape_data() to scrap posts
         scan_list = [None]
         section = []
         elements_path = ['//div[@class="_5pcb _4b0l _2q8l"]']
@@ -580,8 +597,8 @@ def scrap_profile(ids):
         file_names = ["Posts.txt"]
         save_status = 4
 
-        scrap_data(id, scan_list, section, elements_path, save_status, file_names)
-        print("Posts(Statuses) Done")
+        scrape_data(id, scan_list, section, elements_path, save_status, file_names)
+        print("Posts(Statuses) Done!")
         print("----------------------------------------")
     # ----------------------------------------------------------------------------
 
