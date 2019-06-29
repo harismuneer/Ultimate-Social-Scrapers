@@ -4,10 +4,6 @@ import platform
 import sys
 import urllib.request
 import time
-try:
-    import config
-except ImportError:
-    raise RuntimeError("Please create config.py based on config-sample.py")
 
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
@@ -25,14 +21,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 driver = None
 
 # whether to download photos or not
-download_uploaded_photos = True 
-download_friends_photos = True 
+download_uploaded_photos = True
+download_friends_photos = True
 
 # whether to download the full image or its thumbnail (small size)
 # if small size is True then it will be very quick else if its false then it will open each photo to download it
 # and it will take much more time
-friends_small_size = True 
-photos_small_size = True 
+friends_small_size = True
+photos_small_size = True
 
 total_scrolls = 5000
 current_scrolls = 0
@@ -496,7 +492,8 @@ def scrap_profile(ids):
         try:
             target_dir = os.path.join(folder, id.split('/')[-1])
             while os.path.exists(target_dir):
-                input("A folder with the same profile name already exists. Kindly remove that folder first and press Return.")
+                input(
+                    "A folder with the same profile name already exists. Kindly remove that folder first and press Return.")
             os.mkdir(target_dir)
             os.chdir(target_dir)
         except:
@@ -508,26 +505,27 @@ def scrap_profile(ids):
         print("Friends..")
         # setting parameters for scrap_data() to scrap friends
         scan_list = ["All", "Mutual Friends", "Following", "Followers", "Work", "College", "Current City", "Hometown"]
-        section = ["/friends", "friends_mutual", "/following", "/followers", "/friends_work", "/friends_college", "/friends_current_city",
+        section = ["/friends", "friends_mutual", "/following", "/followers", "/friends_work", "/friends_college",
+                   "/friends_current_city",
                    "/friends_hometown"]
         elements_path = ["//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
-        				 "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
+                         "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
                          "//*[contains(@class,'_3i9')][1]/div/div/ul/li[1]/div[2]/div/div/div/div/div[2]/ul/li/div/a",
                          "//*[contains(@class,'fbProfileBrowserListItem')]/div/a",
                          "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
                          "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
                          "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
                          "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a"]
-        file_names = ["All Friends.txt", "Mutual.txt", "Following.txt", "Followers.txt", "Work Friends.txt", "College Friends.txt",
+        file_names = ["All Friends.txt", "Mutual.txt", "Following.txt", "Followers.txt", "Work Friends.txt",
+                      "College Friends.txt",
                       "Current City Friends.txt", "Hometown Friends.txt"]
         save_status = 0
 
         scrap_data(id, scan_list, section, elements_path, save_status, file_names)
         print("Friends Done")
 
+        # ----------------------------------------------------------------------------
 
-        # ----------------------------------------------------------------------------  
-        
         print("----------------------------------------")
         print("Photos..")
         print("Scraping Links..")
@@ -586,7 +584,7 @@ def scrap_profile(ids):
         print("Posts(Statuses) Done")
         print("----------------------------------------")
     # ----------------------------------------------------------------------------
-        
+
     print("\nProcess Completed.")
 
     return
@@ -600,6 +598,7 @@ def safe_find_element_by_id(driver, elem_id):
         return driver.find_element_by_id(elem_id)
     except NoSuchElementException:
         return None
+
 
 def login(email, password):
     """ Logging into our own profile """
@@ -623,9 +622,10 @@ def login(email, password):
                 driver = webdriver.Chrome(executable_path="./chromedriver.exe", options=options)
         except:
             print("Kindly replace the Chrome Web Driver with the latest one from "
-                  "http://chromedriver.chromium.org/downloads"
+                  "http://chromedriver.chromium.org/downloads "
+                  "and also make sure you have the latest Chrome Browser version."
                   "\nYour OS: {}".format(platform_)
-                 )
+                  )
             exit()
 
         driver.get("https://en-gb.facebook.com")
@@ -638,11 +638,13 @@ def login(email, password):
         # clicking on login button
         driver.find_element_by_id('loginbutton').click()
 
-        # multi factor authentication
+        # if your account uses multi factor authentication
         mfa_code_input = safe_find_element_by_id(driver, 'approvals_code')
+
         if mfa_code_input is None:
             return
-        mfa_code_input.send_keys(input("MFA code: "))
+
+        mfa_code_input.send_keys(input("Enter MFA code: "))
         driver.find_element_by_id('checkpointSubmitButton').click()
 
         # there are so many screens asking you to verify things. Just skip them all
@@ -663,16 +665,24 @@ def login(email, password):
 # -----------------------------------------------------------------------------
 
 def main():
+    with open('credentials.txt') as f:
+        email = f.readline().split('"')[1]
+        password = f.readline().split('"')[1]
+
+        if email == "" or password == "":
+            print("Your email or password is missing. Kindly write them in credentials.txt")
+            exit()
+
     ids = ["https://en-gb.facebook.com/" + line.split("/")[-1] for line in open("input.txt", newline='\n')]
 
     if len(ids) > 0:
         print("\nStarting Scraping...")
 
-        login(config.email, config.password)
+        login(email, password)
         scrap_profile(ids)
         driver.close()
     else:
-        print("Input file is empty..")
+        print("Input file is empty.")
 
 
 # -------------------------------------------------------------
