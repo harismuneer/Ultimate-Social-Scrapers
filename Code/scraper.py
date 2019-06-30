@@ -27,10 +27,10 @@ download_friends_photos = True
 # whether to download the full image or its thumbnail (small size)
 # if small size is True then it will be very quick else if its false then it will open each photo to download it
 # and it will take much more time
-friends_small_size = False
-photos_small_size = False
+friends_small_size = True
+photos_small_size = True
 
-total_scrolls = 0
+total_scrolls = 5000
 current_scrolls = 0
 scroll_time = 5
 
