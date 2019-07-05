@@ -29,7 +29,7 @@ current_scrolls = 0
 scroll_time = 8
 
 old_height = 0
-
+firefox_profile_path = "/home/zeryx/.mozilla/firefox/0n8gmjoz.bot"
 facebook_https_prefix = "https://"
 
 
@@ -616,7 +616,7 @@ def login():
 
     global driver
 
-    ffprofile = webdriver.FirefoxProfile("/home/zeryx/.mozilla/firefox/qs23tl6v.default")
+    ffprofile = webdriver.FirefoxProfile(firefox_profile_path)
     gecko_path = os.path.join(os.getcwd(), "bin", "geckodriver")
     # options.add_argument("headless")
 
