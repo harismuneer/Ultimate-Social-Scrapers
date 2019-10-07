@@ -40,7 +40,6 @@
   <img src = "https://upload.wikimedia.org/wikipedia/en/e/e4/National_University_of_Computer_and_Emerging_Sciences_logo.png" width="144" alt="NUCES"/>
 <img src = "https://static.wixstatic.com/media/e70787_c0c48d456b0d421b9c0d45478f9f422d~mv2.gif" width="175" alt="UCLA"/>
   <img src = "https://i2.wp.com/www.opfblog.com/wp-content/uploads/2014/10/Lums-Logo.jpg?zoom=1.3499999046325684&fit=500%2C409&ssl=1" width="140" alt="LUMS"/>
-    <img src = "http://www.conradlabs.com/wp-content/uploads/2018/04/rocket.png" width="120" alt="Conrad"/>
   <img src = "http://www.geekweek.pk/2016/wp-content/uploads/2016/01/ACM-logo.png" width="300" alt="ACM"/>
 </p>
 <hr>
