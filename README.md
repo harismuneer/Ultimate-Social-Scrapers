@@ -27,9 +27,9 @@
 </p>
 
 <h2 align="center">Contributors</h2>
-<span align="center">
+<p align="center">
   Contributors from following organizations have so far joined the quest to maintain UFS.
-</span>
+</p>
 
 <p align="center">
 <img src = "https://agsol.com/wp-content/uploads/2018/09/new-microsoft-logo-SIZED-SQUARE.jpg" width="200" alt="Microsoft"/>
