@@ -34,6 +34,7 @@
 </p>
 
 <p align="center">
+  <a href='#'>
 <img src = "https://www.adbirds.global/wp-content/uploads/2016/07/Microsoft-Logo-square.png" width="150" alt="Microsoft"/>
   <img hspace="5"/>
   <img src = "https://autopair.net/images/easyblog_articles/5/MIT-Logo.png" width="165" alt="MIT"/>
@@ -46,6 +47,8 @@
   <img hspace="20"/>
     <img src = "https://i2.wp.com/www.opfblog.com/wp-content/uploads/2014/10/Lums-Logo.jpg?zoom=1.3499999046325684&fit=500%2C409&ssl=1" width="120" alt="LUMS"/>
 </p>
+  </a>
+  
 <hr>
 
 
