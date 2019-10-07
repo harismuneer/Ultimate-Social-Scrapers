@@ -73,13 +73,13 @@ The code is pretty intuitive and easy to understand, so you can update the relev
 
 ## Sample
 <p align="middle">
-  <img src="../master/images/main.png" width="700"/>
+  <img src="images/main.png" width="700"/>
  </p>
 
 
 ## Screenshot
 <p align="middle">
-  <img src="../master/images/screenshot.png" width="700"/>
+  <img src="images/screenshot.png" width="700"/>
  </p>
 
 
