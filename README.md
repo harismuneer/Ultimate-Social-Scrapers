@@ -1,20 +1,23 @@
+
 <p align="center">
-  <img src="images/ufs_cover.jpg" width='800' height='400'/>  
+  <img src="images/ufs_cover.jpg" width='100%' height='360'/>  
   <h1 align="center">Ultimate Facebook Scraper (UFS)</h1>
+</p>
 
-  <p>Tooling that <b>automates</b> your social media interactions to collect posts, photos, videos, friends, followers and much more on Facebook.<p>
-  <hr>
+<p align="center">
+  Tooling that <b>automates</b> your social media interactions to collect posts, photos, videos, friends, followers and much more on Facebook.<p>
 
-<p>	
-[![DOI](https://zenodo.org/badge/145763277.svg)](https://zenodo.org/badge/latestdoi/145763277)]
+<hr>
+
+[![DOI](https://zenodo.org/badge/145763277.svg)](https://zenodo.org/badge/latestdoi/145763277)
 
 [![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg?style=for-the-badge&logo=appveyor)](#)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](#)
 [![GitHub Forks](https://img.shields.io/github/forks/harismuneer/Ultimate-Facebook-Scraper.svg?style=social&label=Fork&maxAge=2592000)](https://www.github.com/harismuneer/Ultimate-Facebook-Scraper/fork)
 [![GitHub Issues](https://img.shields.io/github/issues/harismuneer/Ultimate-Facebook-Scraper.svg?style=flat&label=Issues&maxAge=2592000)](https://www.github.com/harismuneer/Ultimate-Facebook-Scraper/issues)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat&label=Contributions&colorA=red&colorB=black)](#)
-</p>
-</p>
+
+<hr>
 
 ## Features
 A bot which scrapes almost everything about a facebook user's profile including
