@@ -35,14 +35,13 @@
   <img src = "https://agsol.com/wp-content/uploads/2018/09/new-microsoft-logo-SIZED-SQUARE.jpg" width="200" alt="Microsoft"/>
   <img src = "https://static1.squarespace.com/static/5a5e19ecfe54eff8e7bcf4cc/5ae5fcfe562fa7d975b25e5b/5afe2ad3562fa77bef18efc1/1548783722052/mitxxx01.jpg?format=1500w" width="200" alt="MIT"/>
   <img src = "https://kdp0l43vw6z2dlw631ififc5-wpengine.netdna-ssl.com/wp-content/uploads/2009/01/harvard-logo-263-1024x1024.jpg" width="250" alt="Harvard"/>
-<img src = "https://static.wixstatic.com/media/e70787_c0c48d456b0d421b9c0d45478f9f422d~mv2.gif" width="200"/>
+  <img src = "https://i2.wp.com/www.opfblog.com/wp-content/uploads/2014/10/Lums-Logo.jpg?zoom=1.3499999046325684&fit=500%2C409&ssl=1" width="154" alt="LUMS"/>
+  <img src = "https://upload.wikimedia.org/wikipedia/en/e/e4/National_University_of_Computer_and_Emerging_Sciences_logo.png" width="154" alt="NUCES"/>
+  <img src = "https://scontent.flhe3-1.fna.fbcdn.net/v/t1.0-9/18194737_1542093912502262_770962141842612700_n.jpg?_nc_cat=100&_nc_oc=AQkSzhrtxNhAL49YyhTRlJtZJB_bVEGAlULHVkkWMmbT4VqrKSSsqkPqk0OePGaL5FI&_nc_ht=scontent.flhe3-1.fna&oh=e852dc2ed8562785c3b9daf032eededb&oe=5E2E1AD4" width="154" alt="EVS"/>
+    <img src = "http://acm.khi.nu.edu.pk/images/acmlogo.png" width="154" alt="ACM"/>
+    <img src = "http://www.conradlabs.com/wp-content/uploads/2018/04/rocket.png" width="154" alt="Conrad"/>
+  <img src = "https://static.wixstatic.com/media/e70787_c0c48d456b0d421b9c0d45478f9f422d~mv2.gif" width="200" alt="UCLA"/>
 
-
-  <img src = "https://i2.wp.com/www.opfblog.com/wp-content/uploads/2014/10/Lums-Logo.jpg?zoom=1.3499999046325684&fit=500%2C409&ssl=1" width="154"/>
-  <img src = "https://upload.wikimedia.org/wikipedia/en/e/e4/National_University_of_Computer_and_Emerging_Sciences_logo.png" width="154"/>
-  <img src = "https://scontent.flhe3-1.fna.fbcdn.net/v/t1.0-9/18194737_1542093912502262_770962141842612700_n.jpg?_nc_cat=100&_nc_oc=AQkSzhrtxNhAL49YyhTRlJtZJB_bVEGAlULHVkkWMmbT4VqrKSSsqkPqk0OePGaL5FI&_nc_ht=scontent.flhe3-1.fna&oh=e852dc2ed8562785c3b9daf032eededb&oe=5E2E1AD4" width="154"/>
-    <img src = "http://acm.khi.nu.edu.pk/images/acmlogo.png" width="154"/>
-    <img src = "http://www.conradlabs.com/wp-content/uploads/2018/04/rocket.png" width="154"/>
 
 </p>
 <hr>
