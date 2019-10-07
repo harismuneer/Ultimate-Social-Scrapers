@@ -40,10 +40,10 @@
   <img hspace="10"/>
   <img src = "https://upload.wikimedia.org/wikipedia/en/e/e4/National_University_of_Computer_and_Emerging_Sciences_logo.png" width="124" alt="NUCES"/> <br>
 <img src = "https://static.wixstatic.com/media/e70787_c0c48d456b0d421b9c0d45478f9f422d~mv2.gif" width="165" alt="UCLA"/>
+  <img hspace="20" vpsace="5"/>
+    <img src = "http://www.geekweek.pk/2016/wp-content/uploads/2016/01/ACM-logo.png" width="280" alt="ACM"/>
   <img hspace="20"/>
-  <img src = "https://i2.wp.com/www.opfblog.com/wp-content/uploads/2014/10/Lums-Logo.jpg?zoom=1.3499999046325684&fit=500%2C409&ssl=1" width="130" alt="LUMS"/>
-  <img hspace="20"/>
-  <img src = "http://www.geekweek.pk/2016/wp-content/uploads/2016/01/ACM-logo.png" width="280" alt="ACM"/>
+    <img src = "https://i2.wp.com/www.opfblog.com/wp-content/uploads/2014/10/Lums-Logo.jpg?zoom=1.3499999046325684&fit=500%2C409&ssl=1" width="120" alt="LUMS"/>
 </p>
 <hr>
 
