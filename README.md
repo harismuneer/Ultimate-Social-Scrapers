@@ -1,8 +1,9 @@
-
-<p align="center">
-  <img src="images/ufs_icon.png" width='154'/>  
-  <h1 align="center">Ultimate Facebook Scraper (UFS)</h1>
-</p>
+<a href="#">
+  <div align="center">
+    <img src="images/ufs_icon.png" width='154'/>
+  </div>
+</a>
+<h1 align="center">Ultimate Facebook Scraper (UFS)</h1>
 
 <p align="center">
   Tooling that <b>automates</b> your social media interactions to collect posts, photos, videos, friends, followers and much more on Facebook.
