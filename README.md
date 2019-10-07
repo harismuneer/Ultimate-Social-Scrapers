@@ -26,12 +26,8 @@
   </a>
 </p>
 
-<hr>
 <p align="center">
   <b>Contributors from following companies have so far joined the quest to maintain UFS.</b>
-</p>
-
-<p align="center" width="500px">
   <img src = "https://agsol.com/wp-content/uploads/2018/09/new-microsoft-logo-SIZED-SQUARE.jpg" width="200" alt="Microsoft"/>
   <img src = "https://static1.squarespace.com/static/5a5e19ecfe54eff8e7bcf4cc/5ae5fcfe562fa7d975b25e5b/5afe2ad3562fa77bef18efc1/1548783722052/mitxxx01.jpg?format=1500w" width="200" alt="MIT"/>
   <img src = "https://kdp0l43vw6z2dlw631ififc5-wpengine.netdna-ssl.com/wp-content/uploads/2009/01/harvard-logo-263-1024x1024.jpg" width="250" alt="Harvard"/>
@@ -40,7 +36,6 @@
   <img src = "https://i2.wp.com/www.opfblog.com/wp-content/uploads/2014/10/Lums-Logo.jpg?zoom=1.3499999046325684&fit=500%2C409&ssl=1" width="154" alt="LUMS"/>
     <img src = "http://www.conradlabs.com/wp-content/uploads/2018/04/rocket.png" width="120" alt="Conrad"/>
   <img src = "http://www.geekweek.pk/2016/wp-content/uploads/2016/01/ACM-logo.png" width="300" alt="ACM"/>
-
 </p>
 <hr>
 
