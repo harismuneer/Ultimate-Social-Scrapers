@@ -13,7 +13,7 @@
     <img src="https://zenodo.org/badge/145763277.svg" />
   </a>
   <a href="#">
-    <img src="https://img.shields.io/badge/Build-Passing-brightgreen.svg?style=for-the-badge&logo=appveyor" />
+    <img src="https://img.shields.io/badge/Build-Passing-brightgreen.svg?style=flat-square&logo=appveyor" />
   </a>
   <a href="#">
     <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" />
@@ -26,7 +26,10 @@
   </a>
 </p>
 
-  <b>Contributors from following companies have so far joined the quest to maintain UFS.</b>
+<h2 align="center">Contributors</h2>
+<span align="center">
+  Contributors from following organizations have so far joined the quest to maintain UFS.
+</span>
 
 <p align="center">
 <img src = "https://agsol.com/wp-content/uploads/2018/09/new-microsoft-logo-SIZED-SQUARE.jpg" width="200" alt="Microsoft"/>
