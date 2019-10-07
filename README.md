@@ -32,12 +32,16 @@
   Contributors from following companies have so far joined the quest to maintain UFS.
 </p>
 <p align="center">
-  <img src = "https://agsol.com/wp-content/uploads/2018/09/new-microsoft-logo-SIZED-SQUARE.jpg" width="154"/>
+  <img src = "https://agsol.com/wp-content/uploads/2018/09/new-microsoft-logo-SIZED-SQUARE.jpg" width="200" alt="Microsoft"/>
+  <img src = "https://i.pinimg.com/originals/b4/57/82/b45782df5011090627c0e33904a625d9.jpg" width="210" alt="MIT"/>
+  <img src = "https://kdp0l43vw6z2dlw631ififc5-wpengine.netdna-ssl.com/wp-content/uploads/2009/01/harvard-logo-263-1024x1024.jpg" width="210" alt="Harvard"/>
+
+
   <img src = "https://i2.wp.com/www.opfblog.com/wp-content/uploads/2014/10/Lums-Logo.jpg?zoom=1.3499999046325684&fit=500%2C409&ssl=1" width="154"/>
   <img src = "https://upload.wikimedia.org/wikipedia/en/e/e4/National_University_of_Computer_and_Emerging_Sciences_logo.png" width="154"/>
   <img src = "https://scontent.flhe3-1.fna.fbcdn.net/v/t1.0-9/18194737_1542093912502262_770962141842612700_n.jpg?_nc_cat=100&_nc_oc=AQkSzhrtxNhAL49YyhTRlJtZJB_bVEGAlULHVkkWMmbT4VqrKSSsqkPqk0OePGaL5FI&_nc_ht=scontent.flhe3-1.fna&oh=e852dc2ed8562785c3b9daf032eededb&oe=5E2E1AD4" width="154"/>
-  <img src = "https://i7.pngguru.com/preview/840/497/106/university-of-california-los-angeles-ucla-fielding-school-of-public-health-ucla-extension-student-los-angeles.jpg" width="154"/>
-    <img src = "http://acm.khi.nu.edu.pk/images/acmlogo.png" width="154"/>
+  <img src = "https://www.google.com.pk/url?sa=i&source=images&cd=&ved=2ahUKEwiptr-B2IrlAhVOqxoKHQdUBJMQjRx6BAgBEAQ&url=http%3A%2F%2Fwww.kimbkhauv.com%2Fsingle-post%2F2017%2F09%2F06%2FUCLA-Alumni-Newsletter-Features-Mission-Valley-Chiropractor-Dr-Kim-Khauv&psig=AOvVaw0NWUdHu3Bb7So5LfqR86mB&ust=1570556221025928" width="154"/>
+    <img src = "http://acm.khi.nu.edu.pk/images/acmlogo.png" width="200"/>
 </p>
 <hr>
 
