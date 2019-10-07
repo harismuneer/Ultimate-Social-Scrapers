@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="images/ufs_cover.jpg" width='100%' height='360'/>  
+  <img src="images/ufs_icon.png" width='100%' height='360'/>  
   <h1 align="center">Ultimate Facebook Scraper (UFS)</h1>
 </p>
 
