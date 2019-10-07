@@ -30,7 +30,7 @@
 
 <h2 align="center">Contributors</h2>
 <p align="center">
-  Contributors from following organizations have so far joined the quest to maintain UFS.
+  Contributors from following organizations have so far joined the quest and contributed code to UFS.
 </p>
 
 <p align="center">
