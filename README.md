@@ -34,7 +34,8 @@
 </p>
 
 <p align="center">
-<img src = "https://www.adbirds.global/wp-content/uploads/2016/07/Microsoft-Logo-square.png" width="155" alt="Microsoft"/>
+<img src = "https://www.adbirds.global/wp-content/uploads/2016/07/Microsoft-Logo-square.png" width="150" alt="Microsoft"/>
+  <img hspace="5"/>
   <img src = "https://autopair.net/images/easyblog_articles/5/MIT-Logo.png" width="165" alt="MIT"/>
   <img src = "https://www.globalfinancialdata.com/wp-content/uploads/client-logos/Harvard-University-logo-.jpg" width="163" alt="Harvard"/>
   <img hspace="10"/>
