@@ -35,19 +35,31 @@
 
 <p align="center">
   <a href='#'>
-<img src = "https://www.adbirds.global/wp-content/uploads/2016/07/Microsoft-Logo-square.png" width="150" alt="Microsoft"/>
-  <img hspace="5"/>
-  <img src = "https://autopair.net/images/easyblog_articles/5/MIT-Logo.png" width="165" alt="MIT"/>
-  <img src = "https://www.globalfinancialdata.com/wp-content/uploads/client-logos/Harvard-University-logo-.jpg" width="163" alt="Harvard"/>
-  <img hspace="10"/>
-  <img src = "https://upload.wikimedia.org/wikipedia/en/e/e4/National_University_of_Computer_and_Emerging_Sciences_logo.png" width="120" alt="NUCES"/> <br>
-<img src = "https://static.wixstatic.com/media/e70787_c0c48d456b0d421b9c0d45478f9f422d~mv2.gif" width="165" alt="UCLA"/>
-  <img hspace="20" vpsace="5"/>
-    <img src = "http://www.geekweek.pk/2016/wp-content/uploads/2016/01/ACM-logo.png" width="280" alt="ACM"/>
-  <img hspace="20"/>
-    <img src = "https://i2.wp.com/www.opfblog.com/wp-content/uploads/2014/10/Lums-Logo.jpg?zoom=1.3499999046325684&fit=500%2C409&ssl=1" width="120" alt="LUMS"/>
-</p>
+    <img src = "https://www.adbirds.global/wp-content/uploads/2016/07/Microsoft-Logo-square.png" width="150" alt="Microsoft"/>
   </a>
+  <img hspace="5"/>
+  <a href='#'>
+    <img src = "https://autopair.net/images/easyblog_articles/5/MIT-Logo.png" width="165" alt="MIT"/>
+  </a>
+  <a href='#'>
+    <img src = "https://www.globalfinancialdata.com/wp-content/uploads/client-logos/Harvard-University-logo-.jpg" width="163" alt="Harvard"/>
+  </a>
+  <img hspace="10"/>  
+  <a href='#'>
+    <img src = "https://upload.wikimedia.org/wikipedia/en/e/e4/National_University_of_Computer_and_Emerging_Sciences_logo.png" width="120" alt="NUCES"/>
+  </a><br>      
+  <a href='#'>
+    <img src = "https://static.wixstatic.com/media/e70787_c0c48d456b0d421b9c0d45478f9f422d~mv2.gif" width="165" alt="UCLA"/>
+  </a>
+  <img hspace="20" vpsace="5"/>
+  <a href='#'>
+    <img src = "http://www.geekweek.pk/2016/wp-content/uploads/2016/01/ACM-logo.png" width="280" alt="ACM"/>
+  </a>
+  <img hspace="20"/>
+  <a href='#'>
+    <img src = "https://i2.wp.com/www.opfblog.com/wp-content/uploads/2014/10/Lums-Logo.jpg?zoom=1.3499999046325684&fit=500%2C409&ssl=1" width="120" alt="LUMS"/>
+  </a>
+</p>
   
 <hr>
 
