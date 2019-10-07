@@ -1,22 +1,44 @@
 
 <p align="center">
-  <img src="images/ufs_icon.png" width='100%' height='360'/>  
+  <img src="images/ufs_icon.png" width='154'/>  
   <h1 align="center">Ultimate Facebook Scraper (UFS)</h1>
 </p>
 
 <p align="center">
-  Tooling that <b>automates</b> your social media interactions to collect posts, photos, videos, friends, followers and much more on Facebook.<p>
+  Tooling that <b>automates</b> your social media interactions to collect posts, photos, videos, friends, followers and much more on Facebook.
+</p>
+
+<p align="center">
+  <a href="https://zenodo.org/badge/latestdoi/145763277">
+    <img src="https://zenodo.org/badge/145763277.svg" />
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/Build-Passing-brightgreen.svg?style=for-the-badge&logo=appveyor" />
+  </a>
+  <a href="#">
+    <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" />
+  </a>
+  <a href="https://www.github.com/harismuneer/Ultimate-Facebook-Scraper/fork">
+    <img src="https://img.shields.io/github/forks/harismuneer/Ultimate-Facebook-Scraper.svg?style=social&label=Fork&maxAge=2592000" />
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat&label=Contributions&colorA=red&colorB=black" />
+  </a>
+</p>
 
 <hr>
-
-[![DOI](https://zenodo.org/badge/145763277.svg)](https://zenodo.org/badge/latestdoi/145763277)
-
-[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg?style=for-the-badge&logo=appveyor)](#)
-[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](#)
-[![GitHub Forks](https://img.shields.io/github/forks/harismuneer/Ultimate-Facebook-Scraper.svg?style=social&label=Fork&maxAge=2592000)](https://www.github.com/harismuneer/Ultimate-Facebook-Scraper/fork)
-[![GitHub Issues](https://img.shields.io/github/issues/harismuneer/Ultimate-Facebook-Scraper.svg?style=flat&label=Issues&maxAge=2592000)](https://www.github.com/harismuneer/Ultimate-Facebook-Scraper/issues)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat&label=Contributions&colorA=red&colorB=black)](#)
-
+<h2 align="center">Contributors</h2>
+<p align="center">
+  Contributors from following companies have so far joined the quest to maintain UFS.
+</p>
+<p align="center">
+  <img src = "https://agsol.com/wp-content/uploads/2018/09/new-microsoft-logo-SIZED-SQUARE.jpg" width="154"/>
+  <img src = "https://i2.wp.com/www.opfblog.com/wp-content/uploads/2014/10/Lums-Logo.jpg?zoom=1.3499999046325684&fit=500%2C409&ssl=1" width="154"/>
+  <img src = "https://upload.wikimedia.org/wikipedia/en/e/e4/National_University_of_Computer_and_Emerging_Sciences_logo.png" width="154"/>
+  <img src = "https://scontent.flhe3-1.fna.fbcdn.net/v/t1.0-9/18194737_1542093912502262_770962141842612700_n.jpg?_nc_cat=100&_nc_oc=AQkSzhrtxNhAL49YyhTRlJtZJB_bVEGAlULHVkkWMmbT4VqrKSSsqkPqk0OePGaL5FI&_nc_ht=scontent.flhe3-1.fna&oh=e852dc2ed8562785c3b9daf032eededb&oe=5E2E1AD4" width="154"/>
+  <img src = "https://i7.pngguru.com/preview/840/497/106/university-of-california-los-angeles-ucla-fielding-school-of-public-health-ucla-extension-student-los-angeles.jpg" width="154"/>
+    <img src = "http://acm.khi.nu.edu.pk/images/acmlogo.png" width="154"/>
+</p>
 <hr>
 
 ## Features
