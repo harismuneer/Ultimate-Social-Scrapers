@@ -26,9 +26,10 @@
   </a>
 </p>
 
-<p align="center">
   <b>Contributors from following companies have so far joined the quest to maintain UFS.</b>
-  <img src = "https://agsol.com/wp-content/uploads/2018/09/new-microsoft-logo-SIZED-SQUARE.jpg" width="200" alt="Microsoft"/>
+
+<p align="center">
+<img src = "https://agsol.com/wp-content/uploads/2018/09/new-microsoft-logo-SIZED-SQUARE.jpg" width="200" alt="Microsoft"/>
   <img src = "https://static1.squarespace.com/static/5a5e19ecfe54eff8e7bcf4cc/5ae5fcfe562fa7d975b25e5b/5afe2ad3562fa77bef18efc1/1548783722052/mitxxx01.jpg?format=1500w" width="200" alt="MIT"/>
   <img src = "https://kdp0l43vw6z2dlw631ififc5-wpengine.netdna-ssl.com/wp-content/uploads/2009/01/harvard-logo-263-1024x1024.jpg" width="250" alt="Harvard"/>
   <img src = "https://upload.wikimedia.org/wikipedia/en/e/e4/National_University_of_Computer_and_Emerging_Sciences_logo.png" width="154" alt="NUCES"/>
