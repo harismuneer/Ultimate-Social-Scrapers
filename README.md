@@ -129,7 +129,7 @@ If you use this tool for your research, then kindly cite it. Click the above bad
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 ## Important Message
-This tool is for research purposes only. Hence, the developers of this tool won't be responsible for any misuse of data collected using this tool. 
+This tool is for research purposes only. Hence, the developers of this tool won't be responsible for any misuse of data collected using this tool. Used by many researchers and open source intelligence (OSINT) analysts.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
