@@ -79,7 +79,7 @@ def image_downloader(img_links, folder_name):
             folder = os.path.join(os.getcwd(), folder_name)
             create_folder(folder)
             os.chdir(folder)
-        except:
+        except Exception:
             print("Error in changing directory.")
 
         for link in img_links:
@@ -94,13 +94,13 @@ def image_downloader(img_links, folder_name):
                 else:
                     try:
                         urllib.request.urlretrieve(link, img_name)
-                    except:
+                    except Exception:
                         img_name = "None"
 
             img_names.append(img_name)
 
         os.chdir(parent)
-    except:
+    except Exception:
         print("Exception (image_downloader):", sys.exc_info()[0])
 
     return img_names
@@ -146,10 +146,10 @@ def get_status(x):
     status = ""
     try:
         status = x.find_element_by_xpath(".//div[@class='_5wj-']").text  # use _1xnd for Pages
-    except:
+    except Exception:
         try:
             status = x.find_element_by_xpath(".//div[@class='userContent']").text
-        except:
+        except Exception:
             pass
     return status
 
@@ -158,7 +158,7 @@ def get_div_links(x, tag):
     try:
         temp = x.find_element_by_xpath(".//div[@class='_3x-2']")
         return temp.find_element_by_tag_name(tag)
-    except:
+    except Exception:
         return ""
 
 
@@ -171,13 +171,13 @@ def get_title(x):
     title = ""
     try:
         title = x.find_element_by_xpath(".//span[@class='fwb fcg']")
-    except:
+    except Exception:
         try:
             title = x.find_element_by_xpath(".//span[@class='fcg']")
-        except:
+        except Exception:
             try:
                 title = x.find_element_by_xpath(".//span[@class='fwn fcg']")
-            except:
+            except Exception:
                 pass
     finally:
         return title
@@ -191,7 +191,7 @@ def get_time(x):
             ("%02d" % (int((list(calendar.month_abbr).index(time.split(", ")[1].split()[0][:3]))),))) + "-" + \
                time.split()[3] + " " + str("%02d" % int(time.split()[5].split(":")[0])) + ":" + str(
             time.split()[5].split(":")[1])
-    except:
+    except Exception:
         pass
 
     finally:
@@ -269,12 +269,12 @@ def extract_and_write_posts(elements, filename):
 
                 try:
                     f.writelines(line)
-                except:
+                except Exception:
                     print('Posts: Could not map encoded characters')
-            except:
+            except Exception:
                 pass
         f.close()
-    except:
+    except Exception:
         print("Exception (extract_and_write_posts)", "Status =", sys.exc_info()[0])
 
     return
@@ -324,7 +324,7 @@ def save_to_file(name, elements, status, current_section):
                                 WebDriverWait(driver, 30).until(
                                     EC.presence_of_element_located((By.CLASS_NAME, "profilePicThumb")))
                                 l = driver.find_element_by_class_name("profilePicThumb").get_attribute('href')
-                            except:
+                            except Exception:
                                 l = "None"
 
                             links.append(l)
@@ -345,7 +345,7 @@ def save_to_file(name, elements, status, current_section):
                     img_names = image_downloader(img_links, folder_names[current_section])
                 else:
                     img_names = ["None"] * len(results)
-            except:
+            except Exception:
                 print("Exception (Images)", str(status), "Status =", current_section, sys.exc_info()[0])
 
         # dealing with Photos
@@ -369,7 +369,7 @@ def save_to_file(name, elements, status, current_section):
                     img_names = image_downloader(background_img_links, folder_names[current_section])
                 else:
                     img_names = ["None"] * len(results)
-            except:
+            except Exception:
                 print("Exception (Images)", str(status), "Status =", current_section, sys.exc_info()[0])
 
         # dealing with Videos
@@ -381,7 +381,7 @@ def save_to_file(name, elements, status, current_section):
                 if results[0][0] == '/':
                     results = [r.pop(0) for r in results]
                     results = [("https://en-gb.facebook.com/" + x) for x in results]
-            except:
+            except Exception:
                 pass
 
         # dealing with About Section
@@ -425,7 +425,7 @@ def save_to_file(name, elements, status, current_section):
 
         f.close()
 
-    except:
+    except Exception:
         print("Exception (save_to_file)", "Status =", str(status), sys.exc_info()[0])
 
     return
@@ -434,14 +434,14 @@ def save_to_file(name, elements, status, current_section):
 # ----------------------------------------------------------------------------
 # -----------------------------------------------------------------------------
 
-def scrape_data(id, scan_list, section, elements_path, save_status, file_names):
+def scrape_data(user_id, scan_list, section, elements_path, save_status, file_names):
     """Given some parameters, this function can scrap friends/photos/videos/about/posts(statuses) of a profile"""
     page = []
 
     if save_status == 4:
-        page.append(id)
+        page.append(user_id)
 
-    page += [id + s for s in section]
+    page += [user_id + s for s in section]
 
     for i, _ in enumerate(scan_list):
         try:
@@ -463,7 +463,7 @@ def scrape_data(id, scan_list, section, elements_path, save_status, file_names):
 
             save_to_file(file_names[i], data, save_status, i)
 
-        except:
+        except Exception:
             print("Exception (scrape_data)", str(i), "Status =", str(save_status), sys.exc_info()[0])
 
 
@@ -500,19 +500,19 @@ def scrap_profile(ids):
     os.chdir(folder)
 
     # execute for all profiles given in input.txt file
-    for id in ids:
+    for user_id in ids:
 
-        driver.get(id)
+        driver.get(user_id)
         url = driver.current_url
-        id = create_original_link(url)
+        user_id = create_original_link(url)
 
-        print("\nScraping:", id)
+        print("\nScraping:", user_id)
 
         try:
-            target_dir = os.path.join(folder, id.split('/')[-1])
+            target_dir = os.path.join(folder, user_id.split('/')[-1])
             create_folder(target_dir)
             os.chdir(target_dir)
-        except:
+        except Exception:
             print("Some error occurred in creating the profile directory.")
             continue
 
@@ -537,7 +537,7 @@ def scrap_profile(ids):
                       "Current City Friends.txt", "Hometown Friends.txt"]
         save_status = 0
 
-        scrape_data(id, scan_list, section, elements_path, save_status, file_names)
+        scrape_data(user_id, scan_list, section, elements_path, save_status, file_names)
         print("Friends Done!")
 
         # ----------------------------------------------------------------------------
@@ -552,7 +552,7 @@ def scrap_profile(ids):
         file_names = ["Uploaded Photos.txt", "Tagged Photos.txt"]
         save_status = 1
 
-        scrape_data(id, scan_list, section, elements_path, save_status, file_names)
+        scrape_data(user_id, scan_list, section, elements_path, save_status, file_names)
         print("Photos Done!")
 
         # ----------------------------------------------------------------------------
@@ -565,7 +565,7 @@ def scrap_profile(ids):
         file_names = ["Uploaded Videos.txt", "Tagged Videos.txt"]
         save_status = 2
 
-        scrape_data(id, scan_list, section, elements_path, save_status, file_names)
+        scrape_data(user_id, scan_list, section, elements_path, save_status, file_names)
         print("Videos Done!")
         # ----------------------------------------------------------------------------
 
@@ -581,7 +581,7 @@ def scrap_profile(ids):
                       "Family and Relationships.txt", "Details About.txt", "Life Events.txt"]
         save_status = 3
 
-        scrape_data(id, scan_list, section, elements_path, save_status, file_names)
+        scrape_data(user_id, scan_list, section, elements_path, save_status, file_names)
         print("About Section Done!")
 
         # ----------------------------------------------------------------------------
@@ -595,7 +595,7 @@ def scrap_profile(ids):
         file_names = ["Posts.txt"]
         save_status = 4
 
-        scrape_data(id, scan_list, section, elements_path, save_status, file_names)
+        scrape_data(user_id, scan_list, section, elements_path, save_status, file_names)
         print("Posts(Statuses) Done!")
         print("----------------------------------------")
     # ----------------------------------------------------------------------------
@@ -635,7 +635,7 @@ def login(email, password):
                 driver = webdriver.Chrome(executable_path="./chromedriver", options=options)
             else:
                 driver = webdriver.Chrome(executable_path="./chromedriver.exe", options=options)
-        except:
+        except Exception:
             print("Kindly replace the Chrome Web Driver with the latest one from "
                   "http://chromedriver.chromium.org/downloads "
                   "and also make sure you have the latest Chrome Browser version."
