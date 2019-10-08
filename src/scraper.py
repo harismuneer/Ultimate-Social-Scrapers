@@ -35,7 +35,7 @@ current_scrolls = 0
 scroll_time = 8
 
 old_height = 0
-
+firefox_profile_path = "/home/zeryx/.mozilla/firefox/0n8gmjoz.bot"
 facebook_https_prefix = "https://"
 
 
