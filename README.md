@@ -14,6 +14,9 @@
   <a href="https://zenodo.org/badge/latestdoi/145763277">
     <img src="https://zenodo.org/badge/145763277.svg" />
   </a>
+  <a href="https://www.codacy.com/manual/harismuneer/Ultimate-Facebook-Scraper?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=harismuneer/Ultimate-Facebook-Scraper&amp;utm_campaign=Badge_Grade">
+    <img src="https://api.codacy.com/project/badge/Grade/7f41790c3c3a4fd29293777c676c8617" />
+  </a>
   <a href="#">
     <img src="https://img.shields.io/badge/Build-Passing-brightgreen.svg?style=flat-square&logo=appveyor" />
   </a>
