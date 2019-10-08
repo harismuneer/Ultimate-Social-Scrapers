@@ -3,7 +3,6 @@ import os
 import platform
 import sys
 import urllib.request
-import time
 
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
@@ -146,7 +145,7 @@ def scroll():
 def get_status(x):
     status = ""
     try:
-        status = x.find_element_by_xpath(".//div[@class='_5wj-']").text #use _1xnd for Pages
+        status = x.find_element_by_xpath(".//div[@class='_5wj-']").text  # use _1xnd for Pages
     except:
         try:
             status = x.find_element_by_xpath(".//div[@class='userContent']").text
@@ -646,9 +645,9 @@ def login(email, password):
                   )
             exit()
 
-    fb_path = facebook_https_prefix + "facebook.com"
-    driver.get(fb_path)
-    driver.maximize_window()
+        fb_path = facebook_https_prefix + "facebook.com"
+        driver.get(fb_path)
+        driver.maximize_window()
 
         # filling the form
         driver.find_element_by_name('email').send_keys(email)
