@@ -11,9 +11,6 @@
 </p>
 
 <p align="center">
-  <a href="https://zenodo.org/badge/latestdoi/145763277">
-    <img src="https://zenodo.org/badge/145763277.svg" />
-  </a>
   <a href="https://www.codacy.com/manual/harismuneer/Ultimate-Facebook-Scraper?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=harismuneer/Ultimate-Facebook-Scraper&amp;utm_campaign=Badge_Grade">
     <img src="https://api.codacy.com/project/badge/Grade/7f41790c3c3a4fd29293777c676c8617" />
   </a>
@@ -139,7 +136,9 @@ photos_small_size = True
 
 ## Citation
 
-[![DOI](https://zenodo.org/badge/145763277.svg)](https://zenodo.org/badge/latestdoi/145763277)
+<a href="https://zenodo.org/badge/latestdoi/145763277">
+  <img src="https://zenodo.org/badge/145763277.svg" />
+</a>
 
 If you use this tool for your research, then kindly cite it. Click the above badge for more information regarding the complete citation for this tool and diffferent citation formats like IEEE, APA etc.
 
