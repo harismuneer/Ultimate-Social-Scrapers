@@ -30,11 +30,13 @@ download_friends_photos = True
 friends_small_size = True
 photos_small_size = True
 
-total_scrolls = 5000
+total_scrolls = 2500
 current_scrolls = 0
-scroll_time = 5
+scroll_time = 8
 
 old_height = 0
+
+facebook_https_prefix = "https://"
 
 
 # -------------------------------------------------------------
@@ -473,15 +475,15 @@ def scrape_data(id, scan_list, section, elements_path, save_status, file_names):
 
 def create_original_link(url):
     if url.find(".php") != -1:
-        original_link = "https://en-gb.facebook.com/" + ((url.split("="))[1])
+        original_link = facebook_https_prefix + ".facebook.com/" + ((url.split("="))[1])
 
         if original_link.find("&") != -1:
             original_link = original_link.split("&")[0]
 
     elif url.find("fnr_t") != -1:
-        original_link = "https://en-gb.facebook.com/" + ((url.split("/"))[-1].split("?")[0])
+        original_link = facebook_https_prefix + ".facebook.com/" + ((url.split("/"))[-1].split("?")[0])
     elif url.find("_tab") != -1:
-        original_link = "https://en-gb.facebook.com/" + (url.split("?")[0]).split("/")[-1]
+        original_link = facebook_https_prefix + ".facebook.com/" + (url.split("?")[0]).split("/")[-1]
     else:
         original_link = url
 
@@ -644,8 +646,9 @@ def login(email, password):
                   )
             exit()
 
-        driver.get("https://en-gb.facebook.com")
-        driver.maximize_window()
+    fb_path = facebook_https_prefix + "facebook.com"
+    driver.get(fb_path)
+    driver.maximize_window()
 
         # filling the form
         driver.find_element_by_name('email').send_keys(email)
@@ -689,7 +692,7 @@ def main():
             print("Your email or password is missing. Kindly write them in credentials.txt")
             exit()
 
-    ids = ["https://en-gb.facebook.com/" + line.split("/")[-1] for line in open("input.txt", newline='\n')]
+    ids = [facebook_https_prefix + "facebook.com/" + line.split("/")[-1] for line in open("input.txt", newline='\n')]
 
     if len(ids) > 0:
         print("\nStarting Scraping...")
