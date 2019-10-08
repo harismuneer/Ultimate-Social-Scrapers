@@ -58,7 +58,7 @@ def get_facebook_images_url(img_links):
                     if img_url.find('.gif') == -1:
                         valid_url_found = True
                         urls.append(img_url)
-            except:
+            except Exception:
                 urls.append("None")
         else:
             urls.append("None")
@@ -205,11 +205,9 @@ def extract_and_write_posts(elements, filename):
 
         for x in elements:
             try:
-                video_link = " "
                 title = " "
                 status = " "
                 link = ""
-                img = " "
                 time = " "
 
                 # time
@@ -331,7 +329,7 @@ def save_to_file(name, elements, status, current_section):
 
                             links.append(l)
 
-                        for i in range(len(links)):
+                        for i, _ in enumerate(links):
                             if links[i] is None:
                                 links[i] = "None"
                             elif links[i].find('picture/view') != -1:
@@ -398,7 +396,7 @@ def save_to_file(name, elements, status, current_section):
 
         """Write results to file"""
         if status == 0:
-            for i in range(len(results)):
+            for i, _ in enumerate(results):
                 # friend's profile link
                 f.writelines(results[i])
                 f.write(',')
@@ -412,7 +410,7 @@ def save_to_file(name, elements, status, current_section):
                 f.write('\n')
 
         elif status == 1:
-            for i in range(len(results)):
+            for i, _ in enumerate(results):
                 # image's link
                 f.writelines(results[i])
                 f.write(',')
@@ -445,7 +443,7 @@ def scrape_data(id, scan_list, section, elements_path, save_status, file_names):
 
     page += [id + s for s in section]
 
-    for i in range(len(scan_list)):
+    for i, _ in enumerate(scan_list):
         try:
             driver.get(page[i])
 
@@ -673,7 +671,7 @@ def login(email, password):
 
             driver.find_element_by_id('checkpointSubmitButton').click()
 
-    except Exception as e:
+    except Exception:
         print("There's some error in log in.")
         print(sys.exc_info()[0])
         exit()
@@ -687,7 +685,7 @@ def main():
         email = f.readline().split('"')[1]
         password = f.readline().split('"')[1]
 
-        if email == "" or password == "":
+        if email or password:
             print("Your email or password is missing. Kindly write them in credentials.txt")
             exit()
 
