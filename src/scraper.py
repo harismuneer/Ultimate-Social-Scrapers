@@ -685,7 +685,7 @@ def main():
         email = f.readline().split('"')[1]
         password = f.readline().split('"')[1]
 
-        if email or password:
+        if not (email and password):
             print("Your email or password is missing. Kindly write them in credentials.txt")
             exit()
 
