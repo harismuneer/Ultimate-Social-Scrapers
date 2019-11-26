@@ -67,7 +67,7 @@
 
 
 ## Features
-A bot which scrapes almost everything about a facebook user's profile including
+A bot which scrapes almost everything about a user's Facebook profile including:
 
 * uploaded photos
 * tagged photos
@@ -75,18 +75,18 @@ A bot which scrapes almost everything about a facebook user's profile including
 * friends list and their profile photos (including Followers, Following, Work Friends, College Friends etc)
 * and all public posts/statuses available on the user's timeline.
 
-The best thing about this scraper is that the data is scraped in an organized format so that it can be used for educational/research purpose by researchers. Moreover, this scraper does not use Facebook's Graph API so there are no rate limiting issues as such. 
+Data is scraped in an organized format to be used for educational/research purposes by researchers. This scraper does not use Facebook's Graph API meaning there are no rate limiting issues. 
 
 **This tool is being used by thousands of developers weekly and we are pretty amazed at this response! Thank you guys!🎉**
 
-For details regarding **citing/referencing** this tool for your research, check the 'Citation' section below.
+For **citing/referencing** this tool for your research, check the 'Citation' section below.
 
 ## Note
-At its core, this tool uses xpaths of **'divs'** to extract data from them. Since Facebook keeps on updating its site frequently and the 'divs' get changed. Consequently, we have to update the divs accordingly to correctly scrape the data. 
+This tool uses xpaths of **'divs'** to extract data. Since Facebook updates its site frequently, the 'divs' get changed. Consequently, we have to update the divs accordingly to correctly scrape data. 
 
-The developers of this tool have devoted a lot of time and effort in developing and most importantly maintaining this tool for quite a lot time now. **In order to keep this amazing tool alive, we need support from you geeks.**
+The developers of this tool have devoted time and effort in developing, and maintaining this tool for a long time. **In order to keep this amazing tool alive, we need support from you geeks.**
 
-The code is pretty intuitive and easy to understand, so you can update the relevant xpaths in the code when you feel that you have tried many profiles and the data isn't being scraped for any of them (that's a hint that Facebook has updated their site) and generate a pull request. That's quite an easy thing to do. Thanks!
+The code is intuitive and easy to understand, so you can update the relevant xpaths in the code if you find data is not being scraped from profiles. Facebook has most likely updated their site, so please generate a pull request. Much appreciated!
 
 ## Sample
 <p align="middle">
