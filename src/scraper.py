@@ -789,14 +789,14 @@ def login(email, password):
 
         try:
             platform_ = platform.system().lower()
-            if platform_ in ["linux", "darwin"]:
-                driver = webdriver.Chrome(
-                    executable_path="./chromedriver", options=options
-                )
-            else:
-                driver = webdriver.Chrome(
-                    executable_path="./chromedriver.exe", options=options
-                )
+            chromedriver_versions = {
+                "linux": "./chromedriver_linux64",
+                "darwin": "./chromedriver_mac64",
+                "windows": "./chromedriver_win32.exe",
+            }
+            driver = webdriver.Chrome(
+                executable_path=chromedriver_versions[platform_], options=options
+            )
         except Exception:
             print(
                 "Kindly replace the Chrome Web Driver with the latest one from "
@@ -804,7 +804,7 @@ def login(email, password):
                 "and also make sure you have the latest Chrome Browser version."
                 "\nYour OS: {}".format(platform_)
             )
-            exit()
+            exit(1)
 
         fb_path = facebook_https_prefix + "facebook.com"
         driver.get(fb_path)
@@ -837,7 +837,7 @@ def login(email, password):
     except Exception:
         print("There's some error in log in.")
         print(sys.exc_info()[0])
-        exit()
+        exit(1)
 
 
 # -----------------------------------------------------------------------------
