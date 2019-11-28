@@ -1,2 +1,0 @@
-email = ""
-password = ""
