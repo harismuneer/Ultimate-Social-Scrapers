@@ -3,6 +3,7 @@ import os
 import platform
 import sys
 import urllib.request
+import yaml
 
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
@@ -41,6 +42,7 @@ facebook_https_prefix = "https://"
 # -------------------------------------------------------------
 # -------------------------------------------------------------
 
+
 def get_facebook_images_url(img_links):
     urls = []
 
@@ -51,11 +53,13 @@ def get_facebook_images_url(img_links):
 
             try:
                 while not valid_url_found:
-                    WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.CLASS_NAME, "spotlight")))
+                    WebDriverWait(driver, 30).until(
+                        EC.presence_of_element_located((By.CLASS_NAME, "spotlight"))
+                    )
                     element = driver.find_element_by_class_name("spotlight")
-                    img_url = element.get_attribute('src')
+                    img_url = element.get_attribute("src")
 
-                    if img_url.find('.gif') == -1:
+                    if img_url.find(".gif") == -1:
                         valid_url_found = True
                         urls.append(img_url)
             except Exception:
@@ -86,7 +90,7 @@ def image_downloader(img_links, folder_name):
             img_name = "None"
 
             if link != "None":
-                img_name = (link.split('.jpg')[0]).split('/')[-1] + '.jpg'
+                img_name = (link.split(".jpg")[0]).split("/")[-1] + ".jpg"
 
                 # this is the image id when there's no profile pic
                 if img_name == "10354686_10150004552801856_220367501106153455_n.jpg":
@@ -109,6 +113,7 @@ def image_downloader(img_links, folder_name):
 # -------------------------------------------------------------
 # -------------------------------------------------------------
 
+
 def check_height():
     new_height = driver.execute_script("return document.body.scrollHeight")
     return new_height != old_height
@@ -122,14 +127,16 @@ def scroll():
     global old_height
     current_scrolls = 0
 
-    while (True):
+    while True:
         try:
             if current_scrolls == total_scrolls:
                 return
 
             old_height = driver.execute_script("return document.body.scrollHeight")
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-            WebDriverWait(driver, scroll_time, 0.05).until(lambda driver: check_height())
+            WebDriverWait(driver, scroll_time, 0.05).until(
+                lambda driver: check_height()
+            )
             current_scrolls += 1
         except TimeoutException:
             break
@@ -142,10 +149,13 @@ def scroll():
 
 # --Helper Functions for Posts
 
+
 def get_status(x):
     status = ""
     try:
-        status = x.find_element_by_xpath(".//div[@class='_5wj-']").text  # use _1xnd for Pages
+        status = x.find_element_by_xpath(
+            ".//div[@class='_5wj-']"
+        ).text  # use _1xnd for Pages
     except Exception:
         try:
             status = x.find_element_by_xpath(".//div[@class='userContent']").text
@@ -163,8 +173,8 @@ def get_div_links(x, tag):
 
 
 def get_title_links(title):
-    l = title.find_elements_by_tag_name('a')
-    return l[-1].text, l[-1].get_attribute('href')
+    l = title.find_elements_by_tag_name("a")
+    return l[-1].text, l[-1].get_attribute("href")
 
 
 def get_title(x):
@@ -186,11 +196,31 @@ def get_title(x):
 def get_time(x):
     time = ""
     try:
-        time = x.find_element_by_tag_name('abbr').get_attribute('title')
-        time = str("%02d" % int(time.split(", ")[1].split()[1]), ) + "-" + str(
-            ("%02d" % (int((list(calendar.month_abbr).index(time.split(", ")[1].split()[0][:3]))),))) + "-" + \
-               time.split()[3] + " " + str("%02d" % int(time.split()[5].split(":")[0])) + ":" + str(
-            time.split()[5].split(":")[1])
+        time = x.find_element_by_tag_name("abbr").get_attribute("title")
+        time = (
+            str("%02d" % int(time.split(", ")[1].split()[1]),)
+            + "-"
+            + str(
+                (
+                    "%02d"
+                    % (
+                        int(
+                            (
+                                list(calendar.month_abbr).index(
+                                    time.split(", ")[1].split()[0][:3]
+                                )
+                            )
+                        ),
+                    )
+                )
+            )
+            + "-"
+            + time.split()[3]
+            + " "
+            + str("%02d" % int(time.split()[5].split(":")[0]))
+            + ":"
+            + str(time.split()[5].split(":")[1])
+        )
     except Exception:
         pass
 
@@ -200,8 +230,12 @@ def get_time(x):
 
 def extract_and_write_posts(elements, filename):
     try:
-        f = open(filename, "w", newline='\r\n')
-        f.writelines(' TIME || TYPE  || TITLE || STATUS  ||   LINKS(Shared Posts/Shared Links etc) ' + '\n' + '\n')
+        f = open(filename, "w", newline="\r\n")
+        f.writelines(
+            " TIME || TYPE  || TITLE || STATUS  ||   LINKS(Shared Posts/Shared Links etc) "
+            + "\n"
+            + "\n"
+        )
 
         for x in elements:
             try:
@@ -220,20 +254,25 @@ def extract_and_write_posts(elements, filename):
                     title = get_title(x)
 
                 status = get_status(x)
-                if title.text == driver.find_element_by_id("fb-timeline-cover-name").text:
-                    if status == '':
+                if (
+                    title.text
+                    == driver.find_element_by_id("fb-timeline-cover-name").text
+                ):
+                    if status == "":
                         temp = get_div_links(x, "img")
-                        if temp == '':  # no image tag which means . it is not a life event
-                            link = get_div_links(x, "a").get_attribute('href')
+                        if (
+                            temp == ""
+                        ):  # no image tag which means . it is not a life event
+                            link = get_div_links(x, "a").get_attribute("href")
                             type = "status update without text"
                         else:
-                            type = 'life event'
-                            link = get_div_links(x, "a").get_attribute('href')
+                            type = "life event"
+                            link = get_div_links(x, "a").get_attribute("href")
                             status = get_div_links(x, "a").text
                     else:
                         type = "status update"
-                        if get_div_links(x, "a") != '':
-                            link = get_div_links(x, "a").get_attribute('href')
+                        if get_div_links(x, "a") != "":
+                            link = get_div_links(x, "a").get_attribute("href")
 
                 elif title.text.find(" shared ") != -1:
 
@@ -247,13 +286,17 @@ def extract_and_write_posts(elements, filename):
                     elif title.text.find(" in ") != 1:
                         status = get_div_links(x, "a").text
 
-                elif title.text.find(" added ") != -1 and title.text.find("photo") != -1:
+                elif (
+                    title.text.find(" added ") != -1 and title.text.find("photo") != -1
+                ):
                     type = "added photo"
-                    link = get_div_links(x, "a").get_attribute('href')
+                    link = get_div_links(x, "a").get_attribute("href")
 
-                elif title.text.find(" added ") != -1 and title.text.find("video") != -1:
+                elif (
+                    title.text.find(" added ") != -1 and title.text.find("video") != -1
+                ):
                     type = "added video"
-                    link = get_div_links(x, "a").get_attribute('href')
+                    link = get_div_links(x, "a").get_attribute("href")
 
                 else:
                     type = "others"
@@ -264,13 +307,23 @@ def extract_and_write_posts(elements, filename):
                 status = status.replace("\n", " ")
                 title = title.replace("\n", " ")
 
-                line = str(time) + " || " + str(type) + ' || ' + str(title) + ' || ' + str(status) + ' || ' + str(
-                    link) + "\n"
+                line = (
+                    str(time)
+                    + " || "
+                    + str(type)
+                    + " || "
+                    + str(title)
+                    + " || "
+                    + str(status)
+                    + " || "
+                    + str(link)
+                    + "\n"
+                )
 
                 try:
                     f.writelines(line)
                 except Exception:
-                    print('Posts: Could not map encoded characters')
+                    print("Posts: Could not map encoded characters")
             except Exception:
                 pass
         f.close()
@@ -297,7 +350,7 @@ def save_to_file(name, elements, status, current_section):
         f = None  # file pointer
 
         if status != 4:
-            f = open(name, 'w', encoding='utf-8', newline='\r\n')
+            f = open(name, "w", encoding="utf-8", newline="\r\n")
 
         results = []
         img_names = []
@@ -305,25 +358,36 @@ def save_to_file(name, elements, status, current_section):
         # dealing with Friends
         if status == 0:
             # get profile links of friends
-            results = [x.get_attribute('href') for x in elements]
+            results = [x.get_attribute("href") for x in elements]
             results = [create_original_link(x) for x in results]
 
             # get names of friends
-            people_names = [x.find_element_by_tag_name("img").get_attribute("aria-label") for x in elements]
+            people_names = [
+                x.find_element_by_tag_name("img").get_attribute("aria-label")
+                for x in elements
+            ]
 
             # download friends' photos
             try:
                 if download_friends_photos:
                     if friends_small_size:
-                        img_links = [x.find_element_by_css_selector('img').get_attribute('src') for x in elements]
+                        img_links = [
+                            x.find_element_by_css_selector("img").get_attribute("src")
+                            for x in elements
+                        ]
                     else:
                         links = []
                         for friend in results:
                             try:
                                 driver.get(friend)
                                 WebDriverWait(driver, 30).until(
-                                    EC.presence_of_element_located((By.CLASS_NAME, "profilePicThumb")))
-                                l = driver.find_element_by_class_name("profilePicThumb").get_attribute('href')
+                                    EC.presence_of_element_located(
+                                        (By.CLASS_NAME, "profilePicThumb")
+                                    )
+                                )
+                                l = driver.find_element_by_class_name(
+                                    "profilePicThumb"
+                                ).get_attribute("href")
                             except Exception:
                                 l = "None"
 
@@ -332,53 +396,85 @@ def save_to_file(name, elements, status, current_section):
                         for i, _ in enumerate(links):
                             if links[i] is None:
                                 links[i] = "None"
-                            elif links[i].find('picture/view') != -1:
+                            elif links[i].find("picture/view") != -1:
                                 links[i] = "None"
 
                         img_links = get_facebook_images_url(links)
 
-                    folder_names = ["Friend's Photos", "Mutual Friends' Photos", "Following's Photos",
-                                    "Follower's Photos", "Work Friends Photos",
-                                    "College Friends Photos", "Current City Friends Photos", "Hometown Friends Photos"]
+                    folder_names = [
+                        "Friend's Photos",
+                        "Mutual Friends' Photos",
+                        "Following's Photos",
+                        "Follower's Photos",
+                        "Work Friends Photos",
+                        "College Friends Photos",
+                        "Current City Friends Photos",
+                        "Hometown Friends Photos",
+                    ]
                     print("Downloading " + folder_names[current_section])
 
-                    img_names = image_downloader(img_links, folder_names[current_section])
+                    img_names = image_downloader(
+                        img_links, folder_names[current_section]
+                    )
                 else:
                     img_names = ["None"] * len(results)
             except Exception:
-                print("Exception (Images)", str(status), "Status =", current_section, sys.exc_info()[0])
+                print(
+                    "Exception (Images)",
+                    str(status),
+                    "Status =",
+                    current_section,
+                    sys.exc_info()[0],
+                )
 
         # dealing with Photos
         elif status == 1:
-            results = [x.get_attribute('href') for x in elements]
+            results = [x.get_attribute("href") for x in elements]
             results.pop(0)
 
             try:
                 if download_uploaded_photos:
                     if photos_small_size:
-                        background_img_links = driver.find_elements_by_xpath("//*[contains(@id, 'pic_')]/div/i")
-                        background_img_links = [x.get_attribute('style') for x in background_img_links]
-                        background_img_links = [((x.split('(')[1]).split(')')[0]).strip('"') for x in
-                                                background_img_links]
+                        background_img_links = driver.find_elements_by_xpath(
+                            "//*[contains(@id, 'pic_')]/div/i"
+                        )
+                        background_img_links = [
+                            x.get_attribute("style") for x in background_img_links
+                        ]
+                        background_img_links = [
+                            ((x.split("(")[1]).split(")")[0]).strip('"')
+                            for x in background_img_links
+                        ]
                     else:
                         background_img_links = get_facebook_images_url(results)
 
                     folder_names = ["Uploaded Photos", "Tagged Photos"]
                     print("Downloading " + folder_names[current_section])
 
-                    img_names = image_downloader(background_img_links, folder_names[current_section])
+                    img_names = image_downloader(
+                        background_img_links, folder_names[current_section]
+                    )
                 else:
                     img_names = ["None"] * len(results)
             except Exception:
-                print("Exception (Images)", str(status), "Status =", current_section, sys.exc_info()[0])
+                print(
+                    "Exception (Images)",
+                    str(status),
+                    "Status =",
+                    current_section,
+                    sys.exc_info()[0],
+                )
 
         # dealing with Videos
         elif status == 2:
-            results = elements[0].find_elements_by_css_selector('li')
-            results = [x.find_element_by_css_selector('a').get_attribute('href') for x in results]
+            results = elements[0].find_elements_by_css_selector("li")
+            results = [
+                x.find_element_by_css_selector("a").get_attribute("href")
+                for x in results
+            ]
 
             try:
-                if results[0][0] == '/':
+                if results[0][0] == "/":
                     results = [r.pop(0) for r in results]
                     results = [("https://en-gb.facebook.com/" + x) for x in results]
             except Exception:
@@ -399,25 +495,25 @@ def save_to_file(name, elements, status, current_section):
             for i, _ in enumerate(results):
                 # friend's profile link
                 f.writelines(results[i])
-                f.write(',')
+                f.write(",")
 
                 # friend's name
                 f.writelines(people_names[i])
-                f.write(',')
+                f.write(",")
 
                 # friend's downloaded picture id
                 f.writelines(img_names[i])
-                f.write('\n')
+                f.write("\n")
 
         elif status == 1:
             for i, _ in enumerate(results):
                 # image's link
                 f.writelines(results[i])
-                f.write(',')
+                f.write(",")
 
                 # downloaded picture id
                 f.writelines(img_names[i])
-                f.write('\n')
+                f.write("\n")
 
         elif status == 2:
             for x in results:
@@ -434,6 +530,7 @@ def save_to_file(name, elements, status, current_section):
 # ----------------------------------------------------------------------------
 # -----------------------------------------------------------------------------
 
+
 def scrape_data(user_id, scan_list, section, elements_path, save_status, file_names):
     """Given some parameters, this function can scrap friends/photos/videos/about/posts(statuses) of a profile"""
     page = []
@@ -447,11 +544,14 @@ def scrape_data(user_id, scan_list, section, elements_path, save_status, file_na
         try:
             driver.get(page[i])
 
-            if (save_status == 0) or (save_status == 1) or (
-                    save_status == 2):  # Only run this for friends, photos and videos
+            if (
+                (save_status == 0) or (save_status == 1) or (save_status == 2)
+            ):  # Only run this for friends, photos and videos
 
                 # the bar which contains all the sections
-                sections_bar = driver.find_element_by_xpath("//*[@class='_3cz'][1]/div[2]/div[1]")
+                sections_bar = driver.find_element_by_xpath(
+                    "//*[@class='_3cz'][1]/div[2]/div[1]"
+                )
 
                 if sections_bar.text.find(scan_list[i]) == -1:
                     continue
@@ -464,11 +564,18 @@ def scrape_data(user_id, scan_list, section, elements_path, save_status, file_na
             save_to_file(file_names[i], data, save_status, i)
 
         except Exception:
-            print("Exception (scrape_data)", str(i), "Status =", str(save_status), sys.exc_info()[0])
+            print(
+                "Exception (scrape_data)",
+                str(i),
+                "Status =",
+                str(save_status),
+                sys.exc_info()[0],
+            )
 
 
 # -----------------------------------------------------------------------------
 # -----------------------------------------------------------------------------
+
 
 def create_original_link(url):
     if url.find(".php") != -1:
@@ -478,9 +585,17 @@ def create_original_link(url):
             original_link = original_link.split("&")[0]
 
     elif url.find("fnr_t") != -1:
-        original_link = facebook_https_prefix + ".facebook.com/" + ((url.split("/"))[-1].split("?")[0])
+        original_link = (
+            facebook_https_prefix
+            + ".facebook.com/"
+            + ((url.split("/"))[-1].split("?")[0])
+        )
     elif url.find("_tab") != -1:
-        original_link = facebook_https_prefix + ".facebook.com/" + (url.split("?")[0]).split("/")[-1]
+        original_link = (
+            facebook_https_prefix
+            + ".facebook.com/"
+            + (url.split("?")[0]).split("/")[-1]
+        )
     else:
         original_link = url
 
@@ -509,7 +624,7 @@ def scrap_profile(ids):
         print("\nScraping:", user_id)
 
         try:
-            target_dir = os.path.join(folder, user_id.split('/')[-1])
+            target_dir = os.path.join(folder, user_id.split("/")[-1])
             create_folder(target_dir)
             os.chdir(target_dir)
         except Exception:
@@ -520,21 +635,46 @@ def scrap_profile(ids):
         print("----------------------------------------")
         print("Friends..")
         # setting parameters for scrape_data() to scrape friends
-        scan_list = ["All", "Mutual Friends", "Following", "Followers", "Work", "College", "Current City", "Hometown"]
-        section = ["/friends", "/friends_mutual", "/following", "/followers", "/friends_work", "/friends_college",
-                   "/friends_current_city",
-                   "/friends_hometown"]
-        elements_path = ["//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
-                         "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
-                         "//*[contains(@class,'_3i9')][1]/div/div/ul/li[1]/div[2]/div/div/div/div/div[2]/ul/li/div/a",
-                         "//*[contains(@class,'fbProfileBrowserListItem')]/div/a",
-                         "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
-                         "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
-                         "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
-                         "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a"]
-        file_names = ["All Friends.txt", "Mutual Friends.txt", "Following.txt", "Followers.txt", "Work Friends.txt",
-                      "College Friends.txt",
-                      "Current City Friends.txt", "Hometown Friends.txt"]
+        scan_list = [
+            "All",
+            "Mutual Friends",
+            "Following",
+            "Followers",
+            "Work",
+            "College",
+            "Current City",
+            "Hometown",
+        ]
+        section = [
+            "/friends",
+            "/friends_mutual",
+            "/following",
+            "/followers",
+            "/friends_work",
+            "/friends_college",
+            "/friends_current_city",
+            "/friends_hometown",
+        ]
+        elements_path = [
+            "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
+            "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
+            "//*[contains(@class,'_3i9')][1]/div/div/ul/li[1]/div[2]/div/div/div/div/div[2]/ul/li/div/a",
+            "//*[contains(@class,'fbProfileBrowserListItem')]/div/a",
+            "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
+            "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
+            "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
+            "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
+        ]
+        file_names = [
+            "All Friends.txt",
+            "Mutual Friends.txt",
+            "Following.txt",
+            "Followers.txt",
+            "Work Friends.txt",
+            "College Friends.txt",
+            "Current City Friends.txt",
+            "Hometown Friends.txt",
+        ]
         save_status = 0
 
         scrape_data(user_id, scan_list, section, elements_path, save_status, file_names)
@@ -561,7 +701,9 @@ def scrap_profile(ids):
         # setting parameters for scrape_data() to scrap videos
         scan_list = ["'s Videos", "Videos of"]
         section = ["/videos_by", "/videos_of"]
-        elements_path = ["//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul"] * 2
+        elements_path = [
+            "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul"
+        ] * 2
         file_names = ["Uploaded Videos.txt", "Tagged Videos.txt"]
         save_status = 2
 
@@ -573,12 +715,27 @@ def scrap_profile(ids):
         print("About:")
         # setting parameters for scrape_data() to scrap the about section
         scan_list = [None] * 7
-        section = ["/about?section=overview", "/about?section=education", "/about?section=living",
-                   "/about?section=contact-info", "/about?section=relationship", "/about?section=bio",
-                   "/about?section=year-overviews"]
-        elements_path = ["//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul/li/div/div[2]/div/div"] * 7
-        file_names = ["Overview.txt", "Work and Education.txt", "Places Lived.txt", "Contact and Basic Info.txt",
-                      "Family and Relationships.txt", "Details About.txt", "Life Events.txt"]
+        section = [
+            "/about?section=overview",
+            "/about?section=education",
+            "/about?section=living",
+            "/about?section=contact-info",
+            "/about?section=relationship",
+            "/about?section=bio",
+            "/about?section=year-overviews",
+        ]
+        elements_path = [
+            "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul/li/div/div[2]/div/div"
+        ] * 7
+        file_names = [
+            "Overview.txt",
+            "Work and Education.txt",
+            "Places Lived.txt",
+            "Contact and Basic Info.txt",
+            "Family and Relationships.txt",
+            "Details About.txt",
+            "Life Events.txt",
+        ]
         save_status = 3
 
         scrape_data(user_id, scan_list, section, elements_path, save_status, file_names)
@@ -608,6 +765,7 @@ def scrap_profile(ids):
 # -----------------------------------------------------------------------------
 # -----------------------------------------------------------------------------
 
+
 def safe_find_element_by_id(driver, elem_id):
     try:
         return driver.find_element_by_id(elem_id)
@@ -631,70 +789,78 @@ def login(email, password):
 
         try:
             platform_ = platform.system().lower()
-            if platform_ in ['linux', 'darwin']:
-                driver = webdriver.Chrome(executable_path="./chromedriver", options=options)
-            else:
-                driver = webdriver.Chrome(executable_path="./chromedriver.exe", options=options)
+            chromedriver_versions = {
+                "linux": "./chromedriver_linux64",
+                "darwin": "./chromedriver_mac64",
+                "windows": "./chromedriver_win32.exe",
+            }
+            driver = webdriver.Chrome(
+                executable_path=chromedriver_versions[platform_], options=options
+            )
         except Exception:
-            print("Kindly replace the Chrome Web Driver with the latest one from "
-                  "http://chromedriver.chromium.org/downloads "
-                  "and also make sure you have the latest Chrome Browser version."
-                  "\nYour OS: {}".format(platform_)
-                  )
-            exit()
+            print(
+                "Kindly replace the Chrome Web Driver with the latest one from "
+                "http://chromedriver.chromium.org/downloads "
+                "and also make sure you have the latest Chrome Browser version."
+                "\nYour OS: {}".format(platform_)
+            )
+            exit(1)
 
         fb_path = facebook_https_prefix + "facebook.com"
         driver.get(fb_path)
         driver.maximize_window()
 
         # filling the form
-        driver.find_element_by_name('email').send_keys(email)
-        driver.find_element_by_name('pass').send_keys(password)
+        driver.find_element_by_name("email").send_keys(email)
+        driver.find_element_by_name("pass").send_keys(password)
 
         # clicking on login button
-        driver.find_element_by_id('loginbutton').click()
+        driver.find_element_by_id("loginbutton").click()
 
         # if your account uses multi factor authentication
-        mfa_code_input = safe_find_element_by_id(driver, 'approvals_code')
+        mfa_code_input = safe_find_element_by_id(driver, "approvals_code")
 
         if mfa_code_input is None:
             return
 
         mfa_code_input.send_keys(input("Enter MFA code: "))
-        driver.find_element_by_id('checkpointSubmitButton').click()
+        driver.find_element_by_id("checkpointSubmitButton").click()
 
         # there are so many screens asking you to verify things. Just skip them all
-        while safe_find_element_by_id(driver, 'checkpointSubmitButton') is not None:
-            dont_save_browser_radio = safe_find_element_by_id(driver, 'u_0_3')
+        while safe_find_element_by_id(driver, "checkpointSubmitButton") is not None:
+            dont_save_browser_radio = safe_find_element_by_id(driver, "u_0_3")
             if dont_save_browser_radio is not None:
                 dont_save_browser_radio.click()
 
-            driver.find_element_by_id('checkpointSubmitButton').click()
+            driver.find_element_by_id("checkpointSubmitButton").click()
 
     except Exception:
         print("There's some error in log in.")
         print(sys.exc_info()[0])
-        exit()
+        exit(1)
 
 
 # -----------------------------------------------------------------------------
 # -----------------------------------------------------------------------------
+
 
 def main():
-    with open('credentials.txt') as f:
-        email = f.readline().split('"')[1]
-        password = f.readline().split('"')[1]
+    with open("credentials.yaml", "r") as ymlfile:
+        cfg = yaml.safe_load(stream=ymlfile)
 
-        if not (email and password):
-            print("Your email or password is missing. Kindly write them in credentials.txt")
-            exit()
+    if ("password" not in cfg) or ("email" not in cfg):
+        print("Your email or password is missing. Kindly write them in credentials.txt")
+        exit(1)
 
-    ids = [facebook_https_prefix + "facebook.com/" + line.split("/")[-1] for line in open("input.txt", newline='\n')]
+    ids = [
+        facebook_https_prefix + "facebook.com/" + line.split("/")[-1]
+        for line in open("input.txt", newline="\n")
+    ]
 
     if len(ids) > 0:
         print("\nStarting Scraping...")
 
-        login(email, password)
+        login(cfg["email"], cfg["password"])
         scrap_profile(ids)
         driver.close()
     else:
@@ -705,6 +871,6 @@ def main():
 # -------------------------------------------------------------
 # -------------------------------------------------------------
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # get things rolling
     main()
