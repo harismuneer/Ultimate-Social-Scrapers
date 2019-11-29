@@ -118,7 +118,7 @@ The tool uses latest version of [Chrome Web Driver](http://chromedriver.chromium
 
 ### How to Run
 
-There's a file named "input.txt". You can add as many profiles as you want in the following format with each link on a new line:
+Create a file named "input.txt" and add as many profiles as you want in the following format with each link on a new line:
 
 ```
 https://www.facebook.com/andrew.ng.96
