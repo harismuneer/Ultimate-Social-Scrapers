@@ -116,6 +116,5 @@ dmypy.json
 ## Generated data
 src/Data
 
-## Input files
-input.txt
-credentials.txt
+## Python venv
+venv
