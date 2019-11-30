@@ -39,6 +39,9 @@ firefox_profile_path = "/home/zeryx/.mozilla/firefox/0n8gmjoz.bot"
 facebook_https_prefix = "https://"
 
 
+CHROMEDRIVER_BINARIES_FOLDER = "bin"
+
+
 # -------------------------------------------------------------
 # -------------------------------------------------------------
 
@@ -610,7 +613,7 @@ def create_folder(folder):
 
 
 def scrap_profile(ids):
-    folder = os.path.join(os.getcwd(), "Data")
+    folder = os.path.join(os.getcwd(), "data")
     create_folder(folder)
     os.chdir(folder)
 
@@ -790,10 +793,17 @@ def login(email, password):
         try:
             platform_ = platform.system().lower()
             chromedriver_versions = {
-                "linux": "./chromedriver_linux64",
-                "darwin": "./chromedriver_mac64",
-                "windows": "./chromedriver_win32.exe",
+                "linux": os.path.join(
+                    os.getcwd(), CHROMEDRIVER_BINARIES_FOLDER, "chromedriver_linux64",
+                ),
+                "darwin": os.path.join(
+                    os.getcwd(), CHROMEDRIVER_BINARIES_FOLDER, "chromedriver_mac64",
+                ),
+                "windows": os.path.join(
+                    os.getcwd(), CHROMEDRIVER_BINARIES_FOLDER, "chromedriver_win32.exe",
+                ),
             }
+
             driver = webdriver.Chrome(
                 executable_path=chromedriver_versions[platform_], options=options
             )
@@ -814,8 +824,12 @@ def login(email, password):
         driver.find_element_by_name("email").send_keys(email)
         driver.find_element_by_name("pass").send_keys(password)
 
-        # clicking on login button
-        driver.find_element_by_id("loginbutton").click()
+        try:
+            # clicking on login button
+            driver.find_element_by_id("loginbutton").click()
+        except NoSuchElementException:
+            # Facebook new design
+            driver.find_element_by_name("login").click()
 
         # if your account uses multi factor authentication
         mfa_code_input = safe_find_element_by_id(driver, "approvals_code")
@@ -844,7 +858,7 @@ def login(email, password):
 # -----------------------------------------------------------------------------
 
 
-def main():
+def scrapper(**kwargs):
     with open("credentials.yaml", "r") as ymlfile:
         cfg = yaml.safe_load(stream=ymlfile)
 
@@ -873,4 +887,4 @@ def main():
 
 if __name__ == "__main__":
     # get things rolling
-    main()
+    scrapper()
