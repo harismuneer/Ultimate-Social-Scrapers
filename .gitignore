@@ -114,7 +114,7 @@ dmypy.json
 .idea
 
 ## Generated data
-src/Data
+/data
 
 ## Python venv
 venv

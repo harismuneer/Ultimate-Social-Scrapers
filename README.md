@@ -122,7 +122,7 @@ $ python3 -m venv venv
 $ source venv/bin/activate
 
 # Install Python requirements
-$ pip install -r requirements.txt
+$ pip install -e .
 ```
 
 The code is multi-platform and is tested on both Windows and Linux.
@@ -130,12 +130,12 @@ The tool uses latest version of [Chrome Web Driver](http://chromedriver.chromium
 
 ### How to Run
 
-- Fill your Facebook credentials into [`src/credentials.yaml`](src/credentials.yaml)
-- Edit the [`src/input.txt`](src/input.txt) file and add many profiles links as you want in the following format with each link on a new line:
+- Fill your Facebook credentials into [`credentials.yaml`](credentials.yaml)
+- Edit the [`input.txt`](input.txt) file and add many profiles links as you want in the following format with each link on a new line:
 
 Make sure the link only contains the username or id number at the end and not any other stuff. Make sure its in the format mentioned above.
 
-> Note: There are two modes to download Friends Profile Pics and the user's Photos: Large Size and Small Size. You can change the following variables. By default they are set to Small Sized Pics because its really quick while Large Size Mode takes time depending on the number of pictures to download
+> Note: There are two modes to download Friends Profile Pics and the user's Photos: Large Size and Small Size. You can change the following variables in [`scraper/scraper.py`](scraper/scraper.py#L30). By default they are set to Small Sized Pics because its really quick while Large Size Mode takes time depending on the number of pictures to download
 
 ```python
 # whether to download the full image or its thumbnail (small size)
@@ -144,6 +144,8 @@ Make sure the link only contains the username or id number at the end and not an
 friends_small_size = True
 photos_small_size = True
 ```
+
+Run the `ultimate-facebook-scraper` command ! 🚀
 
 ---
 
