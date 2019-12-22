@@ -836,21 +836,36 @@ def login(email, password):
 
         try:
             platform_ = platform.system().lower()
-            chromedriver_versions = {
-                "linux": os.path.join(
-                    os.getcwd(), CHROMEDRIVER_BINARIES_FOLDER, "chromedriver_linux64",
-                ),
-                "darwin": os.path.join(
-                    os.getcwd(), CHROMEDRIVER_BINARIES_FOLDER, "chromedriver_mac64",
-                ),
-                "windows": os.path.join(
-                    os.getcwd(), CHROMEDRIVER_BINARIES_FOLDER, "chromedriver_win32.exe",
-                ),
-            }
+            if platform_ in ["linux", "darwin"]:
+                driver = webdriver.Chrome(
+                    executable_path=os.getenv('HOME') + "/bin/chromedriver", options=opts
+                )
+            else:
+                print(
+                    "If you are currently running windows,"
+                    "please change to a more secure operating system"
+                    "immediately!"
+                )
+                # driver = webdriver.Chrome(
+                #     executable_path="./chromedriver.exe", options=options
+                # )
 
-            driver = webdriver.Chrome(
-                executable_path=chromedriver_versions[platform_], options=options
-            )
+            # chromedriver_versions = {
+            #     "linux": os.path.join(
+            #         os.getcwd(), CHROMEDRIVER_BINARIES_FOLDER, "chromedriver_linux64",
+            #     ),
+            #     "darwin": os.path.join(
+            #         os.getcwd(), CHROMEDRIVER_BINARIES_FOLDER, "chromedriver_mac64",
+            #     ),
+            #     "windows": os.path.join(
+            #         os.getcwd(), CHROMEDRIVER_BINARIES_FOLDER, "chromedriver_win32.exe",
+            #     ),
+            # }
+            #
+            # driver = webdriver.Chrome(
+            #     executable_path=chromedriver_versions[platform_], options=options
+            # )
+
         except Exception:
             print(
                 "Kindly replace the Chrome Web Driver with the latest one from "

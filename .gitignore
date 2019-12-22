@@ -387,4 +387,8 @@ node_modules/
 *.sql
 *.sqlite
 
-
+# Custom additions
+credentials.yaml
+input.txt
+chromedriver*
+scraper/data/

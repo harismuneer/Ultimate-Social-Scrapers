@@ -1,3 +1,66 @@
+##UFS Quackified: 
+###Modified with intent to circumvent rate limiting complications
+
+---
+
+#### Intro and Reasoning
+
+Several of us have attempted to run the "Ultimate Facebook Scraper" out of the box, directly cloned from the repository, and much to our chagrin discovered that the result would be our account was blocked from using several features on the book of face for a length of time. So several modifications were made to prevent this. Notice, that the result of this being, the script will scrape at a significantly slower pace.    
+
+#### Notable differences 
+
+##### Parameter files
+
+The user will need to copy `input.txt.example` to `input.txt` and copy `credentials.yml.example` to `credentials.yml` Before using.  
+
+
+##### Chromedriver executable '~/home/bin': !IMPORTANT STUFF!
+
+Also, and this is very ver important, in the vanilla UFS repo there is currently a bug that does not recognize chromedriver as being the most recent version compatible with your particular version of chrome. So, you will need to download chromedriver on your own and place it in your home directory under the directory named `bin` so that the full path of the chrome executable will be `$HOME/bin/chromedriver`. 
+
+###### Running the script
+
+1) clone repo like a boss!
+
+```bash
+ git clone https://www.github.com/anoduck/Ultimate-Facebook-Scraper
+```
+
+2) Download the chromedriver that is compatible with the version of chrome that your are using and place it in your home directory under bin like the crazy fiend you are!  
+
+_To find out which version is compatible reference: https://chromedriver.chromium.org/downloads_
+
+```bash
+cd $HOME/bin
+wget https://chromedriver.storage.googleapis.com/$CHANGE_TO_DESIRED_COMPATIBLE_VERSION_NUMBER/chromedriver_linux64.zip
+unzip chromedriver_linux64.zip
+```
+
+3) Change Directory to the repo you just cloned and copy `input.txt.example` to `scraper/input.txt` and copy `credentials.yml.example` to `scraper/credentials.yml`. Then open up those files making desired changes. Do so like the leet phone phreak you are.
+
+```bash
+cd to/the/repository/Ultimate-Facebook-Scraper
+cp input.txt.sample scraper/input.txt
+cp credentials.yml.example scraper/credentials.yml
+nvim input.txt
+# make edits then
+nvim credentials.yml
+```
+
+4) You are ready to scrape, so strap on your seatbelt and launch the script.
+
+```bash
+python3 scraper.py
+```
+5) Watch it scrape away for a few, then you might want to go to a movie or something.
+
+####License and Copyright Clarification
+
+I did not write this script, I only modified it so voraciously that it would actually work.  
+The modifications made to this file were derived from a community effort of others, credit really belongs to these individuals, I just put it on paper.
+
+-----
+
 <a href="#">
   <div align="center">
     <img src="images/ufs_icon.png" width='154'/>
