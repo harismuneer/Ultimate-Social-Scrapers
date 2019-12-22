@@ -2,9 +2,13 @@ import calendar
 import os
 import platform
 import sys
+## Custom Imports for time banning.
+import time
 import urllib.request
-import yaml
+from random import randint
 
+import yaml
+from ratelimit import limits
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from selenium.webdriver.chrome.options import Options
@@ -17,8 +21,15 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 
 # Global Variables
+opts = Options()
+opts.add_argument(
+    "user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPhone10,2;FBMD/iPhone;FBSN/iOS;FBSV/13.1.3;FBSS/3;FBID/phone;FBLC/en_US;FBOP/5;FBCR/Verizon]"
+)
 
-driver = None
+# If you change this variable the scraping process will change
+# and not all elements will be scraped.
+# driver = None
+driver = webdriver.Chrome(options=opts)
 
 # whether to download photos or not
 download_uploaded_photos = True
@@ -27,31 +38,49 @@ download_friends_photos = True
 # whether to download the full image or its thumbnail (small size)
 # if small size is True then it will be very quick else if its false then it will open each photo to download it
 # and it will take much more time
-friends_small_size = True
-photos_small_size = True
+friends_small_size = False
+photos_small_size = False
 
 total_scrolls = 2500
 current_scrolls = 0
 scroll_time = 8
 
 old_height = 0
-firefox_profile_path = "/home/zeryx/.mozilla/firefox/0n8gmjoz.bot"
 facebook_https_prefix = "https://"
 
+# Values for rate limiting | lower is slower!
+# Last worked at: low=10,high=25,time=600
+# Failed at: low=10,high=30
+# But, leaving values alone.
+rtqlow = 10
+rtqhigh = 30
+rtime = 600
+
+# Traversal speed is solely controlled by this variable
+# Vales for time sleep in secs
+# Last worked at: min=25,max=40
+# Failed at: min=20, max=40
+tsmin = 25
+tsmax = 55
 
 CHROMEDRIVER_BINARIES_FOLDER = "bin"
 
 
 # -------------------------------------------------------------
+# Identify Image Links
+# Important Note! The script scans the profiles and appends the
+# links to a list, then downloads them later.
 # -------------------------------------------------------------
 
 
+@limits(calls=randint(rtqlow, rtqhigh), period=rtime)
 def get_facebook_images_url(img_links):
     urls = []
 
     for link in img_links:
         if link != "None":
             valid_url_found = False
+            time.sleep(randint(tsmin, tsmax))
             driver.get(link)
 
             try:
@@ -74,9 +103,11 @@ def get_facebook_images_url(img_links):
 
 
 # -------------------------------------------------------------
+# Image Downloader
 # -------------------------------------------------------------
 
 # takes a url and downloads image from that url
+@limits(calls=randint(rtqlow, rtqhigh), period=rtime)
 def image_downloader(img_links, folder_name):
     img_names = []
 
@@ -100,6 +131,8 @@ def image_downloader(img_links, folder_name):
                     img_name = "None"
                 else:
                     try:
+                        # Requesting images too fast will get you blocked too.
+                        time.sleep(randint(tsmin, tsmax))
                         urllib.request.urlretrieve(link, img_name)
                     except Exception:
                         img_name = "None"
@@ -201,10 +234,10 @@ def get_time(x):
     try:
         time = x.find_element_by_tag_name("abbr").get_attribute("title")
         time = (
-            str("%02d" % int(time.split(", ")[1].split()[1]),)
-            + "-"
-            + str(
-                (
+                str("%02d" % int(time.split(", ")[1].split()[1]), )
+                + "-"
+                + str(
+            (
                     "%02d"
                     % (
                         int(
@@ -215,14 +248,14 @@ def get_time(x):
                             )
                         ),
                     )
-                )
             )
-            + "-"
-            + time.split()[3]
-            + " "
-            + str("%02d" % int(time.split()[5].split(":")[0]))
-            + ":"
-            + str(time.split()[5].split(":")[1])
+        )
+                + "-"
+                + time.split()[3]
+                + " "
+                + str("%02d" % int(time.split()[5].split(":")[0]))
+                + ":"
+                + str(time.split()[5].split(":")[1])
         )
     except Exception:
         pass
@@ -231,6 +264,8 @@ def get_time(x):
         return time
 
 
+# Deals with scraping posts
+@limits(calls=randint(rtqlow, rtqhigh), period=rtime)
 def extract_and_write_posts(elements, filename):
     try:
         f = open(filename, "w", newline="\r\n")
@@ -244,7 +279,7 @@ def extract_and_write_posts(elements, filename):
             try:
                 title = " "
                 status = " "
-                link = ""
+                link = " "
                 time = " "
 
                 # time
@@ -340,6 +375,7 @@ def extract_and_write_posts(elements, filename):
 # -------------------------------------------------------------
 
 
+@limits(calls=randint(rtqlow, rtqhigh), period=rtime)
 def save_to_file(name, elements, status, current_section):
     """helper function used to save links to files"""
 
@@ -382,6 +418,7 @@ def save_to_file(name, elements, status, current_section):
                         links = []
                         for friend in results:
                             try:
+                                time.sleep(randint(tsmin, tsmax))
                                 driver.get(friend)
                                 WebDriverWait(driver, 30).until(
                                     EC.presence_of_element_located(
@@ -534,6 +571,7 @@ def save_to_file(name, elements, status, current_section):
 # -----------------------------------------------------------------------------
 
 
+@limits(calls=randint(rtqlow, rtqhigh), period=rtime)
 def scrape_data(user_id, scan_list, section, elements_path, save_status, file_names):
     """Given some parameters, this function can scrap friends/photos/videos/about/posts(statuses) of a profile"""
     page = []
@@ -545,6 +583,7 @@ def scrape_data(user_id, scan_list, section, elements_path, save_status, file_na
 
     for i, _ in enumerate(scan_list):
         try:
+            time.sleep(randint(tsmin, tsmax))
             driver.get(page[i])
 
             if (
@@ -612,6 +651,7 @@ def create_folder(folder):
         os.mkdir(folder)
 
 
+@limits(calls=randint(rtqlow, rtqhigh), period=rtime)
 def scrap_profile(ids):
     folder = os.path.join(os.getcwd(), "data")
     create_folder(folder)
@@ -620,6 +660,7 @@ def scrap_profile(ids):
     # execute for all profiles given in input.txt file
     for user_id in ids:
 
+        time.sleep(randint(tsmin, tsmax))
         driver.get(user_id)
         url = driver.current_url
         user_id = create_original_link(url)
@@ -634,6 +675,9 @@ def scrap_profile(ids):
             print("Some error occurred in creating the profile directory.")
             continue
 
+        # ----------------------------------------------------------------------------
+        # This section outlines the process in which the scraping will occur.
+        # In the following order: 1) Friends, 2) Photos, 3) Videos, 4) About
         # ----------------------------------------------------------------------------
         print("----------------------------------------")
         print("Friends..")
@@ -858,6 +902,7 @@ def login(email, password):
 # -----------------------------------------------------------------------------
 
 
+@limits(calls=randint(rtqlow, rtqhigh), period=rtime)
 def scrapper(**kwargs):
     with open("credentials.yaml", "r") as ymlfile:
         cfg = yaml.safe_load(stream=ymlfile)
