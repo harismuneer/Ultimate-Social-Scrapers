@@ -1,5 +1,6 @@
-##UFS Quackified: 
-###Modified with intent to circumvent rate limiting complications
+## UFS Quackified:  
+
+### Modified with intent to circumvent rate limiting complications
 
 ---
 
@@ -54,12 +55,12 @@ python3 scraper.py
 ```
 5) Watch it scrape away for a few, then you might want to go to a movie or something.
 
-####License and Copyright Clarification
+#### License and Copyright Clarification
 
 I did not write this script, I only modified it so voraciously that it would actually work.  
 The modifications made to this file were derived from a community effort of others, credit really belongs to these individuals, I just put it on paper.
 
------
+---
 
 <a href="#">
   <div align="center">
