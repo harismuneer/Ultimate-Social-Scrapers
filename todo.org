@@ -3,6 +3,7 @@
 #+PROJECT: Development
 #+TAGS: research(r) development(d) testing(t)
 #+TODO: TODO SOMEDAY | DONE
+#+PRIORITY: A B C D
 #+OPTIONS: H:3 num:nil toc:nil \n:nil ::t |:t ^:t -:t f:T *:T
 #+EXPORT_SELECT_TAGS: EXPORT
 #+EXPORT_EXCLUDE_TAGS: noexport
@@ -22,3 +23,53 @@
     :PROPERTIES:
     :Effort: 1h
     :END:
+
+* Features
+** SOMEDAY [#C] Add in features mentioned by Milahu         :development:
+    :PROPERTIES:
+    :Link: https://github.com/harismuneer/Ultimate-Facebook-Scraper/issues/48#issuecomment-568243776
+    :END:
+#+BEGIN_SRC markdown
+    I have gone ahead and forked the repository
+
+thanks! im too lazy as project maintainer
+
+some random suggestions / todo items
+
+    add ratelimit to dependencies in setup.py: install_requires=["selenium==3.141.0", "pyyaml", "ratelimit"],
+    remove requirements.txt? seems useless, dependencies are defined in setup.py
+    suggest shallow clone for download = git clone --depth=1
+    coding style: prefer "absolute names" for imported objects. for example, instead of from random import randint; randint() use import random; random.randint() etc. the "ugly method" is slightly faster, but "explicit namespaces are much more readable" src. also we can better distinguish between "internal" and "exernal" functions.
+    replace selenium with selenium-wire to read/write http headers -- project and sample. for example, with selenium, i cannot add application/json to the client's accept header, which would be useful in some exotic situations : P also better for testing and monitoring, e.g. monitor that chromium is not leaking private data
+    only download platform-specific binaries. currently i get three versions for linux64, mac64 and win32 -- code sample
+    move all configuration to one central object, including xpath selector strings, image size config [large or small images], login data, input list .... allow to change config for every input item, for example "only download text data from this profile" or "download all except photos from this profile"
+    keep track of state, use a sqlite database, flush often [commit database changes to disk often, so we dont lose data -- no problem for SSD drives]. tolerate unhandled exceptions [program crashes], allow to resume from last position, avoid re-downloading
+    behave more "natural" and "human" while scraping .... this is probably the hardest part cos "what is human?" except solving captchas. facebook aint stupid, they will monitor this project, and train their defense systems to block our software. what i think of "as last resort" is a browser plugin, where you manually browse a profile, and the plugin saves all the data you visit, and also helps to "browse more" data, like "expand all comments". with that user behavior, the program can "learn" to act more human .... to apply a similar "browsing strategy" automatically to other profiles .... machine learning to the rescue. for that purpose, we might have to rewrite the code to javascript : /
+    better visualize the scraping process, for easier monitoring and debugging .... like a "side by side" comparison between original and copy
+    better visualize the result. offer a local http server so we can "browse offline". instead of "endless scroll" use "old school pagination", like 100 posts per page, next page, last page, go to page X, etc. .... also let me filter results by time, location, mood, keywords, tags etc.
+    allow to use firefox, not all people trust google-chrome
+
+lots of room for improvement
+
+ps, regarding "keep track of state", this is some horrible code:
+
+            if save_status != 3:
+                scroll()
+
+            data = driver.find_elements_by_xpath(elements_path[i])
+
+            save_to_file(file_names[i], data, save_status, i)
+
+this is the "serial" approach, or "depth first search"
+
+    scroll the page all the way down
+    find all elements
+    save all data
+
+this must be rewritten to a "parallel" approach using yield statements,
+so when one function fails (scroll or find), for whatever reason,
+we at least have all the data to this point, and can try to resume/debug later
+
+also the "serial" approach is a huge waste of memory
+currently the scraper needs more than 4 gigabytes of ram
+#+END_SRC
