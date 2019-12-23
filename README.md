@@ -1,4 +1,4 @@
-## UFS Quackified:  
+## Ultimate Facebook Scraper: Quackified Edition  
 
 ### Modified with intent to circumvent rate limiting complications
 
@@ -14,12 +14,15 @@ Several of us have attempted to run the "Ultimate Facebook Scraper" out of the b
 
 The user will need to copy `input.txt.example` to `input.txt` and copy `credentials.yml.example` to `credentials.yml` Before using.  
 
-
 ##### Chromedriver executable '~/home/bin': !IMPORTANT STUFF!
 
 Also, and this is very ver important, in the vanilla UFS repo there is currently a bug that does not recognize chromedriver as being the most recent version compatible with your particular version of chrome. So, you will need to download chromedriver on your own and place it in your home directory under the directory named `bin` so that the full path of the chrome executable will be `$HOME/bin/chromedriver`. 
 
-###### Running the script
+##### Venv: to venv or not to venv
+
+The development of this repository does not facilitate the incorporation of Venv, the python virtual environment manager. It was not needed because the system already employed the same version of python that the script called for. If you are familiar and prefer to use venv, then nothing should prevent you from doing so, and you should already be familiar on how to modify the instructions below and the configuration to incorporate the desired implementation. If you are not familiar with venv, then it is recommended not to concern yourself with it in order to avoid creation of complexities that are not required. There is no reason to make things more difficult than they have to be.
+
+#### Running the script
 
 1) clone repo like a boss!
 
@@ -37,7 +40,14 @@ wget https://chromedriver.storage.googleapis.com/$CHANGE_TO_DESIRED_COMPATIBLE_V
 unzip chromedriver_linux64.zip
 ```
 
-3) Change Directory to the repo you just cloned and copy `input.txt.example` to `scraper/input.txt` and copy `credentials.yml.example` to `scraper/credentials.yml`. Then open up those files making desired changes. Do so like the leet phone phreak you are.
+3) Install all the necessary requirements plus the additional ratelimit module with pip
+
+```bash
+sudo pip3 install -r requirements.txt
+sudo pip3 install ratelimit
+```
+
+4) Change Directory to the repo you just cloned and copy `input.txt.example` to `scraper/input.txt` and copy `credentials.yml.example` to `scraper/credentials.yml`. Then open up those files making desired changes. Do so like the leet phone phreak you are.
 
 ```bash
 cd to/the/repository/Ultimate-Facebook-Scraper
@@ -48,12 +58,15 @@ nvim input.txt
 nvim credentials.yml
 ```
 
-4) You are ready to scrape, so strap on your seatbelt and launch the script.
+5) You are ready to scrape, so strap on your seatbelt and launch the script.
 
 ```bash
 python3 scraper.py
 ```
-5) Watch it scrape away for a few, then you might want to go to a movie or something.
+
+6) Watch it scrape away for a few, then you might want to go to a movie or something.
+
+7) If for some reason you discover that your profile has been blocked for using this script or a feature on facebook has been disabled preventing you from successfully completing the scrape. Please submit a new issue to this repository so that we may make concessions and corrections to prevent this from further occurring again. 
 
 #### License and Copyright Clarification
 

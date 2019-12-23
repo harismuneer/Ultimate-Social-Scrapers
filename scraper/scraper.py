@@ -22,17 +22,15 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 # Global Variables
 opts = Options()
-# opts.add_argument(
-#     "user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPhone10,2;FBMD/iPhone;FBSN/iOS;FBSV/13.1.3;FBSS/3;FBID/phone;FBLC/en_US;FBOP/5;FBCR/Verizon]"
-# )
 opts.add_argument(
     "user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/71.0"
 )
 
 # If you change this variable the scraping process will change
 # and not all elements will be scraped.
+# Variable is archaic and deprecated
 # driver = None
-driver = webdriver.Chrome(options=opts)
+# driver = webdriver.Chrome(options=opts)
 
 # whether to download photos or not
 download_uploaded_photos = True
@@ -54,10 +52,9 @@ facebook_https_prefix = "https://"
 # Values for rate limiting | lower is slower!
 # Last worked at: low=10,high=25,time=600
 # Failed at: low=10,high=30
-# But, leaving values alone.
-rtqlow = 10
-rtqhigh = 30
-rtime = 600
+rtqlow = 3
+rtqhigh = 10
+rtime = 300
 
 # Traversal speed is solely controlled by this variable
 # Vales for time sleep in secs
@@ -66,7 +63,8 @@ rtime = 600
 tsmin = 25
 tsmax = 55
 
-CHROMEDRIVER_BINARIES_FOLDER = "bin"
+
+#CHROMEDRIVER_BINARIES_FOLDER = "bin"
 
 
 # -------------------------------------------------------------

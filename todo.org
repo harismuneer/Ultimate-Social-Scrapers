@@ -1,0 +1,24 @@
+#+TITLE: Ultimate Facebook Scraper
+#+DATE: Sun Dec 22 21:35:37 2019
+#+PROJECT: Development
+#+TAGS: research(r) development(d) testing(t)
+#+TODO: TODO SOMEDAY | DONE
+#+OPTIONS: H:3 num:nil toc:nil \n:nil ::t |:t ^:t -:t f:T *:T
+#+EXPORT_SELECT_TAGS: EXPORT
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+STARTUP: align nodlcheck nofold oddeven hidestars
+#+DRAWERS: PROPERTIES CLOCK LOGBOOK RESULTS FEEDSTATUS
+#+COLUMNS: %38ITEM(Details) %TAGS(Context) %7SCHEDULED(Planned) %7TODO(To Do) %5PRIORITY(PRIORITY) %5DONE(Completeness){X%} %5Effort(Time){:} %6CLOCKSUM(Total){:}
+# ---------------------------------------------------------------
+* Tasks
+** TODO [#C] Test running script with mobile useragent               :research:
+    DEADLINE: <2020-01-12 21:30>
+    :PROPERTIES
+    :Effort: 1h
+    :END:
+** SOMEDAY [#C] Develop means to multiplex process              :development:
+** TODO [#A] Successfully test a scraping to detect rate limiting prevention             :testing:
+    SCHEDULED: <2019-12-23 19:23>
+    :PROPERTIES:
+    :Effort: 1h
+    :END:

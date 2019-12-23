@@ -392,3 +392,4 @@ credentials.yaml
 input.txt
 chromedriver*
 scraper/data/
+scraper/scraper-mobile.py
