@@ -51,20 +51,21 @@ facebook_https_prefix = "https://"
 
 # Values for rate limiting | lower is slower!
 # Last worked at: low=10,high=25,time=600
-# Failed at: low=10,high=30
-rtqlow = 3
-rtqhigh = 10
-rtime = 300
+# Failed at: low=3,high=10,time=300
+rtqlow = 5
+rtqhigh = 30
+rltime = 900
+rhtime = 1800
 
 # Traversal speed is solely controlled by this variable
 # Vales for time sleep in secs
 # Last worked at: min=25,max=40
 # Failed at: min=20, max=40
-tsmin = 25
-tsmax = 55
+tsmin = 30
+tsmax = 60
 
 
-#CHROMEDRIVER_BINARIES_FOLDER = "bin"
+# CHROMEDRIVER_BINARIES_FOLDER = "bin"
 
 
 # -------------------------------------------------------------
@@ -74,7 +75,7 @@ tsmax = 55
 # -------------------------------------------------------------
 
 
-@limits(calls=randint(rtqlow, rtqhigh), period=rtime)
+@limits(calls=randint(rtqlow, rtqhigh), period=randint(rltime, rhtime))
 def get_facebook_images_url(img_links):
     urls = []
 
@@ -108,7 +109,7 @@ def get_facebook_images_url(img_links):
 # -------------------------------------------------------------
 
 # takes a url and downloads image from that url
-@limits(calls=randint(rtqlow, rtqhigh), period=rtime)
+@limits(calls=randint(rtqlow, rtqhigh), period=randint(rltime, rhtime))
 def image_downloader(img_links, folder_name):
     img_names = []
 
@@ -266,7 +267,7 @@ def get_time(x):
 
 
 # Deals with scraping posts
-@limits(calls=randint(rtqlow, rtqhigh), period=rtime)
+@limits(calls=randint(rtqlow, rtqhigh), period=randint(rltime, rhtime))
 def extract_and_write_posts(elements, filename):
     try:
         f = open(filename, "w", newline="\r\n")
@@ -376,7 +377,7 @@ def extract_and_write_posts(elements, filename):
 # -------------------------------------------------------------
 
 
-@limits(calls=randint(rtqlow, rtqhigh), period=rtime)
+@limits(calls=randint(rtqlow, rtqhigh), period=randint(rltime, rhtime))
 def save_to_file(name, elements, status, current_section):
     """helper function used to save links to files"""
 
@@ -572,7 +573,7 @@ def save_to_file(name, elements, status, current_section):
 # -----------------------------------------------------------------------------
 
 
-@limits(calls=randint(rtqlow, rtqhigh), period=rtime)
+@limits(calls=randint(rtqlow, rtqhigh), period=randint(rltime, rhtime))
 def scrape_data(user_id, scan_list, section, elements_path, save_status, file_names):
     """Given some parameters, this function can scrap friends/photos/videos/about/posts(statuses) of a profile"""
     page = []
@@ -652,7 +653,7 @@ def create_folder(folder):
         os.mkdir(folder)
 
 
-@limits(calls=randint(rtqlow, rtqhigh), period=rtime)
+@limits(calls=randint(rtqlow, rtqhigh), period=randint(rltime, rhtime))
 def scrap_profile(ids):
     folder = os.path.join(os.getcwd(), "data")
     create_folder(folder)
@@ -918,7 +919,7 @@ def login(email, password):
 # -----------------------------------------------------------------------------
 
 
-@limits(calls=randint(rtqlow, rtqhigh), period=rtime)
+@limits(calls=randint(rtqlow, rtqhigh), period=randint(rltime, rhtime))
 def scrapper(**kwargs):
     with open("credentials.yaml", "r") as ymlfile:
         cfg = yaml.safe_load(stream=ymlfile)

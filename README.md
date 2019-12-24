@@ -6,7 +6,7 @@
 
 #### Intro and Reasoning
 
-Several of us have attempted to run the "Ultimate Facebook Scraper" out of the box, directly cloned from the repository, and much to our chagrin discovered that the result would be our account was blocked from using several features on the book of face for a length of time. So several modifications were made to prevent this. Notice, that the result of this being, the script will scrape at a significantly slower pace.    
+Several of us have attempted to run the "Ultimate Facebook Scraper" out of the box, directly cloned from the repository, and much to our chagrin discovered that the result would be our account was blocked from using several features on the book of face for a length of time. So several modifications were made to prevent this. Notice, that the result of this being, the script will scrape at a definitively and most painfully slow pace.    
 
 #### Notable differences 
 
