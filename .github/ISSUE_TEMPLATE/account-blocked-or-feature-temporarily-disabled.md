@@ -1,5 +1,5 @@
 ---
-name: Account Blocked or Feature Temporarily Disabled
+name: Account Blocked 
 about: Account is Blocked from using a feature temporarily
 title: "[Account Temporarily Blocked]"
 labels: Blocked
@@ -9,7 +9,8 @@ assignees: anoduck
 
 ## Account Blocked from Scraping  
 
-### How were did you get into the scraping before you account was blocked?
+### How far did you get into the scraping process before you account was blocked?
+
 
 
 
@@ -17,16 +18,32 @@ assignees: anoduck
 
 
 
-### Did you modify the script?
+
+#### Did you modify the script?
 
 
 
-### What is the version of chrome driver that you are using?
+
+#### If so, What vales did you enter for the rate limit variables and for the time sleep variables.
 
 
 
-### What Operating System are you running?
+
+#### What is the version of chrome driver that you are using?
 
 
 
-### What is your favorite flavor of ice cream?
+
+
+#### What Operating System are you running?
+
+
+
+
+
+#### Did you notify facebook that there restrictions were too hight?
+
+
+
+
+
