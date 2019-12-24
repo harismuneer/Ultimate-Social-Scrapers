@@ -2,6 +2,7 @@ import calendar
 import os
 import platform
 import sys
+
 ## Custom Imports for time banning.
 import time
 import urllib.request
@@ -236,10 +237,10 @@ def get_time(x):
     try:
         time = x.find_element_by_tag_name("abbr").get_attribute("title")
         time = (
-                str("%02d" % int(time.split(", ")[1].split()[1]), )
-                + "-"
-                + str(
-            (
+            str("%02d" % int(time.split(", ")[1].split()[1]),)
+            + "-"
+            + str(
+                (
                     "%02d"
                     % (
                         int(
@@ -250,14 +251,14 @@ def get_time(x):
                             )
                         ),
                     )
+                )
             )
-        )
-                + "-"
-                + time.split()[3]
-                + " "
-                + str("%02d" % int(time.split()[5].split(":")[0]))
-                + ":"
-                + str(time.split()[5].split(":")[1])
+            + "-"
+            + time.split()[3]
+            + " "
+            + str("%02d" % int(time.split()[5].split(":")[0]))
+            + ":"
+            + str(time.split()[5].split(":")[1])
         )
     except Exception:
         pass
@@ -840,7 +841,8 @@ def login(email, password):
             platform_ = platform.system().lower()
             if platform_ in ["linux", "darwin"]:
                 driver = webdriver.Chrome(
-                    executable_path=os.getenv('HOME') + "/bin/chromedriver", options=opts
+                    executable_path=os.getenv("HOME") + "/bin/chromedriver",
+                    options=opts,
                 )
             else:
                 print(
