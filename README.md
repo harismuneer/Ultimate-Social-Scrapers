@@ -24,13 +24,13 @@ The development of this repository does not facilitate the incorporation of Venv
 
 #### Running the script
 
-1) clone repo like a boss!
+1) Perform a shallow clone of the repo, like a boss!
 
 ```bash
- git clone https://www.github.com/anoduck/Ultimate-Facebook-Scraper
+ git clone --depth=1 https://www.github.com/anoduck/Ultimate-Facebook-Scraper
 ```
 
-2) Download the chromedriver that is compatible with the version of chrome that your are using and place it in your home directory under bin like the crazy fiend you are!  
+2) Download the chromedriver that is compatible with the version of chrome that your are using and place it in your home directory under bin.  
 
 _To find out which version is compatible reference: https://chromedriver.chromium.org/downloads_
 
@@ -47,15 +47,14 @@ sudo pip3 install -r requirements.txt
 sudo pip3 install ratelimit
 ```
 
-4) Change Directory to the repo you just cloned and copy `input.txt.example` to `scraper/input.txt` and copy `credentials.yml.example` to `scraper/credentials.yml`. Then open up those files making desired changes. Do so like the leet phone phreak you are.
+4) Change Directory to the repo you just cloned and copy `input.txt.example` to `scraper/input.txt` and copy `credentials.yml.example` to `scraper/credentials.yml`. Then open up those files making desired changes.
 
 ```bash
 cd to/the/repository/Ultimate-Facebook-Scraper
-cp input.txt.sample scraper/input.txt
-cp credentials.yml.example scraper/credentials.yml
 nvim input.txt
 # make edits then
 nvim credentials.yml
+# Enter credential information
 ```
 
 5) You are ready to scrape, so strap on your seatbelt and launch the script.
