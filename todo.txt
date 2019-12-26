@@ -1,3 +1,4 @@
+TODO (A) Imediately exist the script upon blocked notification
 TODO (D) Develop means to multiplex process
 TODO (C) filter users by sex
 TODO (C) Scrape people who are tagged in photos

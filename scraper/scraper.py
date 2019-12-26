@@ -2,7 +2,6 @@ import calendar
 import os
 import platform
 import sys
-
 ## Custom Imports for time banning.
 import time
 import urllib.request
@@ -54,7 +53,7 @@ facebook_https_prefix = "https://"
 # Last worked at: low=10,high=25,time=600
 # Failed at: low=3,high=10,time=300
 rtqlow = 5
-rtqhigh = 30
+rtqhigh = 20
 rltime = 900
 rhtime = 1800
 
@@ -157,6 +156,20 @@ def check_height():
     new_height = driver.execute_script("return document.body.scrollHeight")
     return new_height != old_height
 
+
+# -------------------------------------------------------------
+# Exit immediately after being blocked
+# -------------------------------------------------------------
+
+
+# def block_check(b):
+#     blocked = ""
+#     try:
+#         blocked = b.find_element_by_xpath("//div[@class='mvl ptm uiInterstitial uiInterstitialLarge uiBoxWhite']").text
+#     except Exception:
+#         pass
+#     finally:
+#         exit(1)
 
 # -------------------------------------------------------------
 # -------------------------------------------------------------
@@ -664,6 +677,7 @@ def scrap_profile(ids):
     for user_id in ids:
 
         time.sleep(randint(tsmin, tsmax))
+        # block_check()
         driver.get(user_id)
         url = driver.current_url
         user_id = create_original_link(url)
@@ -853,6 +867,7 @@ def login(email, password):
                 # driver = webdriver.Chrome(
                 #     executable_path="./chromedriver.exe", options=options
                 # )
+                exit(1)
 
             # chromedriver_versions = {
             #     "linux": os.path.join(
