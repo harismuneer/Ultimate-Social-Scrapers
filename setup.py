@@ -2,7 +2,6 @@ import setuptools
 
 from scraper import __version__
 
-
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
@@ -16,7 +15,7 @@ setuptools.setup(
     description="A bot which scrapes almost everything about a Facebook user's profile",
     long_description_content_type="text/markdown",
     long_description=long_description,
-    url="https://github.com/harismuneer/Ultimate-Facebook-Scraper",
+    url="https://github.com/anoduck/UFS-quackified",
     packages=setuptools.find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -26,9 +25,9 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.7",
-    extras_require={"dev": ["black", "twine", "wheel"],},
-    install_requires=["selenium==3.141.0", "pyyaml"],
+    extras_require={"dev": ["black", "twine", "wheel"], },
+    install_requires=["selenium==3.141.0", "pyyaml", "ratelimit"],
     entry_points={
-        "console_scripts": ["ultimate-facebook-scraper=scraper.__main__:scraper",],
+        "console_scripts": ["ultimate-facebook-scraper=scraper.__main__:scraper", ],
     },
 )
