@@ -10,10 +10,6 @@ Several of us have attempted to run the "Ultimate Facebook Scraper" out of the b
 
 #### Notable differences 
 
-##### Parameter files
-
-The user will need to copy `input.txt.example` to `input.txt` and copy `credentials.yml.example` to `credentials.yml` Before using.  
-
 ##### Chromedriver executable '~/home/bin': !IMPORTANT STUFF!
 
 Also, and this is very ver important, in the vanilla UFS repo there is currently a bug that does not recognize chromedriver as being the most recent version compatible with your particular version of chrome. So, you will need to download chromedriver on your own and place it in your home directory under the directory named `bin` so that the full path of the chrome executable will be `$HOME/bin/chromedriver`. 
