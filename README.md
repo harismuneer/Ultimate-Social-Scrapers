@@ -40,11 +40,10 @@ wget https://chromedriver.storage.googleapis.com/$CHANGE_TO_DESIRED_COMPATIBLE_V
 unzip chromedriver_linux64.zip
 ```
 
-3) Install all the necessary requirements plus the additional ratelimit module with pip
+3) Install all the necessary requirements with pip
 
 ```bash
 sudo pip3 install -r requirements.txt
-sudo pip3 install ratelimit
 ```
 
 4) Change Directory to the repo you just cloned and copy `input.txt.example` to `scraper/input.txt` and copy `credentials.yml.example` to `scraper/credentials.yml`. Then open up those files making desired changes.
@@ -66,6 +65,22 @@ python3 scraper.py
 6) Watch it scrape away for a few, then you might want to go to a movie or something.
 
 7) If for some reason you discover that your profile has been blocked for using this script or a feature on facebook has been disabled preventing you from successfully completing the scrape. Please submit a new issue to this repository so that we may make concessions and corrections to prevent this from further occurring again. 
+
+#### Tips and Tricks (but no treats)...
+
+There are a few things that are recommended in order to encourage successful scraping and avoid being blocked or having a feature temporarily disabled on your account. They are: 
+
+1) Do not fiddle with the website inside of the chromedriver window while the script is running.
+
+2) Do not open up another browser and visit the book of face-ness while the script is running.
+
+3) Avoid using the book of facey face on your mobile device while the script is running.
+
+4) Have patience with the process it will take a long time, and often will take over 24 hours to complete.
+
+5) Attempt to scrape a single profile at a time until you have full knowledge that the script will not result in your profile being blocked and you are comfortable running the script.
+
+6) Since currently, the script will not exit on being notified that your account has been blocked, do keep an eye on the scraping process from time to time. If ever you are notified that your account has been blocked, exit the script immediately. 
 
 #### License and Copyright Clarification
 
