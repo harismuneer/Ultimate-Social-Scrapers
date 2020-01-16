@@ -859,15 +859,15 @@ def login(email, password):
                     options=opts,
                 )
             else:
-                print(
-                    "If you are currently running windows,"
-                    "please change to a more secure operating system"
-                    "immediately!"
-                )
-                # driver = webdriver.Chrome(
-                #     executable_path="./chromedriver.exe", options=options
+                # print(
+                #     "If you are currently running windows,"
+                #     "please change to a more secure operating system"
+                #     "immediately!"
                 # )
-                exit(1)
+                # exit(1)
+                driver = webdriver.Chrome(
+                    executable_path="./chromedriver.exe", options=opts
+                )
 
             # chromedriver_versions = {
             #     "linux": os.path.join(
