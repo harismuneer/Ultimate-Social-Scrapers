@@ -41,7 +41,7 @@
   </a>
   <img hspace="5"/>
   <a href='#'>
-    <img src = "https://autopair.net/images/easyblog_articles/5/MIT-Logo.png" width="165" alt="MIT"/>
+    <img src = "http://www.hultprize.org/wp-content/uploads/2017/04/MIT-Logo.png" width="165" alt="MIT"/>
   </a>
   <a href='#'>
     <img src = "https://www.globalfinancialdata.com/wp-content/uploads/client-logos/Harvard-University-logo-.jpg" width="163" alt="Harvard"/>
