@@ -40,11 +40,6 @@
     <img src = "https://user-images.githubusercontent.com/30947706/76143154-c84be780-6096-11ea-932f-345691310628.png" width="150" alt="Security Online"/>
   </a>
 
-  <img hspace="5"/>
-  <a href='https://geeks3d.com/newz/item?id=28'>
-    <img src = "https://user-images.githubusercontent.com/30947706/76143160-df8ad500-6096-11ea-9c4d-b8705e038cab.png" width="163" alt="Harvard"/>
-  </a>
-
   <img hspace="5"/>  
   <a href='https://en.kali.tools/all/?tool=2440'>
     <img src = "https://user-images.githubusercontent.com/30947706/76143168-f9c4b300-6096-11ea-97ce-345cddb82945.png" width="120" alt="NUCES"/>
@@ -92,10 +87,9 @@
     <img src = "https://user-images.githubusercontent.com/30947706/76143245-76579180-6097-11ea-993d-98dd6db76c91.png" width="120" alt="LUMS"/>
   </a>
 
-  <a href='https://books.google.com.pk/books?id=Yz7HDwAAQBAJ&pg=PT63&lpg=PT63&dq=ultimate+facebook+scraper&source=bl&ots=a1-xD2wHl_&sig=ACfU3U1znkOE0yamSMGFrP5MmnK1HCkVkw&hl=en&sa=X&ved=2ahUKEwiDy-2PiYjoAhUSA2MBHfmXCFMQ6AEwDnoECBQQAQ#v=onepage&q=ultimate%20facebook%20scraper&f=false'>
-    <img src = "https://user-images.githubusercontent.com/30947706/76143260-a56e0300-6097-11ea-94d0-aab0ae8a4f3f.png" width="165" alt="UCLA"/>
-  </a>
 </p>
+
+<hr>
 
 <h2 align="center">2nd Spot in Top Trending Python Repositories on GitHub </h2>
 <p align="center">
