@@ -33,10 +33,6 @@
 <h2 align="center">Featured by Top Security Blogs and OSINT Researchers</h2>
 
 <p align="center">
-  <a href='https://books.google.com.pk/books?id=Yz7HDwAAQBAJ&pg=PT63&lpg=PT63&dq=ultimate+facebook+scraper&source=bl&ots=a1-xD2wHl_&sig=ACfU3U1znkOE0yamSMGFrP5MmnK1HCkVkw&hl=en&sa=X&ved=2ahUKEwiDy-2PiYjoAhUSA2MBHfmXCFMQ6AEwDnoECBQQAQ#v=onepage&q=ultimate%20facebook%20scraper&f=false'>
-    <img src = "https://books.google.com.pk/books/content?id=Yz7HDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72ixUlGuGhPIsDSzz0_Ml7C-1dEg40vzF_VbDjxd64yboDi38DPBAzWZzgAmwJCR5ywajT9xaxdgrM4XPK10R8oF5CGAwT2Swn6rg7cO0J4oPadpaz8mMDLAWpWxssYAFuwY37Q" width="165" alt="UCLA"/>
-  </a>
-  <br>
 
 
 
@@ -96,6 +92,12 @@
   <a href='https://onehack.us/t/ultimate-facebook-scraper-a-bot-which-scrapes-almost-everything-about-a-facebook/63803'>
     <img src = "https://onehack.us/uploads/default/original/3X/3/9/399113b18669b47093986b96747fb383ff197dce.png" width="120" alt="LUMS"/>
   </a>
+
+  <a href='https://books.google.com.pk/books?id=Yz7HDwAAQBAJ&pg=PT63&lpg=PT63&dq=ultimate+facebook+scraper&source=bl&ots=a1-xD2wHl_&sig=ACfU3U1znkOE0yamSMGFrP5MmnK1HCkVkw&hl=en&sa=X&ved=2ahUKEwiDy-2PiYjoAhUSA2MBHfmXCFMQ6AEwDnoECBQQAQ#v=onepage&q=ultimate%20facebook%20scraper&f=false'>
+    <img src = "https://books.google.com.pk/books/content?id=Yz7HDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72ixUlGuGhPIsDSzz0_Ml7C-1dEg40vzF_VbDjxd64yboDi38DPBAzWZzgAmwJCR5ywajT9xaxdgrM4XPK10R8oF5CGAwT2Swn6rg7cO0J4oPadpaz8mMDLAWpWxssYAFuwY37Q" width="165" alt="UCLA"/>
+  </a>
+
+
 </p>
 
   
