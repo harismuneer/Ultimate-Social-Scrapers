@@ -36,7 +36,12 @@
 
 <h2 align="center">Featured by Top Security Blogs and OSINT Researchers</h2>
 <p align="center">
-      
+
+  <a href='https://blackarch.org/social.html'>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143207-3b555e00-6097-11ea-9f73-803dc166344a.png" width="120" alt="LUMS"/>
+  </a>
+
+  <img hspace="10"/>
   <a href='https://hakin9.org/ultimate-facebook-scraper-ufs/'>
     <img src = "https://user-images.githubusercontent.com/30947706/76143228-5a53f000-6097-11ea-8a19-9f2eb771ba4b.png" width="120" alt="Hakin9"/>
   </a>
@@ -51,11 +56,10 @@
     <img src = "https://user-images.githubusercontent.com/30947706/76143154-c84be780-6096-11ea-932f-345691310628.png" width="150" alt="Security Online"/>
   </a>
 
-  <img hspace="10"/>
-  <a href='https://blackarch.org/social.html'>
-    <img src = "https://user-images.githubusercontent.com/30947706/76143207-3b555e00-6097-11ea-9f73-803dc166344a.png" width="120" alt="LUMS"/>
+<img hspace="10"/>
+  <a href='https://medium.com/week-in-osint/week-in-osint-48-59e992554489'>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143218-4ad4a700-6097-11ea-846e-471fdb2eca3a.png" width="190" alt="OSINT"/>
   </a>
-
   <br>
 
   <a href='https://www.kitploit.com/2019/11/ultimate-facebook-scraper-bot-which.html'>
@@ -77,16 +81,7 @@
     <img src = "https://user-images.githubusercontent.com/30947706/76143203-2d074200-6097-11ea-8d0f-ff0120bddcb7.png" width="120" alt="LUMS"/>
   </a>
 
-
-
-
-  <img hspace="20"/>
-  <a href='https://medium.com/week-in-osint/week-in-osint-48-59e992554489'>
-    <img src = "https://user-images.githubusercontent.com/30947706/76143218-4ad4a700-6097-11ea-846e-471fdb2eca3a.png" width="120" alt="LUMS"/>
-  </a>
-
-
-  <img hspace="20"/>
+  <img hspace="5"/>
   <a href='https://onehack.us/t/ultimate-facebook-scraper-a-bot-which-scrapes-almost-everything-about-a-facebook/63803'>
     <img src = "https://user-images.githubusercontent.com/30947706/76143245-76579180-6097-11ea-993d-98dd6db76c91.png" width="120" alt="LUMS"/>
   </a>
