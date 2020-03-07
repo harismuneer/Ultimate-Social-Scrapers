@@ -33,6 +33,13 @@
 <h2 align="center">Featured by Top Security Blogs and OSINT Researchers</h2>
 
 <p align="center">
+  <a href='https://books.google.com.pk/books?id=Yz7HDwAAQBAJ&pg=PT63&lpg=PT63&dq=ultimate+facebook+scraper&source=bl&ots=a1-xD2wHl_&sig=ACfU3U1znkOE0yamSMGFrP5MmnK1HCkVkw&hl=en&sa=X&ved=2ahUKEwiDy-2PiYjoAhUSA2MBHfmXCFMQ6AEwDnoECBQQAQ#v=onepage&q=ultimate%20facebook%20scraper&f=false'>
+    <img src = "https://books.google.com.pk/books/content?id=Yz7HDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72ixUlGuGhPIsDSzz0_Ml7C-1dEg40vzF_VbDjxd64yboDi38DPBAzWZzgAmwJCR5ywajT9xaxdgrM4XPK10R8oF5CGAwT2Swn6rg7cO0J4oPadpaz8mMDLAWpWxssYAFuwY37Q" width="165" alt="UCLA"/>
+  </a>
+  <br>
+
+
+
   <a href='https://securityonline.info/ultimate-facebook-scraper/'>
     <img src = "https://scontent.flhe7-1.fna.fbcdn.net/v/t1.0-9/78991615_109140520570266_4767574549380202496_n.jpg?_nc_cat=103&_nc_sid=85a577&_nc_ohc=pEYOWTFlno0AX_ErsOl&_nc_ht=scontent.flhe7-1.fna&oh=2475c2e81dc3ee05daae3790c2d3bcae&oe=5E986975" width="150" alt="Security Online"/>
   </a>
@@ -48,9 +55,6 @@
     <img src = "https://tools.kali.org/wp-content/uploads/2015/12/tools-logo-1.png" width="120" alt="NUCES"/>
   </a><br>
       
-  <a href='https://books.google.com.pk/books?id=Yz7HDwAAQBAJ&pg=PT63&lpg=PT63&dq=ultimate+facebook+scraper&source=bl&ots=a1-xD2wHl_&sig=ACfU3U1znkOE0yamSMGFrP5MmnK1HCkVkw&hl=en&sa=X&ved=2ahUKEwiDy-2PiYjoAhUSA2MBHfmXCFMQ6AEwDnoECBQQAQ#v=onepage&q=ultimate%20facebook%20scraper&f=false'>
-    <img src = "https://books.google.com.pk/books/content?id=Yz7HDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72ixUlGuGhPIsDSzz0_Ml7C-1dEg40vzF_VbDjxd64yboDi38DPBAzWZzgAmwJCR5ywajT9xaxdgrM4XPK10R8oF5CGAwT2Swn6rg7cO0J4oPadpaz8mMDLAWpWxssYAFuwY37Q" width="165" alt="UCLA"/>
-  </a>
 
   <img hspace="20" vpsace="5"/>
   <a href='https://www.kitploit.com/2019/11/ultimate-facebook-scraper-bot-which.html'>
