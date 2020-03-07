@@ -45,18 +45,16 @@
   </a>
 
   <img hspace="5"/>
-
   <a href='https://geeks3d.com/newz/item?id=28'>
     <img src = "https://pbs.twimg.com/profile_images/378800000556981931/76b41124f3b545b32f54b1edac6f1ac5_400x400.jpeg" width="163" alt="Harvard"/>
   </a>
 
-  <img hspace="10"/>  
+  <img hspace="5"/>  
   <a href='https://en.kali.tools/all/?tool=2440'>
     <img src = "https://tools.kali.org/wp-content/uploads/2015/12/tools-logo-1.png" width="120" alt="NUCES"/>
-  </a><br>
+  </a>
       
-
-  <img hspace="20" vpsace="5"/>
+  <img hspace="5"/>
   <a href='https://www.kitploit.com/2019/11/ultimate-facebook-scraper-bot-which.html'>
     <img src = "https://2.bp.blogspot.com/-IQKG1FPPWQo/VT7jrl3D6KI/AAAAAAAAD70/IV92DTUDwAk/s1600/kitploit-Logo-2015-04-27%2B-%2B%25283%2529.png" width="200" alt="ACM"/>
   </a>
