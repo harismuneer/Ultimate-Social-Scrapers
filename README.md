@@ -30,40 +30,75 @@
 
 <hr>
 
-<h2 align="center">Contributors</h2>
-<p align="center">
-  Developers from following organizations have so far joined the quest and contributed to UFS.
-</p>
+<h2 align="center">Featured on Top Security Blogs</h2>
 
 <p align="center">
-  <a href='#'>
-    <img src = "https://www.adbirds.global/wp-content/uploads/2016/07/Microsoft-Logo-square.png" width="150" alt="Microsoft"/>
+  <a href='https://securityonline.info/ultimate-facebook-scraper/'>
+    <img src = "https://scontent.flhe7-1.fna.fbcdn.net/v/t1.0-9/78991615_109140520570266_4767574549380202496_n.jpg?_nc_cat=103&_nc_sid=85a577&_nc_ohc=pEYOWTFlno0AX_ErsOl&_nc_ht=scontent.flhe7-1.fna&oh=2475c2e81dc3ee05daae3790c2d3bcae&oe=5E986975" width="150" alt="Security Online"/>
   </a>
+
   <img hspace="5"/>
-  <a href='#'>
+  
+  <a href='https://miloserdov.org/?p=3896'>
     <img src = "http://www.hultprize.org/wp-content/uploads/2017/04/MIT-Logo.png" width="165" alt="MIT"/>
   </a>
-  <a href='#'>
-    <img src = "https://www.globalfinancialdata.com/wp-content/uploads/client-logos/Harvard-University-logo-.jpg" width="163" alt="Harvard"/>
+
+  <a href='https://geeks3d.com/newz/item?id=28'>
+    <img src = "https://pbs.twimg.com/profile_images/378800000556981931/76b41124f3b545b32f54b1edac6f1ac5_400x400.jpeg" width="163" alt="Harvard"/>
   </a>
+
   <img hspace="10"/>  
-  <a href='#'>
-    <img src = "https://upload.wikimedia.org/wikipedia/en/e/e4/National_University_of_Computer_and_Emerging_Sciences_logo.png" width="120" alt="NUCES"/>
-  </a><br>      
-  <a href='#'>
-    <img src = "https://static.wixstatic.com/media/e70787_c0c48d456b0d421b9c0d45478f9f422d~mv2.gif" width="165" alt="UCLA"/>
+  <a href='https://en.kali.tools/all/?tool=2440'>
+    <img src = "https://tools.kali.org/wp-content/uploads/2015/12/tools-logo-1.png" width="120" alt="NUCES"/>
+  </a><br>
+      
+  <a href='https://books.google.com.pk/books?id=Yz7HDwAAQBAJ&pg=PT63&lpg=PT63&dq=ultimate+facebook+scraper&source=bl&ots=a1-xD2wHl_&sig=ACfU3U1znkOE0yamSMGFrP5MmnK1HCkVkw&hl=en&sa=X&ved=2ahUKEwiDy-2PiYjoAhUSA2MBHfmXCFMQ6AEwDnoECBQQAQ#v=onepage&q=ultimate%20facebook%20scraper&f=false'>
+    <img src = "https://books.google.com.pk/books/content?id=Yz7HDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72ixUlGuGhPIsDSzz0_Ml7C-1dEg40vzF_VbDjxd64yboDi38DPBAzWZzgAmwJCR5ywajT9xaxdgrM4XPK10R8oF5CGAwT2Swn6rg7cO0J4oPadpaz8mMDLAWpWxssYAFuwY37Q" width="165" alt="UCLA"/>
   </a>
+
   <img hspace="20" vpsace="5"/>
-  <a href='#'>
-    <img src = "https://nuces.acm.org/wp-content/uploads/2020/01/ACM-logo-1.png" width="200" alt="ACM"/>
+  <a href='https://www.kitploit.com/2019/11/ultimate-facebook-scraper-bot-which.html'>
+    <img src = "https://2.bp.blogspot.com/-IQKG1FPPWQo/VT7jrl3D6KI/AAAAAAAAD70/IV92DTUDwAk/s1600/kitploit-Logo-2015-04-27%2B-%2B%25283%2529.png" width="200" alt="ACM"/>
   </a>
+
   <img hspace="20"/>
-  <a href='#'>
-    <img src = "https://i2.wp.com/www.opfblog.com/wp-content/uploads/2014/10/Lums-Logo.jpg?zoom=1.3499999046325684&fit=500%2C409&ssl=1" width="120" alt="LUMS"/>
+  <a href='https://www.journaliststoolbox.org/2020/03/04/twitter_resources/'>
+    <img src = "https://www.journaliststoolbox.org/wp-content/themes/spj-blogs-2014/jtb-headline-2017.png" width="120" alt="LUMS"/>
   </a>
+
+
+  <img hspace="20"/>
+  <a href='https://anonyviet.com/huong-dan-thu-thap-thong-tin-facebook-bang-ultimate-facebook-scraper/'>
+    <img src = "https://anonyviet.com/wp-content/uploads/2018/09/logo272x90.png" width="120" alt="LUMS"/>
+  </a>
+
+
+  <img hspace="20"/>
+  <a href='https://medium.com/week-in-osint/week-in-osint-48-59e992554489'>
+    <img src = "https://miro.medium.com/max/480/1*tx1oUUDsCe8IewS6D5WABQ.png" width="120" alt="LUMS"/>
+  </a>
+
+  <img hspace="20"/>
+  <a href='https://blackarch.org/social.html'>
+    <img src = "https://blackarch.org/images/logo/ba-logo.png" width="120" alt="LUMS"/>
+  </a>
+
+
+  <img hspace="20"/>
+  <a href='https://medium.com/week-in-osint/week-in-osint-48-59e992554489'>
+    <img src = "https://osint.team/assets/logo.png" width="120" alt="LUMS"/>
+  </a>
+
+  <img hspace="20"/>
+  <a href='https://hakin9.org/ultimate-facebook-scraper-ufs/'>
+    <img src = "https://pbs.twimg.com/profile_images/492312605134815232/JAYjfRk-_400x400.jpeg" width="120" alt="LUMS"/>
+  </a>
+
 </p>
+
   
 <hr>
+
 
 ## Features
 
