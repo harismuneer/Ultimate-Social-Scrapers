@@ -11,6 +11,10 @@
 </p>
 
 <p align="center">
+  <a href="https://awesomeopensource.com/project/harismuneer/Ultimate-Facebook-Scraper">
+    <img src="https://user-images.githubusercontent.com/30947706/76143280-07c70380-6098-11ea-86b1-79fbce03888c.png" width="250" />
+  </a>  
+  <br>
   <a href="https://www.codacy.com/manual/harismuneer/Ultimate-Facebook-Scraper?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=harismuneer/Ultimate-Facebook-Scraper&amp;utm_campaign=Badge_Grade">
     <img src="https://api.codacy.com/project/badge/Grade/7f41790c3c3a4fd29293777c676c8617" />
   </a>
@@ -31,77 +35,77 @@
 <hr>
 
 <h2 align="center">Featured by Top Security Blogs and OSINT Researchers</h2>
-
 <p align="center">
-
-
-
   <a href='https://securityonline.info/ultimate-facebook-scraper/'>
-    <img src = "https://scontent.flhe7-1.fna.fbcdn.net/v/t1.0-9/78991615_109140520570266_4767574549380202496_n.jpg?_nc_cat=103&_nc_sid=85a577&_nc_ohc=pEYOWTFlno0AX_ErsOl&_nc_ht=scontent.flhe7-1.fna&oh=2475c2e81dc3ee05daae3790c2d3bcae&oe=5E986975" width="150" alt="Security Online"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143154-c84be780-6096-11ea-932f-345691310628.png" width="150" alt="Security Online"/>
   </a>
 
   <img hspace="5"/>
   <a href='https://geeks3d.com/newz/item?id=28'>
-    <img src = "https://pbs.twimg.com/profile_images/378800000556981931/76b41124f3b545b32f54b1edac6f1ac5_400x400.jpeg" width="163" alt="Harvard"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143160-df8ad500-6096-11ea-9c4d-b8705e038cab.png" width="163" alt="Harvard"/>
   </a>
 
   <img hspace="5"/>  
   <a href='https://en.kali.tools/all/?tool=2440'>
-    <img src = "https://tools.kali.org/wp-content/uploads/2015/12/tools-logo-1.png" width="120" alt="NUCES"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143168-f9c4b300-6096-11ea-97ce-345cddb82945.png" width="120" alt="NUCES"/>
   </a>
       
   <img hspace="5"/>
   <a href='https://www.kitploit.com/2019/11/ultimate-facebook-scraper-bot-which.html'>
-    <img src = "https://2.bp.blogspot.com/-IQKG1FPPWQo/VT7jrl3D6KI/AAAAAAAAD70/IV92DTUDwAk/s1600/kitploit-Logo-2015-04-27%2B-%2B%25283%2529.png" width="200" alt="ACM"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143178-0a752900-6097-11ea-8f15-8c8545bb2ff6.png" width="200" alt="ACM"/>
   </a>
 
-  <img hspace="20"/>
+  <img hspace="5"/>
   <a href='https://www.journaliststoolbox.org/2020/03/04/twitter_resources/'>
-    <img src = "https://www.journaliststoolbox.org/wp-content/themes/spj-blogs-2014/jtb-headline-2017.png" width="120" alt="LUMS"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143186-19f47200-6097-11ea-91d6-3400fa3c5c32.png" width="120" alt="LUMS"/>
   </a>
 
-
-  <img hspace="20"/>
+  <img hspace="5"/>
   <a href='https://anonyviet.com/huong-dan-thu-thap-thong-tin-facebook-bang-ultimate-facebook-scraper/'>
-    <img src = "https://anonyviet.com/wp-content/uploads/2018/09/logo272x90.png" width="120" alt="LUMS"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143203-2d074200-6097-11ea-8d0f-ff0120bddcb7.png" width="120" alt="LUMS"/>
   </a>
 
 
   <img hspace="20"/>
   <a href='https://blackarch.org/social.html'>
-    <img src = "https://blackarch.org/images/logo/ba-logo.png" width="120" alt="LUMS"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143207-3b555e00-6097-11ea-9f73-803dc166344a.png" width="120" alt="LUMS"/>
   </a>
 
 
   <img hspace="20"/>
   <a href='https://medium.com/week-in-osint/week-in-osint-48-59e992554489'>
-    <img src = "https://osint.team/assets/logo.png" width="120" alt="LUMS"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143218-4ad4a700-6097-11ea-846e-471fdb2eca3a.png" width="120" alt="LUMS"/>
   </a>
 
   <img hspace="20"/>
   <a href='https://hakin9.org/ultimate-facebook-scraper-ufs/'>
-    <img src = "https://pbs.twimg.com/profile_images/492312605134815232/JAYjfRk-_400x400.jpeg" width="120" alt="LUMS"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143228-5a53f000-6097-11ea-8a19-9f2eb771ba4b.png" width="120" alt="LUMS"/>
   </a>
 
   <img hspace="20"/>
   <a href='https://kalilinuxtutorials.com/ufs-ultimate-facebook-scraper/'>
-    <img src = "https://pbs.twimg.com/profile_images/852828958722674688/VlGFPLnx_400x400.jpg" width="120" alt="LUMS"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143239-693aa280-6097-11ea-9c27-cfd365a48e55.png" width="120" alt="LUMS"/>
   </a>
 
   <img hspace="20"/>
   <a href='https://onehack.us/t/ultimate-facebook-scraper-a-bot-which-scrapes-almost-everything-about-a-facebook/63803'>
-    <img src = "https://onehack.us/uploads/default/original/3X/3/9/399113b18669b47093986b96747fb383ff197dce.png" width="120" alt="LUMS"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143245-76579180-6097-11ea-993d-98dd6db76c91.png" width="120" alt="LUMS"/>
   </a>
 
   <a href='https://books.google.com.pk/books?id=Yz7HDwAAQBAJ&pg=PT63&lpg=PT63&dq=ultimate+facebook+scraper&source=bl&ots=a1-xD2wHl_&sig=ACfU3U1znkOE0yamSMGFrP5MmnK1HCkVkw&hl=en&sa=X&ved=2ahUKEwiDy-2PiYjoAhUSA2MBHfmXCFMQ6AEwDnoECBQQAQ#v=onepage&q=ultimate%20facebook%20scraper&f=false'>
-    <img src = "https://books.google.com.pk/books/content?id=Yz7HDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72ixUlGuGhPIsDSzz0_Ml7C-1dEg40vzF_VbDjxd64yboDi38DPBAzWZzgAmwJCR5ywajT9xaxdgrM4XPK10R8oF5CGAwT2Swn6rg7cO0J4oPadpaz8mMDLAWpWxssYAFuwY37Q" width="165" alt="UCLA"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143260-a56e0300-6097-11ea-94d0-aab0ae8a4f3f.png" width="165" alt="UCLA"/>
   </a>
-
-
 </p>
 
-  
+<h2 align="center">2nd Spot in Top Trending Python Repositories on GitHub </h2>
+<p align="center">
+  <a href='#'>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143469-7bb5db80-6099-11ea-9f37-520437e0cddd.png" width="500" alt="UCLA"/>
+  </a>
+
+</p>
 <hr>
+
 
 
 ## Features
