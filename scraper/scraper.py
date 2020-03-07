@@ -1,4 +1,5 @@
 import calendar
+import json
 import os
 import platform
 import sys
@@ -34,9 +35,13 @@ total_scrolls = 2500
 current_scrolls = 0
 scroll_time = 8
 
+with open("selectors.json") as json_file:
+    selectors = json.load(json_file)
+
 old_height = 0
-firefox_profile_path = "/home/zeryx/.mozilla/firefox/0n8gmjoz.bot"
-facebook_https_prefix = "https://"
+firefox_profile_path = selectors.get("firefox_profile_path")
+facebook_https_prefix = selectors.get("facebook_https_prefix")
+facebook_link_body = selectors.get("facebook_link_body")
 
 
 CHROMEDRIVER_BINARIES_FOLDER = "bin"
@@ -57,9 +62,13 @@ def get_facebook_images_url(img_links):
             try:
                 while not valid_url_found:
                     WebDriverWait(driver, 30).until(
-                        EC.presence_of_element_located((By.CLASS_NAME, "spotlight"))
+                        EC.presence_of_element_located(
+                            (By.CLASS_NAME, selectors.get("spotlight"))
+                        )
                     )
-                    element = driver.find_element_by_class_name("spotlight")
+                    element = driver.find_element_by_class_name(
+                        selectors.get("spotlight")
+                    )
                     img_url = element.get_attribute("src")
 
                     if img_url.find(".gif") == -1:
@@ -96,7 +105,7 @@ def image_downloader(img_links, folder_name):
                 img_name = (link.split(".jpg")[0]).split("/")[-1] + ".jpg"
 
                 # this is the image id when there's no profile pic
-                if img_name == "10354686_10150004552801856_220367501106153455_n.jpg":
+                if img_name == selectors.get("default_image"):
                     img_name = "None"
                 else:
                     try:
@@ -118,7 +127,7 @@ def image_downloader(img_links, folder_name):
 
 
 def check_height():
-    new_height = driver.execute_script("return document.body.scrollHeight")
+    new_height = driver.execute_script(selectors.get("height_script"))
     return new_height != old_height
 
 
@@ -135,8 +144,8 @@ def scroll():
             if current_scrolls == total_scrolls:
                 return
 
-            old_height = driver.execute_script("return document.body.scrollHeight")
-            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            old_height = driver.execute_script(selectors.get("height_script"))
+            driver.execute_script(selectors.get("scroll_script"))
             WebDriverWait(driver, scroll_time, 0.05).until(
                 lambda driver: check_height()
             )
@@ -157,11 +166,11 @@ def get_status(x):
     status = ""
     try:
         status = x.find_element_by_xpath(
-            ".//div[@class='_5wj-']"
+            selectors.get("status")
         ).text  # use _1xnd for Pages
     except Exception:
         try:
-            status = x.find_element_by_xpath(".//div[@class='userContent']").text
+            status = x.find_element_by_xpath(selectors.get("status_exc")).text
         except Exception:
             pass
     return status
@@ -169,7 +178,7 @@ def get_status(x):
 
 def get_div_links(x, tag):
     try:
-        temp = x.find_element_by_xpath(".//div[@class='_3x-2']")
+        temp = x.find_element_by_xpath(selectors.get("temp"))
         return temp.find_element_by_tag_name(tag)
     except Exception:
         return ""
@@ -183,13 +192,13 @@ def get_title_links(title):
 def get_title(x):
     title = ""
     try:
-        title = x.find_element_by_xpath(".//span[@class='fwb fcg']")
+        title = x.find_element_by_xpath(selectors.get("title"))
     except Exception:
         try:
-            title = x.find_element_by_xpath(".//span[@class='fcg']")
+            title = x.find_element_by_xpath(selectors.get("title_exc1"))
         except Exception:
             try:
-                title = x.find_element_by_xpath(".//span[@class='fwn fcg']")
+                title = x.find_element_by_xpath(selectors.get("title_exc2"))
             except Exception:
                 pass
     finally:
@@ -253,13 +262,13 @@ def extract_and_write_posts(elements, filename):
                 # title
                 title = get_title(x)
                 if title.text.find("shared a memory") != -1:
-                    x = x.find_element_by_xpath(".//div[@class='_1dwg _1w_m']")
+                    x = x.find_element_by_xpath(selectors.get("title_element"))
                     title = get_title(x)
 
                 status = get_status(x)
                 if (
                     title.text
-                    == driver.find_element_by_id("fb-timeline-cover-name").text
+                    == driver.find_element_by_id(selectors.get("title_text")).text
                 ):
                     if status == "":
                         temp = get_div_links(x, "img")
@@ -385,11 +394,14 @@ def save_to_file(name, elements, status, current_section):
                                 driver.get(friend)
                                 WebDriverWait(driver, 30).until(
                                     EC.presence_of_element_located(
-                                        (By.CLASS_NAME, "profilePicThumb")
+                                        (
+                                            By.CLASS_NAME,
+                                            selectors.get("profilePicThumb"),
+                                        )
                                     )
                                 )
                                 l = driver.find_element_by_class_name(
-                                    "profilePicThumb"
+                                    selectors.get("profilePicThumb")
                                 ).get_attribute("href")
                             except Exception:
                                 l = "None"
@@ -439,7 +451,7 @@ def save_to_file(name, elements, status, current_section):
                 if download_uploaded_photos:
                     if photos_small_size:
                         background_img_links = driver.find_elements_by_xpath(
-                            "//*[contains(@id, 'pic_')]/div/i"
+                            selectors.get("background_img_links")
                         )
                         background_img_links = [
                             x.get_attribute("style") for x in background_img_links
@@ -479,7 +491,7 @@ def save_to_file(name, elements, status, current_section):
             try:
                 if results[0][0] == "/":
                     results = [r.pop(0) for r in results]
-                    results = [("https://en-gb.facebook.com/" + x) for x in results]
+                    results = [(selectors.get("fb_link") + x) for x in results]
             except Exception:
                 pass
 
@@ -553,7 +565,7 @@ def scrape_data(user_id, scan_list, section, elements_path, save_status, file_na
 
                 # the bar which contains all the sections
                 sections_bar = driver.find_element_by_xpath(
-                    "//*[@class='_3cz'][1]/div[2]/div[1]"
+                    selectors.get("sections_bar")
                 )
 
                 if sections_bar.text.find(scan_list[i]) == -1:
@@ -582,7 +594,9 @@ def scrape_data(user_id, scan_list, section, elements_path, save_status, file_na
 
 def create_original_link(url):
     if url.find(".php") != -1:
-        original_link = facebook_https_prefix + ".facebook.com/" + ((url.split("="))[1])
+        original_link = (
+            facebook_https_prefix + facebook_link_body + ((url.split("="))[1])
+        )
 
         if original_link.find("&") != -1:
             original_link = original_link.split("&")[0]
@@ -590,13 +604,13 @@ def create_original_link(url):
     elif url.find("fnr_t") != -1:
         original_link = (
             facebook_https_prefix
-            + ".facebook.com/"
+            + facebook_link_body
             + ((url.split("/"))[-1].split("?")[0])
         )
     elif url.find("_tab") != -1:
         original_link = (
             facebook_https_prefix
-            + ".facebook.com/"
+            + facebook_link_body
             + (url.split("?")[0]).split("/")[-1]
         )
     else:
@@ -761,6 +775,7 @@ def scrap_profile(ids):
     # ----------------------------------------------------------------------------
 
     print("\nProcess Completed.")
+    os.chdir("../..")
 
     return
 
@@ -816,7 +831,7 @@ def login(email, password):
             )
             exit(1)
 
-        fb_path = facebook_https_prefix + "facebook.com"
+        fb_path = facebook_https_prefix + facebook_link_body
         driver.get(fb_path)
         driver.maximize_window()
 
@@ -858,7 +873,7 @@ def login(email, password):
 # -----------------------------------------------------------------------------
 
 
-def scrapper(**kwargs):
+def scraper(**kwargs):
     with open("credentials.yaml", "r") as ymlfile:
         cfg = yaml.safe_load(stream=ymlfile)
 
@@ -867,7 +882,7 @@ def scrapper(**kwargs):
         exit(1)
 
     ids = [
-        facebook_https_prefix + "facebook.com/" + line.split("/")[-1]
+        facebook_https_prefix + facebook_link_body + line.split("/")[-1]
         for line in open("input.txt", newline="\n")
     ]
 
@@ -887,4 +902,4 @@ def scrapper(**kwargs):
 
 if __name__ == "__main__":
     # get things rolling
-    scrapper()
+    scraper()

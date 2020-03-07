@@ -1,3 +1,3 @@
-from .scraper import scrapper
+from .scraper import scraper
 
-scrapper()
+scraper()
