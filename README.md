@@ -36,9 +36,9 @@
 
 <h2 align="center">Featured by Top Security Blogs and OSINT Researchers</h2>
 <p align="center">
-
+  <br>
   <a href='https://blackarch.org/social.html'>
-    <img src = "https://user-images.githubusercontent.com/30947706/76143207-3b555e00-6097-11ea-9f73-803dc166344a.png" width="120" alt="LUMS"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143207-3b555e00-6097-11ea-9f73-803dc166344a.png" width="120" alt="BlackArch"/>
   </a>
 
   <img hspace="10"/>
@@ -60,30 +60,31 @@
   <a href='https://medium.com/week-in-osint/week-in-osint-48-59e992554489'>
     <img src = "https://user-images.githubusercontent.com/30947706/76143218-4ad4a700-6097-11ea-846e-471fdb2eca3a.png" width="190" alt="OSINT"/>
   </a>
-  <br>
+  <br><br>
 
   <a href='https://www.kitploit.com/2019/11/ultimate-facebook-scraper-bot-which.html'>
-    <img src = "https://user-images.githubusercontent.com/30947706/76143178-0a752900-6097-11ea-8f15-8c8545bb2ff6.png" width="150" alt="Kitploit"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143178-0a752900-6097-11ea-8f15-8c8545bb2ff6.png" width="170" alt="Kitploit"/>
   </a>
+
 
   <img hspace="5"/>  
   <a href='https://en.kali.tools/all/?tool=2440'>
-    <img src = "https://user-images.githubusercontent.com/30947706/76143168-f9c4b300-6096-11ea-97ce-345cddb82945.png" width="120" alt="Kali Tools"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143168-f9c4b300-6096-11ea-97ce-345cddb82945.png" width="140" alt="Kali Tools"/>
   </a>
 
   <img hspace="5"/>
   <a href='https://www.journaliststoolbox.org/2020/03/04/twitter_resources/'>
-    <img src = "https://user-images.githubusercontent.com/30947706/76143186-19f47200-6097-11ea-91d6-3400fa3c5c32.png" width="120" alt="LUMS"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143186-19f47200-6097-11ea-91d6-3400fa3c5c32.png" width="140" alt="Journalist ToolBox"/>
   </a>
 
   <img hspace="5"/>
   <a href='https://anonyviet.com/huong-dan-thu-thap-thong-tin-facebook-bang-ultimate-facebook-scraper/'>
-    <img src = "https://user-images.githubusercontent.com/30947706/76143203-2d074200-6097-11ea-8d0f-ff0120bddcb7.png" width="120" alt="LUMS"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143203-2d074200-6097-11ea-8d0f-ff0120bddcb7.png" width="140" alt="Anonyviet"/>
   </a>
 
   <img hspace="5"/>
   <a href='https://onehack.us/t/ultimate-facebook-scraper-a-bot-which-scrapes-almost-everything-about-a-facebook/63803'>
-    <img src = "https://user-images.githubusercontent.com/30947706/76143245-76579180-6097-11ea-993d-98dd6db76c91.png" width="120" alt="LUMS"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143245-76579180-6097-11ea-993d-98dd6db76c91.png" width="140" alt="OneHack"/>
   </a>
 
 </p>
