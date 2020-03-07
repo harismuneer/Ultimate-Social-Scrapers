@@ -93,8 +93,10 @@
 
 <h2 align="center">2nd Spot in Top Trending Python Repositories on GitHub </h2>
 <p align="center">
+  UFS trended for 3 consecutive weeks in the Python category :)
+  <br><br>
   <a href='#'>
-    <img src = "https://user-images.githubusercontent.com/30947706/76143469-7bb5db80-6099-11ea-9f37-520437e0cddd.png" width="500" alt="UCLA"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76143469-7bb5db80-6099-11ea-9f37-520437e0cddd.png" width="500" alt="Trending on GitHub"/>
   </a>
 
 </p>
