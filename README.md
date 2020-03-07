@@ -30,7 +30,7 @@
 
 <hr>
 
-<h2 align="center">Featured on Top Security Blogs</h2>
+<h2 align="center">Featured by Top Security Blogs and OSINT Researchers</h2>
 
 <p align="center">
   <a href='https://securityonline.info/ultimate-facebook-scraper/'>
@@ -74,11 +74,6 @@
 
 
   <img hspace="20"/>
-  <a href='https://medium.com/week-in-osint/week-in-osint-48-59e992554489'>
-    <img src = "https://miro.medium.com/max/480/1*tx1oUUDsCe8IewS6D5WABQ.png" width="120" alt="LUMS"/>
-  </a>
-
-  <img hspace="20"/>
   <a href='https://blackarch.org/social.html'>
     <img src = "https://blackarch.org/images/logo/ba-logo.png" width="120" alt="LUMS"/>
   </a>
@@ -94,6 +89,15 @@
     <img src = "https://pbs.twimg.com/profile_images/492312605134815232/JAYjfRk-_400x400.jpeg" width="120" alt="LUMS"/>
   </a>
 
+  <img hspace="20"/>
+  <a href='https://kalilinuxtutorials.com/ufs-ultimate-facebook-scraper/'>
+    <img src = "https://pbs.twimg.com/profile_images/852828958722674688/VlGFPLnx_400x400.jpg" width="120" alt="LUMS"/>
+  </a>
+
+  <img hspace="20"/>
+  <a href='https://onehack.us/t/ultimate-facebook-scraper-a-bot-which-scrapes-almost-everything-about-a-facebook/63803'>
+    <img src = "https://onehack.us/uploads/default/original/3X/3/9/399113b18669b47093986b96747fb383ff197dce.png" width="120" alt="LUMS"/>
+  </a>
 </p>
 
   
