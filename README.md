@@ -116,7 +116,7 @@ A bot which scrapes almost everything about a user's Facebook profile including:
 
 Data is scraped in an organized format to be used for educational/research purposes by researchers. This scraper does not use Facebook's Graph API meaning there are no rate limiting issues.
 
-**This tool is being used by thousands of developers weekly and we are pretty amazed at this response! Thank you guys!🎉**
+**This tool is being used by thousands of developers weekly and we are pretty amazed at this response! Thank you!🎉**
 
 For **citing/referencing** this tool for your research, check the 'Citation' section below.
 
