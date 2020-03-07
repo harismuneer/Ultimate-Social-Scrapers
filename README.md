@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://awesomeopensource.com/project/harismuneer/Ultimate-Facebook-Scraper" target="_blank">
+  <a href="https://awesomeopensource.com/project/harismuneer/Ultimate-Facebook-Scraper" target="_blank" rel="noopener noreferrer">
     <img src="https://user-images.githubusercontent.com/30947706/76143280-07c70380-6098-11ea-86b1-79fbce03888c.png" width="250" />
   </a>  
   <br>
