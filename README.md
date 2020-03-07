@@ -191,7 +191,7 @@ If you liked the repo then kindly support it by giving it a star ⭐!
 
 If you find any bug in the code or have any improvements in mind then feel free to generate a pull request.
 
-> Note: Wee use [Black](https://pypi.org/project/black/) to lint Python files. Please use it in order to have a valid pull request 😉
+> Note: We use [Black](https://pypi.org/project/black/) to lint Python files. Please use it in order to have a valid pull request 😉
 
 ## Issues
 
