@@ -38,10 +38,6 @@
   </a>
 
   <img hspace="5"/>
-  
-  <a href='https://miloserdov.org/?p=3896'>
-    <img src = "http://www.hultprize.org/wp-content/uploads/2017/04/MIT-Logo.png" width="165" alt="MIT"/>
-  </a>
 
   <a href='https://geeks3d.com/newz/item?id=28'>
     <img src = "https://pbs.twimg.com/profile_images/378800000556981931/76b41124f3b545b32f54b1edac6f1ac5_400x400.jpeg" width="163" alt="Harvard"/>
