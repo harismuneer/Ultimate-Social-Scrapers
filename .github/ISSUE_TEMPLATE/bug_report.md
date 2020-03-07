@@ -26,7 +26,7 @@ If applicable, add screenshots or `output logs` to help explain your problem.
 **Desktop (please complete the following information):**
  - OS: [e.g. Linux]
  - Python version [e.g. 3.7.5]
- - Version [e.g. 0a5d89e] (run `git rev-parse --short HEAD` to get it)
+ - Chrome web driver version [e.g 81]
 
 **Additional context**
 Add any other context about the problem here.
