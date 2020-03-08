@@ -104,7 +104,7 @@
 
 ## Updates 🏆
 * UFS got included as an official tool in the [BlackArch Linux distribution](https://blackarch.org/social.html)! 
-* UFS got listed among the [top 20 hacking tools in 2019](https://www.kitploit.com/2019/12/top-20-most-popular-hacking-tools-in.html)
+* UFS got listed among the [top 20 hacking tools in 2019](https://www.kitploit.com/2019/12/top-20-most-popular-hacking-tools-in.html)!
 
 ## Features 🚀
 
@@ -122,7 +122,7 @@ Data is scraped in an organized format to be used for educational/research purpo
 
 For **citing/referencing** this tool for your research, check the 'Citation' section below.
 
-## Note
+## Note 🤝
 
 This tool uses xpaths of **'divs'** to extract data. Since Facebook updates its site frequently, the 'divs' get changed. Consequently, we have to update the divs accordingly to correctly scrape data.
 
@@ -146,7 +146,7 @@ The code is intuitive and easy to understand, so you can update the relevant xpa
 
 ## Usage 🔧
 
-### Installation
+### Installation 💻 
 
 You will need to:
 
@@ -190,7 +190,7 @@ Run the `ultimate-facebook-scraper` command ! 🚀
 
 ---
 
-## Citation
+## Citation 📚
 
 <a href="https://zenodo.org/badge/latestdoi/145763277">
   <img src="https://zenodo.org/badge/145763277.svg" />
@@ -200,7 +200,7 @@ If you use this tool for your research, then kindly cite it. Click the above bad
 
 ---
 
-## Important Message
+## Important Message ⚠️
 
 This tool is for research purposes only. Hence, the developers of this tool won't be responsible for any misuse of data collected using this tool. Used by many researchers and open source intelligence (OSINT) analysts.
 
@@ -208,7 +208,7 @@ This tool will not works if your account was set up with 2FA. You must disable i
 
 ---
 
-## Authors ✨
+## Authors 👋
 
 You can get in touch with us on our LinkedIn Profiles:
 
@@ -226,7 +226,7 @@ You can also follow my GitHub Profile to stay updated about my latest projects: 
 
 If you liked the repo then please support it by giving it a star ⭐!
 
-## Contributions Welcome
+## Contributions Welcome ✨
 
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 
@@ -234,7 +234,7 @@ If you find any bug in the code or have any improvements in mind then feel free 
 
 > Note: We use [Black](https://pypi.org/project/black/) to lint Python files. Please use it in order to have a valid pull request 😉
 
-## Issues
+## Issues 🔨
 
 [![GitHub Issues](https://img.shields.io/github/issues/harismuneer/Ultimate-Facebook-Scraper.svg?style=flat&label=Issues&maxAge=2592000)](https://www.github.com/harismuneer/Ultimate-Facebook-Scraper/issues)
 
