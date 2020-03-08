@@ -102,7 +102,7 @@
 </p>
 <hr>
 
-## Updates 🏆
+## News Updates 🏆
 * UFS got included as an official tool in the [BlackArch Linux distribution](https://blackarch.org/social.html)! 
 * UFS got listed among the [top 20 hacking tools in 2019](https://www.kitploit.com/2019/12/top-20-most-popular-hacking-tools-in.html)!
 
