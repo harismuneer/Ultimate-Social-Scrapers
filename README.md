@@ -102,9 +102,11 @@
 </p>
 <hr>
 
+## Updates 🏆
+* UFS got included as an official tool in the [BlackArch Linux distribution](https://blackarch.org/social.html)! 
+* UFS got listed among the [top 20 hacking tools in 2019](https://www.kitploit.com/2019/12/top-20-most-popular-hacking-tools-in.html)
 
-
-## Features
+## Features 🚀
 
 A bot which scrapes almost everything about a user's Facebook profile including:
 
@@ -142,7 +144,7 @@ The code is intuitive and easy to understand, so you can update the relevant xpa
 
 ---
 
-## Usage
+## Usage 🔧
 
 ### Installation
 
@@ -206,7 +208,7 @@ This tool will not works if your account was set up with 2FA. You must disable i
 
 ---
 
-## Authors
+## Authors ✨
 
 You can get in touch with us on our LinkedIn Profiles:
 
@@ -238,7 +240,7 @@ If you find any bug in the code or have any improvements in mind then feel free 
 
 If you face any issue, you can create a new issue in the Issues Tab and I will be glad to help you out.
 
-## License
+## License 📄
 
 [![MIT](https://img.shields.io/cocoapods/l/AFNetworking.svg?style=style&label=License&maxAge=2592000)](LICENSE)
 
