@@ -38,7 +38,7 @@
 <p align="center">
   <br>
   <a href='https://blackarch.org/social.html'>
-    <img src = "https://user-images.githubusercontent.com/30947706/76143207-3b555e00-6097-11ea-9f73-803dc166344a.png" width="120" alt="BlackArch"/>
+    <img src = "https://user-images.githubusercontent.com/30947706/76163714-5218b500-616a-11ea-81bd-f4d6580416b2.png" width="220" alt="BlackArch"/>
   </a>
 
   <img hspace="10"/>
