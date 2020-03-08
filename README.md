@@ -226,6 +226,9 @@ You can also follow my GitHub Profile to stay updated about my latest projects: 
 
 If you liked the repo then please support it by giving it a star ⭐!
 
+## For Future 🔮
+Shoutout to geeks willing to contribute to this project. Please have a look at the [kanban board](https://github.com/harismuneer/Ultimate-Facebook-Scraper/projects/1) for a list of things to be done.
+
 ## Contributions Welcome ✨
 
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
