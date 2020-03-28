@@ -27,7 +27,7 @@
   <a href="https://www.github.com/harismuneer/Ultimate-Facebook-Scraper/fork">
     <img src="https://img.shields.io/github/forks/harismuneer/Ultimate-Facebook-Scraper.svg?style=social&label=Fork&maxAge=2592000" />
   </a>
-  <a href="#">
+  <a href="#">  
     <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat&label=Contributions&colorA=red&colorB=black" />
   </a>
 </p>
@@ -176,17 +176,28 @@ The tool uses latest version of [Chrome Web Driver](http://chromedriver.chromium
 
 Make sure the link only contains the username or id number at the end and not any other stuff. Make sure its in the format mentioned above.
 
-> Note: There are two modes to download Friends Profile Pics and the user's Photos: Large Size and Small Size. You can change the following variables in [`scraper/scraper.py`](scraper/scraper.py#L30). By default they are set to Small Sized Pics because its really quick while Large Size Mode takes time depending on the number of pictures to download
+Run the `ultimate-facebook-scraper` command ! 🚀
 
 ```python
-# whether to download the full image or its thumbnail (small size)
-# if small size is True then it will be very quick else if its False then it will open each photo to download it
-# and it will take much more time
-friends_small_size = True
-photos_small_size = True
+$ python scraper/scraper.py
 ```
 
-Run the `ultimate-facebook-scraper` command ! 🚀
+> Note: There are two modes to download Friends Profile Pics and the user's Photos: Large Size and Small Size. By default they are set to Small Sized Pics because its really quick while Large Size Mode takes time depending on the number of pictures to download.
+
+You can personalize your scrapping needs using the command line arguments:
+
+```python
+$ python scraper/scraper.py \
+    --uploaded_photos True \
+    --friends_photos True \
+    --friends_small_size True \
+    --photos_small_size True \
+    --total_scrolls 2500 \
+    --scroll_time 8
+```
+
+Note that those are the default values so no need to write them down if you're just testing or are okay with them.
+
 
 ---
 
