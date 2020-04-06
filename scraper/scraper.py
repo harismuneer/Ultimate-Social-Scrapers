@@ -14,6 +14,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 def get_facebook_images_url(img_links):
@@ -118,13 +119,13 @@ def extract_and_write_posts(elements, filename):
 
                 status = utils.get_status(x, selectors)
                 if (
-                    title.text
-                    == driver.find_element_by_id(selectors.get("title_text")).text
+                        title.text
+                        == driver.find_element_by_id(selectors.get("title_text")).text
                 ):
                     if status == "":
                         temp = utils.get_div_links(x, "img", selectors)
                         if (
-                            temp == ""
+                                temp == ""
                         ):  # no image tag which means . it is not a life event
                             link = utils.get_div_links(x, "a", selectors).get_attribute(
                                 "href"
@@ -156,13 +157,13 @@ def extract_and_write_posts(elements, filename):
                         status = utils.get_div_links(x, "a", selectors).text
 
                 elif (
-                    title.text.find(" added ") != -1 and title.text.find("photo") != -1
+                        title.text.find(" added ") != -1 and title.text.find("photo") != -1
                 ):
                     type = "added photo"
                     link = utils.get_div_links(x, "a", selectors).get_attribute("href")
 
                 elif (
-                    title.text.find(" added ") != -1 and title.text.find("video") != -1
+                        title.text.find(" added ") != -1 and title.text.find("video") != -1
                 ):
                     type = "added video"
                     link = utils.get_div_links(x, "a", selectors).get_attribute("href")
@@ -177,16 +178,16 @@ def extract_and_write_posts(elements, filename):
                 title = title.replace("\n", " ")
 
                 line = (
-                    str(time)
-                    + " || "
-                    + str(type)
-                    + " || "
-                    + str(title)
-                    + " || "
-                    + str(status)
-                    + " || "
-                    + str(link)
-                    + "\n"
+                        str(time)
+                        + " || "
+                        + str(type)
+                        + " || "
+                        + str(title)
+                        + " || "
+                        + str(status)
+                        + " || "
+                        + str(link)
+                        + "\n"
                 )
 
                 try:
@@ -404,7 +405,6 @@ def save_to_file(name, elements, status, current_section):
 
 
 def scrape_data(user_id, scan_list, section, elements_path, save_status, file_names):
-
     """Given some parameters, this function can scrap friends/photos/videos/about/posts(statuses) of a profile"""
     page = []
 
@@ -418,7 +418,7 @@ def scrape_data(user_id, scan_list, section, elements_path, save_status, file_na
             driver.get(page[i])
 
             if (
-                (save_status == 0) or (save_status == 1) or (save_status == 2)
+                    (save_status == 0) or (save_status == 1) or (save_status == 2)
             ):  # Only run this for friends, photos and videos
 
                 # the bar which contains all the sections
@@ -453,7 +453,7 @@ def scrape_data(user_id, scan_list, section, elements_path, save_status, file_na
 def create_original_link(url):
     if url.find(".php") != -1:
         original_link = (
-            facebook_https_prefix + facebook_link_body + ((url.split("="))[1])
+                facebook_https_prefix + facebook_link_body + ((url.split("="))[1])
         )
 
         if original_link.find("&") != -1:
@@ -461,15 +461,15 @@ def create_original_link(url):
 
     elif url.find("fnr_t") != -1:
         original_link = (
-            facebook_https_prefix
-            + facebook_link_body
-            + ((url.split("/"))[-1].split("?")[0])
+                facebook_https_prefix
+                + facebook_link_body
+                + ((url.split("/"))[-1].split("?")[0])
         )
     elif url.find("_tab") != -1:
         original_link = (
-            facebook_https_prefix
-            + facebook_link_body
-            + (url.split("?")[0]).split("/")[-1]
+                facebook_https_prefix
+                + facebook_link_body
+                + (url.split("?")[0]).split("/")[-1]
         )
     else:
         original_link = url
@@ -555,20 +555,8 @@ def login(email, password):
 
         try:
             platform_ = platform.system().lower()
-            chromedriver_versions = {
-                "linux": os.path.join(
-                    os.getcwd(), CHROMEDRIVER_BINARIES_FOLDER, "chromedriver_linux64",
-                ),
-                "darwin": os.path.join(
-                    os.getcwd(), CHROMEDRIVER_BINARIES_FOLDER, "chromedriver_mac64",
-                ),
-                "windows": os.path.join(
-                    os.getcwd(), CHROMEDRIVER_BINARIES_FOLDER, "chromedriver_win32.exe",
-                ),
-            }
-
             driver = webdriver.Chrome(
-                executable_path=chromedriver_versions[platform_], options=options
+                executable_path=ChromeDriverManager().install(), options=options
             )
         except Exception:
             print(
@@ -649,7 +637,6 @@ def scraper(**kwargs):
 # -------------------------------------------------------------
 
 if __name__ == "__main__":
-
     ap = argparse.ArgumentParser()
     # PLS CHECK IF HELP CAN BE BETTER / LESS AMBIGUOUS
     ap.add_argument(
