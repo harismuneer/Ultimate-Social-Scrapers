@@ -14,6 +14,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 def get_facebook_images_url(img_links):
@@ -404,7 +405,6 @@ def save_to_file(name, elements, status, current_section):
 
 
 def scrape_data(user_id, scan_list, section, elements_path, save_status, file_names):
-
     """Given some parameters, this function can scrap friends/photos/videos/about/posts(statuses) of a profile"""
     page = []
 
@@ -555,20 +555,8 @@ def login(email, password):
 
         try:
             platform_ = platform.system().lower()
-            chromedriver_versions = {
-                "linux": os.path.join(
-                    os.getcwd(), CHROMEDRIVER_BINARIES_FOLDER, "chromedriver_linux64",
-                ),
-                "darwin": os.path.join(
-                    os.getcwd(), CHROMEDRIVER_BINARIES_FOLDER, "chromedriver_mac64",
-                ),
-                "windows": os.path.join(
-                    os.getcwd(), CHROMEDRIVER_BINARIES_FOLDER, "chromedriver_win32.exe",
-                ),
-            }
-
             driver = webdriver.Chrome(
-                executable_path=chromedriver_versions[platform_], options=options
+                executable_path=ChromeDriverManager().install(), options=options
             )
         except Exception:
             print(
@@ -649,7 +637,6 @@ def scraper(**kwargs):
 # -------------------------------------------------------------
 
 if __name__ == "__main__":
-
     ap = argparse.ArgumentParser()
     # PLS CHECK IF HELP CAN BE BETTER / LESS AMBIGUOUS
     ap.add_argument(

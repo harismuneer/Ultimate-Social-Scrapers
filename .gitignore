@@ -1,4 +1,3 @@
-
 # Created by https://www.gitignore.io/api/python
 # Edit at https://www.gitignore.io/?templates=python
 
@@ -115,6 +114,9 @@ dmypy.json
 
 ## Generated data
 /data
+scraper/credentials.yaml
+scraper/input.txt
+scraper/data/
 
 ## Python venv
 venv
