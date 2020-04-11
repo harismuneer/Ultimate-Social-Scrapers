@@ -1,4 +1,9 @@
 
+scraper/credentials.yaml
+scraper/input.txt
+scraper/params.json
+scraper/selectors.json
+scraper/data/
 # Created by https://www.gitignore.io/api/python
 # Edit at https://www.gitignore.io/?templates=python
 
