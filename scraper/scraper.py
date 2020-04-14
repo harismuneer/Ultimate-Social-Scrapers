@@ -771,21 +771,21 @@ def login(email, password):
                 executable_path=ChromeDriverManager().install(), options=options
             )
 
-            if platform_ in ["linux", "darwin"]:
-                driver = webdriver.Chrome(
-                    executable_path=os.getenv("HOME") + "/bin/chromedriver",
-                    options=opts,
-                )
-            else:
-                # print(
-                #     "If you are currently running windows,"
-                #     "please change to a more secure operating system"
-                #     "immediately!"
-                # )
-                # exit(1)
-                driver = webdriver.Chrome(
-                    executable_path="./chromedriver.exe", options=opts
-                )
+            # if platform_ in ["linux", "darwin"]:
+            #     driver = webdriver.Chrome(
+            #         executable_path=os.getenv("HOME") + "/bin/chromedriver",
+            #         options=opts,
+            #     )
+            # else:
+            #     # print(
+            #     #     "If you are currently running windows,"
+            #     #     "please change to a more secure operating system"
+            #     #     "immediately!"
+            #     # )
+            #     # exit(1)
+            #     driver = webdriver.Chrome(
+            #         executable_path="./chromedriver.exe", options=opts
+            #     )
 
             # chromedriver_versions = {
             #     "linux": os.path.join(
