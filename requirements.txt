@@ -1,2 +1,3 @@
 selenium==3.141.0
 pyyaml
+webdriver_manager

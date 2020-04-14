@@ -1,121 +1,151 @@
 {
-	"Friends": {
-		"scan_list":  [
-			"All", 
-			"Mutual Friends", 
-			"Following", 
-			"Followers", 
-			"Work", 
-			"College", 
-			"Current City", 
-			"Hometown"
-		],
-		"section": [
-            "/friends",
-            "/friends_mutual",
-            "/following",
-            "/followers",
-            "/friends_work",
-            "/friends_college",
-            "/friends_current_city",
-            "/friends_hometown"
-        ],
-		"elements_path": [
-            "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
-            "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
-            "//*[contains(@class,'_3i9')][1]/div/div/ul/li[1]/div[2]/div/div/div/div/div[2]/ul/li/div/a",
-            "//*[contains(@class,'fbProfileBrowserListItem')]/div/a",
-            "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
-            "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
-            "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
-            "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a"
-        ],
-		"file_names": [
-            "All Friends.txt",
-            "Mutual Friends.txt",
-            "Following.txt",
-            "Followers.txt",
-            "Work Friends.txt",
-            "College Friends.txt",
-            "Current City Friends.txt",
-            "Hometown Friends.txt"
-        ],
-		"save_status":0
-	},
-	"Photos": {
-		"scan_list": [
-			"'s Photos",
-			"Photos of"
-		],
-        "section": [
-        	"/photos_all", 
-        	"/photos_of"
-        ],
-        "elements_path": [
-        	"//*[contains(@id, 'pic_')]",
-        	"//*[contains(@id, 'pic_')]"
-        ],
-        "file_names": [
-        	"Uploaded Photos.txt", 
-        	"Tagged Photos.txt"
-        ],
-        "save_status": 1
-    },	
-    "Videos": {
-    	"scan_list": [
-    	 	"'s Videos", 
-    	 	"Videos of"
-    	],
-        "section": [
-        	"/videos_by", 
-        	"/videos_of"
-        ],
-        "elements_path": [
-            "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul",
-            "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul"
-        ],
-        "file_names": [
-        	"Uploaded Videos.txt", 
-        	"Tagged Videos.txt"
-        ],
-        "save_status": 2
-    },
-    "About": {
-    	"scan_list": [],
-        "section": [
-            "/about?section=overview",
-            "/about?section=education",
-            "/about?section=living",
-            "/about?section=contact-info",
-            "/about?section=relationship",
-            "/about?section=bio",
-            "/about?section=year-overviews"
-        ],
-        "elements_path": [
-            "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul/li/div/div[2]/div/div",
-            "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul/li/div/div[2]/div/div",
-            "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul/li/div/div[2]/div/div",
-            "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul/li/div/div[2]/div/div",
-            "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul/li/div/div[2]/div/div",
-            "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul/li/div/div[2]/div/div",
-            "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul/li/div/div[2]/div/div"
-        ],
-        "file_names": [
-            "Overview.txt",
-            "Work and Education.txt",
-            "Places Lived.txt",
-            "Contact and Basic Info.txt",
-            "Family and Relationships.txt",
-            "Details About.txt",
-            "Life Events.txt"
-        ],
-        "save_status": 3
-    },
-    "Posts": {
-    	"scan_list": [],
-        "section": [],
-        "elements_path": ["//div[@class='_5pcb _4b0l _2q8l']"],
-        "file_names": ["Posts.txt"],
-        "save_status": 4
-    }
+  "Friends": {
+    "scan_list": [
+      "All",
+      "Mutual Friends",
+      "Following",
+      "Followers",
+      "Work",
+      "College",
+      "Current City",
+      "Hometown"
+    ],
+    "section": [
+      "/friends",
+      "/friends_mutual",
+      "/following",
+      "/followers",
+      "/friends_work",
+      "/friends_college",
+      "/friends_current_city",
+      "/friends_hometown"
+    ],
+    "elements_path": [
+      "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
+      "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
+      "//*[contains(@class,'_3i9')][1]/div/div/ul/li[1]/div[2]/div/div/div/div/div[2]/ul/li/div/a",
+      "//*[contains(@class,'fbProfileBrowserListItem')]/div/a",
+      "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
+      "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
+      "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
+      "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a"
+    ],
+    "file_names": [
+      "All Friends.txt",
+      "Mutual Friends.txt",
+      "Following.txt",
+      "Followers.txt",
+      "Work Friends.txt",
+      "College Friends.txt",
+      "Current City Friends.txt",
+      "Hometown Friends.txt"
+    ],
+    "save_status": 0
+  },
+  "Members": {
+    "scan_list": [
+      "All"
+    ],
+    "section": [
+      "/members"
+    ],
+    "elements_path": [
+      "//*[contains(@id,'pagelet_group_members')][1]/div[2]/div/ul/li/div/a"
+    ],
+    "file_names": [
+      "All Members.txt"
+    ],
+    "save_status": 0
+  },
+  "Photos": {
+    "scan_list": [
+      "'s Photos",
+      "Photos of"
+    ],
+    "section": [
+      "/photos_all",
+      "/photos_of"
+    ],
+    "elements_path": [
+      "//*[contains(@id, 'pic_')]",
+      "//*[contains(@id, 'pic_')]"
+    ],
+    "file_names": [
+      "Uploaded Photos.txt",
+      "Tagged Photos.txt"
+    ],
+    "save_status": 1
+  },
+  "Videos": {
+    "scan_list": [
+      "'s Videos",
+      "Videos of"
+    ],
+    "section": [
+      "/videos_by",
+      "/videos_of"
+    ],
+    "elements_path": [
+      "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul",
+      "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul"
+    ],
+    "file_names": [
+      "Uploaded Videos.txt",
+      "Tagged Videos.txt"
+    ],
+    "save_status": 2
+  },
+  "About": {
+    "scan_list": [],
+    "section": [
+      "/about?section=overview",
+      "/about?section=education",
+      "/about?section=living",
+      "/about?section=contact-info",
+      "/about?section=relationship",
+      "/about?section=bio",
+      "/about?section=year-overviews"
+    ],
+    "elements_path": [
+      "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul/li/div/div[2]/div/div",
+      "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul/li/div/div[2]/div/div",
+      "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul/li/div/div[2]/div/div",
+      "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul/li/div/div[2]/div/div",
+      "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul/li/div/div[2]/div/div",
+      "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul/li/div/div[2]/div/div",
+      "//*[contains(@id, 'pagelet_timeline_app_collection_')]/ul/li/div/div[2]/div/div"
+    ],
+    "file_names": [
+      "Overview.txt",
+      "Work and Education.txt",
+      "Places Lived.txt",
+      "Contact and Basic Info.txt",
+      "Family and Relationships.txt",
+      "Details About.txt",
+      "Life Events.txt"
+    ],
+    "save_status": 3
+  },
+  "Posts": {
+    "scan_list": [],
+    "section": [],
+    "elements_path": [
+      "//div[@class='_5pcb _4b0l _2q8l']"
+    ],
+    "file_names": [
+      "Posts.txt"
+    ],
+    "save_status": 4
+  },
+  "GroupPosts": {
+    "scan_list": [],
+    "section": [],
+    "elements_path": [
+      "//div[@class='_4-u2 mbm _4mrt _5jmm _5pat _5v3q _7cqq _4-u8']"
+    ],
+    "file_names": [
+      "Posts.txt"
+    ],
+    "save_status": 5
+  }
 }

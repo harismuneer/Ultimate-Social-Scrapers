@@ -115,8 +115,13 @@ dmypy.json
 ## Generated data
 /data
 scraper/credentials.yaml
-scraper/input.txt
 scraper/data/
+scraper/debug.log
+##misplaced configuration files
+scraper/selectors.json
+scraper/params.json
+scraper/input.txt
+
 
 ## Python venv
 venv
