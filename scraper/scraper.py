@@ -48,7 +48,7 @@ photos_small_size = False
 
 total_scrolls = 2500
 current_scrolls = 0
-scroll_time = 8
+scroll_time = 9
 
 old_height = 0
 facebook_https_prefix = "https://"
@@ -56,17 +56,17 @@ facebook_https_prefix = "https://"
 # Values for rate limiting | lower is slower!
 # Last worked at: low=10,high=25,time=600
 # Failed at: low=3,high=10,time=300
-rtqlow = 5
-rtqhigh = 20
-rltime = 900
-rhtime = 1800
+rtqlow = 10
+rtqhigh = 25
+rltime = 600
+rhtime = 900
 
 # Traversal speed is solely controlled by this variable
 # Vales for time sleep in secs
 # Last worked at: min=25,max=40
 # Failed at: min=20, max=40
-tsmin = 30
-tsmax = 60
+tsmin = 25
+tsmax = 45
 
 
 # CHROMEDRIVER_BINARIES_FOLDER = "bin"
