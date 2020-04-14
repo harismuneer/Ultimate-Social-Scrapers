@@ -94,7 +94,7 @@ def image_downloader(img_links, folder_name):
 
 def extract_and_write_posts(elements, filename):
     try:
-        f = open(filename, "w", newline="\r\n")
+        f = open(filename, "w", newline="\r\n", encoding="utf-8")
         f.writelines(
             " TIME || TYPE  || TITLE || STATUS  ||   LINKS(Shared Posts/Shared Links etc) "
             + "\n"
