@@ -391,5 +391,11 @@ node_modules/
 credentials.yaml
 input.txt
 chromedriver*
-scraper/data/
+data
+images
+scraper/input.txt
+scraper/data
+scraper/credentials.yaml
+scraper/chromedriver
+scraper/input.txt-backup
 scraper/scraper-mobile.py
