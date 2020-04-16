@@ -99,7 +99,7 @@ def extract_and_write_posts(elements, filename):
     try:
         f = open(filename, "w", newline="\r\n", encoding="utf-8")
         f.writelines(
-            " TIME || TYPE  || TITLE || STATUS  ||   LINKS(Shared Posts/Shared Links etc) || SEE_MORE_LINK || POST_ID "
+            " TIME || TYPE  || TITLE || STATUS  ||   LINKS(Shared Posts/Shared Links etc) || POST_ID "
             + "\n"
             + "\n"
         )
@@ -240,7 +240,7 @@ def create_post_file(filename):
     """
     f = open(filename, "w", newline="\r\n", encoding="utf-8")
     f.writelines(
-        "TIME || TYPE  || TITLE || STATUS || LINKS(Shared Posts/Shared Links etc) || SEE_MORE_LINK || POST_ID || "
+        "TIME || TYPE  || TITLE || STATUS || LINKS(Shared Posts/Shared Links etc) || POST_ID || "
         "PHOTO || COMMENTS " + "\n"
     )
     return f
@@ -695,9 +695,7 @@ def scrape_group(url):
         print("----------------------------------------")
         print("Scraping {}..".format(item))
 
-        if item == "Posts":
-            scan_list = [None]
-        elif item == "GroupPosts":
+        if item == "GroupPosts":
             scan_list = [None]
         elif item == "About":
             scan_list = [None] * 7
