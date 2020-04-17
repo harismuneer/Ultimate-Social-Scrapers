@@ -115,6 +115,7 @@ A bot which scrapes almost everything about a user's Facebook profile including:
 - videos
 - friends list and their profile photos (including Followers, Following, Work Friends, College Friends etc)
 - and all public posts/statuses available on the user's timeline.
+**NEW NEW NEW** Now you can scrape Facebook group posts.
 
 Data is scraped in an organized format to be used for educational/research purposes by researchers. This scraper does not use Facebook's Graph API meaning there are no rate limiting issues.
 
@@ -167,12 +168,12 @@ $ pip install -e .
 ```
 
 The code is multi-platform and is tested on both Windows and Linux.
-The tool uses latest version of [Chrome Web Driver](http://chromedriver.chromium.org/downloads). I have placed the webdriver along with the code but if that version doesn't work then replace the chrome web driver with the latest one according to your platform and your Google Chrome version.
+Chrome driver is automatically downloaded using the chromedriver_manager package.
 
 ### How to Run
 
 - Fill your Facebook credentials into [`credentials.yaml`](credentials.yaml)
-- Edit the [`input.txt`](input.txt) file and add many profiles links as you want in the following format with each link on a new line:
+- Edit the [`input.txt`](input.txt) file and add profile, groups and individual group posts links as you want in the following format with each link on a new line:
 
 Make sure the link only contains the username or id number at the end and not any other stuff. Make sure its in the format mentioned above.
 
