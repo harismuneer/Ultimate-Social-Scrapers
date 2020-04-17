@@ -1,6 +1,6 @@
 <a href="#">
   <div align="center">
-    <img src="images/ufs_icon.png" width='154'/>
+    <img src="https://user-images.githubusercontent.com/30947706/79588950-17515780-80ee-11ea-8f66-e26da49fa052.png" width='154'/>
   </div>
 </a>
 
@@ -114,8 +114,8 @@ A bot which scrapes almost everything about a user's Facebook profile including:
 - tagged photos
 - videos
 - friends list and their profile photos (including Followers, Following, Work Friends, College Friends etc)
-- and all public posts/statuses available on the user's timeline.
-**NEW NEW NEW** Now you can scrape Facebook group posts.
+- and all public posts/statuses available on the user's timeline
+- **NEW** Now you can scrape Facebook group posts.
 
 Data is scraped in an organized format to be used for educational/research purposes by researchers. This scraper does not use Facebook's Graph API meaning there are no rate limiting issues.
 
@@ -134,13 +134,13 @@ The code is intuitive and easy to understand, so you can update the relevant xpa
 ## Sample
 
 <p align="middle">
-  <img src="images/main.png" width="700"/>
+  <img src="https://user-images.githubusercontent.com/30947706/79589043-34862600-80ee-11ea-9648-5ff86a63e464.png" width="700"/>
  </p>
 
 ## Screenshot
 
 <p align="middle">
-  <img src="images/screenshot.png" width="700"/>
+  <img src="https://user-images.githubusercontent.com/30947706/79589002-259f7380-80ee-11ea-959a-bddf0e2f6629.png" width="700"/>
  </p>
 
 ---
