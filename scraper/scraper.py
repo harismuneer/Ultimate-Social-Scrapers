@@ -4,6 +4,7 @@ import json
 import os
 import platform
 import sys
+
 ## Custom Imports for time banning.
 import time
 import urllib.request
@@ -38,7 +39,7 @@ opts.add_argument(
 
 # whether to download photos or not
 download_uploaded_photos = True
-download_friends_photos = True
+download_friends_photos = False
 
 # whether to download the full image or its thumbnail (small size)
 # if small size is True then it will be very quick else if its false then it will open each photo to download it
@@ -53,11 +54,15 @@ scroll_time = 9
 old_height = 0
 facebook_https_prefix = "https://"
 
+## Reducing these values now that a scroll time period has been added to avoid rate limit
+# Actually did not change them.
+
 # Values for rate limiting | lower is slower!
 # Last worked at: low=10,high=25,time=600
 # Failed at: low=3,high=10,time=300
 rtqlow = 10
 rtqhigh = 25
+# You don't really need to change these at all.
 rltime = 600
 rhtime = 900
 
@@ -65,8 +70,8 @@ rhtime = 900
 # Vales for time sleep in secs
 # Last worked at: min=25,max=40
 # Failed at: min=20, max=40
-tsmin = 25
-tsmax = 45
+tsmin = 15
+tsmax = 30
 
 
 # CHROMEDRIVER_BINARIES_FOLDER = "bin"
@@ -317,13 +322,13 @@ def extract_and_write_posts(elements, filename):
 
                 status = utils.get_status(x, selectors)
                 if (
-                        title.text
-                        == driver.find_element_by_id(selectors.get("title_text")).text
+                    title.text
+                    == driver.find_element_by_id(selectors.get("title_text")).text
                 ):
                     if status == "":
                         temp = utils.get_div_links(x, "img", selectors)
                         if (
-                                temp == ""
+                            temp == ""
                         ):  # no image tag which means . it is not a life event
                             link = utils.get_div_links(x, "a", selectors).get_attribute(
                                 "href"
@@ -655,7 +660,7 @@ def scrape_data(user_id, scan_list, section, elements_path, save_status, file_na
 def create_original_link(url):
     if url.find(".php") != -1:
         original_link = (
-                facebook_https_prefix + facebook_link_body + ((url.split("="))[1])
+            facebook_https_prefix + facebook_link_body + ((url.split("="))[1])
         )
 
         if original_link.find("&") != -1:
@@ -663,15 +668,15 @@ def create_original_link(url):
 
     elif url.find("fnr_t") != -1:
         original_link = (
-                facebook_https_prefix
-                + facebook_link_body
-                + ((url.split("/"))[-1].split("?")[0])
+            facebook_https_prefix
+            + facebook_link_body
+            + ((url.split("/"))[-1].split("?")[0])
         )
     elif url.find("_tab") != -1:
         original_link = (
-                facebook_https_prefix
-                + facebook_link_body
-                + (url.split("?")[0]).split("/")[-1]
+            facebook_https_prefix
+            + facebook_link_body
+            + (url.split("?")[0]).split("/")[-1]
         )
     else:
         original_link = url
@@ -770,40 +775,6 @@ def login(email, password):
             driver = webdriver.Chrome(
                 executable_path=ChromeDriverManager().install(), options=options
             )
-
-            # if platform_ in ["linux", "darwin"]:
-            #     driver = webdriver.Chrome(
-            #         executable_path=os.getenv("HOME") + "/bin/chromedriver",
-            #         options=opts,
-            #     )
-            # else:
-            #     # print(
-            #     #     "If you are currently running windows,"
-            #     #     "please change to a more secure operating system"
-            #     #     "immediately!"
-            #     # )
-            #     # exit(1)
-            #     driver = webdriver.Chrome(
-            #         executable_path="./chromedriver.exe", options=opts
-            #     )
-
-            # chromedriver_versions = {
-            #     "linux": os.path.join(
-            #         os.getcwd(), CHROMEDRIVER_BINARIES_FOLDER, "chromedriver_linux64",
-            #     ),
-            #     "darwin": os.path.join(
-            #         os.getcwd(), CHROMEDRIVER_BINARIES_FOLDER, "chromedriver_mac64",
-            #     ),
-            #     "windows": os.path.join(
-            #         os.getcwd(), CHROMEDRIVER_BINARIES_FOLDER, "chromedriver_win32.exe",
-            #     ),
-            # }
-            #
-            # driver = webdriver.Chrome(
-            #     executable_path=chromedriver_versions[platform_], options=options
-            # )
-
-
 
         except Exception:
             print(
@@ -941,8 +912,8 @@ if __name__ == "__main__":
     current_scrolls = 0
     old_height = 0
 
-    driver = None
-    CHROMEDRIVER_BINARIES_FOLDER = "bin"
+    # driver = None
+    # CHROMEDRIVER_BINARIES_FOLDER = "bin"
 
     with open("selectors.json") as a, open("params.json") as b:
         selectors = json.load(a)
