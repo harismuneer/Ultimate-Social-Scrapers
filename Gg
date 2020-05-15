@@ -1,0 +1,89 @@
+$ docker run hello-world
+
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+ca4f61b1923c: Pull complete
+Digest: sha256:ca0eeb6fb05351dfc8759c20733c91def84cb8007aa89a5bf606bc8b315b9fc7
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+...
+ $ docker run --detach --publish=80:80 --name=webserver nginx
+$ docker container ls
+CONTAINER ID   IMAGE   COMMAND                  CREATED              STATUS              PORTS                         NAMES
+56f433965490   nginx   "nginx -g 'daemon off"   About a minute ago   Up About a minute   0.0.0.0:80->80/tcp, 443/tcp   webserver
+$ docker container ls
+$ docker container stop webserver
+$ docker container ls -a
+$ docker container rm webserver
+$ docker image ls
+$ docker image rm nginx
+$ docker run -it alpine env
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+HOSTNAME=b7edf988b2b5
+TERM=xterm
+HOME=/root
+HTTP_PROXY=http://sans.org:3128
+http_proxy=http://proxy.example.com:3128
+no_proxy=*.local, 169.254/16
+
+> docker version
+
+Client: Docker Engine - Community
+ Version:           19.03.1
+ API version:       1.40
+ Go version:        go1.12.5
+ Git commit:        74b1e89
+ Built:             Thu Jul 25 21:18:17 2019
+ OS/Arch:           darwin/amd64
+ Experimental:      true
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          19.03.1
+  API version:      1.40 (minimum version 1.12)
+  Go version:       go1.12.5
+  Git commit:       74b1e89
+  Built:            Thu Jul 25 21:17:52 2019
+  OS/Arch:          linux/amd64
+  Experimental:     true
+ containerd:
+  Version:          v1.2.6
+  GitCommit:        894b81a4b802e4eb2a91d1ce216b8817763c29fb
+ runc:
+  Version:          1.0.0-rc8
+  GitCommit:        425e105d5a03fabd737a126ad93d62a9eeede87f
+ docker-init:
+  Version:          0.18.0
+  GitCommit:        fec3683
+$ kubectl config get-contexts
+$ kubectl config use-context docker-desktop
+$ sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain ca.crt
+
+$ security add-trusted-cert -d -r trustRoot -k ~/Library/Keychains/login.keychain ca.crt
+
+/Users/<user>/.docker/certs.d/
+└── <MyRegistry>:<Port>
+   ├── ca.crt
+   ├── client.cert
+   └── client.key
+
+/etc/docker/certs.d/        <-- Certificate directory
+└── localhost:5000          <-- Hostname:port
+   ├── client.cert          <-- Client certificate
+   ├── client.key           <-- Client key
+   └── ca.crt               <-- Certificate authority that signed
+                                the registry certificate
+/Users/<user>/.docker/certs.d/
+└── <MyRegistry>:<Port>
+    ├── client.cert
+    └── client.key
+etc=/Applications/Docker.app/Contents/Resources/etc
+ln -s $etc/docker.bash-completion $(brew --prefix)/etc/bash_completion.d/docker
+ln -s $etc/docker-compose.bash-completion $(brew --prefix)/etc/bash_completion.d/docker-compose
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
+etc=/Applications/Docker.app/Contents/Resources/etc
+ln -s $etc/docker.zsh-completion /usr/local/share/zsh/site-functions/_docker
+ln -s $etc/docker-compose.zsh-completion /usr/local/share/zsh/site-functions/_docker-compose
