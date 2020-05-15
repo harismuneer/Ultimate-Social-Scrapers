@@ -1,0 +1,5 @@
+docker stack deploy --compose-file /path/to/docker-compose.yml mystack
+docker stack services mystack
+docker stack deploy --namespace my-app --compose-file /path/to/docker-compose.yml mystack
+DOCKER_STACK_ORCHESTRATOR=swarm docker stack deploy --compose-file /path/to/docker-compose.yml mystack
+docker stack deploy --orchestrator swarm --compose-file /path/to/docker-compose.yml mystack
