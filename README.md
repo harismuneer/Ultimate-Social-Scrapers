@@ -115,7 +115,7 @@ A bot which scrapes almost everything about a user's Facebook profile including:
 - videos
 - friends list and their profile photos (including Followers, Following, Work Friends, College Friends etc)
 - and all public posts/statuses available on the user's timeline
-- **NEW** Now you can scrape Facebook group posts.
+- **NEW:** Now you can scrape Facebook group posts.
 
 Data is scraped in an organized format to be used for educational/research purposes by researchers. This scraper does not use Facebook's Graph API meaning there are no rate limiting issues.
 
@@ -156,15 +156,11 @@ You will need to:
 - Have a Facebook account without 2FA enabled
 
 ```bash
-$ git clone https://github.com/harismuneer/Ultimate-Facebook-Scraper.git
-$ cd Ultimate-Facebook-Scraper
-
-# Set up a virtual env
-$ python3 -m venv venv
-$ source venv/bin/activate
+git clone https://github.com/harismuneer/Ultimate-Facebook-Scraper.git
+cd Ultimate-Facebook-Scraper
 
 # Install Python requirements
-$ pip install -e .
+pip install -e .
 ```
 
 The code is multi-platform and is tested on both Windows and Linux.
