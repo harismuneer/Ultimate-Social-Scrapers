@@ -80,11 +80,6 @@
   </a>
 
   <img hspace="5"/>
-  <a href='https://anonyviet.com/huong-dan-thu-thap-thong-tin-facebook-bang-ultimate-facebook-scraper/'>
-    <img src = "https://user-images.githubusercontent.com/30947706/76143203-2d074200-6097-11ea-8d0f-ff0120bddcb7.png" width="140" alt="Anonyviet"/>
-  </a>
-
-  <img hspace="5"/>
   <a href='https://onehack.us/t/ultimate-facebook-scraper-a-bot-which-scrapes-almost-everything-about-a-facebook/63803'>
     <img src = "https://user-images.githubusercontent.com/30947706/76143245-76579180-6097-11ea-993d-98dd6db76c91.png" width="140" alt="OneHack"/>
   </a>
