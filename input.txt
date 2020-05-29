@@ -1,3 +1,7 @@
 #Lines starting with # and empty lines will be ignored
 https://www.facebook.com/christopher.d.murray.1
+<<<<<<< Updated upstream
 https://www.facebook.com/julia4suree
+=======
+https://www.facebook.com/julia4suree
+>>>>>>> Stashed changes
