@@ -59,9 +59,6 @@
   </a>
 
 <img hspace="10"/>
-  <a href='https://medium.com/week-in-osint/week-in-osint-48-59e992554489'>
-    <img src = "https://user-images.githubusercontent.com/30947706/76143218-4ad4a700-6097-11ea-846e-471fdb2eca3a.png" width="190" alt="OSINT"/>
-  </a>
   <br><br>
 
   <a href='https://www.kitploit.com/2019/11/ultimate-facebook-scraper-bot-which.html'>
