@@ -1,5 +1,5 @@
 {
-  "status": ".//div[@class='_5wj-']",
+  "status": "//div[contains(@class, '_5pbx')]",
   "sections_bar": "//*[@class='_3cz'][1]/div[2]/div[1]",
   "status_exc": ".//div[@class='userContent']",
   "temp": ".//div[@class='_3x-2']",
