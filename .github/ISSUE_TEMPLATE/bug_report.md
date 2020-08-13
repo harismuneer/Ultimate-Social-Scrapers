@@ -14,7 +14,7 @@ A clear and concise description of what the bug is.
 Steps to reproduce the behavior:
 1. Configure '…'
 2. Run '…'
-3. …
+3. test 
 4. See error
 
 **Expected behavior**
