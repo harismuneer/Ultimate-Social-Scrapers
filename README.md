@@ -15,7 +15,9 @@
     <img src="https://user-images.githubusercontent.com/30947706/76143280-07c70380-6098-11ea-86b1-79fbce03888c.png" width="250" />
   </a>  
   <br>
-  <img src="https://media.gettyimages.com/videos/pakistan-flag-video-id1161759219?s=640x640" target="_blank" width="250">
+  <a href="#">
+    <img src="https://media.gettyimages.com/videos/pakistan-flag-video-id1161759219?s=640x640" target="_blank" width="250">
+  </a>
   <br><br>
   <a href="https://www.codacy.com/manual/harismuneer/Ultimate-Facebook-Scraper?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=harismuneer/Ultimate-Facebook-Scraper&amp;utm_campaign=Badge_Grade">
     <img src="https://api.codacy.com/project/badge/Grade/7f41790c3c3a4fd29293777c676c8617" />
