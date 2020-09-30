@@ -2,7 +2,7 @@ from unittest import TestCase
 from scraper import utils
 
 
-class Test(TestCase):
+class Test Set up (TestCase):
     def test_identify_url(self):
         self.assertEqual(
             utils.identify_url("https://www.facebook.com/groups/123456789694/?fref=nf"),
