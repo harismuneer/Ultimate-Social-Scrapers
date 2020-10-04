@@ -179,7 +179,7 @@ python scraper/scraper.py
 
 You can personalize your scrapping needs using the command line arguments:
 
-```python
+```bash
 python scraper/scraper.py \
     --uploaded_photos True \
     --friends_photos True \
@@ -190,6 +190,20 @@ python scraper/scraper.py \
 ```
 
 Note that those are the default values so no need to write them down if you're just testing or are okay with them.
+
+
+## Chromium
+
+Chromium users can add `--chromium True` to run using the Chromium browser.
+
+```bash
+python scraper/scraper.py \
+    --uploaded_photos True \
+    --photos_small_size True \
+    --total_scrolls 2500 \
+    --scroll_time 8 \
+    --chromium True
+```
 
 
 ---

@@ -733,12 +733,20 @@ def login(email, password):
         options.add_argument("--disable-notifications")
         options.add_argument("--disable-infobars")
         options.add_argument("--mute-audio")
-        # options.add_argument("headless")
+        
+        if headless:
+            options.add_argument('--headless')
 
         try:
-            driver = webdriver.Chrome(
-                executable_path=ChromeDriverManager().install(), options=options
-            )
+            if chromium:
+                from selenium.webdriver import Chrome
+                driver = webdriver.Chrome(
+                    options=options
+                )
+            else:
+                driver = webdriver.Chrome(
+                    executable_path=ChromeDriverManager().install(), options=options
+                )
         except Exception:
             print("Error loading chrome webdriver " + sys.exc_info()[0])
             exit(1)
@@ -864,6 +872,16 @@ if __name__ == "__main__":
     ap.add_argument(
         "-st", "--scroll_time", help="How much time should I take to scroll?", default=8
     )
+    ap.add_argument(
+        "--chromium",
+        help="Should I use Chromium instead?",
+        default=False
+    )
+    ap.add_argument(
+        "--headless",
+        help="Should I run in a headless browser?",
+        default=False
+    )
 
     args = vars(ap.parse_args())
     print(args)
@@ -884,6 +902,8 @@ if __name__ == "__main__":
 
     total_scrolls = int(args["total_scrolls"])
     scroll_time = int(args["scroll_time"])
+    chromium = utils.to_bool(args["chromium"])
+    headless = utils.to_bool(args["headless"])
 
     current_scrolls = 0
     old_height = 0
