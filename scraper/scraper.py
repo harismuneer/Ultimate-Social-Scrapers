@@ -7,7 +7,7 @@ import utils
 import argparse
 
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, InvalidSessionIdException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -747,6 +747,12 @@ def login(email, password):
         driver.get(fb_path)
         driver.maximize_window()
 
+        try:
+            # New Facebook design has an annoying cookie banner.
+            driver.find_element_by_css_selector("button[data-cookiebanner=accept_button]").click()
+        except NoSuchElementException:
+            pass
+
         # filling the form
         driver.find_element_by_name("email").send_keys(email)
         driver.find_element_by_name("pass").send_keys(password)
@@ -794,11 +800,12 @@ def scraper(**kwargs):
     if ("password" not in cfg) or ("email" not in cfg):
         print("Your email or password is missing. Kindly write them in credentials.txt")
         exit(1)
-    urls = [
-        facebook_https_prefix + facebook_link_body + get_item_id(line)
-        for line in open("input.txt", newline="\r\n")
-        if not line.lstrip().startswith("#") and not line.strip() == ""
-    ]
+
+    urls = []
+    for line in open("input.txt"):
+        if line.lstrip().startswith("#"):
+            continue
+        urls.append(line.strip())
 
     if len(urls) > 0:
         print("\nStarting Scraping...")
@@ -822,7 +829,10 @@ def scraper(**kwargs):
                 add_group_post_to_file(f, file_name, item_id)
                 f.close()
                 os.chdir("../..")
-        driver.close()
+        try:
+            driver.close()
+        except InvalidSessionIdException as e:
+            print("InvalidSessionIdException while closing driver.")
     else:
         print("Input file is empty.")
 
