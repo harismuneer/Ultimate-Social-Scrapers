@@ -802,8 +802,8 @@ def scraper(**kwargs):
         exit(1)
 
     urls = []
-    for line in open("input.txt"):
-        if line.lstrip().startswith("#"):
+    for line in open("input.txt", newline="\r\n"):
+        if line.lstrip().startswith("#") or line.strip() == "":
             continue
         urls.append(line.strip())
 
