@@ -749,7 +749,9 @@ def login(email, password):
 
         try:
             # New Facebook design has an annoying cookie banner.
-            driver.find_element_by_css_selector("button[data-cookiebanner=accept_button]").click()
+            driver.find_element_by_css_selector(
+                "button[data-cookiebanner=accept_button]"
+            ).click()
         except NoSuchElementException:
             pass
 
