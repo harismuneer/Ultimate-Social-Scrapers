@@ -881,6 +881,8 @@ if __name__ == "__main__":
     )
     ap.add_argument(
         "--headless",
+        nargs='?', 
+        const=True,
         help="Should I run in a headless browser?",
         default=False
     )
