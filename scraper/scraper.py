@@ -874,6 +874,8 @@ if __name__ == "__main__":
     )
     ap.add_argument(
         "--chromium",
+        nargs='?',
+        const=True,
         help="Should I use Chromium instead?",
         default=False
     )
