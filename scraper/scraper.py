@@ -792,7 +792,7 @@ def scraper(**kwargs):
         cfg = yaml.safe_load(stream=ymlfile)
 
     if ("password" not in cfg) or ("email" not in cfg):
-        print("Your email or password is missing. Kindly write them in credentials.txt")
+        print("Your email or password is missing. Kindly write them in credentials.yaml")
         exit(1)
     urls = [
         facebook_https_prefix + facebook_link_body + get_item_id(line)
