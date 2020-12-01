@@ -10,6 +10,18 @@
   Tooling that <b>automates</b> your social media interactions to collect posts, photos, videos, friends, followers and much more on Facebook.
 </p>
 
+<hr>
+<h2>📢IMPORTANT ANNOUNCEMENT -> (NEW UFS VERSION)</h2>
+<p>I received multiple messages to update UFS to support Facebook's new UI update. Therefore, <b>I have decided to spare some time and build the new version of UFS wih some major upgrades!</b> Those awesome people who have benefited from the tool and are interested in the new version should <b>support the development</b> at:</p>
+
+- <a href="https://buy.paddle.com/product/638653">Platinum (99.99$)<a/>
+- <a href="https://buy.paddle.com/product/638651">Gold (49.99$)</a>
+- <a href="https://buy.paddle.com/product/638654">Silver (19.99$)</a>
+  
+The new update is a major rework. So please support me in keeping this tool alive. Thanks!
+<hr>
+
+
 <p align="center">
   <a href="https://awesomeopensource.com/project/harismuneer/Ultimate-Facebook-Scraper" target="_blank" rel="noopener noreferrer">
     <img src="https://user-images.githubusercontent.com/30947706/76143280-07c70380-6098-11ea-86b1-79fbce03888c.png" width="250" />
