@@ -18,7 +18,7 @@
 - <a href="https://buy.paddle.com/product/638651"><b>Gold (49.99$)</b> -> 1 hour of development</a>
 - <a href="https://buy.paddle.com/product/638654"><b>Silver (19.99$)</b> -> 30 minutes of development</a>
   
-The new update is a major rework as the new Facebook UI xpaths aren't constant and therefore its a lot technically challenging now to scrape data. So please support me in keeping this tool alive. Thanks!
+The new update is a major rework as the new Facebook UI xpaths aren't constant and therefore its a big technical challenge now to scrape data. So please support me in keeping this tool alive. Thanks!
 <hr>
 
 
