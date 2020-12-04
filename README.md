@@ -11,15 +11,41 @@
 </p>
 
 <hr>
-<h2>📢IMPORTANT ANNOUNCEMENT -> (NEW UFS VERSION)</h2>
-<p>I received multiple messages to update UFS to support Facebook's new UI update. Therefore, <b>I have decided to spare some time and build the new version of UFS wih some major upgrades!</b> Those awesome people who have benefited from the tool and are interested in the new version should <b>support the development</b> at:</p>
+
+<h2>📢 Important Announcement: UFS 2.0 available (with support for latest Facebook UI)</h2>
+<p>Hi guys! The exclusive version of **UFS 2.0** supports scraping for the latest Facebook UI along with many powerful features, much better organization through CSV (Excel-like) file format, bug fixes, and multiple browser support. You can get exclusive access here: 
+
+#### **[Buy UFS 2.0](https://tinyurl.com/UFS-NEW)** 
+
+Building the new version has been a tough technical challenge and I have spent a considerable amount of time and effort on building it. Therefore, kindly support by purchasing it from the link shared [above.](https://tinyurl.com/UFS-NEW) 
+
+<hr>
+You can also share small donations through these links:
+
 
 - <a href="https://buy.paddle.com/product/638653"><b>Platinum (99.99$)</b> -> 2 hours of development<a/>
 - <a href="https://buy.paddle.com/product/638651"><b>Gold (49.99$)</b> -> 1 hour of development</a>
 - <a href="https://buy.paddle.com/product/638654"><b>Silver (19.99$)</b> -> 30 minutes of development</a>
-  
-The new update is a major rework as the new Facebook UI xpaths aren't constant and therefore its a big technical challenge now to scrape data. So please support me in keeping this tool alive. Thanks!
-<hr>
+
+_If **considerable support is shown through the above donations then I will release the version for the general public** after some time as I want to keep this software open-sourced. So, now is the time for all those folks who benefited from the tool to support its reach for a wider audience :)_
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <p align="center">
