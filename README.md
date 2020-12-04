@@ -20,8 +20,8 @@
 Building the new version has been a tough technical challenge and I have spent a considerable amount of time and effort on building it. Therefore, kindly support by purchasing it from the link shared [above.](https://tinyurl.com/UFS-NEW) 
 
 <hr>
-You can also share small donations through these links:
 
+You can also share small donations through these links:
 
 - <a href="https://buy.paddle.com/product/638653"><b>Platinum (99.99$)</b> -> 2 hours of development<a/>
 - <a href="https://buy.paddle.com/product/638651"><b>Gold (49.99$)</b> -> 1 hour of development</a>
