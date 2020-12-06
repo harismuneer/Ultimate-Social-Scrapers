@@ -175,7 +175,9 @@ def get_time(x):
     try:
         time = x.find_element_by_tag_name("abbr").get_attribute("title")
         time = (
-            str("%02d" % int(time.split(", ")[1].split()[1]),)
+            str(
+                "%02d" % int(time.split(", ")[1].split()[1]),
+            )
             + "-"
             + str(
                 (
