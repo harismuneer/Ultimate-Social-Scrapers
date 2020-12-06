@@ -19,7 +19,8 @@
 
 Building the new version has been a tough technical challenge and I have spent a considerable amount of time and effort on building it. Therefore, kindly support by purchasing it from the link shared [above.](https://tinyurl.com/UFS-NEW) 
 
-**The current state of the repo might not be in working state. So, its recommended that you go for the latest version mentioned above.**
+⚠️ **The current state of the repo might not be in working state. So, its recommended that you go for the latest version mentioned above.** ⚠️
+
 <hr>
 
 You can also share small donations through these links:
@@ -30,22 +31,6 @@ You can also share small donations through these links:
 
 _If **considerable support is shown through the above donations then I will release the version for the general public** after some time as I want to keep this software open-sourced. So, now is the time for all those folks who benefited from the tool to support its reach for a wider audience :)_
 </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
