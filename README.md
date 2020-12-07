@@ -13,7 +13,7 @@
 <hr>
 
 <h2>📢 Important Announcement: UFS 2.0 available (with support for latest Facebook UI)</h2>
-<p>Hi guys! The exclusive version of **UFS 2.0** supports scraping for the latest Facebook UI along with many powerful features, much better organization through CSV (Excel-like) file format, bug fixes, and multiple browser support. You can get exclusive access here: 
+<p>Hi guys! The exclusive version of <b>UFS 2.0</b> supports scraping for the latest Facebook UI along with many powerful features, much better organization through CSV (Excel-like) file format, bug fixes, and multiple browser support. You can get exclusive access here: 
 
 #### **[Buy UFS 2.0](https://tinyurl.com/UFS-NEW)** 
 
@@ -29,7 +29,7 @@ You can also share small donations through these links:
 - <a href="https://buy.paddle.com/product/638651"><b>Gold (49.99$)</b> -> 2 hours of development</a>
 - <a href="https://buy.paddle.com/product/638654"><b>Silver (19.99$)</b> -> 1 hour of development</a>
 
-**So, now is the time for all those folks who benefited from the tool to show some support:)**
+**So, now is the time for all those folks who benefited from the tool to show some support :)**
 </p>
 
 
