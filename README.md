@@ -25,11 +25,11 @@ Building the new version has been a tough technical challenge and I have spent a
 
 You can also share small donations through these links:
 
-- <a href="https://buy.paddle.com/product/638653"><b>Platinum (99.99$)</b> -> 2 hours of development<a/>
-- <a href="https://buy.paddle.com/product/638651"><b>Gold (49.99$)</b> -> 1 hour of development</a>
-- <a href="https://buy.paddle.com/product/638654"><b>Silver (19.99$)</b> -> 30 minutes of development</a>
+- <a href="https://buy.paddle.com/product/638653"><b>Platinum (99.99$)</b> -> 4 hours of development<a/>
+- <a href="https://buy.paddle.com/product/638651"><b>Gold (49.99$)</b> -> 2 hours of development</a>
+- <a href="https://buy.paddle.com/product/638654"><b>Silver (19.99$)</b> -> 1 hour of development</a>
 
-_If **considerable support is shown through the above donations then I will release the version for the general public** after some time as I want to keep this software open-sourced. So, now is the time for all those folks who benefited from the tool to support its reach for a wider audience :)_
+**So, now is the time for all those folks who benefited from the tool to show some support:)**
 </p>
 
 
