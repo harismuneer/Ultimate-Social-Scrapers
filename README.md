@@ -17,7 +17,7 @@
 
 #### **[Buy UFS 2.0](https://tinyurl.com/UFS-NEW)**               
 
-Use coupon: `UFS2020` for a super discount offer valid till only 31st Dec, 2020.
+<b>Use coupon: `UFS2020` for a super discount offer valid till only 31st Dec, 2020.</b>
 
 Building the new version has been a tough technical challenge and I have spent a considerable amount of time and effort on building it. Therefore, kindly support by purchasing it from the link shared [above.](https://tinyurl.com/UFS-NEW) 
 
