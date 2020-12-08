@@ -15,7 +15,9 @@
 <h2>📢 Important Announcement: UFS 2.0 available (with support for latest Facebook UI)</h2>
 <p>Hi guys! The exclusive version of <b>UFS 2.0</b> supports scraping for the latest Facebook UI along with many powerful features, much better organization through CSV (Excel-like) file format, bug fixes, and multiple browser support. You can get exclusive access here: 
 
-#### **[Buy UFS 2.0](https://tinyurl.com/UFS-NEW)** 
+#### **[Buy UFS 2.0](https://tinyurl.com/UFS-NEW)**               
+
+Use coupon: `UFS2020` for a super discount offer valid till only 31st Dec, 2020.
 
 Building the new version has been a tough technical challenge and I have spent a considerable amount of time and effort on building it. Therefore, kindly support by purchasing it from the link shared [above.](https://tinyurl.com/UFS-NEW) 
 
