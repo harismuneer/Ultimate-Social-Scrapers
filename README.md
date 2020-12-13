@@ -15,7 +15,7 @@
 <h2>📢 Important Announcement: UFS 2.0 available (with support for latest Facebook UI)</h2>
 <p>Hi guys! The exclusive version of <b>UFS 2.0</b> supports scraping for the latest Facebook UI along with many powerful features, much better organization through CSV (Excel-like) file format, bug fixes, and multiple browser support. You can get exclusive access here: 
 
-#### **[Buy UFS 2.0](https://tinyurl.com/UFS-NEW)**               
+<b>[Buy UFS 2.0](https://tinyurl.com/UFS-NEW)</b> This includes a TeamViewer meeting through which I will install this tool on your computer and train you on its usage.               
 
 <b>Use coupon: `UFS2020` for a super discount offer valid till only 31st Dec, 2020.</b>
 
@@ -120,7 +120,7 @@ Building the new version has been a tough technical challenge and I have spent a
 
 ## Features 🚀
 
-A bot which scrapes following sections about a <b>user's Facebook profile</b> including:
+A bot which scrapes following five sections about a <b>user's Facebook profile</b> including:
 
 - photos (uploaded and tagged)
 - videos (uploaded and tagged)
@@ -128,25 +128,22 @@ A bot which scrapes following sections about a <b>user's Facebook profile</b> in
 - about sections (including work and education, places lived, contact info etc)  
 - and posts/statuses available on the user's timeline
 
-Data is scraped/downloaded in an organized format to be used for educational/research purposes by researchers.
+Data is scraped/downloaded in an organized format (CSV files) for ease of analysis.
 
-For **citing/referencing** this tool for your research, check the 'Citation' section below.
+## Purchase 🤝
 
----
+You can purchase the tool from <b>[here](https://tinyurl.com/UFS-NEW)</b>. <b>This includes a TeamViewer meeting through which I will install the tool on your computer and train you on how to use it.</b>
 
-## Citation 📚
+## Important Notes 📑 
+Please read these points before [purchasing](https://tinyurl.com/UFS-NEW) the tool:
 
-<a href="https://zenodo.org/badge/latestdoi/145763277">
-  <img src="https://zenodo.org/badge/145763277.svg" />
-</a>
+- Currently the tool scrapes only the sections mentioned above in 'Features' section.
+- The default language of Facebook should be set to English for this tool to work properly.
+- If there's any specific use case of yours which the tool doesn't support currently then feel free to send me an email at [](haris.muneer5@gmail.com) and we will discuss it further.
+- This tool is not meant for massive scraping (thousands of posts or friends etc). It is possible but the rate of scraping would be slower in that scenario.
+- Facebook has taken aggressive measures against scraping so there's no guarantee that you will always get the data required (though there are some ways to circumvent this issue which I will share during the teamviewer installation meeting)
 
-If you use this tool for your research, then kindly cite it. Click the above badge for more information regarding the complete citation for this tool and diffferent citation formats like IEEE, APA etc.
 
----
-
-## Important Message ⚠️
-
-This tool is meant for research purposes only. Hence, the developers of this tool won't be responsible for any misuse of data collected using this tool. This tool has been used by many researchers and open source intelligence (OSINT) analysts.
 
 ---
 
@@ -176,6 +173,18 @@ You can also follow my GitHub Profile to stay updated about my latest projects: 
 
 ---
 If you liked the repo then kindly support it by giving it a star ⭐ and share in your circles so more people can benefit from the effort.
+
+## Important Message ⚠️
+
+This tool is meant for research purposes only. Hence, the developers of this tool won't be responsible for any misuse of data collected using this tool. This tool has been used by many researchers and open source intelligence (OSINT) analysts.
+
+## Citation 📚
+
+<a href="https://zenodo.org/badge/latestdoi/145763277">
+  <img src="https://zenodo.org/badge/145763277.svg" />
+</a>
+
+If you use this tool for your research, then kindly cite it. Click the above badge for more information regarding the complete citation for this tool and diffferent citation formats like IEEE, APA etc.
 
 ## License 📄
 
