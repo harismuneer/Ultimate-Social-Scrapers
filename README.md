@@ -133,7 +133,7 @@ Data is scraped/downloaded in an organized format (CSV files) for ease of analys
 
 ## Purchase 🤝
 
-You can purchase the tool from <b>[here](https://tinyurl.com/UFS-NEW)</b>. <b>This includes a TeamViewer meeting through which I will install the tool on your computer and train you on how to use it.</b>
+You can purchase the tool from <b>[here](https://tinyurl.com/UFS-NEW)</b>. <b>This includes a TeamViewer meeting through which I will install the tool on your computer and train you on how to use it. Incase of any query, you can reach me at [haris.muneer5@gmail.com](haris.muneer5@gmail.com)</b>
 
 ## Important Notes 📑 
 Please read these points before [purchasing](https://tinyurl.com/UFS-NEW) the tool:
@@ -142,7 +142,7 @@ Please read these points before [purchasing](https://tinyurl.com/UFS-NEW) the to
 - The default language of Facebook should be set to English for this tool to work properly.
 - If there's any specific use case of yours which the tool doesn't support currently then feel free to send me an email at [haris.muneer5@gmail.com](haris.muneer5@gmail.com) and we will discuss it further.
 - This tool is not meant for massive scraping (thousands of posts or friends etc). It is possible but the rate of scraping would be slower in that scenario.
-- Facebook has taken aggressive measures against scraping so there's no guarantee that you will always get the data required (though there are some ways to circumvent this issue which I will share during the teamviewer installation meeting)
+- Facebook has taken aggressive measures against scraping so there's no guarantee that you will always get the data required (though there are some ways to circumvent this issue which I will share during the TeamViewer installation meeting)
 
 
 ---
