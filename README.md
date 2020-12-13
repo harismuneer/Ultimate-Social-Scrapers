@@ -7,7 +7,7 @@
 <h1 align="center">Ultimate Facebook Scraper (UFS) </h1>
 
 <p align="center">
-  Tooling that <b>automates</b> your social media interactions to collect posts, photos, videos, friends, followers and much more on Facebook.
+  Tooling that <b>automates</b> your social media interactions to collect posts, photos, videos, friends, followers and much more from a <b>user's profile</b> on Facebook.
 </p>
 
 <hr>
@@ -21,7 +21,7 @@
 
 Building the new version has been a tough technical challenge and I have spent a considerable amount of time and effort on building it. Therefore, kindly support by purchasing it from the link shared [above.](https://tinyurl.com/UFS-NEW) 
 
-**So, now is the time for all those folks who benefited from the tool to show some support :)**
+**Now is the time for all those folks who benefited from the tool to show some support :)**
 </p>
 
 
@@ -120,31 +120,17 @@ Building the new version has been a tough technical challenge and I have spent a
 
 ## Features 🚀
 
-A bot which scrapes almost everything about a user's Facebook profile including:
+A bot which scrapes following sections about a <b>user's Facebook profile</b> including:
 
-- uploaded photos
-- tagged photos
-- videos
+- photos (uploaded and tagged)
+- videos (uploaded and tagged)
 - friends list and their profile photos (including Followers, Following, Work Friends, College Friends etc)
-- and public posts/statuses available on the user's timeline
+- about sections (including work and education, places lived, contact info etc)  
+- and posts/statuses available on the user's timeline
 
-Data is scraped in an organized format to be used for educational/research purposes by researchers. This scraper does not use Facebook's Graph API meaning there are no rate limiting issues.
-
-**This tool is being used by thousands of developers weekly and we are pretty amazed at this response! Thank you!🎉**
+Data is scraped/downloaded in an organized format to be used for educational/research purposes by researchers.
 
 For **citing/referencing** this tool for your research, check the 'Citation' section below.
-
-## Sample
-
-<p align="middle">
-  <img src="https://user-images.githubusercontent.com/30947706/79589043-34862600-80ee-11ea-9648-5ff86a63e464.png" width="700"/>
- </p>
-
-## Screenshot
-
-<p align="middle">
-  <img src="https://user-images.githubusercontent.com/30947706/79589002-259f7380-80ee-11ea-959a-bddf0e2f6629.png" width="700"/>
- </p>
 
 ---
 
@@ -160,9 +146,17 @@ If you use this tool for your research, then kindly cite it. Click the above bad
 
 ## Important Message ⚠️
 
-This tool is for research purposes only. Hence, the developers of this tool won't be responsible for any misuse of data collected using this tool. Used by many researchers and open source intelligence (OSINT) analysts.
+This tool is meant for research purposes only. Hence, the developers of this tool won't be responsible for any misuse of data collected using this tool. This tool has been used by many researchers and open source intelligence (OSINT) analysts.
 
 ---
+
+## Sponsor
+If you or your company use any of my projects or like what I’m doing then consider backing me.
+
+- 🌟  **$9.99/month (recommended)** ❯ [Two cups of Caffè latte (coffee) every month](https://tinyurl.com/Haris-OSS-Coffee)
+- 🚀  **$99.99 (one-time sponsor)** ❯ [Support an hour of open-source work](https://tinyurl.com/Haris-OSS-Platinum)
+- 🔰  **$49.99 (one-time sponsor)** ❯ [Support an hour of maintenance](https://tinyurl.com/Haris-OSS-Gold)
+- ☕️  **$9.99 (one-time sponsor)** ❯ [Lunch/coffee](https://tinyurl.com/Haris-OSS-Silver)
 
 ## Authors 👋
 
@@ -182,14 +176,6 @@ You can also follow my GitHub Profile to stay updated about my latest projects: 
 
 ---
 If you liked the repo then kindly support it by giving it a star ⭐ and share in your circles so more people can benefit from the effort.
-
-## Sponsor
-If you or your company use any of my projects or like what I’m doing then consider backing me.
-
-- 🌟  **$9.99/month (recommended)** ❯ [Two cups of Caffè latte (coffee) every month](https://tinyurl.com/Haris-OSS-Coffee)
-- 🚀  **$99.99 (one-time sponsor)** ❯ [Support an hour of open-source work](https://tinyurl.com/Haris-OSS-Platinum)
-- 🔰  **$49.99 (one-time sponsor)** ❯ [Support an hour of maintenance](https://tinyurl.com/Haris-OSS-Gold)
-- ☕️  **$9.99 (one-time sponsor)** ❯ [Lunch/coffee](https://tinyurl.com/Haris-OSS-Silver)
 
 ## License 📄
 
