@@ -147,7 +147,7 @@ Please read these points before [purchasing](https://tinyurl.com/UFS-NEW) the to
 
 ---
 
-## Sponsor
+## Sponsor 💪
 If you or your company use any of my projects or like what I’m doing then consider backing me.
 
 - 🌟  **$9.99/month (recommended)** ❯ [Two cups of Caffè latte (coffee) every month](https://tinyurl.com/Haris-OSS-Coffee)
