@@ -15,11 +15,10 @@
 <h2>📢 Important Announcement: UFS 2.0 available (with support for latest Facebook UI)</h2>
 <p>Hi guys! The exclusive version of <b>UFS 2.0</b> supports scraping for the latest Facebook UI along with many powerful features, much better organization through CSV (Excel-like) file format, bug fixes, and multiple browser support. You can get exclusive access here: 
 
-<b>[Buy UFS 2.0](https://tinyurl.com/UFS-NEW)</b> This includes a TeamViewer meeting through which I will install this tool on your computer and train you on its usage.               
-
+<b>[Buy UFS 2.0](https://tinyurl.com/UFS-NEW)</b> This includes a <b>TeamViewer meeting</b> through which I will install this tool on your computer and train you on its usage.               
 <b>Use coupon: `UFS2020` for a super discount offer valid till only 31st Dec, 2020.</b>
 
-Building the new version has been a tough technical challenge and I have spent a considerable amount of time and effort on building it. Therefore, kindly support by purchasing it from the link shared [above.](https://tinyurl.com/UFS-NEW) 
+Building the new version has been a tough technical challenge and I have spent a considerable amount of time and effort on building it. Therefore, kindly support by purchasing it from the link shared [above.](https://tinyurl.com/UFS-NEW) For more details about the features supported, read the 'Features' section below. 
 
 **Now is the time for all those folks who benefited from the tool to show some support :)**
 </p>
@@ -139,10 +138,9 @@ Please read these points before [purchasing](https://tinyurl.com/UFS-NEW) the to
 
 - Currently the tool scrapes only the sections mentioned above in 'Features' section.
 - The default language of Facebook should be set to English for this tool to work properly.
-- If there's any specific use case of yours which the tool doesn't support currently then feel free to send me an email at [](haris.muneer5@gmail.com) and we will discuss it further.
+- If there's any specific use case of yours which the tool doesn't support currently then feel free to send me an email at [haris.muneer5@gmail.com](haris.muneer5@gmail.com) and we will discuss it further.
 - This tool is not meant for massive scraping (thousands of posts or friends etc). It is possible but the rate of scraping would be slower in that scenario.
 - Facebook has taken aggressive measures against scraping so there's no guarantee that you will always get the data required (though there are some ways to circumvent this issue which I will share during the teamviewer installation meeting)
-
 
 
 ---
