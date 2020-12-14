@@ -13,12 +13,11 @@
 <hr>
 
 <h2>📢 Important Announcement: UFS 2.0 available (with support for latest Facebook UI)</h2>
-<p>Hi guys! The exclusive version of <b>UFS 2.0</b> supports scraping for the latest Facebook UI along with many powerful features, much better organization through CSV (Excel-like) file format, bug fixes, and multiple browser support. You can get exclusive access here: 
+<p>Hi guys! The exclusive version of <b>UFS 2.0</b> supports scraping for the latest Facebook UI along with many powerful features, much better organization through CSV (Excel-like) file format, bug fixes, and multiple browser support. 
+  
+  
+<i>In order to purchase it, please send me an email at <b>[haris.muneer5@gmail.com](haris.muneer5@gmail.com)</b> and I will help you further. The purchase price is 149$ which includes a <b>TeamViewer meeting</b> through which I will install this tool on your computer and train you on its usage. </i>
 
-<b>[Buy UFS 2.0](https://tinyurl.com/UFS-NEW)</b> This includes a <b>TeamViewer meeting</b> through which I will install this tool on your computer and train you on its usage. 
-
-
-<b>Use coupon: `UFS2020` for a super discount offer valid till only 31st Dec, 2020.</b>
 
 Building the new version has been a tough technical challenge and I have spent a considerable amount of time and effort on building it. Therefore, kindly support by purchasing it from the link shared [above.](https://tinyurl.com/UFS-NEW) For more details about the features supported, read the 'Features' section below. 
 
@@ -134,7 +133,7 @@ Data is scraped/downloaded in an organized format (CSV files) for ease of analys
 
 ## Purchase 🤝
 
-You can purchase the tool from <b>[here](https://tinyurl.com/UFS-NEW)</b>. <b>This includes a TeamViewer meeting through which I will install the tool on your computer and train you on how to use it.</b> Incase of any query, you can reach me at [haris.muneer5@gmail.com](haris.muneer5@gmail.com)
+In order to purchase the tool, please send me an email at <b>[haris.muneer5@gmail.com](haris.muneer5@gmail.com)</b> and I will help you further. The purchase price is 149$ which includes a <b>TeamViewer meeting</b> through which I will install this tool on your computer and train you on its usage. 
 
 ## Important Notes 📑 
 Please read these points before [purchasing](https://tinyurl.com/UFS-NEW) the tool:
