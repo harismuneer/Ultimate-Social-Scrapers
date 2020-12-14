@@ -176,7 +176,7 @@ If you liked the repo then kindly support it by giving it a star ⭐ and share i
 
 ## Important Message ⚠️
 
-This tool is meant for research purposes only. Hence, the developers of this tool won't be responsible for any misuse of data collected using this tool. This tool has been used by many researchers and open source intelligence (OSINT) analysts.
+This tool is meant for research purposes only. Hence, the developers of this tool won't be responsible for any misuse of data collected using this tool. This tool has been used by many researchers, marketers and open source intelligence (OSINT) analysts.
 
 ## Citation 📚
 
