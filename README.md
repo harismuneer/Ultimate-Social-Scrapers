@@ -120,7 +120,7 @@ Building the new version has been a tough technical challenge and I have spent a
 
 ## Features 🚀
 
-A bot which scrapes following five sections about a <b>user's Facebook profile</b> including:
+A bot which scrapes following sections about a <b>user's Facebook profile</b> including:
 
 - photos (uploaded and tagged)
 - videos (uploaded and tagged)
