@@ -27,10 +27,6 @@ Building the new version has been a tough technical challenge and I have spent a
 
 
 <p align="center">
-  <a href="https://awesomeopensource.com/project/harismuneer/Ultimate-Facebook-Scraper" target="_blank" rel="noopener noreferrer">
-    <img src="https://user-images.githubusercontent.com/30947706/76143280-07c70380-6098-11ea-86b1-79fbce03888c.png" width="250" />
-  </a>  
-  <br>
   <a href="https://wander-lush.org/most-beautiful-places-in-pakistan/">
     <img src="https://media.gettyimages.com/videos/pakistan-flag-video-id1161759219?s=640x640" target="_blank" width="250">
   </a>
@@ -114,7 +110,7 @@ Building the new version has been a tough technical challenge and I have spent a
 </p>
 <hr>
 
-## News Updates 🏆
+## Awards/Achievements 🏆
 * UFS got included as an official tool in the [BlackArch Linux distribution](https://blackarch.org/social.html)! 
 * UFS got listed among the [top 20 hacking tools in 2019](https://www.kitploit.com/2019/12/top-20-most-popular-hacking-tools-in.html)!
 
@@ -130,6 +126,11 @@ A bot which scrapes following sections about a <b>user's Facebook profile</b> in
 - and posts/statuses available on the user's timeline
 
 Data is scraped/downloaded in an organized format (CSV files) for ease of analysis.
+
+## Testimonials 💯 👍
+> I had the pleasure to have a meeting with Haris to learn how to use a tool that he created. He is a great professional, with a lot of experience and knowledge to share with others. His ability to teach and explain the requirements to use the tool was very clear. I Totally recommend working with him.
+
+Cristóbal V. (Civil Industrial Engineer)
 
 ## Purchase 🤝
 
@@ -147,46 +148,16 @@ Please read these points before [purchasing](https://tinyurl.com/UFS-NEW) the to
 
 ---
 
-## Sponsor 💪
-If you or your company use any of my projects or like what I’m doing then consider backing me.
-
-- 🌟  **$9.99/month (recommended)** ❯ [Two cups of Caffè latte (coffee) every month](https://tinyurl.com/Haris-OSS-Coffee)
-- 🚀  **$99.99 (one-time sponsor)** ❯ [Support an hour of open-source work](https://tinyurl.com/Haris-OSS-Platinum)
-- 🔰  **$49.99 (one-time sponsor)** ❯ [Support an hour of maintenance](https://tinyurl.com/Haris-OSS-Gold)
-- ☕️  **$9.99 (one-time sponsor)** ❯ [Lunch/coffee](https://tinyurl.com/Haris-OSS-Silver)
-
-## Authors 👋
-
-You can get in touch with us on our LinkedIn Profiles:
-
-#### Haris Muneer
-
-[![LinkedIn Link](https://img.shields.io/badge/Connect-harismuneer-blue.svg?logo=linkedin&longCache=true&style=social&label=Follow)](https://www.linkedin.com/in/harismuneer)
-
-You can also follow my GitHub Profile to stay updated about my latest projects: [![GitHub Follow](https://img.shields.io/badge/Connect-harismuneer-blue.svg?logo=Github&longCache=true&style=social&label=Follow)](https://github.com/harismuneer)
-
-#### Hassaan Elahi
-
-[![LinkedIn Link](https://img.shields.io/badge/Connect-Hassaan--Elahi-blue.svg?logo=linkedin&longCache=true&style=social&label=Connect)](https://www.linkedin.com/in/hassaan-elahi/)
-
-You can also follow my GitHub Profile to stay updated about my latest projects: [![GitHub Follow](https://img.shields.io/badge/Connect-Hassaan--Elahi-blue.svg?logo=Github&longCache=true&style=social&label=Follow)](https://github.com/Hassaan-Elahi)
-
 If you liked the repo then kindly support it by giving it a star ⭐ and share in your circles so more people can benefit from the effort.
 
 ## Important Message ⚠️
 
-This tool is meant for research purposes only. Hence, the developers of this tool won't be responsible for any misuse of data collected using this tool. This tool has been used by many researchers, marketers and open source intelligence (OSINT) analysts.
+The developers of this tool won't be responsible for any misuse of data collected using this tool. This tool has been used by many researchers, marketers and open source intelligence (OSINT) analysts.
 
-## Citation 📚
-
-<a href="https://zenodo.org/badge/latestdoi/145763277">
-  <img src="https://zenodo.org/badge/145763277.svg" />
-</a>
-
-If you use this tool for your research, then kindly cite it. Click the above badge for more information regarding the complete citation for this tool and diffferent citation formats like IEEE, APA etc.
-
-## License 📄
+## Acknowledgements 📄
 
 [![MIT](https://img.shields.io/cocoapods/l/AFNetworking.svg?style=style&label=License&maxAge=2592000)]()
 
-Copyright (c) 2018-present, harismuneer, Hassaan-Elahi
+Copyright (c) 2018-present: 
+- [![GitHub Follow](https://img.shields.io/badge/Connect-harismuneer-blue.svg?logo=Github&longCache=true&style=social&label=Follow)](https://github.com/harismuneer)
+- [![GitHub Follow](https://img.shields.io/badge/Connect-Hassaan--Elahi-blue.svg?logo=Github&longCache=true&style=social&label=Follow)](https://github.com/Hassaan-Elahi)
