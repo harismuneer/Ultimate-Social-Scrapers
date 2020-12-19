@@ -116,14 +116,16 @@ Building the new version has been a tough technical challenge and I have spent a
 
 ## Features 🚀
 
-A bot which scrapes following sections about a <b>user's Facebook profile</b> including:
+A bot that scrapes the following sections about a <b>user's Facebook profile</b> including:
 
 - photos (uploaded and tagged)
 - videos (uploaded and tagged)
 - user likes (pages liked including movies, books, interests etc)
 - friends list and their profile photos (including Followers, Following, Work Friends, College Friends etc)
 - about sections (including work and education, places lived, contact info etc)  
-- and posts/statuses available on the user's timeline
+- events
+- check-ins (places visited)
+- posts/statuses available on the user's timeline
 
 Data is scraped/downloaded in an organized format (CSV files) for ease of analysis.
 
@@ -158,6 +160,6 @@ The developers of this tool won't be responsible for any misuse of data collecte
 
 [![MIT](https://img.shields.io/cocoapods/l/AFNetworking.svg?style=style&label=License&maxAge=2592000)]()
 
-Copyright (c) 2018-present: 
+Copyright (c) 2018-present. Follow to stay about our latest projects: 
 - [![GitHub Follow](https://img.shields.io/badge/Connect-harismuneer-blue.svg?logo=Github&longCache=true&style=social&label=Follow)](https://github.com/harismuneer)
 - [![GitHub Follow](https://img.shields.io/badge/Connect-Hassaan--Elahi-blue.svg?logo=Github&longCache=true&style=social&label=Follow)](https://github.com/Hassaan-Elahi)
