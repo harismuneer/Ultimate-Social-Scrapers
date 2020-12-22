@@ -19,7 +19,7 @@
 <i>In order to purchase it, please send me an email at <b>[haris.muneer5@gmail.com](haris.muneer5@gmail.com)</b> and I will help you further. The purchase price is 149$ which includes a <b>TeamViewer meeting</b> through which I will install this tool on your computer and train you on its usage. </i>
 
 
-Building the new version has been a tough technical challenge and I have spent a considerable amount of time and effort on building it. Therefore, kindly support by purchasing it from the link shared [above.](https://tinyurl.com/UFS-NEW) For more details about the features supported, read the 'Features' section below. 
+Building the new version has been a tough technical challenge and I have spent a considerable amount of time and effort on building it. Therefore, kindly support by purchasing it. For more details about the features supported, read the 'Features' section below. 
 
 **Now is the time for all those folks who benefited from the tool to show some support :)**
 </p>
@@ -141,7 +141,7 @@ Cristóbal V. (Civil Industrial Engineer)
 In order to purchase the tool, please send me an email at <b>[haris.muneer5@gmail.com](haris.muneer5@gmail.com)</b> and I will help you further. The purchase price is 149$ which includes a <b>TeamViewer meeting</b> through which I will install this tool on your computer and train you on its usage. 
 
 ## Important Notes 📑 
-Please read these points before [purchasing](https://tinyurl.com/UFS-NEW) the tool:
+Please read these points before purchasing the tool:
 
 - Currently the tool scrapes only the sections mentioned above in 'Features' section.
 - The default language of Facebook should be set to English for this tool to work properly.
