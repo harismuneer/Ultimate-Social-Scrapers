@@ -149,6 +149,7 @@ Please read these points before purchasing the tool:
 - This tool is not meant for massive scraping (thousands of posts or friends etc). It is possible but the rate of scraping would be slower in that scenario.
 - Facebook has taken aggressive measures against scraping so sometimes the account you are using to scrape data might get temporarily blocked (though there are some ways to circumvent this issue which I will share during the TeamViewer installation meeting)
 
+For more details, read the [FAQ](./FAQ.md)
 
 ---
 
