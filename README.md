@@ -161,8 +161,6 @@ The developers of this tool won't be responsible for any misuse of data collecte
 
 ## Acknowledgements 📄
 
-[![MIT](https://img.shields.io/cocoapods/l/AFNetworking.svg?style=style&label=License&maxAge=2592000)]()
-
 Copyright (c) 2018-present. Follow to stay updated about our latest projects: 
 - [![GitHub Follow](https://img.shields.io/badge/Connect-harismuneer-blue.svg?logo=Github&longCache=true&style=social&label=Follow)](https://github.com/harismuneer)
 - [![GitHub Follow](https://img.shields.io/badge/Connect-Hassaan--Elahi-blue.svg?logo=Github&longCache=true&style=social&label=Follow)](https://github.com/Hassaan-Elahi)
