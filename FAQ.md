@@ -4,7 +4,7 @@
 ### Q: What fields does the tool scrape for each section?
 
 <b>A:</b> 
-
+## 1) User's Profile
 For Posts, following fields are scraped:
 - ["Date Posted", "Post Text", "Post Link", "Reacts Count", "Comments Count", "Shares Count"]
 
@@ -12,10 +12,10 @@ For Friends (Followers, Following and other types of Friends), following fields 
 - ["Name", "Account Link", "Profile Picture Link", "Downloaded Profile Picture ID"]
 
 For Photos, following fields are scraped:
-- ["Photo Link", "Downloaded Photo ID"]
+- ["Photo Link", "Downloaded Photo ID", "Photo Description"]
 
 For Videos, following fields are scraped:
-- ["Video Link"]
+- ["Video Link", "Photo Description"]
 
 For all sections in about, following fields are scraped:
 - ["Details"]
@@ -31,3 +31,30 @@ For Check-Ins, following fields are scraped:
 
 For Reviews, following fields are scraped:
 - ["Page Title", "Review Link", "Review Given"]
+
+## 2) Facebook Page
+For Posts, following fields are scraped:
+- ["Date Posted", "Post Text", "Post Link", "Reacts Count", "Comments Count", "Shares Count"]
+
+For Photos, following fields are scraped:
+- ["Photo Link", "Downloaded Photo ID", "Photo Description"]
+
+For Videos, following fields are scraped:
+- ["Video Link", "Photo Description"]
+
+For all sections in about, following fields are scraped:
+- ["Details"]
+
+## 3) Facebook Group
+For Posts, following fields are scraped:
+- ["Date Posted", "Post Text", "Post Link", "Reacts Count", "Comments Count", "Shares Count"]
+
+For Photos, following fields are scraped:
+- ["Photo Link", "Downloaded Photo ID", "Photo Description"]
+
+For Videos, following fields are scraped:
+- ["Video Link", "Photo Description"]
+
+For all sections in about, following fields are scraped:
+- ["Details"]
+
