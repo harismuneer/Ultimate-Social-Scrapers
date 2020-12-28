@@ -7,7 +7,7 @@
 <h1 align="center">Ultimate Facebook Scraper (UFS) </h1>
 
 <p align="center">
-  Tooling that <b>automates</b> your social media interactions to collect posts, photos, interests (likes), videos, friends, followers and much more from a <b>user's profile</b> on Facebook.
+  Tooling that <b>automates</b> your social media interactions to collect posts, photos, interests (likes), videos, friends, followers and much more on Facebook.
 </p>
 
 <hr>
@@ -116,8 +116,9 @@ Building the new version has been a tough technical challenge and I have spent a
 
 ## Features 🚀
 
-A bot that scrapes the following sections about a <b>user's Facebook profile</b> including:
+A bot that scrapes the following sections from Facebook:
 
+### 1) User's Profile
 - photos (uploaded and tagged)
 - videos (uploaded and tagged)
 - user likes (pages liked including movies, books, interests etc)
@@ -126,6 +127,18 @@ A bot that scrapes the following sections about a <b>user's Facebook profile</b>
 - events
 - check-ins (places visited)
 - posts/statuses available on the user's timeline
+
+### 2) Public Page
+- photos
+- videos
+- about sections (including page info and contact details)  
+- posts done by the Facebook page
+
+### 3) Group
+- photos
+- videos
+- about sections (including group info, posting rules etc)  
+- posts in the group (also called Discussion)
 
 Data is scraped/downloaded in an organized format (CSV files) for ease of analysis.
 
@@ -136,6 +149,10 @@ UFS is a great software developed by Haris and excellent service that is worth b
 
 Cristóbal V. (Civil Industrial Engineer)
 
+> Superb customer service! Haris continued to update the tool with new functionality after purchase.
+
+Georg H. (Data Science Researcher)
+
 ## Purchase 🤝
 
 In order to purchase the tool, please send me an email at <b>[haris.muneer5@gmail.com](haris.muneer5@gmail.com)</b> and I will help you further. The purchase price is 149$ which includes a <b>TeamViewer meeting</b> through which I will install this tool on your computer and train you on its usage. 
@@ -143,7 +160,6 @@ In order to purchase the tool, please send me an email at <b>[haris.muneer5@gmai
 ## Important Notes 📑 
 Please read these points before purchasing the tool:
 
-- Currently the tool scrapes only the sections mentioned above in 'Features' section.
 - The default language of Facebook should be set to English for this tool to work properly.
 - If there's any specific use case of yours which the tool doesn't support currently then feel free to send me an email at [haris.muneer5@gmail.com](haris.muneer5@gmail.com) and we will discuss it further.
 - This tool is not meant for massive scraping (thousands of posts or friends etc). It is possible but the rate of scraping would be slower in that scenario.
