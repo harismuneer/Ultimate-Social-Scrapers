@@ -12,20 +12,6 @@
 
 <hr>
 
-<h2>📢 Important Announcement: UFS 2.0 available (with support for latest Facebook UI)</h2>
-<p>Hi guys! The exclusive version of <b>UFS 2.0</b> supports scraping for the latest Facebook UI along with many powerful features, much better organization through CSV (Excel-like) file format, bug fixes, and multiple browser support. 
-  
-  
-<i>In order to purchase it, please send me an email at <b>[haris.muneer5@gmail.com](haris.muneer5@gmail.com)</b> and I will help you further. The purchase price is 149$ which includes a <b>TeamViewer meeting</b> through which I will install this tool on your computer and train you on its usage. </i>
-
-
-Building the new version has been a tough technical challenge and I have spent a considerable amount of time and effort on building it. Therefore, kindly support by purchasing it. For more details about the features supported, read the 'Features' section below. 
-
-**Now is the time for all those folks who benefited from the tool to show some support :)**
-</p>
-
-
-
 <p align="center">
   <a href="https://wander-lush.org/most-beautiful-places-in-pakistan/">
     <img src="https://media.gettyimages.com/videos/pakistan-flag-video-id1161759219?s=640x640" target="_blank" width="250">
