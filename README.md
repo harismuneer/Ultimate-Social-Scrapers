@@ -133,15 +133,15 @@ Data is scraped/downloaded in an organized format (CSV files) for ease of analys
 I had the pleasure to have a meeting with Haris to learn how to use a tool that he created called "UFS". He is a great professional and very friendly, with a lot of experience and knowledge to share with others. His ability to teach and explain the requirements to use the tool was very clear. I Highly recommend working with him!!.
 UFS is a great software developed by Haris and excellent service that is worth buying
 
-Cristóbal V. (Civil Industrial Engineer)
+- Cristóbal V. (Civil Industrial Engineer)
 
 > Superb customer service! Haris continued to update the tool with new functionality after purchase.
 
-Georg H. (Data Science Researcher)
+- Georg H. (Data Science Researcher)
 
 > Haris was extremely helpful and patient with his instructions as well as helping me understand how his scraper works and the necessities of certain functions and libraries. Very pleased with the program and the professionalism. This inspires me to improve upon it as well as helping me understand web scrapers more. Thank you Haris!
 
-Suksan S. (Cybersecurity Student)
+- Suksan S. (Cybersecurity Student)
 
 ## Purchase 🤝
 
