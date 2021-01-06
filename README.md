@@ -139,6 +139,10 @@ Cristóbal V. (Civil Industrial Engineer)
 
 Georg H. (Data Science Researcher)
 
+> Haris was extremely helpful and patient with his instructions as well as helping me understand how his scraper works and the necessities of certain functions and libraries. Very pleased with the program and the professionalism. This inspires me to improve upon it as well as helping me understand web scrapers more. Thank you Haris!
+
+Suksan S. (Cybersecurity Student)
+
 ## Purchase 🤝
 
 In order to purchase the tool, please send me an email at <b>[haris.muneer5@gmail.com](haris.muneer5@gmail.com)</b> and I will help you further. Due to New Year, there's an exclusive discount on UFS and its <b>99$</b> now instead of 149$. <i>The offer is valid till Jan 10, 2021.</i> The purchase includes a <b>TeamViewer meeting</b> through which I will install this tool on your computer and train you on its usage. 
