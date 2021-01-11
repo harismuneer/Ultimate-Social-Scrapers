@@ -143,9 +143,11 @@ UFS is a great software developed by Haris and excellent service that is worth b
 
 - Suksan S. (Cybersecurity Student)
 
-## Purchase 🤝
+and many more satisfied customers.. 
 
-In order to purchase the tool, please send me an email at <b>[haris.muneer5@gmail.com](haris.muneer5@gmail.com)</b> and I will help you further. Due to New Year, there's an exclusive discount on UFS and its <b>99$</b> now instead of 149$. <i>The offer is valid till Jan 10, 2021.</i> The purchase includes a <b>TeamViewer meeting</b> through which I will install this tool on your computer and train you on its usage. 
+## Purchase 🤝 
+
+In order to purchase the tool, please send me an email at <b>[haris.muneer5@gmail.com](haris.muneer5@gmail.com)</b> and I will help you further. The purchase price is 149$. The purchase includes a <b>TeamViewer meeting</b> through which I will install this tool on your computer and train you on its usage. 
 
 ## Important Notes 📑 
 Please read these points before purchasing the tool:
