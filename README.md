@@ -4,7 +4,7 @@
   </div>
 </a>
 
-<h1 align="center">Ultimate Facebook Scraper (UFS) </h1>
+<h1 align="center">Ultimate Facebook Scraper (UFS) - a Facebook Data Extraction Software </h1>
 
 <p align="center">
   Tooling that <b>automates</b> your social media interactions to collect posts, photos, interests (likes), videos, friends, followers and much more on Facebook.
