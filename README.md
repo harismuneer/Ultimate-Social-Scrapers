@@ -9,7 +9,7 @@
 <hr>
 
 <p align="center">
-  Tooling that <b>automates</b> your social media interactions to collect posts, photos, interests (likes), videos, friends, followers and much more on Facebook.
+  Software that <b>automates</b> your social media interactions to collect posts, photos, interests (likes), videos, friends, followers and much more on Facebook.
 </p>
 
 <hr>
@@ -102,7 +102,7 @@
 
 ## Features 🚀
 
-A bot that scrapes the following sections from Facebook:
+A Software that scrapes the following sections from Facebook:
 
 ### 1) User's Profile
 - photos (uploaded and tagged)
@@ -147,7 +147,7 @@ and many more satisfied customers..
 
 ## Purchase 🤝 
 
-In order to purchase the tool, please send me an email at <b>[haris.muneer5@gmail.com](haris.muneer5@gmail.com)</b> and I will help you further. The original price is 199$ but I am offering a special discounted price of <b>179$</b> these days. <i><b>The discounted price is valid only till Jan 18, 2021.</b></i> The purchase includes a one-on-one <b>TeamViewer meeting</b> through which I will install this tool on your computer, train you on its usage and share best practices for scraping. 
+In order to purchase the Software, please send me an email at <b>[haris.muneer5@gmail.com](haris.muneer5@gmail.com)</b> and I will help you further. The original price is 199$ but I am offering a special discounted price of <b>179$</b> these days. <i><b>The discounted price is valid only till Jan 18, 2021.</b></i> The purchase includes a one-on-one <b>TeamViewer meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. 
 
 ## Important Notes 📑 
 Please read these points before purchasing the tool:
