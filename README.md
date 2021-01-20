@@ -104,7 +104,7 @@
 
 A Software that scrapes the following sections from Facebook:
 
-### 1) User's Profile
+### 1) User's Profile/Account
 - photos (uploaded and tagged)
 - videos (uploaded and tagged)
 - user likes (pages liked including movies, books, interests etc)
@@ -114,13 +114,13 @@ A Software that scrapes the following sections from Facebook:
 - check-ins (places visited)
 - posts/statuses available on the user's timeline
 
-### 2) Public Page
+### 2) Public Facebook Page
 - photos
 - videos
 - about sections (including page info and contact details)  
 - posts done by the Facebook page
 
-### 3) Group
+### 3) Facebook Group
 - photos
 - videos
 - about sections (including group info, posting rules etc)  
@@ -145,9 +145,30 @@ UFS is a great software developed by Haris and excellent service that is worth b
 
 and many more satisfied customers.. 
 
-## Purchase 🤝 
+## Price 💳  
 
-In order to purchase the Software, please send me an email at <b>[haris.muneer5@gmail.com](haris.muneer5@gmail.com)</b> and I will help you further. Instead of the original price of 269$, <b>I am offering a special discounted price of 159$ for a limited time.</b> <i><b>The discounted price is valid only till Jan 28, 2021. You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>TeamViewer meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. 
+<b><i>Limited discount offer valid till Jan 28, 2021.</i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>TeamViewer meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. 
+
+### Basic Version (99$) ~~149$~~
+- allows you to scrape all sections for a <b>User's Profile/Account </b>
+
+### Pro Version (159$) ~~259$~~
+- gives you all features of Basic version plus allows you to scrape <b>Facebook Public Pages and Facebook Groups</b>.
+
+## Purchase 🤝
+For payment, you can follow these simple steps:
+
+<b>1)</b> Free signup at <b>[TransferWise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the donation)
+
+<b>2)</b> Select the amount (99$ for Basic and 159$ for Pro) and choose the receiving/recipient's currency to be PKR. It supports multiple payment options (credit card, debit card etc)
+
+<b>3)</b> Then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients.
+
+<b>4)</b> Choose the reason for transfer to the one that suits you the most (in this case it could be 'General expenses') and in the reference section, you can mention your email.
+ 
+If you face any issue in doing payment then feel free to get in touch with me at <b>haris.muneer5@gmail.com</b> 
+
+Thank you for your support!
 
 ## Important Notes 📑 
 Please read these points before purchasing the tool:
