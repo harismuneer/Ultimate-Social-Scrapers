@@ -160,15 +160,15 @@ For payment, you can follow these simple steps:
 
 <b>1)</b> Free signup at <b>[TransferWise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the donation)
 
-<b>2)</b> Select the amount (99$ for Basic and 159$ for Pro) and choose the receiving/recipient's currency to be PKR. It supports multiple payment options (credit card, debit card etc)
+<b>2)</b> Select the amount (99$ for Basic and 159$ for Pro) and choose the receiving/recipient's currency to be PKR. It supports multiple payment options (credit card, debit card, wire transfer etc)
 
 <b>3)</b> Then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients.
 
 <b>4)</b> Choose the reason for transfer to the one that suits you the most (in this case it could be 'General expenses') and in the reference section, you can mention your email.
  
-If you face any issue in doing payment then feel free to get in touch with me at <b>haris.muneer5@gmail.com</b> 
-
-Thank you for your support!
+After the payment, please share a screenshot of the payment receipt at <b>haris.muneer5@gmail.com</b> and we will schedule your installation meeting which takes upto 20min.
+ 
+If you face any issue in doing payment then feel free to get in touch with me at <b>haris.muneer5@gmail.com</b> Thank you for your support!
 
 ## Important Notes 📑 
 Please read these points before purchasing the tool:
