@@ -158,7 +158,7 @@ and many more satisfied customers..
 ## Purchase 🤝
 For payment, you can follow these simple steps:
 
-<b>1)</b> Free signup at <b>[TransferWise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the donation)
+<b>1)</b> Free signup at <b>[TransferWise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the payment)
 
 <b>2)</b> Select the amount (99$ for Basic and 159$ for Pro) and choose the receiving/recipient's currency to be PKR. It supports multiple payment options (credit card, debit card, wire transfer etc)
 
