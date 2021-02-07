@@ -2,8 +2,10 @@
 # -*- coding: utf-8 -*-
 
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
+#from selenium.webdriver.chrome.service import Service
+#from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.firefox.options import Options
 
 # Options
 options = Options()
@@ -15,10 +17,12 @@ options = Options()
 options.headless = False
 
 # Specify custom geckodriver path
-service = Service('bin/chromedriver')
+#service = Service('bin/chromedriver')
+service = Service('/usr/local/bin/geckodriver')
 
 # Test
-browser = webdriver.Chrome(options=options, service=service)
+#browser = webdriver.Chrome(options=options, service=service)
+browser = webdriver.Firefox(options=options, service=service)
 browser.get('https://dev.to')
 print(browser.title)
 browser.quit()
