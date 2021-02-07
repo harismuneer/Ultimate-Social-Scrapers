@@ -19,6 +19,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
 # -------------------------------------------------------------
@@ -29,9 +30,22 @@ from webdriver_manager.chrome import ChromeDriverManager
 opts = Options()
 opts.add_argument(
     "user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/71.0"
-
 )
 
+# exports.config = {
+#     seleniumAddress: "http://localhost:9515",
+#     specs: [""],
+#     capabilities: {
+#         "browserName": "chrome",
+#         "goog:chromeOptions": {
+#             args: [
+#                 "user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/71.0"
+#             ]
+#         },
+#     },
+# }
+
+# ---------------------------------------------------------------
 # If you change this variable the scraping process will change
 # and not all elements will be scraped.
 # Variable is archaic and deprecated
@@ -264,7 +278,9 @@ def get_time(x):
     try:
         time = x.find_element_by_tag_name("abbr").get_attribute("title")
         time = (
-            str("%02d" % int(time.split(", ")[1].split()[1]),)
+            str(
+                "%02d" % int(time.split(", ")[1].split()[1]),
+            )
             + "-"
             + str(
                 (
@@ -770,10 +786,13 @@ def login(email, password):
         options.add_argument("--disable-infobars")
         options.add_argument("--mute-audio")
         options.add_argument("--no-sandbox")
-        # options.add_argument("headless")
+        options.add_argument("headless")
 
         try:
             platform_ = platform.system().lower()
+            os.environ["webdriver.chrome.driver"] = "./bin/chromedriver"
+            driver = webdriver.Chrome("./bin/chromedriver")
+            # service = Service("./bin/chromedriver")
             driver = webdriver.Chrome(
                 executable_path=ChromeDriverManager().install(), options=options
             )
@@ -914,7 +933,9 @@ if __name__ == "__main__":
     current_scrolls = 0
     old_height = 0
 
-    driver = webdriver.Chrome("./bin/chromedriver")
+    os.environ["webdriver.chrome.driver"] = "bin/chromedriver"
+    driver = webdriver.Chrome("bin/chromedriver")
+    # service = Service("bin/chromedriver")
     CHROMEDRIVER_BINARIES_FOLDER = "bin"
 
     with open("selectors.json") as a, open("params.json") as b:
