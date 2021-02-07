@@ -29,6 +29,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 opts = Options()
 opts.add_argument(
     "user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/71.0"
+
 )
 
 # If you change this variable the scraping process will change
@@ -74,7 +75,7 @@ tsmin = 15
 tsmax = 30
 
 
-# CHROMEDRIVER_BINARIES_FOLDER = "bin"
+CHROMEDRIVER_BINARIES_FOLDER = "bin"
 
 
 # -------------------------------------------------------------
@@ -768,6 +769,7 @@ def login(email, password):
         options.add_argument("--disable-notifications")
         options.add_argument("--disable-infobars")
         options.add_argument("--mute-audio")
+        options.add_argument("--no-sandbox")
         # options.add_argument("headless")
 
         try:
@@ -912,8 +914,8 @@ if __name__ == "__main__":
     current_scrolls = 0
     old_height = 0
 
-    # driver = None
-    # CHROMEDRIVER_BINARIES_FOLDER = "bin"
+    driver = webdriver.Chrome("./bin/chromedriver")
+    CHROMEDRIVER_BINARIES_FOLDER = "bin"
 
     with open("selectors.json") as a, open("params.json") as b:
         selectors = json.load(a)
