@@ -1,6 +1,6 @@
 {
   "status": ".//div[@class='_5wj-']",
-  "sections_bar": "//div[@id='mount_0_0_cY']/div/div/div/div[3]/div/div/div/div/div/div/div[3]/div/div/div/div/div/div/div/div/div/div/div/div/div/a[3]/div/span",
+  "sections_bar": "//body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]",
   "status_exc": ".//div[@class='userContent']",
   "temp": ".//div[@class='_3x-2']",
   "title": ".//span[@class='fwb fcg']",
