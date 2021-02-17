@@ -6,6 +6,7 @@
 credentials.yaml
 input.txt*
 input.txt.old*
+*.side
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
