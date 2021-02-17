@@ -5,7 +5,7 @@ import os
 import platform
 import sys
 
-## Custom Imports for time banning.
+# Custom Imports for time banning.
 import time
 import urllib.request
 from random import randint
@@ -14,22 +14,25 @@ import utils
 import yaml
 from ratelimit import limits
 from selenium import webdriver
+from selenium.webdriver import Firefox
+from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.firefox.webdriver import WebDriver
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
+
+# from webdriver_manager.chrome import ChromeDriverManager
 
 # -------------------------------------------------------------
 # -------------------------------------------------------------
 
 
 # Global Variables
-opts = Options()
-opts.add_argument(
-    "user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/71.0"
+options = Options()
+options.add_argument(
+    "user-agent=Mozilla/5.0(Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/71.0"
 )
 
 # exports.config = {
@@ -68,9 +71,10 @@ scroll_time = 9
 
 old_height = 0
 facebook_https_prefix = "https://"
+facebook_link_body = "facebook.com"
 
-## Reducing these values now that a scroll time period has been added to avoid rate limit
-# Actually did not change them.
+# Reducing these values now that a scroll time period has been added
+# to avoid rate limit. Actually did not change them.
 
 # Values for rate limiting | lower is slower!
 # Last worked at: low=10,high=25,time=600
@@ -89,8 +93,8 @@ tsmin = 15
 tsmax = 30
 
 
-CHROMEDRIVER_BINARIES_FOLDER = "bin"
-
+# CHROMEDRIVER_BINARIES_FOLDER = "bin"
+Firefox(executable_path="/usr/local/bin/geckodriver")
 
 # -------------------------------------------------------------
 # Identify Image Links
@@ -184,20 +188,6 @@ def check_height():
     new_height = driver.execute_script("return document.body.scrollHeight")
     return new_height != old_height
 
-
-# -------------------------------------------------------------
-# Exit immediately after being blocked
-# -------------------------------------------------------------
-
-
-# def block_check(b):
-#     blocked = ""
-#     try:
-#         blocked = b.find_element_by_xpath("//div[@class='mvl ptm uiInterstitial uiInterstitialLarge uiBoxWhite']").text
-#     except Exception:
-#         pass
-#     finally:
-#         exit(1)
 
 # -------------------------------------------------------------
 # -------------------------------------------------------------
@@ -424,6 +414,23 @@ def extract_and_write_posts(elements, filename):
 
 
 # -------------------------------------------------------------
+
+######   ######  ########     ###    ########  #### ##    ##  ######
+##    ## ##    ## ##     ##   ## ##   ##     ##  ##  ###   ## ##    ##
+##       ##       ##     ##  ##   ##  ##     ##  ##  ####  ## ##
+######  ##       ########  ##     ## ########   ##  ## ## ## ##   ####
+## ##       ##   ##   ######### ##         ##  ##  #### ##    ##
+##    ## ##    ## ##    ##  ##     ## ##         ##  ##   ### ##    ##
+######   ######  ##     ## ##     ## ##        #### ##    ##  ######
+
+######  ##     ## #### ########
+##    ## ##     ##  ##     ##
+##       ##     ##  ##     ##
+######  #########  ##     ##
+## ##     ##  ##     ##
+##    ## ##     ##  ##     ##
+######  ##     ## ####    ##
+
 # -------------------------------------------------------------
 
 
@@ -480,13 +487,13 @@ def save_to_file(name, elements, status, current_section):
                                         )
                                     )
                                 )
-                                l = driver.find_element_by_class_name(
+                                ld = driver.find_element_by_class_name(
                                     selectors.get("profilePicThumb")
                                 ).get_attribute("href")
                             except Exception:
-                                l = "None"
+                                ld = "None"
 
-                            links.append(l)
+                            links.append(ld)
 
                         for i, _ in enumerate(links):
                             if links[i] is None:
@@ -502,6 +509,7 @@ def save_to_file(name, elements, status, current_section):
                         "Following's Photos",
                         "Follower's Photos",
                         "Work Friends Photos",
+                        "High School Friends Photos",
                         "College Friends Photos",
                         "Current City Friends Photos",
                         "Hometown Friends Photos",
@@ -628,7 +636,8 @@ def save_to_file(name, elements, status, current_section):
 
 @limits(calls=randint(rtqlow, rtqhigh), period=randint(rltime, rhtime))
 def scrape_data(user_id, scan_list, section, elements_path, save_status, file_names):
-    """Given some parameters, this function can scrap friends/photos/videos/about/posts(statuses) of a profile"""
+    """Given some parameters, this function can scrape
+    friends/photos/videos/about/posts(statuses) of a profile"""
     page = []
 
     if save_status == 4:
@@ -671,6 +680,15 @@ def scrape_data(user_id, scan_list, section, elements_path, save_status, file_na
 
 
 # -----------------------------------------------------------------------------
+
+#######  ########  ####  ######          ##       #### ##    ## ##    ##
+##     ## ##     ##  ##  ##    ##         ##        ##  ###   ## ##   ##
+##     ## ##     ##  ##  ##               ##        ##  ####  ## ##  ##
+##     ## ########   ##  ##   ####        ##        ##  ## ## ## #####
+##     ## ##   ##    ##  ##    ##         ##        ##  ##  #### ##  ##
+##     ## ##    ##   ##  ##    ##  ###    ##        ##  ##   ### ##   ##
+#######  ##     ## ####  ######   ###    ######## #### ##    ## ##    ##
+
 # -----------------------------------------------------------------------------
 
 
@@ -702,6 +720,13 @@ def create_original_link(url):
 
 
 # -----------------------------------------------------------------------------
+
+#  ___             _   ___                _     __       ___
+# | _ \___ __ _ __| | |_ _|_ _  _ __ _  _| |_  / _|___  | _ \_  _ _ _
+# |   / -_) _` / _` |  | || ' \| '_ \ || |  _| > _|_ _| |   / || | ' \
+# |_|_\___\__,_\__,_| |___|_||_| .__/\_,_|\__| \_____|  |_|_\\_,_|_||_|
+#                              |_|
+
 # -----------------------------------------------------------------------------
 def create_folder(folder):
     if not os.path.exists(folder):
@@ -763,6 +788,14 @@ def scrap_profile(ids):
 
 
 # -----------------------------------------------------------------------------
+
+
+#  _                   _             _
+# | |   ___  __ _ __ _(_)_ _  __ _  (_)_ _
+# | |__/ _ \/ _` / _` | | ' \/ _` | | | ' \
+# |____\___/\__, \__, |_|_||_\__, | |_|_||_|
+#           |___/|___/       |___/
+
 # -----------------------------------------------------------------------------
 
 
@@ -790,12 +823,14 @@ def login(email, password):
 
         try:
             platform_ = platform.system().lower()
-            os.environ["webdriver.chrome.driver"] = "./bin/chromedriver"
-            driver = webdriver.Chrome("./bin/chromedriver")
+            os.environ["webdriver.firefox.driver"] = "/usr/local/bin/geckodriver"
+            # driver = webdriver.Firefox("/usr/local/bin/geckodriver")
+            # driver = webdriver.Chrome("./bin/chromedriver")
+            service = Service("/usr/local/bin/geckodriver")
             # service = Service("./bin/chromedriver")
-            driver = webdriver.Chrome(
-                executable_path=ChromeDriverManager().install(), options=options
-            )
+            # driver = webdriver.Chrome(
+            #     executable_path=ChromeDriverManager().install(), options=options
+            # )
 
         except Exception:
             print(
@@ -845,6 +880,23 @@ def login(email, password):
 
 
 # -----------------------------------------------------------------------------
+
+######  ##       ####
+##    ## ##        ##
+##       ##        ##
+##       ##        ##
+##       ##        ##
+##    ## ##        ##
+######  ######## ####
+
+######## ########  ########   #######  ########
+##       ##     ## ##     ## ##     ## ##     ##
+##       ##     ## ##     ## ##     ## ##     ##
+######   ########  ########  ##     ## ########
+##       ##   ##   ##   ##   ##     ## ##   ##
+##       ##    ##  ##    ##  ##     ## ##    ##
+######## ##     ## ##     ##  #######  ##     ##
+
 # -----------------------------------------------------------------------------
 
 
@@ -873,7 +925,23 @@ def scraper(**kwargs):
 
 
 # -------------------------------------------------------------
-# -------------------------------------------------------------
+
+######  ##       ####
+##    ## ##        ##
+##       ##        ##
+##       ##        ##
+##       ##        ##
+##    ## ##        ##
+######  ######## ####
+
+##     ## ######## ##       ########
+##     ## ##       ##       ##     ##
+##     ## ##       ##       ##     ##
+######### ######   ##       ########
+##     ## ##       ##       ##
+##     ## ##       ##       ##
+##     ## ######## ######## ##
+
 # -------------------------------------------------------------
 
 if __name__ == "__main__":
@@ -914,7 +982,23 @@ if __name__ == "__main__":
     print(args)
 
     # ---------------------------------------------------------
-    # Global Variables
+
+    ######   ##        #######  ########     ###    ##
+    ##    ##  ##       ##     ## ##     ##   ## ##   ##
+    ##        ##       ##     ## ##     ##  ##   ##  ##
+    ##   #### ##       ##     ## ########  ##     ## ##
+    ##    ##  ##       ##     ## ##     ## ######### ##
+    ##    ##  ##       ##     ## ##     ## ##     ## ##
+    ######   ########  #######  ########  ##     ## ########
+
+    ##     ##    ###    ########  ####    ###    ########  ##       ########  ######
+    ##     ##   ## ##   ##     ##  ##    ## ##   ##     ## ##       ##       ##    ##
+    ##     ##  ##   ##  ##     ##  ##   ##   ##  ##     ## ##       ##       ##
+    ##     ## ##     ## ########   ##  ##     ## ########  ##       ######    ######
+    ##   ##  ######### ##   ##    ##  ######### ##     ## ##       ##             ##
+    ## ##   ##     ## ##    ##   ##  ##     ## ##     ## ##       ##       ##    ##
+    ###    ##     ## ##     ## #### ##     ## ########  ######## ########  ######
+
     # ---------------------------------------------------------
 
     # whether to download photos or not
@@ -922,8 +1006,8 @@ if __name__ == "__main__":
     download_friends_photos = utils.to_bool(args["friends_photos"])
 
     # whether to download the full image or its thumbnail (small size)
-    # if small size is True then it will be very quick else if its false then it will open each photo to download it
-    # and it will take much more time
+    # if small size is True then it will be very quick else if its false then
+    # it will open each photo to download it and it will take much more time
     friends_small_size = utils.to_bool(args["friends_small_size"])
     photos_small_size = utils.to_bool(args["photos_small_size"])
 
@@ -933,10 +1017,12 @@ if __name__ == "__main__":
     current_scrolls = 0
     old_height = 0
 
-    os.environ["webdriver.chrome.driver"] = "bin/chromedriver"
-    driver = webdriver.Chrome("bin/chromedriver")
+    os.environ["webdriver.firefox.driver"] = "/usr/local/bin/geckodriver"
+    # Below caused an error, because module driver should not be called.
+    # driver = webdriver.firefox("/usr/local/bin/geckodriver")
+    service = Service("/usr/local/bin/geckodriver")
     # service = Service("bin/chromedriver")
-    CHROMEDRIVER_BINARIES_FOLDER = "bin"
+    # CHROMEDRIVER_BINARIES_FOLDER = "bin"
 
     with open("selectors.json") as a, open("params.json") as b:
         selectors = json.load(a)
@@ -946,5 +1032,16 @@ if __name__ == "__main__":
     facebook_https_prefix = selectors.get("facebook_https_prefix")
     facebook_link_body = selectors.get("facebook_link_body")
 
-    # get things rolling
+
+########  ##     ## ##    ##
+##     ## ##     ## ###   ##
+##     ## ##     ## ####  ##
+########  ##     ## ## ## ##
+##   ##   ##     ## ##  ####
+##    ##  ##     ## ##   ###
+##     ##  #######  ##    ##
+
+
+# get things rolling
+with Firefox() as driver:
     scraper()

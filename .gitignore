@@ -5,6 +5,7 @@
 ### Local Ignores ###
 credentials.yaml
 input.txt*
+input.txt.old*
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
