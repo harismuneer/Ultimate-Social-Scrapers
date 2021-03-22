@@ -147,12 +147,12 @@ and many more satisfied customers..
 
 ## Price 💳  
 
-<b><i>Limited discount offer valid till Feb 22, 2021.</i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>TeamViewer meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. 
+<b><i>Limited discount offer valid till March 27, 2021.</i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>TeamViewer meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. 
 
-### Basic Version (99$) ~~149$~~
+### Basic Version (139$) ~~179$~~
 - allows you to scrape all sections for a <b>User's Profile/Account </b>
 
-### Pro Version (159$) ~~259$~~
+### Pro Version (239$) ~~279$~~
 - gives you all features of Basic version plus allows you to scrape <b>Facebook Public Pages and Facebook Groups</b>.
 
 ## Purchase 🤝
