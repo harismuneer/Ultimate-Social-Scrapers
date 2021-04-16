@@ -59,7 +59,7 @@ nvim credentials.yml
 5. You are ready to scrape, so strap on your seatbelt and launch the script.
 
 ```bash
-python3 scraper.py
+python3 photo-scraper.py
 ```
 
 6. Watch it scrape away for a few, then you might want to go to a movie or something.
