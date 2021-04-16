@@ -7,6 +7,13 @@ credentials.yaml
 input.txt*
 input.txt.old*
 *.side
+*.ipynb
+.ipynb*
+*.jupyter*
+*.backup*
+*-backup*
+*.org
+*.sublime*
 
 ### Python ###
 # Byte-compiled / optimized / DLL files

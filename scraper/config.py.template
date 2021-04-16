@@ -1,0 +1,29 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# I probably should have named this something other than config.py. Because,
+# for all intensive purposes this is the same thing as a standard config.txt
+# file.
+username = ""
+password = ""
+
+# ****************************************************************************
+# *                             Geckodriver Path                             *
+# ****************************************************************************
+
+# What is the path to geckodriver.
+driver = ""
+
+
+# ****************************************************************************
+# *                              Input file name                             *
+# ****************************************************************************
+
+input_file = "input.txt"
+
+
+# ****************************************************************************
+# *                             Configure a proxy                            *
+# ****************************************************************************
+
+proxy = ""
