@@ -1,63 +1,31 @@
 {
   "Friends": {
     "scan_list": [
-      "All",
-      "Mutual Friends",
-      "Following",
-      "Followers",
-      "Work",
-      "College",
-      "Current City",
-      "Hometown"
+      "All"
     ],
     "section": [
-      "/friends",
-      "/friends_mutual",
-      "/following",
-      "/followers",
-      "/friends_work",
-      "/friends_college",
-      "/friends_current_city",
-      "/friends_hometown"
+      "/friends_all"
     ],
     "elements_path": [
-      "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
-      "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
-      "//*[contains(@class,'_3i9')][1]/div/div/ul/li[1]/div[2]/div/div/div/div/div[2]/ul/li/div/a",
-      "//*[contains(@class,'fbProfileBrowserListItem')]/div/a",
-      "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
-      "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
-      "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a",
-      "//*[contains(@id,'pagelet_timeline_medley_friends')][1]/div[2]/div/ul/li/div/a"
+      "//a[@class='cu' and @xpath=',1' and text()='Friends']"
     ],
     "file_names": [
-      "All Friends.txt",
-      "Mutual Friends.txt",
-      "Following.txt",
-      "Followers.txt",
-      "Work Friends.txt",
-      "College Friends.txt",
-      "Current City Friends.txt",
-      "Hometown Friends.txt"
+      "All_Friends.txt"
     ],
     "save_status": 0
   },
   "Photos": {
     "scan_list": [
-      "'s Photos",
       "Photos of"
     ],
     "section": [
-      "/photos_all",
-      "/photos_of"
+      "/photos_all"
     ],
     "elements_path": [
-      "//*[contains(@id, 'pic_')]",
-      "//*[contains(@id, 'pic_')]"
+      "//a[@class='cu' and text()='Photos']"
     ],
     "file_names": [
-      "Uploaded Photos.txt",
-      "Tagged Photos.txt"
+      "All_Photos.txt"
     ],
     "save_status": 1
   },

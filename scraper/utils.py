@@ -1,5 +1,6 @@
 import argparse
 import os
+from calendar import calendar
 
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
@@ -60,27 +61,31 @@ def scroll(total_scrolls, driver, selectors, scroll_time):
 # Helper Functions for Posts
 # -----------------------------------------------------------------------------
 
+'''
+The status feature has been discontinued by facebook and no longer applies
+'''
+# def get_status(x, selectors):
+#     status = ""
+#     try:
+#         status = x.find_element_by_xpath(
+#             selectors.get("status")
+#         ).text  # use _1xnd for Pages
+#     except Exception:
+#         try:
+#             status = x.find_element_by_xpath(selectors.get("status_exc")).text
+#         except Exception:
+#             pass
+#     return status
 
-def get_status(x, selectors):
-    status = ""
-    try:
-        status = x.find_element_by_xpath(
-            selectors.get("status")
-        ).text  # use _1xnd for Pages
-    except Exception:
-        try:
-            status = x.find_element_by_xpath(selectors.get("status_exc")).text
-        except Exception:
-            pass
-    return status
-
-
-def get_div_links(x, tag, selectors):
-    try:
-        temp = x.find_element_by_xpath(selectors.get("temp"))
-        return temp.find_element_by_tag_name(tag)
-    except Exception:
-        return ""
+'''
+the temp appears to be no longer a feature as well.
+'''
+# def get_div_links(x, tag, selectors):
+#     try:
+#         temp = x.find_element_by_xpath(selectors.get("temp"))
+#         return temp.find_element_by_tag_name(tag)
+#     except Exception:
+#         return ""
 
 
 def get_title_links(title):
