@@ -4,8 +4,8 @@
 
 ### Local Ignores ###
 credentials.yaml
-*input.txt*
-*input.txt.old*
+input.txt*
+input.txt.old*
 passwords.txt
 *.side
 *.ipynb
