@@ -246,11 +246,8 @@ def get_profile_photos(ids):
                     driver.get(full_Size_Url)
                     time.sleep(3)
                     img_url = driver.current_url
-                    # cookies = driver.get_cookies()
                     image_number = str(randint(1, 9999))
                     image_name = "photo" + image_number + ".jpg"
-                    # headers = "'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) relesys_web_client/1.3.7.0 (RelesysApp/1.3.35; net.relesysapp.nettoenterprise)'"  # noqa: E501
-                    # with requests.get(img_url, headers=headers, cookies=cookies, stream=True, allow_redirects=True) as r:  # noqa: E501
                     with requests.get(img_url, stream=True, allow_redirects=True) as r:  # noqa: E501
                         with open(image_name, "wb") as f:
                             r.raw.decode_content = True
@@ -265,18 +262,13 @@ def get_profile_photos(ids):
                                 "//a[text()='View Full Size']").get_attribute("href")  # noqa: E501
                             driver.get(full_Size_Url)
                             img_url = driver.current_url
-                            # cookies = driver.get_cookies()
                             image_number = str(randint(1, 9999))
                             image_name = "photo" + image_number + ".jpg"
-                            # headers = "'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) relesys_web_client/1.3.7.0 (RelesysApp/1.3.35; net.relesysapp.nettoenterprise)'"  # noqa: E501
-                            # with requests.get(img_url, headers=headers, cookies=cookies, stream=True, allow_redirects=True) as r:  # noqa: E501
                             with requests.get(img_url, stream=True, allow_redirects=True) as r:  # noqa: E501
                                 with open(image_name, "wb") as f:
                                     r.raw.decode_content = True
                                     shutil.copyfileobj(r.raw, f)
                             driver.back()
-                        if driver.current_url is firstImage:
-                            galleryEnd = True
                     except NoSuchElementException:
                         galleryEnd = True
                 except NoSuchElementException:
@@ -290,36 +282,36 @@ def get_profile_photos(ids):
                 full_Size_Url = driver.find_element_by_xpath(
                     "//a[text()='View Full Size']").get_attribute("href")
                 driver.get(full_Size_Url)
-                time.sleep(3)
+                time.sleep(2)
                 img_url = driver.current_url
-                # cookies = driver.get_cookies()
                 image_number = str(randint(1, 9999))
                 image_name = "photo" + image_number + ".jpg"
-                # headers = "'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) relesys_web_client/1.3.7.0 (RelesysApp/1.3.35; net.relesysapp.nettoenterprise)'"  # noqa: E501
-                # with requests.get(img_url, headers=headers, cookies=cookies, stream=True, allow_redirects=True) as r:  # noqa: E501
                 with requests.get(img_url, stream=True, allow_redirects=True) as r:  # noqa: E501
                     with open(image_name, "wb") as f:
                         r.raw.decode_content = True
                         shutil.copyfileobj(r.raw, f)
             finally:
                 try:
-                    f = furl(firstImage)
+                    f1 = furl(firstImage)
                     prefix = "https://"
-                    int_fb_id = f.args.popvalue('id')
+                    int_fb_id = f1.args.popvalue('id')
                     account_id = int_fb_id.strip()
+                    f2 = furl(photos_url)
+                    userid_path = str(f2.path)
+                    userid = userid_path.strip('/')
                     front_album_url = "mbasic.facebook.com/"
-                    back_album_url = "/photos/albums/?owner_id="
-                    album_page_url = prefix + front_album_url + user_id + back_album_url + account_id  # noqa: E501
+                    back_album_url = "/albums/?owner_id="
+                    album_page_url = prefix + front_album_url + userid + back_album_url + account_id  # noqa: E501
                     driver.get(album_page_url)
-                    driver.get(photos_url)
-                    photo_albums_links = driver.find_elements_by_xpath("//span[@class='u']/a")  # noqa: E501
-                    folder = os.path.join(os.getcwd(), "data")
-                    album_folder = photo_albums_links.get_attribute("LinkText")
-                    utils.create_folder(album_folder)
-                    os.chdir(folder)
+                    # driver.get(photos_url)
+                    photo_albums_links = driver.find_elements_by_xpath("//td[@class='t']/span/a")  # noqa: E501
                     for element in photo_albums_links:
                         album_link = photo_albums_links.get_attribute("href")
                         driver.get(album_link)
+                        folder = os.path.join(os.getcwd(), "data")
+                        folder_title = driver.find_elements_by_xpath("//div[text()]").get_attribute("text")  # noqa: E501
+                        utils.create_folder(folder_title)
+                        os.chdir(folder)
                         try:
                             driver.find_element_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/article[1]/div[1]/section[3]/div[1]/a[1]").click()  # noqa: E501
                             firstImage = driver.current_url
@@ -328,11 +320,8 @@ def get_profile_photos(ids):
                             driver.get(full_Size_Url)
                             time.sleep(3)
                             img_url = driver.current_url
-                            # cookies = driver.get_cookies()
                             image_number = str(randint(1, 9999))
                             image_name = "photo" + image_number + ".jpg"
-                            # headers = "'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) relesys_web_client/1.3.7.0 (RelesysApp/1.3.35; net.relesysapp.nettoenterprise)'"  # noqa: E501
-                            # with requests.get(img_url, headers=headers, cookies=cookies, stream=True, allow_redirects=True) as r:  # noqa: E501
                             with requests.get(img_url, stream=True, allow_redirects=True) as r:  # noqa: E501
                                 with open(image_name, "wb") as f:
                                     r.raw.decode_content = True
@@ -347,18 +336,13 @@ def get_profile_photos(ids):
                                         "//a[text()='View Full Size']").get_attribute("href")  # noqa: E501
                                     driver.get(full_Size_Url)
                                     img_url = driver.current_url
-                                    # cookies = driver.get_cookies()
                                     image_number = str(randint(1, 9999))
                                     image_name = "photo" + image_number + ".jpg"  # noqa: E501
-                                    # headers = "'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) relesys_web_client/1.3.7.0 (RelesysApp/1.3.35; net.relesysapp.nettoenterprise)'"  # noqa: E501
-                                    # with requests.get(img_url, headers=headers, cookies=cookies, stream=True, allow_redirects=True) as r:  # noqa: E501
                                     with requests.get(img_url, stream=True, allow_redirects=True) as r:  # noqa: E501
                                         with open(image_name, "wb") as f:
                                             r.raw.decode_content = True
                                             shutil.copyfileobj(r.raw, f)
                                     driver.back()
-                                    if driver.current_url is firstImage:
-                                        galleryEnd = True
                             except NoSuchElementException:
                                 galleryEnd = True
                         except NoSuchElementException:
