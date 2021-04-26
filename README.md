@@ -1,3 +1,4 @@
+```txt
 <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 <!--     ____ _______________________                                       -->
 <!--    |    |   \_   _____/   _____/                                       -->
@@ -12,6 +13,7 @@
 <!--    \_____\ \_/____/(____  /\___  >__|_ \__||__|  |__|\___  >____ |     -->
 <!--           \__>          \/     \/     \/                 \/     \/     -->
 <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+```
 
 ## UFS Scraper: Quackified Edition  
 
@@ -23,12 +25,23 @@ Since the last update of this repo the developer has removed the script from git
 ##### What this means for the future of this script?
 Unfortunately, the book of face has changed it's design and nearly all of the references that were used to scrape profiles are no longer present, many once important sections have now been completely removed. As far as yours truly is concerned, I only was using this script to scrape pictures. So, as far as profile information was concerned, it was wasted space. So, the future of this script is to be modified to scrape pictures and pictures only. 
 
+### Features
+
+A bot which scrapes a user's Facebook profile for images:
+
+- all albums
+- profile photos
+- friend's profile photos(WIP)
 
 #### Notable differences
 
-##### Chromedriver executable '~/home/bin': !IMPORTANT STUFF!
+##### Chromedriver is no more
 
-Also, and this is very very important, in the vanilla UFS repo there is currently a bug that does not recognize chromedriver as being the most recent version compatible with your particular version of chrome. So, you will need to download chromedriver on your own and place it in your home directory under the directory named `bin` so that the full path of the chrome executable will be `$HOME/bin/chromedriver`.
+For some undiscovered reason chromedriver stopped working locally and it was already desired to move the project from chrome to firefox. So chrome has been axed from the project and in it's place is geckodriver. So, you will need gecko driver to successfully run this script.
+
+##### Geckodriver executable '/usr/local/bin': !IMPORTANT STUFF!
+
+Since we have moved from chrome driver to geckodriver the location of geckodriver needs to remain consistent if you desire to run this program. In my distrobution geckodriver is located in `/usr/local/bin`, yours needs to be the same to successfully execute.
 
 #### Running the script
 
@@ -84,6 +97,7 @@ There are a few things that are recommended in order to encourage successful scr
 
 This script was originally written by Haris Muneer and associates, but what remains of the original work is less than ten percent of the original code base, the remaining 90% was written by yours truly. This was done before the license to the code was changed unknowingly from being open source to closed source. The remaining portions of the original code base is from the open source version and not the closed. Being in such state, this repository is free from all and any claims made upon it by the previous authors, and will be placed under the MIT license. 
 
+```txt
 <!-- Copyright (c) 2021 anoduck
 
 Permission is hereby granted, free of charge, to any person obtaining a
@@ -104,14 +118,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
  -->
-
----
-
-<hr>
-
-## Features
-
-A bot which scrapes almost everything about a user's Facebook profile including:
-
-- uploaded photos
-- tagged photos
+```
