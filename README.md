@@ -43,6 +43,10 @@ For some undiscovered reason chromedriver stopped working locally and it was alr
 
 Since we have moved from chrome driver to geckodriver the location of geckodriver needs to remain consistent if you desire to run this program. In my distrobution geckodriver is located in `/usr/local/bin`, yours needs to be the same to successfully execute.
 
+##### No Longer run scraper, but photo-scraper: !Also Uber Important!
+
+In order to maintain a copy of the original script, I created a new script and have made all my modifications to it. It is photo-scraper.py, and it is what you will need to run for the forseeable future. So remember this, it is not `python3 scraper.py`, but is `python3 photo-scraper.py`. 
+
 #### Running the script
 
 1. Perform a shallow clone of the repo, like a boss!
