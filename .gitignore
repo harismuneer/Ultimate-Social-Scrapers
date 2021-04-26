@@ -15,8 +15,16 @@ passwords.txt
 *.jupyter*
 *.backup*
 *-backup*
-*.org
 *.sublime*
+project.org
+scraper-mobile.py
+
+# Custom additions
+chromedriver*
+data
+images
+input.txt-backup
+
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -402,16 +410,3 @@ node_modules/
 *.log
 *.sql
 *.sqlite
-
-# Custom additions
-credentials.yaml
-input.txt
-chromedriver*
-data
-images
-scraper/input.txt
-scraper/data
-scraper/credentials.yaml
-scraper/chromedriver
-scraper/input.txt-backup
-scraper/scraper-mobile.py

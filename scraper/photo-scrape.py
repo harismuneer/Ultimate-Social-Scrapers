@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# ----------------------------------------------------------------------------
 # Copyright (c) 2021 anoduck
 
 # Permission is hereby granted, free of charge, to any person obtaining a
@@ -20,6 +21,8 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
+# -----------------------------------------------------------------------------
+# Jeezus this code is a fucking mess...
 
 import requests
 import shutil
@@ -48,6 +51,7 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+import selenium.webdriver.support.relative_locator
 # from selenium.webdriver.support.expected_conditions import presence_of_element_located  # noqa: E501
 
 # -------------------------------------------------------------
@@ -373,8 +377,11 @@ def get_friends(ids):
         driver.get(user_id)
         try:
             driver.find_element_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/a[3]").click()  # noqa: E501
-            friend_box = driver.find_elements_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]")  # noqa: E501
-            for x in friend_box:
+            profile_name = driver.find_elements_by_xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/strong[1]").text  # noqa: E501
+            global profile_name
+            friend_box = driver.find_element_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]")  # noqa: E501
+            friend_list = friend_box.find_elements_by_xpath("//a[@class='cf']")
+            for x in friend_list:
                 friend_url = x.get_attribute("href")
                 friend_name = x.get_attribute("text")
                 friend_file = user_id + "friends" + ".txt"
@@ -384,12 +391,18 @@ def get_friends(ids):
                     u.write("/n")
                     u.writelines(friend_url[i])
                     u.write("/n/n")
+                friend_url_file = profile_name + "friend_urls" + ".txt"
+                global friend_url_file
+                k = open(friend_url_file, "w", encoding="utf-8", newline="\r\n")  # noqa: E501
+                for k, _ in enumerate(friend_url):
+                    k.writelines(friend_url[k])
+                    u.write("/n/n")
             friend_list_end = False
             while friend_list_end is False:
                 try:
                     driver.find_element_by_xpath("//span[text()='See More Friends']").click() # noqa E501
-                    driver.friend_box()
-                    for x in friend_box:
+                    driver.friend_list()
+                    for x in friend_list:
                         friend_url = x.get_attribute("href")
                         friend_name = x.get_attribute("text")
                         friend_file = user_id + "friends" + ".txt"
@@ -399,13 +412,61 @@ def get_friends(ids):
                             u.write("/n")
                             u.writelines(friend_url[i])
                             u.write("/n/n")
+                        friend_url_file = profile_name + "friend_urls" + ".txt"
+                        k = open(friend_url_file, "w", encoding="utf-8", newline="\r\n")  # noqa: E501
+                        for k, _ in enumerate(friend_url):
+                            k.writelines(friend_url[k])
+                            u.write("/n/n")
                 except NoSuchElementException:
                     friend_list_end = True
                     print("Did not find any more friends.")
         except NoSuchElementException:
             return False
             print("Friends Element Not Found")
-        return True
+        # return True # -> WHY?
+
+# ****************************************************************************
+# *                                Get Gender                                *
+# ****************************************************************************
+
+
+def get_gender(ids):
+    for user_id in ids:
+        # profile_imgs = []
+        driver.get(user_id)
+        print('Scraping Gender' + str(user_id))
+        try:
+            find_gender = driver.find_elements_by_xpath("//span[@innerstringmarker='Gender']")  # noqa: E501
+            if NoSuchElementException is False:
+                gender_label = find_gender.to_right_of(find_gender)  # noqa: E501
+                gender = gender_label.text
+                print(gender)
+                if gender == "Female":
+                    continue
+                else:
+                    break
+        except NoSuchElementException:
+            print("No Gender Found")
+
+
+# ****************************************************************************
+# *                              get friend urls                             *
+# ****************************************************************************
+
+def friend_scraper(**kwargs):
+    friend_ids = [
+        line.split("/")[-1]
+        for line in open("input.txt", newline="\n")
+    ]
+
+    if len(friend_ids) > 0:
+        print("\nStarting Scraping Friends...")
+
+        scrap_profile(friend_ids)
+        # driver.close() # -> Suspect of creating two browser windows
+    else:
+        print("Friend URL file is empty.")
+
 
 # ****************************************************************************
 # *                                 get names                                *
@@ -1088,11 +1149,10 @@ def scraper(**kwargs):
 
         login(cfg["email"], cfg["password"])
         scrap_profile(ids)
-        driver.close()
+        # driver.close() # -> Suspect of creating two browser windows
     else:
         print("Input file is empty.")
 
-## CLI Help
 
 # -------------------------------------------------------------
 

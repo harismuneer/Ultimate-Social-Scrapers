@@ -1,0 +1,13 @@
+#+TITLE: TODO DOT ORG
+#+DATE: 04-26-2021
+#+AUTHOR: anoduck
+#+EMAIL: anoduck@github.com
+#+CATEGORY: Tasks
+#+PROJECT: ORG
+#+OPTIONS: H:3 num:nil toc:nil \n:nil ::t |:t ^:t -:t f:Tls *:T
+#+STARTUP: align nodlcheck nofold oddeven hidestars
+#+DRAWERS: PROPERTIES CLOCK LOGBOOK RESULTS FEEDSTATUS
+#+COLUMNS: %38ITEM(Details) %TAGS(Context) %7SCHEDULED(Planned) %7TODO(To Do) %5PRIORITY(PRIORITY) %5DONE(Completeness){X%} %5Effort(Time){:} %6CLOCKSUM(Total){:}
+# ===============================================================================
+
+* TODO [#A] Finish setting up genders
