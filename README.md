@@ -19,10 +19,10 @@
 
 ---
 
-#### New Changes to come
+### New Changes to come
 Since the last update of this repo the developer has removed the script from github and closed the source code. He now requires payment for access to this script. 
 
-##### What this means for the future of this script?
+#### What this means for the future of this script?
 Unfortunately, the book of face has changed it's design and nearly all of the references that were used to scrape profiles are no longer present, many once important sections have now been completely removed. As far as yours truly is concerned, I only was using this script to scrape pictures. So, as far as profile information was concerned, it was wasted space. So, the future of this script is to be modified to scrape pictures and pictures only. 
 
 ### Features
@@ -33,21 +33,21 @@ A bot which scrapes a user's Facebook profile for images:
 - profile photos
 - friend's profile photos(WIP)
 
-#### Notable differences
+### Notable Changes
 
-##### Chromedriver is no more
+#### Chromedriver is no more
 
 For some undiscovered reason chromedriver stopped working locally and it was already desired to move the project from chrome to firefox. So chrome has been axed from the project and in it's place is geckodriver. So, you will need gecko driver to successfully run this script.
 
-##### Geckodriver executable '/usr/local/bin': !IMPORTANT STUFF!
+#### Geckodriver executable '/usr/local/bin': !IMPORTANT STUFF!
 
 Since we have moved from chrome driver to geckodriver the location of geckodriver needs to remain consistent if you desire to run this program. In my distrobution geckodriver is located in `/usr/local/bin`, yours needs to be the same to successfully execute.
 
-##### No Longer run scraper, but photo-scraper: !Also Uber Important!
+#### No Longer run scraper, but photo-scraper: !Also Uber Important!
 
 In order to maintain a copy of the original script, I created a new script and have made all my modifications to it. It is photo-scraper.py, and it is what you will need to run for the forseeable future. So remember this, it is not `python3 scraper.py`, but is `python3 photo-scraper.py`. 
 
-#### Running the script
+### Running the script
 
 1. Perform a shallow clone of the repo, like a boss!
 
@@ -83,7 +83,7 @@ python3 photo-scraper.py
 
 7. If for some reason you discover that your profile has been blocked for using this script or a feature on facebook has been disabled preventing you from successfully completing the scrape. Please submit a new issue to this repository so that we may make concessions and corrections to prevent this from further occurring again.
 
-#### Tips and Tricks (but no treats)...
+### Tips and Tricks (but no treats)...
 
 There are a few things that are recommended in order to encourage successful scraping and avoid being blocked or having a feature temporarily disabled on your account. They are:
 
@@ -97,7 +97,7 @@ There are a few things that are recommended in order to encourage successful scr
 
 6. Since currently, the script will not exit on being notified that your account has been blocked, do keep an eye on the scraping process from time to time. If ever you are notified that your account has been blocked, exit the script immediately.
 
-#### License and Copyright Clarification
+### License, Copyright, and Clarification
 
 This script was originally written by Haris Muneer and associates, but what remains of the original work is less than ten percent of the original code base, the remaining 90% was written by yours truly. This was done before the license to the code was changed unknowingly from being open source to closed source. The remaining portions of the original code base is from the open source version and not the closed. Being in such state, this repository is free from all and any claims made upon it by the previous authors, and will be placed under the MIT license. 
 
