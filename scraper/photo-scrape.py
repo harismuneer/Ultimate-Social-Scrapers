@@ -42,6 +42,7 @@ from furl import furl
 
 import utils
 import yaml
+# import seleniumsupport
 from ratelimit import limits
 from selenium import webdriver
 # from selenium_stealth import stealth
@@ -51,7 +52,6 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-import selenium.webdriver.support.relative_locator
 # from selenium.webdriver.support.expected_conditions import presence_of_element_located  # noqa: E501
 
 # -------------------------------------------------------------
@@ -223,17 +223,14 @@ def get_facebook_images_url(img_links):
 
 
 def get_profile_photos(ids):
-    # lip = []
     time.sleep(randint(tsmin, tsmax))
     for user_id in ids:
         # profile_imgs = []
         driver.get(user_id)
         url = driver.current_url
         user_id = create_original_link(url)
-        renderer = Figlet(font='small')
-        render_phrase = 'Scraping photos' + str(user_id)
-        to_render = renderer.renderText(render_phrase)
-        print(to_render)
+        render_phrase = 'Scraping photos' + '/n' + str(user_id)
+        print(render_phrase)
         try:
             WebDriverWait(driver, 5)
             photos_url = driver.find_element_by_xpath("//a[text()='Photos']").get_attribute("href")  # noqa: E501
@@ -243,7 +240,8 @@ def get_profile_photos(ids):
                     "//a[contains(text(),'See All')]").click()
                 WebDriverWait(driver, 5)
                 try:
-                    driver.find_element_by_xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/a[1]").click()  # noqa: E501
+                    driver.find_element_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]").click()  # noqa: E501
+                    # global firstImage
                     firstImage = driver.current_url
                     full_Size_Url = driver.find_element_by_xpath(
                         "//a[text()='View Full Size']").get_attribute("href")
@@ -276,10 +274,10 @@ def get_profile_photos(ids):
                     except NoSuchElementException:
                         galleryEnd = True
                 except NoSuchElementException:
-                    return False
+                    # return False
                     print("No More Photos Found")
             except NoSuchElementException:
-                return False
+                # return False
                 print("Could not see all photos")
             else:
                 driver.find_element_by_xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/a[1]").click()  # noqa: E501
@@ -351,12 +349,12 @@ def get_profile_photos(ids):
                                 galleryEnd = True
                         except NoSuchElementException:
                             print("Could not open any elements")
-                            return False
+                            # return False
                 except NoSuchElementException:
                     print("No photo Albums found")
-                    return False
+                    # return False
         except NoSuchElementException:
-            return False
+            # return False
             print("No Photos Found")
 
 # ## Image Downloader
@@ -369,7 +367,7 @@ def get_profile_photos(ids):
 # ****************************************************************************
 # -------------------------------------------------------------
 # TODO: create a variable that is user_id and friends_id combined for images
-# TODO: Add a loop with a limitation of redundancy
+# DONE: Add a loop with a limitation of redundancy
 
 
 def get_friends(ids):
@@ -377,8 +375,8 @@ def get_friends(ids):
         driver.get(user_id)
         try:
             driver.find_element_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/a[3]").click()  # noqa: E501
-            profile_name = driver.find_elements_by_xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/strong[1]").text  # noqa: E501
             global profile_name
+            profile_name = driver.find_elements_by_xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/strong[1]").text  # noqa: E501
             friend_box = driver.find_element_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]")  # noqa: E501
             friend_list = friend_box.find_elements_by_xpath("//a[@class='cf']")
             for x in friend_list:
@@ -391,8 +389,8 @@ def get_friends(ids):
                     u.write("/n")
                     u.writelines(friend_url[i])
                     u.write("/n/n")
-                friend_url_file = profile_name + "friend_urls" + ".txt"
                 global friend_url_file
+                friend_url_file = profile_name + "friend_urls" + ".txt"
                 k = open(friend_url_file, "w", encoding="utf-8", newline="\r\n")  # noqa: E501
                 for k, _ in enumerate(friend_url):
                     k.writelines(friend_url[k])
@@ -412,7 +410,7 @@ def get_friends(ids):
                             u.write("/n")
                             u.writelines(friend_url[i])
                             u.write("/n/n")
-                        friend_url_file = profile_name + "friend_urls" + ".txt"
+                        # friend_url_file = profile_name + "friend_urls" + ".txt"  # noqa: E501
                         k = open(friend_url_file, "w", encoding="utf-8", newline="\r\n")  # noqa: E501
                         for k, _ in enumerate(friend_url):
                             k.writelines(friend_url[k])
@@ -420,18 +418,19 @@ def get_friends(ids):
                 except NoSuchElementException:
                     friend_list_end = True
                     print("Did not find any more friends.")
+                    scraped_friends = "done"
         except NoSuchElementException:
-            return False
             print("Friends Element Not Found")
-        # return True # -> WHY?
+            scraped_friends = "done"
+            return scraped_friends
 
 # ****************************************************************************
 # *                                Get Gender                                *
 # ****************************************************************************
 
 
-def get_gender(ids):
-    for user_id in ids:
+def get_gender(friend_ids):
+    for user_id in friend_ids:
         # profile_imgs = []
         driver.get(user_id)
         print('Scraping Gender' + str(user_id))
@@ -447,6 +446,7 @@ def get_gender(ids):
                     break
         except NoSuchElementException:
             print("No Gender Found")
+            continue
 
 
 # ****************************************************************************
@@ -454,19 +454,34 @@ def get_gender(ids):
 # ****************************************************************************
 
 def friend_scraper(**kwargs):
+    global friend_ids
     friend_ids = [
         line.split("/")[-1]
-        for line in open("input.txt", newline="\n")
+        for line in open("friend_url_file.txt", newline="\n")
     ]
 
     if len(friend_ids) > 0:
         print("\nStarting Scraping Friends...")
 
+        get_gender(friend_ids)
         scrap_profile(friend_ids)
         # driver.close() # -> Suspect of creating two browser windows
     else:
         print("Friend URL file is empty.")
 
+# ****************************************************************************
+# *                           Control IDs to Scrape                          *
+# ****************************************************************************
+
+
+def scraper_control(ids, friend_ids):
+    global scraped_friends
+    if scraped_friends != "done":
+        p_ids = ids
+    else:
+        friend_scraper()
+        get_gender()
+        p_ids = friend_ids
 
 # ****************************************************************************
 # *                                 get names                                *
@@ -987,8 +1002,10 @@ def scrap_profile(ids):
             continue
 
         # get_friends_names(friend_url)
+        # scraper_control(ids, friend_ids)
         get_profile_photos(ids)
         get_friends(ids)
+        # scraper_control(ids, friend_ids)
 
         # to_scrap = ["Friends", "Photos"]
         # for item in to_scrap:
@@ -1003,7 +1020,7 @@ def scrap_profile(ids):
         # save_status = params[item]["save_status"]
 
         # scrape_data(
-        #     user_id, scan_list, section, elements_path, save_status, file_names
+        #     user_id, scan_list, section, elements_path, save_status, file_names  # noqa: E501
         # )
 
         # try:
