@@ -10,4 +10,6 @@
 #+COLUMNS: %38ITEM(Details) %TAGS(Context) %7SCHEDULED(Planned) %7TODO(To Do) %5PRIORITY(PRIORITY) %5DONE(Completeness){X%} %5Effort(Time){:} %6CLOCKSUM(Total){:}
 # ===============================================================================
 
-* TODO [#A] Finish setting up genders
+* INPROGRESS [#A] Finish setting up genders
+* TODO [#A] Rewrite scraper control module
+* DONE [#B] Control which ID gets scraped

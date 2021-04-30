@@ -37,7 +37,6 @@ import time
 import urllib.request
 # from urllib.request import urlopen, Request
 from random import randint
-from pyfiglet import Figlet
 from furl import furl
 
 import utils
@@ -52,12 +51,9 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-# from selenium.webdriver.support.expected_conditions import presence_of_element_located  # noqa: E501
 
 # -------------------------------------------------------------
 # -------------------------------------------------------------
-# TODO: change element presence conditional wording
-# TODO: Change getting text from element to simplier syntax
 
 
 # ## Global Variables
@@ -76,8 +72,6 @@ opts.add_argument("no-sandbox")
 opts.add_argument("lang=en-US")
 opts.add_argument("dns-prefetch-disable")
 opts.add_argument("start-maximized")
-# opts.add_experimental_option("excludeSwitches", ["enable-automation"])
-# opts.add_experimental_option('useAutomationExtension', False)
 
 # For requests library
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.3'}  # noqa: E501
@@ -148,16 +142,6 @@ Firefox(executable_path="/usr/local/bin/geckodriver")
 #                         |___/               #
 ###############################################
 
-# -------------------------------------------------------------
-# Identify Image Links
-# Important Note! The script scans the profiles and appends thestatus
-# links to a list, then downloads them later.
-# -------------------------------------------------------------
-
-# img_links = [
-#     x.find_element_by_css_selector("img").get_attribute("src")
-#     for x in element
-# ]
 
 # ****************************************************************************
 # *                              id control                                  *
@@ -248,7 +232,7 @@ def get_facebook_images_url(img_links):
 ##########################################################################################  # noqa: E501
 
 # --------------------------------------------------------------
-# TODO: prevent infinite loop of scraping photos.
+# DONE: prevent infinite loop of scraping photos.
 
 
 def get_profile_photos(p_ids):
@@ -404,7 +388,7 @@ def get_profile_photos(p_ids):
 # *                                Get Friends                               *
 # ****************************************************************************
 # -------------------------------------------------------------
-# TODO: create a variable that is user_id and friends_id combined for images
+# DONE: create a variable that is user_id and friends_id combined for images
 # DONE: Add a loop with a limitation of redundancy
 
 
@@ -485,23 +469,6 @@ def get_gender(friend_ids):
         except NoSuchElementException:
             print("No Gender Found")
             continue
-
-
-# ****************************************************************************
-# *                                 get names                                *
-# ****************************************************************************
-
-
-# def get_friends_names(friends):
-#     for friends_urls in friends:
-#         friend_names = []
-#         if friends_urls is not None:
-#             driver.get(friends_urls)
-#             friend_name = [x.find_element(By.XPATH,
-#                 "//strong[@class='ce']").get_attribute("text")  # noqa: E128
-#                 for x in elements]  # noqa E501
-#             friend_name.append(friend_names)
-#         return friend_names
 
 
 # -------------------------------------------------------------
@@ -792,15 +759,7 @@ def save_to_file(name, elements, status, friends_urls, current_section):
                     current_section,
                     sys.exc_info()[0],
                 )
-# ****************************************************************************
-# *                               Handle About:                              *
-# ****************************************************************************
-        # dealing with About Section
-        # elif status == 3:
-        #     results = elements[0].text
-        #     f.writelines(results)
 
-# Write results to file
 
 # ****************************************************************************
 # *                               Write to file                              *
@@ -911,6 +870,15 @@ def create_folder(folder):
 # In[ ]:
 
 
+##########################################################################
+#     ___                          _   _         _        _    _ _       #
+#    / __| __ _ _ __ _ _ __  ___  | |_| |_  __ _| |_   __| |_ (_) |_     #
+#    \__ \/ _| '_/ _` | '_ \/ -_) |  _| ' \/ _` |  _| (_-< ' \| |  _|    #
+#    |___/\__|_| \__,_| .__/\___|  \__|_||_\__,_|\__| /__/_||_|_|\__|    #
+#                     |_|                                                #
+##########################################################################
+
+
 # ****************************************************************************
 # *                       Start scraping profiles Here                       *
 # ****************************************************************************
@@ -930,12 +898,11 @@ def scrap_profile(ids):
     for user_id in ids:
 
         time.sleep(randint(tsmin, tsmax))
-        # block_check()
-        # driver.get(user_id)
-        # url = driver.current_url
-        # user_id = create_original_link(url)
-        # print(url)
-        # print("\nScraping:", user_id)
+        driver.get(user_id)
+        url = driver.current_url
+        user_id = create_original_link(url)
+        print(url)
+        print("\nScraping:", user_id)
 
         try:
             target_dir = os.path.join(folder, user_id.split("/")[-1])
@@ -945,38 +912,14 @@ def scrap_profile(ids):
             print("Some error occurred in creating the profile directory.")
             continue
 
-        # get_friends_names(friend_url)
+        # This defines what gets scraped
+        # -------------------------------
         scraper_control(ids)
         get_profile_photos(p_ids)
         get_friends(p_ids)
-        # scraper_control(ids, friend_ids)
-
-        # to_scrap = ["Friends", "Photos"]
-        # for item in to_scrap:
-        #     print(to_scrap)
-        #     print("----------------------------------------")
-        #     print("Scraping {}..".format(item))
-
-        # scan_list = params[item]["scan_list"]
-        # section = params[item]["section"]
-        # elements_path = params[item]["elements_path"]
-        # file_names = params[item]["file_names"]
-        # save_status = params[item]["save_status"]
-
-        # scrape_data(
-        #     user_id, scan_list, section, elements_path, save_status, file_names  # noqa: E501
-        # )
-
-        # try:
-        #     driver.get(profile_imgs)
-        # except Exception:
-        #     print("I am Done, Bitches!")
-
-        # print("{} Done!")
 
     print("\nProcess Completed.")
     os.chdir("../..")
-    driver.close()
     return
 
 
@@ -1012,22 +955,8 @@ def login(email, password):
     try:
         global driver
 
-        # I believe below is what is causing the script to open two browsers.
-        # -------------------------------------------------------------
-        # opts = Options()
-
-        # #  Code to disable notifications pop up of Firefox Browser
-        # opts.add_argument("--disable-notifications")
-        # opts.add_argument("--disable-infobars")
-        # opts.add_argument("--mute-audio")
-        # opts.add_argument("--no-sandbox")
-        # opts.add_argument("headless")
-
         try:
             platform_ = platform.system().lower()
-#             driver = webdriver.Firefox(
-#                 executable_path="/usr/local/bin/geckodriver"
-#             )
 
         except Exception:
             print(
@@ -1048,15 +977,8 @@ def login(email, password):
 
         # Facebook new design
         driver.find_element_by_xpath("//input[@value='Log In']").click()
-        # driver.implicitly_wait(driver, 20).until(EC.presence_of_element_located(By.XPATH, selectors.get("not_Now")))  # noqa: E501
         WebDriverWait(driver, 7)
         driver.find_element_by_xpath(selectors.get("notNow")).click()
-        # if presence_of_element_located(By.XPATH, selectors.get("not_Now")) is True:  # noqa: E501
-        #     try:
-        #         driver.find_element_by_xpath(selectors.get("not_Now")).click()  # noqa: E501
-        #     except Exception:
-        #         print("Something fishing is going on here.")
-        #         exit(0)
 
     except Exception:
         print("There is something wrong with logging in.")
