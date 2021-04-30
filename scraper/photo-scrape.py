@@ -160,6 +160,35 @@ Firefox(executable_path="/usr/local/bin/geckodriver")
 # ]
 
 # ****************************************************************************
+# *                              id control                                  *
+# ****************************************************************************
+
+def scraper_control(ids):
+    global p_ids
+    global friend_ids
+    in_file = open("../../../input.txt", "r", newline="\n")
+    idents = in_file.readlines()
+    for line in idents:
+        user_ident = line
+        dir_prefix = "../../../"
+        friend_url_filePath = dir_prefix + "data/" + user_ident + "/" + "friend_urls.txt"  # noqa: E501
+        if os.path.exists(friend_url_filePath):
+            friend_ids = [
+                line.split("/")[-1]
+                for line in open("friend_urls.txt", newline="\n")
+            ]
+
+            if len(friend_ids) > 0:
+                print("\nStarting Scraping Friend photos...")
+
+                gender = get_gender(friend_ids)
+                if gender == "female":
+                    p_ids = friend_ids
+        else:
+            p_ids = ids
+
+
+# ****************************************************************************
 # *                            Get Facebook Images                           *
 # ****************************************************************************
 
@@ -222,14 +251,14 @@ def get_facebook_images_url(img_links):
 # TODO: prevent infinite loop of scraping photos.
 
 
-def get_profile_photos(ids):
+def get_profile_photos(p_ids):
     time.sleep(randint(tsmin, tsmax))
-    for user_id in ids:
+    for user_id in p_ids:
         # profile_imgs = []
         driver.get(user_id)
         url = driver.current_url
         user_id = create_original_link(url)
-        render_phrase = 'Scraping photos' + '/n' + str(user_id)
+        render_phrase = 'Scraping photos =  ' + str(user_id)
         print(render_phrase)
         try:
             WebDriverWait(driver, 5)
@@ -240,8 +269,7 @@ def get_profile_photos(ids):
                     "//a[contains(text(),'See All')]").click()
                 WebDriverWait(driver, 5)
                 try:
-                    driver.find_element_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]").click()  # noqa: E501
-                    # global firstImage
+                    driver.find_element_by_xpath("//html/body/div/div/div/div/table/tbody/tr/td/div/a[1]").click()  # noqa: E501
                     firstImage = driver.current_url
                     full_Size_Url = driver.find_element_by_xpath(
                         "//a[text()='View Full Size']").get_attribute("href")
@@ -255,11 +283,29 @@ def get_profile_photos(ids):
                             r.raw.decode_content = True
                             shutil.copyfileobj(r.raw, f)
                     driver.back()
-                    galleryEnd = False
+                    driver.back()
+                    driver.find_element_by_xpath("//html/body/div/div/div/div/table/tbody/tr/td/div/a[2]").click()  # noqa: E501
+                    secondImage = driver.current_url
+                    print(secondImage)
+                    full_Size_Url = driver.find_element_by_xpath(
+                        "//a[text()='View Full Size']").get_attribute("href")
+                    driver.get(full_Size_Url)
+                    time.sleep(3)
+                    img_url = driver.current_url
+                    image_number = str(randint(1, 9999))
+                    image_name = "photo" + image_number + ".jpg"
+                    with requests.get(img_url, stream=True, allow_redirects=True) as r:  # noqa: E501
+                        with open(image_name, "wb") as f:
+                            r.raw.decode_content = True
+                            shutil.copyfileobj(r.raw, f)
+                    driver.back()
                     try:
+                        galleryEnd = False
                         while galleryEnd is False:
                             driver.find_element_by_xpath("//a[text()='Next']").click()  # noqa: E501
                             time.sleep(3)
+                            if driver.current_url is firstImage or secondImage:  # noqa: E501
+                                galleryEnd = True
                             full_Size_Url = driver.find_element_by_xpath(
                                 "//a[text()='View Full Size']").get_attribute("href")  # noqa: E501
                             driver.get(full_Size_Url)
@@ -272,28 +318,19 @@ def get_profile_photos(ids):
                                     shutil.copyfileobj(r.raw, f)
                             driver.back()
                     except NoSuchElementException:
+                        print("Reached End of Series")
                         galleryEnd = True
                 except NoSuchElementException:
-                    # return False
-                    print("No More Photos Found")
+                    print("No More Photos Found - 1")
             except NoSuchElementException:
-                # return False
                 print("Could not see all photos")
             else:
-                driver.find_element_by_xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/a[1]").click()  # noqa: E501
-                full_Size_Url = driver.find_element_by_xpath(
-                    "//a[text()='View Full Size']").get_attribute("href")
-                driver.get(full_Size_Url)
-                time.sleep(2)
-                img_url = driver.current_url
-                image_number = str(randint(1, 9999))
-                image_name = "photo" + image_number + ".jpg"
-                with requests.get(img_url, stream=True, allow_redirects=True) as r:  # noqa: E501
-                    with open(image_name, "wb") as f:
-                        r.raw.decode_content = True
-                        shutil.copyfileobj(r.raw, f)
-            finally:
                 try:
+                    driver.get(photos_url)
+                    driver.find_element_by_xpath("//a[contains(text(),'See All')]").click()  # noqa: E501
+                    driver.find_element_by_xpath("//html/body/div/div/div/div/table/tbody/tr/td/div/a[1]").click()  # noqa: E501
+                    time.sleep(3)
+                    firstImage = driver.current_url
                     f1 = furl(firstImage)
                     prefix = "https://"
                     int_fb_id = f1.args.popvalue('id')
@@ -305,10 +342,9 @@ def get_profile_photos(ids):
                     back_album_url = "/albums/?owner_id="
                     album_page_url = prefix + front_album_url + userid + back_album_url + account_id  # noqa: E501
                     driver.get(album_page_url)
-                    # driver.get(photos_url)
-                    photo_albums_links = driver.find_elements_by_xpath("//td[@class='t']/span/a")  # noqa: E501
-                    for element in photo_albums_links:
-                        album_link = photo_albums_links.get_attribute("href")
+                    photo_albums_links = driver.find_elements_by_xpath("//span[@class='u']/a")  # noqa: E501
+                    for e in photo_albums_links:
+                        album_link = e.get_attribute("href")
                         driver.get(album_link)
                         folder = os.path.join(os.getcwd(), "data")
                         folder_title = driver.find_elements_by_xpath("//div[text()]").get_attribute("text")  # noqa: E501
@@ -329,11 +365,13 @@ def get_profile_photos(ids):
                                     r.raw.decode_content = True
                                     shutil.copyfileobj(r.raw, f)
                             driver.back()
-                            galleryEnd = False
                             try:
+                                galleryEnd = False
                                 while galleryEnd is False:
                                     driver.find_element_by_xpath("//a[text()='Next']").click()  # noqa: E501
                                     time.sleep(3)
+                                    if driver.current_url is firstImage:
+                                        galleryEnd = True
                                     full_Size_Url = driver.find_element_by_xpath(  # noqa: E501
                                         "//a[text()='View Full Size']").get_attribute("href")  # noqa: E501
                                     driver.get(full_Size_Url)
@@ -370,8 +408,8 @@ def get_profile_photos(ids):
 # DONE: Add a loop with a limitation of redundancy
 
 
-def get_friends(ids):
-    for user_id in ids:
+def get_friends(p_ids):
+    for user_id in p_ids:
         driver.get(user_id)
         try:
             driver.find_element_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/a[3]").click()  # noqa: E501
@@ -390,7 +428,7 @@ def get_friends(ids):
                     u.writelines(friend_url[i])
                     u.write("/n/n")
                 global friend_url_file
-                friend_url_file = profile_name + "friend_urls" + ".txt"
+                friend_url_file = "friend_urls.txt"
                 k = open(friend_url_file, "w", encoding="utf-8", newline="\r\n")  # noqa: E501
                 for k, _ in enumerate(friend_url):
                     k.writelines(friend_url[k])
@@ -448,40 +486,6 @@ def get_gender(friend_ids):
             print("No Gender Found")
             continue
 
-
-# ****************************************************************************
-# *                              get friend urls                             *
-# ****************************************************************************
-
-def friend_scraper(**kwargs):
-    global friend_ids
-    friend_ids = [
-        line.split("/")[-1]
-        for line in open("friend_url_file.txt", newline="\n")
-    ]
-
-    if len(friend_ids) > 0:
-        print("\nStarting Scraping Friends...")
-
-        get_gender(friend_ids)
-        scrap_profile(friend_ids)
-        # driver.close() # -> Suspect of creating two browser windows
-    else:
-        print("Friend URL file is empty.")
-
-# ****************************************************************************
-# *                           Control IDs to Scrape                          *
-# ****************************************************************************
-
-
-def scraper_control(ids, friend_ids):
-    global scraped_friends
-    if scraped_friends != "done":
-        p_ids = ids
-    else:
-        friend_scraper()
-        get_gender()
-        p_ids = friend_ids
 
 # ****************************************************************************
 # *                                 get names                                *
@@ -845,66 +849,6 @@ def save_to_file(name, elements, status, friends_urls, current_section):
 
 # ## Defining the scraping process
 
-# In[ ]:
-
-
-# -----------------------------------------------------------------------------
-# ****************************************************************************
-# *                          Defines scraping process                        *
-# ****************************************************************************
-# -----------------------------------------------------------------------------
-# TODO: This needs to be changed the most.
-
-# @limits(calls=randint(rtqlow, rtqhigh), period=randint(rltime, rhtime))
-# def scrape_data(user_id, scan_list, section, elements_path, save_status, file_names):  # noqa: E501
-#     """Given some parameters, this function can scrape
-#     friends/photos/videos/about/posts(statuses) of a profile"""
-#     page = []
-
-#     if save_status == 4:
-#         page.append(user_id)
-
-#     page += [user_id + s for s in section]
-
-#     for i, _ in enumerate(scan_list):
-#         try:
-#             time.sleep(randint(tsmin, tsmax))
-#             driver.get(page[i])
-
-#             if (
-#                 (save_status == 0) or (save_status == 1) or (save_status == 2)
-#             ):  # Only run this for friends, photos and videos
-
-#                 # the bar which contains all the sections
-#                 sections_bar = driver.find_element_by_xpath(
-#                     selectors.get("sections_bar")
-#                 )
-
-#                 if sections_bar.text.find(scan_list[i]) == -1:
-#                     continue
-
-#             if save_status != 3:
-#                 utils.scroll(total_scrolls, driver, selectors, scroll_time)
-
-#             data = driver.find_elements_by_xpath(elements_path[i])
-
-#             save_to_file(file_names[i], data, save_status, i)
-
-#         except Exception:
-#             print(
-#                 "Exception (scrape_data)",
-#                 str(i),
-#                 "Status =",
-#                 str(save_status),
-#                 sys.exc_info()[0],
-#             )
-
-
-## Create original link
-
-# In[ ]:
-
-
 # -----------------------------------------------------------------------------
 #####################################################
 #      ___       _           _     _       _        #
@@ -1002,9 +946,9 @@ def scrap_profile(ids):
             continue
 
         # get_friends_names(friend_url)
-        # scraper_control(ids, friend_ids)
-        get_profile_photos(ids)
-        get_friends(ids)
+        scraper_control(ids)
+        get_profile_photos(p_ids)
+        get_friends(p_ids)
         # scraper_control(ids, friend_ids)
 
         # to_scrap = ["Friends", "Photos"]
@@ -1156,6 +1100,7 @@ def scraper(**kwargs):
         )
         exit(1)
 
+    global ids
     ids = [
         facebook_https_prefix + facebook_link_body + line.split("/")[-1]
         for line in open("input.txt", newline="\n")
