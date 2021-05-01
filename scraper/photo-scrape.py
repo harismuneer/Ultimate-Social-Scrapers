@@ -147,7 +147,7 @@ Firefox(executable_path="/usr/local/bin/geckodriver")
 # *                              id control                                  *
 # ****************************************************************************
 
-def scraper_control(ids):
+def scraper_control():
     global p_ids
     global friend_ids
     in_file = open("../../../input.txt", "r", newline="\n")
@@ -168,6 +168,10 @@ def scraper_control(ids):
                 gender = get_gender(friend_ids)
                 if gender == "female":
                     p_ids = friend_ids
+
+            else:
+                global scrape_complete
+                scrape_complete = True
         else:
             p_ids = ids
 
@@ -211,6 +215,60 @@ def get_facebook_images_url(img_links):
     return urls
 
 
+# ---------------------------------------------------------
+###################################################################
+#      ___      _ _               __      __    _ _               #
+#     / __|__ _| | |___ _ _ _  _  \ \    / /_ _| | |_____ _ _     #
+#    | (_ / _` | | / -_) '_| || |  \ \/\/ / _` | | / / -_) '_|    #
+#     \___\__,_|_|_\___|_|  \_, |   \_/\_/\__,_|_|_\_\___|_|      #
+#                           |__/                                  #
+###################################################################
+# ----------------------------------------------------------
+
+def gallery_walker(firstImage):
+    try:
+        galleryEnd = False
+        while galleryEnd is False:
+            driver.find_element_by_xpath("//a[text()='Next']").click()  # noqa: E501
+            time.sleep(3)
+            if driver.current_url is firstImage:  # noqa: E501
+                galleryEnd = True
+            full_Size_Url = driver.find_element_by_xpath(
+                "//a[text()='View Full Size']").get_attribute("href")  # noqa: E501
+            image_number = str(randint(1, 9999))
+            image_name = "photo" + image_number + ".jpg"
+            with requests.get(full_Size_Url, stream=True, allow_redirects=True) as r:  # noqa: E501
+                with open(image_name, "wb") as f:
+                    r.raw.decode_content = True
+                    shutil.copyfileobj(r.raw, f)
+    except NoSuchElementException:
+        print("Reached End of Series")
+        galleryEnd = True
+
+# --------------------------------------------------------
+###############################################################
+#              _      __      _ _        _        _           #
+#     __ _ ___| |_   / _|_  _| | |  _ __| |_  ___| |_ ___     #
+#    / _` / -_)  _| |  _| || | | | | '_ \ ' \/ _ \  _/ _ \    #
+#    \__, \___|\__| |_|  \_,_|_|_| | .__/_||_\___/\__\___/    #
+#    |___/                         |_|                        #
+###############################################################
+# ---------------------------------------------------------
+
+
+def get_fullphoto():
+    full_Size_Url = driver.find_element_by_xpath(
+        "//a[text()='View Full Size']").get_attribute("href")
+    image_number = str(randint(1, 9999))
+    image_name = "photo" + image_number + ".jpg"
+    with requests.get(full_Size_Url, stream=True, allow_redirects=True) as r:  # noqa: E501
+        with open(image_name, "wb") as f:
+            r.raw.decode_content = True
+            shutil.copyfileobj(r.raw, f)
+
+
+# ---------------------------------------------------------
+
 # #### Identifying images notes:
 #
 # Script needs to do the following in order:
@@ -253,62 +311,16 @@ def get_profile_photos(p_ids):
                     "//a[contains(text(),'See All')]").click()
                 WebDriverWait(driver, 5)
                 try:
-                    driver.find_element_by_xpath("//html/body/div/div/div/div/table/tbody/tr/td/div/a[1]").click()  # noqa: E501
+                    fimg_element = driver.find_element_by_xpath("//html/body/div/div/div/div/table/tbody/tr/td/div/a[1]")  # noqa: E501
+                    firstImage = fimg_element.get_attribute("href")
+                    fimg_element.click()
                     firstImage = driver.current_url
-                    full_Size_Url = driver.find_element_by_xpath(
-                        "//a[text()='View Full Size']").get_attribute("href")
-                    driver.get(full_Size_Url)
-                    time.sleep(3)
-                    img_url = driver.current_url
-                    image_number = str(randint(1, 9999))
-                    image_name = "photo" + image_number + ".jpg"
-                    with requests.get(img_url, stream=True, allow_redirects=True) as r:  # noqa: E501
-                        with open(image_name, "wb") as f:
-                            r.raw.decode_content = True
-                            shutil.copyfileobj(r.raw, f)
-                    driver.back()
-                    driver.back()
-                    driver.find_element_by_xpath("//html/body/div/div/div/div/table/tbody/tr/td/div/a[2]").click()  # noqa: E501
-                    secondImage = driver.current_url
-                    print(secondImage)
-                    full_Size_Url = driver.find_element_by_xpath(
-                        "//a[text()='View Full Size']").get_attribute("href")
-                    driver.get(full_Size_Url)
-                    time.sleep(3)
-                    img_url = driver.current_url
-                    image_number = str(randint(1, 9999))
-                    image_name = "photo" + image_number + ".jpg"
-                    with requests.get(img_url, stream=True, allow_redirects=True) as r:  # noqa: E501
-                        with open(image_name, "wb") as f:
-                            r.raw.decode_content = True
-                            shutil.copyfileobj(r.raw, f)
-                    driver.back()
-                    try:
-                        galleryEnd = False
-                        while galleryEnd is False:
-                            driver.find_element_by_xpath("//a[text()='Next']").click()  # noqa: E501
-                            time.sleep(3)
-                            if driver.current_url is firstImage or secondImage:  # noqa: E501
-                                galleryEnd = True
-                            full_Size_Url = driver.find_element_by_xpath(
-                                "//a[text()='View Full Size']").get_attribute("href")  # noqa: E501
-                            driver.get(full_Size_Url)
-                            img_url = driver.current_url
-                            image_number = str(randint(1, 9999))
-                            image_name = "photo" + image_number + ".jpg"
-                            with requests.get(img_url, stream=True, allow_redirects=True) as r:  # noqa: E501
-                                with open(image_name, "wb") as f:
-                                    r.raw.decode_content = True
-                                    shutil.copyfileobj(r.raw, f)
-                            driver.back()
-                    except NoSuchElementException:
-                        print("Reached End of Series")
-                        galleryEnd = True
+                    get_fullphoto()
+                    gallery_walker(firstImage)
                 except NoSuchElementException:
                     print("No More Photos Found - 1")
             except NoSuchElementException:
                 print("Could not see all photos")
-            else:
                 try:
                     driver.get(photos_url)
                     driver.find_element_by_xpath("//a[contains(text(),'See All')]").click()  # noqa: E501
@@ -325,9 +337,10 @@ def get_profile_photos(p_ids):
                     front_album_url = "mbasic.facebook.com/"
                     back_album_url = "/albums/?owner_id="
                     album_page_url = prefix + front_album_url + userid + back_album_url + account_id  # noqa: E501
+                    print(album_page_url)
                     driver.get(album_page_url)
-                    photo_albums_links = driver.find_elements_by_xpath("//span[@class='u']/a")  # noqa: E501
-                    for e in photo_albums_links:
+                    album_links = driver.find_elements_by_xpath("//span[@class='u']/a")  # noqa: E501
+                    for e in album_links:
                         album_link = e.get_attribute("href")
                         driver.get(album_link)
                         folder = os.path.join(os.getcwd(), "data")
@@ -337,44 +350,29 @@ def get_profile_photos(p_ids):
                         try:
                             driver.find_element_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/article[1]/div[1]/section[3]/div[1]/a[1]").click()  # noqa: E501
                             firstImage = driver.current_url
-                            full_Size_Url = driver.find_element_by_xpath(
-                                "//a[text()='View Full Size']").get_attribute("href")  # noqa: E501
-                            driver.get(full_Size_Url)
-                            time.sleep(3)
-                            img_url = driver.current_url
-                            image_number = str(randint(1, 9999))
-                            image_name = "photo" + image_number + ".jpg"
-                            with requests.get(img_url, stream=True, allow_redirects=True) as r:  # noqa: E501
-                                with open(image_name, "wb") as f:
-                                    r.raw.decode_content = True
-                                    shutil.copyfileobj(r.raw, f)
-                            driver.back()
-                            try:
-                                galleryEnd = False
-                                while galleryEnd is False:
-                                    driver.find_element_by_xpath("//a[text()='Next']").click()  # noqa: E501
-                                    time.sleep(3)
-                                    if driver.current_url is firstImage:
-                                        galleryEnd = True
-                                    full_Size_Url = driver.find_element_by_xpath(  # noqa: E501
-                                        "//a[text()='View Full Size']").get_attribute("href")  # noqa: E501
-                                    driver.get(full_Size_Url)
-                                    img_url = driver.current_url
-                                    image_number = str(randint(1, 9999))
-                                    image_name = "photo" + image_number + ".jpg"  # noqa: E501
-                                    with requests.get(img_url, stream=True, allow_redirects=True) as r:  # noqa: E501
-                                        with open(image_name, "wb") as f:
-                                            r.raw.decode_content = True
-                                            shutil.copyfileobj(r.raw, f)
-                                    driver.back()
-                            except NoSuchElementException:
-                                galleryEnd = True
+                            get_fullphoto()
+                            gallery_walker(firstImage)
                         except NoSuchElementException:
                             print("Could not open any elements")
                             # return False
                 except NoSuchElementException:
-                    print("No photo Albums found")
-                    # return False
+                    driver.get(photos_url)
+                    album_block = driver.find_elements_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[3]/section[1]/ul[1]")  # noqa: E501
+                    for a in album_block:
+                        album_link = a.get_attribute("href")
+                        driver.get(album_link)
+                        driver.get(album_link)
+                        folder = os.path.join(os.getcwd(), "data")
+                        folder_title = driver.find_elements_by_xpath("//div[text()]").get_attribute("text")  # noqa: E501
+                        utils.create_folder(folder_title)
+                        os.chdir(folder)
+                        try:
+                            driver.find_element_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/article[1]/div[1]/section[3]/div[1]/a[1]").click()  # noqa: E501
+                            firstImage = driver.current_url
+                            get_fullphoto()
+                            gallery_walker(firstImage)
+                        except NoSuchElementException:
+                            print("Could not open any elements")
         except NoSuchElementException:
             # return False
             print("No Photos Found")
@@ -914,9 +912,12 @@ def scrap_profile(ids):
 
         # This defines what gets scraped
         # -------------------------------
-        scraper_control(ids)
-        get_profile_photos(p_ids)
-        get_friends(p_ids)
+        global scrape_complete
+        scrape_complete = False
+        while scrape_complete is False:
+            scraper_control()
+            get_profile_photos(p_ids)
+            get_friends(p_ids)
 
     print("\nProcess Completed.")
     os.chdir("../..")
@@ -1050,8 +1051,8 @@ def scraper(**kwargs):
 #####################################################
 
 # -------------------------------------------------------------
-
-
+# Does not work any longer | will remove in the future
+# -------------------------------------------------------------
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     # PLS CHECK IF HELP CAN BE BETTER / LESS AMBIGUOUS
