@@ -20,8 +20,11 @@
 * TODO [#B] create function for album walkthrough to reduce size of code.
 	- [ ] create independent function
 	- [ ] remove redundancy
-* TODO [#A] Find a solution to the infinite page loop dilemna
-* TODO [#A] Troubleshoot new error of elements "temporarily unable to be viewed"
+* DONE [#A] Find a solution to the infinite page loop dilemna
+* TODO [#A] Find solution for locating individual image links from thumbnail page
+	- [ ] I totally have no idea what is preventing this from success
+	- [ ] I added a line to print the link it is scraping, which it skips everytime.
+* DONE [#A] Troubleshoot new error of elements "temporarily unable to be viewed"
 * TODO [#B] Combine `get_fullphoto()` with gallery_walker
 * TODO [#B] rewrite gallery_walker to walk gallery pages not images
 * DONE [#B] Control which ID gets scraped

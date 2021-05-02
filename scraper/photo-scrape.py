@@ -225,14 +225,14 @@ def get_facebook_images_url(img_links):
 ###################################################################
 # ----------------------------------------------------------
 
-def gallery_walker(firstImage):
+def gallery_walker():
     try:
-        galleryEnd = False
-        while galleryEnd is False:
-            driver.find_element_by_xpath("//a[text()='Next']").click()  # noqa: E501
-            time.sleep(3)
-            if driver.current_url is firstImage:  # noqa: E501
-                galleryEnd = True
+        photo_block = driver.find_elements_by_xpath("//td/div/a")  # noqa: E501
+        print("Successfully entered Gallery Walker")
+        for i in photo_block:
+            photo_link = i.get_attribute("href")  # noqa: E501
+            print("Opening this photo: " + photo_link)
+            driver.get(photo_link)
             full_Size_Url = driver.find_element_by_xpath(
                 "//a[text()='View Full Size']").get_attribute("href")  # noqa: E501
             image_number = str(randint(1, 9999))
@@ -241,9 +241,11 @@ def gallery_walker(firstImage):
                 with open(image_name, "wb") as f:
                     r.raw.decode_content = True
                     shutil.copyfileobj(r.raw, f)
+            driver.back()
+            next = driver.find_element_by_xpath("//span[text()='See More Photos']").get_attribute("href")  # noqa: E501
+            driver.get(next)
     except NoSuchElementException:
         print("Reached End of Series")
-        galleryEnd = True
 
 # --------------------------------------------------------
 ###############################################################
@@ -306,73 +308,33 @@ def get_profile_photos(p_ids):
             WebDriverWait(driver, 5)
             photos_url = driver.find_element_by_xpath("//a[text()='Photos']").get_attribute("href")  # noqa: E501
             driver.get(photos_url)
-            try:
-                driver.find_element_by_xpath(
-                    "//a[contains(text(),'See All')]").click()
-                WebDriverWait(driver, 5)
+            photos_view = driver.find_elements_by_xpath("//section/a")
+            for j in photos_view:
+                pv_link = j.get_attribute("href")
+                driver.get(pv_link)
                 try:
-                    fimg_element = driver.find_element_by_xpath("//html/body/div/div/div/div/table/tbody/tr/td/div/a[1]")  # noqa: E501
-                    firstImage = fimg_element.get_attribute("href")
-                    fimg_element.click()
-                    firstImage = driver.current_url
-                    get_fullphoto()
-                    gallery_walker(firstImage)
+                    # see_all = driver.find_element_by_xpath("//a[text()='See All']").get_attribute("href")  # noqa: E501
+                    # phrase = "Opening this link: " + see_all
+                    # print(phrase)
+                    # time.sleep(3)
+                    # driver.get(see_all)
+                    gallery_walker()
                 except NoSuchElementException:
-                    print("No More Photos Found - 1")
-            except NoSuchElementException:
-                print("Could not see all photos")
-                try:
-                    driver.get(photos_url)
-                    driver.find_element_by_xpath("//a[contains(text(),'See All')]").click()  # noqa: E501
-                    driver.find_element_by_xpath("//html/body/div/div/div/div/table/tbody/tr/td/div/a[1]").click()  # noqa: E501
-                    time.sleep(3)
-                    firstImage = driver.current_url
-                    f1 = furl(firstImage)
-                    prefix = "https://"
-                    int_fb_id = f1.args.popvalue('id')
-                    account_id = int_fb_id.strip()
-                    f2 = furl(photos_url)
-                    userid_path = str(f2.path)
-                    userid = userid_path.strip('/')
-                    front_album_url = "mbasic.facebook.com/"
-                    back_album_url = "/albums/?owner_id="
-                    album_page_url = prefix + front_album_url + userid + back_album_url + account_id  # noqa: E501
-                    print(album_page_url)
-                    driver.get(album_page_url)
-                    album_links = driver.find_elements_by_xpath("//span[@class='u']/a")  # noqa: E501
-                    for e in album_links:
-                        album_link = e.get_attribute("href")
-                        driver.get(album_link)
-                        folder = os.path.join(os.getcwd(), "data")
-                        folder_title = driver.find_elements_by_xpath("//div[text()]").get_attribute("text")  # noqa: E501
-                        utils.create_folder(folder_title)
-                        os.chdir(folder)
-                        try:
-                            driver.find_element_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/article[1]/div[1]/section[3]/div[1]/a[1]").click()  # noqa: E501
-                            firstImage = driver.current_url
-                            get_fullphoto()
-                            gallery_walker(firstImage)
-                        except NoSuchElementException:
-                            print("Could not open any elements")
-                            # return False
-                except NoSuchElementException:
-                    driver.get(photos_url)
-                    album_block = driver.find_elements_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[3]/section[1]/ul[1]")  # noqa: E501
-                    for a in album_block:
-                        album_link = a.get_attribute("href")
-                        driver.get(album_link)
-                        driver.get(album_link)
-                        folder = os.path.join(os.getcwd(), "data")
-                        folder_title = driver.find_elements_by_xpath("//div[text()]").get_attribute("text")  # noqa: E501
-                        utils.create_folder(folder_title)
-                        os.chdir(folder)
-                        try:
-                            driver.find_element_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/article[1]/div[1]/section[3]/div[1]/a[1]").click()  # noqa: E501
-                            firstImage = driver.current_url
-                            get_fullphoto()
-                            gallery_walker(firstImage)
-                        except NoSuchElementException:
-                            print("Could not open any elements")
+                    print("No more views found")
+                    try:
+                        albums_view = driver.find_elements_by_xpath("//span/a")
+                        for k in albums_view:
+                            av_link = k.get_attribute("href")
+                            driver.get(av_link)
+                            try:
+                                next_page = driver.find_element_by_xpath("//div/section/a[text()='See All']").get_attribute("href")  # noqa: E501
+                                driver.get(next_page)
+                                WebDriverWait(driver, 5)
+                                gallery_walker()
+                            except NoSuchElementException:
+                                print("No more albums found")
+                    except NoSuchElementException:
+                        print("No albums found")
         except NoSuchElementException:
             # return False
             print("No Photos Found")
