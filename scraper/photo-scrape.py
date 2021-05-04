@@ -225,67 +225,32 @@ def get_facebook_images_url(img_links):
 ###################################################################
 # ----------------------------------------------------------
 
-# def gallery_walker():
-#     try:
-#         photo_block = driver.find_elements_by_xpath("//td/div/a")  # noqa: E501
-#         print("Successfully entered Gallery Walker")
-#         for i in photo_block:
-#             photo_link = i.get_attribute("href")  # noqa: E501
-#             print("Opening this photo: " + photo_link)
-#             driver.get(photo_link)
-#             full_Size_Url = driver.find_element_by_xpath(
-#                 "//a[text()='View Full Size']").get_attribute("href")  # noqa: E501
-#             image_number = str(randint(1, 9999))
-#             image_name = "photo" + image_number + ".jpg"
-#             with requests.get(full_Size_Url, stream=True, allow_redirects=True) as r:  # noqa: E501
-#                 with open(image_name, "wb") as f:
-#                     r.raw.decode_content = True
-#                     shutil.copyfileobj(r.raw, f)
-#             driver.back()
-#             next_album_page = driver.find_element_by_xpath("//span[text()='See More Photos']").get_attribute("href")  # noqa: E501
-#             driver.get(next_album_page)
-#     except NoSuchElementException:
-#         print("Cannot Find shit.")
-
-
 def gallery_walker():
     phset = False
     while phset is False:
         try:
-            # front_xpath = "//body[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/a["  # noqa: E501
-            # rear_xpath = "]"
-            # xp_int = 1
-            # pb_xpath = front_xpath + str(xp_int) + rear_xpath
-            # photo_link = driver.find_elements_by_xpath(pb_xpath)
             photos_links = driver.find_elements_by_xpath("//td/div/a")  # noqa: E501
-            # WebDriverWait(driver, 10).until(EC.visibility_of_all_elements_located(By.XPATH("//td/div/a")))  # noqa: E501
-            # print("Found the bitch element")
             for i in photos_links:
-                # photo_link = driver.find_elements_by_xpath(pb_xpath).get_attribute("href")  # noqa: E501
-                # driver.get(photo_link)
-                driver.refresh()
-                # WebDriverWait(driver, 10).until(EC.presence_of_element_located(By.XPATH(("//td/div/a"))))  # noqa: E501
-                # print("Found the bitch element")
-                # driver.implicitly_wait(5)
                 image_link = i.get_attribute("href")
-                driver.get(image_link)
-                full_Size_Url = driver.find_element_by_xpath(
-                    "//a[text()='View Full Size']").get_attribute("href")  # noqa: E501
-                image_number = str(randint(1, 9999))
-                image_name = "photo" + image_number + ".jpg"
-                with requests.get(full_Size_Url, stream=True, allow_redirects=True) as r:  # noqa: E501
-                    with open(image_name, "wb") as f:
-                        r.raw.decode_content = True
-                        shutil.copyfileobj(r.raw, f)
-                # xp_int = xp_int + 1
-                driver.back()
-        except NoSuchElementException:
+                q = open("/tmp/image_url.txt", "w", encoding="utf-8", newline="\n")  # noqa: E501
+                q.writelines(image_link)
+                q.write("\n")
             try:
-                gallery_set = driver.find_element_by_css_selector("#m_more_item").get_attribute("href")  # noqa: E501
+                gallery_set = driver.find_element_by_xpath("//span/div/a").get_attribute("href")  # noqa: E501
                 driver.get(gallery_set)
             except NoSuchElementException:
-                print("The Fat Bitch has sang")
+                print("reached end of set")
+                q.close()
                 phset = True
+        except NoSuchElementException:
+            print("The Fat Bitch has sang")
+            phset = True
+    else:
+        with open("/tmp/image_url.txt") as rfile:
+            for line in rfile:
+                driver.get(line)
+                get_fullphoto()
+
 
 # --------------------------------------------------------
 ###############################################################
@@ -375,6 +340,24 @@ def get_profile_photos(p_ids):
                                 print("No more albums found")
                     except NoSuchElementException:
                         print("No albums found")
+                else:
+                    f1 = furl(pv_link)
+                    prefix = "https://"
+                    int_fb_id = f1.args.popvalue('owner_id')
+                    account_id = int_fb_id.strip()
+                    f2 = furl(photos_url)
+                    userid_path = str(f2.path)
+                    userid = userid_path.strip('/')
+                    front_album_url = "mbasic.facebook.com/"
+                    back_album_url = "/albums/?owner_id="
+                    album_page_url = prefix + front_album_url + userid + back_album_url + account_id  # noqa: E501
+                    driver.get(album_page_url)
+                    # driver.get(photos_url)
+                    photo_albums_links = driver.find_elements_by_xpath("//td[@class='t']/span/a")  # noqa: E501
+                    for element in photo_albums_links:
+                        album_link = photo_albums_links.get_attribute("href")
+                        driver.get(album_link)
+                        gallery_walker()
         except NoSuchElementException:
             # return False
             print("No Photos Found")
