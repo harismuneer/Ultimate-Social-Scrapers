@@ -24,6 +24,7 @@
 * TODO [#A] Find solution for locating individual image links from thumbnail page
 	- [ ] I totally have no idea what is preventing this from success
 	- [ ] I added a line to print the link it is scraping, which it skips everytime.
+* TODO [#A] Find solution for stale element exception that is plagueing the script currently.
 * DONE [#A] Troubleshoot new error of elements "temporarily unable to be viewed"
 * TODO [#B] Combine `get_fullphoto()` with gallery_walker
 * TODO [#B] rewrite gallery_walker to walk gallery pages not images
