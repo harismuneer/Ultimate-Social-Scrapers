@@ -228,28 +228,23 @@ def get_facebook_images_url(img_links):
 def gallery_walker():
     phset = False
     while phset is False:
+        photos_links = driver.find_elements_by_xpath("//td/div/a")  # noqa: E501
+        for i in photos_links:
+            image_link = i.get_attribute("href")
+            q = open("/tmp/image_url.txt", "a", encoding="utf-8", newline="\n")  # noqa: E501
+            q.writelines(image_link)
+            q.write("\n")
+            q.close()
         try:
-            photos_links = driver.find_elements_by_xpath("//td/div/a")  # noqa: E501
-            for i in photos_links:
-                image_link = i.get_attribute("href")
-                q = open("/tmp/image_url.txt", "w", encoding="utf-8", newline="\n")  # noqa: E501
-                q.writelines(image_link)
-                q.write("\n")
-            try:
-                gallery_set = driver.find_element_by_xpath("//span/div/a").get_attribute("href")  # noqa: E501
-                driver.get(gallery_set)
-            except NoSuchElementException:
-                print("reached end of set")
-                q.close()
-                phset = True
+            gallery_set = driver.find_element_by_xpath("//span/div/a").get_attribute("href")  # noqa: E501
+            driver.get(gallery_set)
         except NoSuchElementException:
-            print("The Fat Bitch has sang")
+            print("reached end of set")
             phset = True
-    else:
-        with open("/tmp/image_url.txt") as rfile:
-            for line in rfile:
-                driver.get(line)
-                get_fullphoto()
+            with open("/tmp/image_url.txt") as rfile:
+                for line in rfile:
+                    driver.get(line)
+                    get_fullphoto()
 
 
 # --------------------------------------------------------
