@@ -17,7 +17,11 @@
 
 ## UFS Scraper: Quackified Edition  
 
----
+----
+
+### Warning! Still in the early development stages and not fully functional at the moment.
+
+----
 
 ### New Changes to come
 Since the last update of this repo the developer has removed the script from github and closed the source code. He now requires payment for access to this script. 
