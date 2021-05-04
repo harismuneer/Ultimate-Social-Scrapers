@@ -14,7 +14,8 @@ passwords.txt
 .ipynb*
 *.jupyter*
 *.backup*
-*-backup*
+*backup*
+*backup
 *.sublime*
 project.org
 scraper-mobile.py
