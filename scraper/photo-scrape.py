@@ -312,47 +312,49 @@ def get_profile_photos(p_ids):
             for j in photos_view:
                 pv_link = j.get_attribute("href")
                 driver.get(pv_link)
-                try:
-                    # see_all = driver.find_element_by_xpath("//a[text()='See All']").get_attribute("href")  # noqa: E501
-                    # phrase = "Opening this link: " + see_all
-                    # print(phrase)
-                    # time.sleep(3)
-                    # driver.get(see_all)
+                gallery_walker()
+                # try:
+                # see_all = driver.find_element_by_xpath("//a[text()='See All']").get_attribute("href")  # noqa: E501
+                # phrase = "Opening this link: " + see_all
+                # print(phrase)
+                # time.sleep(3)
+                # driver.get(see_all)
+                # gallery_walker()
+            # except NoSuchElementException:
+                # print("No more views found")
+                # try:
+                #     albums_view = driver.find_elements_by_xpath("//span/a")
+                #     for k in albums_view:
+                #         av_link = k.get_attribute("href")
+                #         driver.get(av_link)
+                #         try:
+                #             next_page = driver.find_element_by_xpath("//div/section/a[text()='See All']").get_attribute("href")  # noqa: E501
+                #             driver.get(next_page)
+                #             WebDriverWait(driver, 5)
+                #             gallery_walker()
+                #         except NoSuchElementException:
+                #             print("No more albums found")
+                # except NoSuchElementException:
+                #     print("No albums found")
+            try:
+                f1 = furl(pv_link)
+                prefix = "https://"
+                int_fb_id = f1.args.popvalue('owner_id')
+                account_id = int_fb_id.strip()
+                f2 = furl(photos_url)
+                userid_path = str(f2.path)
+                userid = userid_path.strip('/')
+                front_album_url = "mbasic.facebook.com/"
+                back_album_url = "/albums/?owner_id="
+                album_page_url = prefix + front_album_url + userid + back_album_url + account_id  # noqa: E501
+                driver.get(album_page_url)
+                photo_albums_links = driver.find_elements_by_xpath("//td[@class='t']/span/a")  # noqa: E501
+                for bb in photo_albums_links:
+                    album_link = bb.get_attribute("href")
+                    driver.get(album_link)
                     gallery_walker()
-                except NoSuchElementException:
-                    print("No more views found")
-                    try:
-                        albums_view = driver.find_elements_by_xpath("//span/a")
-                        for k in albums_view:
-                            av_link = k.get_attribute("href")
-                            driver.get(av_link)
-                            try:
-                                next_page = driver.find_element_by_xpath("//div/section/a[text()='See All']").get_attribute("href")  # noqa: E501
-                                driver.get(next_page)
-                                WebDriverWait(driver, 5)
-                                gallery_walker()
-                            except NoSuchElementException:
-                                print("No more albums found")
-                    except NoSuchElementException:
-                        print("No albums found")
-                else:
-                    f1 = furl(pv_link)
-                    prefix = "https://"
-                    int_fb_id = f1.args.popvalue('owner_id')
-                    account_id = int_fb_id.strip()
-                    f2 = furl(photos_url)
-                    userid_path = str(f2.path)
-                    userid = userid_path.strip('/')
-                    front_album_url = "mbasic.facebook.com/"
-                    back_album_url = "/albums/?owner_id="
-                    album_page_url = prefix + front_album_url + userid + back_album_url + account_id  # noqa: E501
-                    driver.get(album_page_url)
-                    # driver.get(photos_url)
-                    photo_albums_links = driver.find_elements_by_xpath("//td[@class='t']/span/a")  # noqa: E501
-                    for element in photo_albums_links:
-                        album_link = photo_albums_links.get_attribute("href")
-                        driver.get(album_link)
-                        gallery_walker()
+            except NoSuchElementException:
+                pass
         except NoSuchElementException:
             # return False
             print("No Photos Found")
