@@ -152,7 +152,14 @@ def scraper_control():
     global friend_ids
     current_dir = os.getcwd()
     print(current_dir)
-    in_file = open("../../../input.txt", "r", newline="\n")
+    '''
+    Script was running just fine, then mysteriously output a message informing
+    me that it could not locate the input file. This was weird considering
+    I had changed nothing that should affect this. So, all directory
+    references were rewritten from '../../../' to '../'
+    -- Now it has changed back again...
+    '''
+    in_file = open("../../../input.txt", newline="\n")
     idents = in_file.readlines()
     for line in idents:
         user_ident = line
@@ -238,22 +245,28 @@ def gallery_walker():
             q.write("\n")
             q.close()
         try:
-            gallery_set = driver.find_element_by_xpath("//span/div/a").get_attribute("href")  # noqa: E501
+            gallery_set = driver.find_element_by_xpath("//table/tbody/tr/td/div/span/div/a/span").get_attribute("href")  # noqa: E501
             print("Trying next page...")
             driver.get(gallery_set)
         except NoSuchElementException:
-            print("reached end of set")
-            phset = True
-            print("Downing scraped photos")
-            with open("/tmp/image_url.txt") as rfile:
-                for line in rfile:
-                    driver.get(line)
-                    get_fullphoto()
-            if os.path.exists("/tmp/image_url.txt"):
-                print("Cleaning...")
-                os.remove("/tmp/image_url.txt")
-            else:
-                print("The file does not exist")
+            try:
+                album_set = driver.find_elements_by_xpath("//table/tbody/tr/td/article/div/div/div/a/span").get_attribute("href")  # noqa: E501
+                print("Trying next page in album...")
+                driver.get(album_set)
+            except NoSuchElementException:
+                print("reached end of set")
+                phset = True
+                print("Downing scraped photos")
+                with open("/tmp/image_url.txt") as rfile:
+                    for line in rfile:
+                        driver.get(line)
+                        get_fullphoto()
+                if phset is True:
+                    print("Cleaning...")
+                    if os.path.exists("/tmp/image_url.txt"):
+                        os.remove("/tmp/image_url.txt")
+                    else:
+                        print("The file does not exist")
 
 
 # --------------------------------------------------------
@@ -331,34 +344,59 @@ def get_profile_photos(p_ids):
                 f2 = furl(photos_url)
                 userid_path = str(f2.path)
                 userid = userid_path.strip('/')
-                front_album_url = "mbasic.facebook.com/"
-                back_album_url = "/albums/?owner_id="
+                front_album_url = "mbasic.facebook.com"
+                back_album_url = "albums/?owner_id="
                 album_page_url = prefix + front_album_url + "/" + userid + "/" + back_album_url + account_id  # noqa: E501
+                print(album_page_url)
                 driver.get(album_page_url)
-                photo_albums_links = driver.find_elements_by_xpath("//span/a")  # noqa: E501
-                for bb in photo_albums_links:
-                    album_link = bb.get_attribute("href")
-                    k = open("/tmp/album_url.txt", "a", encoding="utf-8", newline="\n")  # noqa: E501
-                    k.writelines(album_link)
-                    k.write("\n")
-                    k.close()
                 try:
+                    photo_albums_links = driver.find_elements_by_xpath("//span/a")  # noqa: E501
+                    for bb in photo_albums_links:
+                        album_link = bb.get_attribute("href")
+                        k = open("/tmp/album_url.txt", "a", encoding="utf-8", newline="\n")  # noqa: E501
+                        k.writelines(album_link)
+                        k.write("\n")
+                        k.close()
                     with open("/tmp/album_url.txt") as kfile:
                         for line in kfile:
                             print("Opening albums...")
                             driver.get(line)
                             gallery_walker()
+                    print("Cleaning...")
                     if os.path.exists("/tmp/album_url.txt"):
-                        print("Cleaning...")
                         os.remove("/tmp/album_url.txt")
                     else:
                         print("The file does not exist")
-                except AttributeError:
-                    print("link reference not found")
-            except NoSuchElementException:
-                pass
+                except NoSuchElementException:
+                    print("No album page found")
+                    if os.path.exists("/tmp/album_url.txt"):
+                        os.remove("/tmp/album_url.txt")
+                    else:
+                        print("The file does not exist")
+                    if os.path.exists("/tmp/image_url.txt"):
+                        os.remove("/tmp/image_url.txt")
+                    else:
+                        print("The file does not exist")
+            except Exception:
+                print("Unable to generate album page or find any albums")
+                if os.path.exists("/tmp/album_url.txt"):
+                    os.remove("/tmp/album_url.txt")
+                else:
+                    print("The file does not exist")
+                if os.path.exists("/tmp/image_url.txt"):
+                    os.remove("/tmp/image_url.txt")
+                else:
+                    print("The file does not exist")
         except NoSuchElementException:
             print("Fuck!! No Photos Found!")
+            if os.path.exists("/tmp/album_url.txt"):
+                os.remove("/tmp/album_url.txt")
+            else:
+                print("The file does not exist")
+            if os.path.exists("/tmp/image_url.txt"):
+                os.remove("/tmp/image_url.txt")
+            else:
+                print("The file does not exist")
 
 # ## Image Downloader
 
