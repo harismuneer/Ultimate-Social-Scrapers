@@ -150,6 +150,8 @@ Firefox(executable_path="/usr/local/bin/geckodriver")
 def scraper_control():
     global p_ids
     global friend_ids
+    current_dir = os.getcwd()
+    print(current_dir)
     in_file = open("../../../input.txt", "r", newline="\n")
     idents = in_file.readlines()
     for line in idents:
