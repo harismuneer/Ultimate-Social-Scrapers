@@ -245,12 +245,12 @@ def gallery_walker():
             q.write("\n")
             q.close()
         try:
-            gallery_set = driver.find_element_by_xpath("//table/tbody/tr/td/div/span/div/a/span").get_attribute("href")  # noqa: E501
+            gallery_set = driver.find_element_by_xpath("//table/tbody/tr/td/div/span/div/a").get_attribute("href")  # noqa: E501
             print("Trying next page...")
             driver.get(gallery_set)
         except NoSuchElementException:
             try:
-                album_set = driver.find_elements_by_xpath("//table/tbody/tr/td/article/div/div/div/a/span").get_attribute("href")  # noqa: E501
+                album_set = driver.find_elements_by_xpath("//table/tbody/tr/td/article/div/div/div/a").get_attribute("href")  # noqa: E501
                 print("Trying next page in album...")
                 driver.get(album_set)
             except NoSuchElementException:
