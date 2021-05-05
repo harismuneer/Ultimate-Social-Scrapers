@@ -237,14 +237,21 @@ def gallery_walker():
             q.close()
         try:
             gallery_set = driver.find_element_by_xpath("//span/div/a").get_attribute("href")  # noqa: E501
+            print("Trying next page...")
             driver.get(gallery_set)
         except NoSuchElementException:
             print("reached end of set")
             phset = True
+            print("Downing scraped photos")
             with open("/tmp/image_url.txt") as rfile:
                 for line in rfile:
                     driver.get(line)
                     get_fullphoto()
+            if os.path.exists("/tmp/image_url.txt"):
+                print("Cleaning...")
+                os.remove("/tmp/image_url.txt")
+            else:
+                print("The file does not exist")
 
 
 # --------------------------------------------------------
@@ -313,30 +320,8 @@ def get_profile_photos(p_ids):
                 pv_link = j.get_attribute("href")
                 driver.get(pv_link)
                 gallery_walker()
-                # try:
-                # see_all = driver.find_element_by_xpath("//a[text()='See All']").get_attribute("href")  # noqa: E501
-                # phrase = "Opening this link: " + see_all
-                # print(phrase)
-                # time.sleep(3)
-                # driver.get(see_all)
-                # gallery_walker()
-            # except NoSuchElementException:
-                # print("No more views found")
-                # try:
-                #     albums_view = driver.find_elements_by_xpath("//span/a")
-                #     for k in albums_view:
-                #         av_link = k.get_attribute("href")
-                #         driver.get(av_link)
-                #         try:
-                #             next_page = driver.find_element_by_xpath("//div/section/a[text()='See All']").get_attribute("href")  # noqa: E501
-                #             driver.get(next_page)
-                #             WebDriverWait(driver, 5)
-                #             gallery_walker()
-                #         except NoSuchElementException:
-                #             print("No more albums found")
-                # except NoSuchElementException:
-                #     print("No albums found")
             try:
+                print("Generating albums page...")
                 f1 = furl(pv_link)
                 prefix = "https://"
                 int_fb_id = f1.args.popvalue('owner_id')
@@ -346,18 +331,32 @@ def get_profile_photos(p_ids):
                 userid = userid_path.strip('/')
                 front_album_url = "mbasic.facebook.com/"
                 back_album_url = "/albums/?owner_id="
-                album_page_url = prefix + front_album_url + userid + back_album_url + account_id  # noqa: E501
+                album_page_url = prefix + front_album_url + "/" + userid + "/" + back_album_url + account_id  # noqa: E501
                 driver.get(album_page_url)
-                photo_albums_links = driver.find_elements_by_xpath("//td[@class='t']/span/a")  # noqa: E501
+                photo_albums_links = driver.find_elements_by_xpath("//span/a")  # noqa: E501
                 for bb in photo_albums_links:
                     album_link = bb.get_attribute("href")
-                    driver.get(album_link)
-                    gallery_walker()
+                    k = open("/tmp/album_url.txt", "a", encoding="utf-8", newline="\n")  # noqa: E501
+                    k.writelines(album_link)
+                    k.write("\n")
+                    k.close()
+                try:
+                    with open("/tmp/album_url.txt") as kfile:
+                        for line in kfile:
+                            print("Opening albums...")
+                            driver.get(line)
+                            gallery_walker()
+                    if os.path.exists("/tmp/album_url.txt"):
+                        print("Cleaning...")
+                        os.remove("/tmp/album_url.txt")
+                    else:
+                        print("The file does not exist")
+                except AttributeError:
+                    print("link reference not found")
             except NoSuchElementException:
                 pass
         except NoSuchElementException:
-            # return False
-            print("No Photos Found")
+            print("Fuck!! No Photos Found!")
 
 # ## Image Downloader
 
