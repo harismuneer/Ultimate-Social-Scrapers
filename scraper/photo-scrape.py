@@ -249,6 +249,38 @@ def gallery_walker():
             print("Trying next page...")
             driver.get(gallery_set)
         except NoSuchElementException:
+            print("reached end of set")
+            phset = True
+            print("Downing scraped photos")
+            with open("/tmp/image_url.txt") as rfile:
+                for line in rfile:
+                    driver.get(line)
+                    get_fullphoto()
+            if os.path.exists("/tmp/image_url.txt"):
+                print("Cleaning...")
+                os.remove("/tmp/image_url.txt")
+            else:
+                print("The file does not exist")
+
+
+################################################################
+#       _   _ _                __      __    _ _               #
+#      /_\ | | |__ _  _ _ __   \ \    / /_ _| | |_____ _ _     #
+#     / _ \| | '_ \ || | '  \   \ \/\/ / _` | | / / -_) '_|    #
+#    /_/ \_\_|_.__/\_,_|_|_|_|   \_/\_/\__,_|_|_\_\___|_|      #
+#                                                              #
+################################################################
+
+def album_walker():
+    phset = False
+    while phset is False:
+        photos_links = driver.find_elements_by_xpath("//td/div/a")  # noqa: E501
+        for i in photos_links:
+            image_link = i.get_attribute("href")
+            q = open("/tmp/image_url.txt", "a", encoding="utf-8", newline="\n")  # noqa: E501
+            q.writelines(image_link)
+            q.write("\n")
+            q.close()
             try:
                 album_set = driver.find_elements_by_xpath("//table/tbody/tr/td/article/div/div/div/a").get_attribute("href")  # noqa: E501
                 print("Trying next page in album...")
@@ -362,7 +394,7 @@ def get_profile_photos(p_ids):
                         for line in kfile:
                             print("Opening albums...")
                             driver.get(line)
-                            gallery_walker()
+                            album_walker()
                     print("Cleaning...")
                     if os.path.exists("/tmp/album_url.txt"):
                         os.remove("/tmp/album_url.txt")
