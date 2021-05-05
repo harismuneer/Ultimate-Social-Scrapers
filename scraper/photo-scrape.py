@@ -152,13 +152,6 @@ def scraper_control():
     global friend_ids
     current_dir = os.getcwd()
     print(current_dir)
-    '''
-    Script was running just fine, then mysteriously output a message informing
-    me that it could not locate the input file. This was weird considering
-    I had changed nothing that should affect this. So, all directory
-    references were rewritten from '../../../' to '../'
-    -- Now it has changed back again...
-    '''
     in_file = open("../../../input.txt", newline="\n")
     idents = in_file.readlines()
     for line in idents:
