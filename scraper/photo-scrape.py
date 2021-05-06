@@ -282,17 +282,17 @@ def album_walker():
                 print("cannot find attrribute in list")
                 print("reached end of set")
                 phset = True
-        print("Downing scraped photos")
-        with open("/tmp/image_url.txt") as rfile:
-            for line in rfile:
-                driver.get(line)
-                get_fullphoto()
-        if phset is True:
-            print("Cleaning...")
-            if os.path.exists("/tmp/image_url.txt"):
-                os.remove("/tmp/image_url.txt")
-            else:
-                print("The file does not exist")
+                print("Downing scraped photos")
+                with open("/tmp/image_url.txt") as rfile:
+                    for line in rfile:
+                        driver.get(line)
+                        get_fullphoto()
+                if phset is True:
+                    print("Cleaning...")
+                    if os.path.exists("/tmp/image_url.txt"):
+                        os.remove("/tmp/image_url.txt")
+                    else:
+                        print("The file does not exist")
 
 
 # --------------------------------------------------------
