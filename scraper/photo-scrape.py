@@ -265,34 +265,37 @@ def gallery_walker():
 ################################################################
 
 def album_walker():
-    phset = False
-    while phset is False:
-        photos_links = driver.find_elements_by_xpath("//td/div/a")  # noqa: E501
+    print("Walking the album")
+    alset = False
+    while alset is False:
+        photos_links = driver.find_elements_by_xpath("//article/div/section/div/a")  # noqa: E501
+        print("Writing Image links...")
         for i in photos_links:
-            image_link = i.get_attribute("href")
-            q = open("/tmp/image_url.txt", "a", encoding="utf-8", newline="\n")  # noqa: E501
-            q.writelines(image_link)
+            album_image_link = i.get_attribute("href")
+            q = open("/tmp/album_image_url.txt", "a", encoding="utf-8", newline="\n")  # noqa: E501
+            q.writelines(album_image_link)
             q.write("\n")
             q.close()
-            try:
-                album_set = driver.find_elements_by_xpath("//table/tbody/tr/td/article/div/div/div/a").get_attribute("href")  # noqa: E501
-                print("Trying next page in album...")
-                driver.get(album_set)
-            except AttributeError:
-                print("cannot find attrribute in list")
-                print("reached end of set")
-                phset = True
-                print("Downing scraped photos")
-                with open("/tmp/image_url.txt") as rfile:
-                    for line in rfile:
-                        driver.get(line)
-                        get_fullphoto()
-                if phset is True:
-                    print("Cleaning...")
-                    if os.path.exists("/tmp/image_url.txt"):
-                        os.remove("/tmp/image_url.txt")
-                    else:
-                        print("The file does not exist")
+        try:
+            print("Trying next page in album...")
+            album_set = driver.find_elements_by_xpath("//article/div/div/div/a").get_attribute("href")  # noqa: E501
+            driver.get(album_set)
+        except NoSuchElementException:
+            print("Downing scraped photos")
+            with open("/tmp/album_image_url.txt") as ai_file:
+                for line in ai_file:
+                    driver.get(line)
+                    print("Getting  " + line)
+                    get_fullphoto()
+        except Exception:
+            alset = True
+            print("You fell into a much lesser pit of computational despair")  # noqa: E501
+    if alset is True:
+        print("Cleaning...")
+        if os.path.exists("/tmp/album_image_url.txt"):
+            os.remove("/tmp/album_image_url.txt")
+        else:
+            print("The file does not exist")
 
 
 # --------------------------------------------------------
@@ -315,6 +318,19 @@ def get_fullphoto():
         with open(image_name, "wb") as f:
             r.raw.decode_content = True
             shutil.copyfileobj(r.raw, f)
+
+
+# ****************************************************************************
+# *                              Clean File Sets                             *
+# ****************************************************************************
+
+def clean_file_sets():
+    if os.path.exists("/tmp/album_url.txt"):
+        os.remove("/tmp/album_url.txt")
+    elif os.path.exists("/tmp/image_url.txt"):
+        os.remove("/tmp/image_url.txt")
+    else:
+        print("Set files do not exist")
 
 
 # ---------------------------------------------------------
@@ -379,50 +395,29 @@ def get_profile_photos(p_ids):
                     photo_albums_links = driver.find_elements_by_xpath("//span/a")  # noqa: E501
                     for bb in photo_albums_links:
                         album_link = bb.get_attribute("href")
+                        print("Opening  " + album_link)
                         k = open("/tmp/album_url.txt", "a", encoding="utf-8", newline="\n")  # noqa: E501
                         k.writelines(album_link)
                         k.write("\n")
                         k.close()
-                    with open("/tmp/album_url.txt") as kfile:
-                        for line in kfile:
-                            print("Opening albums...")
-                            driver.get(line)
-                            album_walker()
-                    print("Cleaning...")
-                    if os.path.exists("/tmp/album_url.txt"):
-                        os.remove("/tmp/album_url.txt")
-                    else:
-                        print("The file does not exist")
+                        with open("/tmp/album_url.txt") as kfile:
+                            for line in kfile:
+                                driver.get(line)
+                                print("Opening album  " + line)
+                                album_walker()
+                        print("Cleaning...")
+                        if os.path.exists("/tmp/album_url.txt"):
+                            os.remove("/tmp/album_url.txt")
+                        else:
+                            print("The file does not exist")
                 except NoSuchElementException:
                     print("No album page found")
-                    if os.path.exists("/tmp/album_url.txt"):
-                        os.remove("/tmp/album_url.txt")
-                    else:
-                        print("The file does not exist")
-                    if os.path.exists("/tmp/image_url.txt"):
-                        os.remove("/tmp/image_url.txt")
-                    else:
-                        print("The file does not exist")
+                    clean_file_sets()
             except Exception:
                 print("Unable to generate album page or find any albums")
-                if os.path.exists("/tmp/album_url.txt"):
-                    os.remove("/tmp/album_url.txt")
-                else:
-                    print("The file does not exist")
-                if os.path.exists("/tmp/image_url.txt"):
-                    os.remove("/tmp/image_url.txt")
-                else:
-                    print("The file does not exist")
+                clean_file_sets()
         except NoSuchElementException:
             print("Fuck!! No Photos Found!")
-            if os.path.exists("/tmp/album_url.txt"):
-                os.remove("/tmp/album_url.txt")
-            else:
-                print("The file does not exist")
-            if os.path.exists("/tmp/image_url.txt"):
-                os.remove("/tmp/image_url.txt")
-            else:
-                print("The file does not exist")
 
 # ## Image Downloader
 
@@ -443,25 +438,25 @@ def get_friends(p_ids):
         try:
             driver.find_element_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/a[3]").click()  # noqa: E501
             global profile_name
-            profile_name = driver.find_elements_by_xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/strong[1]").text  # noqa: E501
+            profile_name = driver.find_elements_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/strong[1]").text  # noqa: E501
             friend_box = driver.find_element_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]")  # noqa: E501
             friend_list = friend_box.find_elements_by_xpath("//a[@class='cf']")
             for x in friend_list:
                 friend_url = x.get_attribute("href")
                 friend_name = x.get_attribute("text")
                 friend_file = user_id + "friends" + ".txt"
-                u = open(friend_file, "w", encoding="utf-8", newline="\r\n")
+                u = open(friend_file, "w", encoding="utf-8", newline="\n")
                 for i, _ in enumerate(friend_name):
                     u.writelines(friend_name[i])
-                    u.write("/n")
+                    u.write("\t")
                     u.writelines(friend_url[i])
-                    u.write("/n/n")
+                    u.write("\n")
                 global friend_url_file
                 friend_url_file = "friend_urls.txt"
-                k = open(friend_url_file, "w", encoding="utf-8", newline="\r\n")  # noqa: E501
+                k = open(friend_url_file, "w", encoding="utf-8", newline="\n")  # noqa: E501
                 for k, _ in enumerate(friend_url):
                     k.writelines(friend_url[k])
-                    u.write("/n/n")
+                    u.write("\n")
             friend_list_end = False
             while friend_list_end is False:
                 try:
@@ -471,17 +466,17 @@ def get_friends(p_ids):
                         friend_url = x.get_attribute("href")
                         friend_name = x.get_attribute("text")
                         friend_file = user_id + "friends" + ".txt"
-                        u = open(friend_file, "w", encoding="utf-8", newline="\r\n")  # noqa: E501
+                        u = open(friend_file, "w", encoding="utf-8", newline="\n")  # noqa: E501
                         for i, _ in enumerate(friend_name):
                             u.writelines(friend_name[i])
-                            u.write("/n")
+                            u.write("\t")
                             u.writelines(friend_url[i])
-                            u.write("/n/n")
+                            u.write("\n")
                         # friend_url_file = profile_name + "friend_urls" + ".txt"  # noqa: E501
-                        k = open(friend_url_file, "w", encoding="utf-8", newline="\r\n")  # noqa: E501
+                        k = open(friend_url_file, "w", encoding="utf-8", newline="\n")  # noqa: E501
                         for k, _ in enumerate(friend_url):
                             k.writelines(friend_url[k])
-                            u.write("/n/n")
+                            u.write("\n")
                 except NoSuchElementException:
                     friend_list_end = True
                     print("Did not find any more friends.")

@@ -10,23 +10,31 @@
 #+COLUMNS: %38ITEM(Details) %TAGS(Context) %7SCHEDULED(Planned) %7TODO(To Do) %5PRIORITY(PRIORITY) %5DONE(Completeness){X%} %5Effort(Time){:} %6CLOCKSUM(Total){:}
 # ===============================================================================
 
-* INPROGRESS [#A] Finish setting up gender filtering
-	- [x] Write Function
-	- [x] integrate into scrypt
-	- [ ] Test functionality
-* TODO [#B] Find means to mitigate error of no attribute in next page functions.
-* CANCELED [#B] Rewrite scrap_profile function
-	- [ ] combine this with the scraper_control
-	- [ ] rearrage flow of script to fully complete one user at a time
-* DONE [#B] create function for album walkthrough to reduce size of code.
-	- [x] create independent function
-	- [x] remove redundancy
-* DONE [#A] Find a solution to the infinite page loop dilemna
-* DONE [#A] Find solution for locating individual image links from thumbnail page
-	- [x] I totally have no idea what is preventing this from success
-	- [x] I added a line to print the link it is scraping, which it skips everytime.
-* DONE [#A] Find solution for stale element exception that is plagueing the script currently.
-* DONE [#A] Troubleshoot new error of elements "temporarily unable to be viewed"
-* DONE [#B] Combine `get_fullphoto()` with gallery_walker
-* DONE [#B] rewrite gallery_walker to walk gallery pages not images
-* DONE [#B] Control which ID gets scraped
+* Tasks
+** TODO Successfully scrape images and albums
+*** INPROGRESS [#A] Finish setting up gender filtering
+  	- [x] Write Function
+  	- [x] integrate into scrypt
+  	- [ ] Test functionality
+*** TODO [#B] Find means to mitigate error of no attribute in next page functions.
+*** CANCELED [#B] Rewrite scrap_profile function
+  	- [ ] combine this with the scraper_control
+  	- [ ] rearrage flow of script to fully complete one user at a time
+*** DONE [#B] create function for album walkthrough to reduce size of code.
+  	- [x] create independent function
+  	- [x] remove redundancy
+*** DONE [#A] Find a solution to the infinite page loop dilemna
+*** DONE [#A] Find solution for locating individual image links from thumbnail page
+  	- [x] I totally have no idea what is preventing this from success
+  	- [x] I added a line to print the link it is scraping, which it skips everytime.
+*** DONE [#A] Find solution for stale element exception that is plagueing the script currently.
+*** DONE [#A] Troubleshoot new error of elements "temporarily unable to be viewed"
+*** DONE [#B] Combine `get_fullphoto()` with gallery_walker
+*** DONE [#B] rewrite gallery_walker to walk gallery pages not images
+*** DONE [#B] Control which ID gets scraped
+*** TODO Scrape albums
+** TODO Scrape Friends
+** TODO Scrape Based on genders
+* Docs
+  - https://www.scrapingbee.com/blog/web-scraping-without-getting-blocked/
+  - https://selenium-python.readthedocs.io/
