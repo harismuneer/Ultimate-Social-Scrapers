@@ -409,11 +409,10 @@ def get_profile_photos(p_ids):
                         else:
                             print("The file does not exist")
                 except NoSuchElementException:
-                    print("No album page found")
+                    print("No more albums found")
                     clean_file_sets()
             except Exception:
                 print("Unable to generate album page or find any albums")
-                clean_file_sets()
         except NoSuchElementException:
             print("Fuck!! No Photos Found!")
 
@@ -958,6 +957,7 @@ def scrap_profile(ids):
             scraper_control()
             get_profile_photos(p_ids)
             get_friends(p_ids)
+        scrape_complete = True
 
     print("\nProcess Completed.")
     os.chdir("../..")
