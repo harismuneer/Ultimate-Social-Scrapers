@@ -268,18 +268,18 @@ def album_walker():
     print("Walking the album")
     alset = False
     while alset is False:
-        photos_links = driver.find_elements_by_xpath("//article/div/section/div/a")  # noqa: E501
+        album_photos_links = driver.find_elements_by_xpath("//article/div/section/div/a")  # noqa: E501
         print("Writing Image links...")
-        for i in photos_links:
-            album_image_link = i.get_attribute("href")
-            q = open("/tmp/album_image_url.txt", "a", encoding="utf-8", newline="\n")  # noqa: E501
-            q.writelines(album_image_link)
-            q.write("\n")
-            q.close()
+        for s in album_photos_links:
+            album_image_link = s.get_attribute("href")
+            v = open("/tmp/album_image_url.txt", "a", encoding="utf-8", newline="\n")  # noqa: E501
+            v.writelines(album_image_link)
+            v.write("\n")
+            v.close()
         try:
+            album_nextpage = driver.find_element_by_xpath("//article/div/div/div/a").get_attribute("href")  # noqa: E501
+            driver.get(album_nextpage)
             print("Trying next page in album...")
-            album_set = driver.find_elements_by_xpath("//article/div/div/div/a").get_attribute("href")  # noqa: E501
-            driver.get(album_set)
         except NoSuchElementException:
             print("Downing scraped photos")
             with open("/tmp/album_image_url.txt") as ai_file:
@@ -287,9 +287,7 @@ def album_walker():
                     driver.get(line)
                     print("Getting  " + line)
                     get_fullphoto()
-        except Exception:
             alset = True
-            print("You fell into a much lesser pit of computational despair")  # noqa: E501
     if alset is True:
         print("Cleaning...")
         if os.path.exists("/tmp/album_image_url.txt"):
