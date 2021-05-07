@@ -416,9 +416,32 @@ def get_profile_photos(p_ids):
         except NoSuchElementException:
             print("Fuck!! No Photos Found!")
 
-# ## Image Downloader
+# ****************************************************************************
+# *                               Friend Walker                              *
+# ****************************************************************************
 
-# In[116]:
+
+def friend_walker():
+    fi_url = driver.current_url
+    ff = furl(fi_url)
+    f_idl = str(ff.path)
+    f_id = f_idl.strip("/friends")
+    friend_list = driver.find_elements_by_xpath("//div[2]/div/div/div[2]/div/table/tbody/tr/td[2]/a")  # noqa: E501
+    for x in friend_list:
+        friend_url = x.get_attribute("href")
+        friend_name = x.text
+        friend_file = f_id + "friends" + ".txt"
+        u = open(friend_file, "a", encoding="utf-8", newline="\n")
+        u.writelines(friend_name)
+        u.write("\t")
+        u.writelines(friend_url)
+        u.write("\n")
+        u.close()
+        friend_url_file = "friend_urls.txt"
+        k = open(friend_url_file, "a", encoding="utf-8", newline="\n")  # noqa: E501
+        k.writelines(friend_url)
+        k.write("\n")
+        k.close()
 
 # -------------------------------------------------------------
 # ****************************************************************************
@@ -433,55 +456,22 @@ def get_friends(p_ids):
     for user_id in p_ids:
         driver.get(user_id)
         try:
-            driver.find_element_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/a[3]").click()  # noqa: E501
-            global profile_name
-            profile_name = driver.find_elements_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/strong[1]").text  # noqa: E501
-            friend_box = driver.find_element_by_xpath("//body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]")  # noqa: E501
-            friend_list = friend_box.find_elements_by_xpath("//a[@class='cf']")
-            for x in friend_list:
-                friend_url = x.get_attribute("href")
-                friend_name = x.get_attribute("text")
-                friend_file = user_id + "friends" + ".txt"
-                u = open(friend_file, "w", encoding="utf-8", newline="\n")
-                for i, _ in enumerate(friend_name):
-                    u.writelines(friend_name[i])
-                    u.write("\t")
-                    u.writelines(friend_url[i])
-                    u.write("\n")
-                global friend_url_file
-                friend_url_file = "friend_urls.txt"
-                k = open(friend_url_file, "w", encoding="utf-8", newline="\n")  # noqa: E501
-                for k, _ in enumerate(friend_url):
-                    k.writelines(friend_url[k])
-                    u.write("\n")
+            friend_page = driver.find_element_by_xpath("//div[2]/div/div/div/div[4]/a[2]").get_attribute("href")  # noqa: E501
+            driver.get(friend_page)
+            scroll()
+            friend_walker()
             friend_list_end = False
             while friend_list_end is False:
                 try:
-                    driver.find_element_by_xpath("//span[text()='See More Friends']").click() # noqa E501
-                    driver.friend_list()
-                    for x in friend_list:
-                        friend_url = x.get_attribute("href")
-                        friend_name = x.get_attribute("text")
-                        friend_file = user_id + "friends" + ".txt"
-                        u = open(friend_file, "w", encoding="utf-8", newline="\n")  # noqa: E501
-                        for i, _ in enumerate(friend_name):
-                            u.writelines(friend_name[i])
-                            u.write("\t")
-                            u.writelines(friend_url[i])
-                            u.write("\n")
-                        # friend_url_file = profile_name + "friend_urls" + ".txt"  # noqa: E501
-                        k = open(friend_url_file, "w", encoding="utf-8", newline="\n")  # noqa: E501
-                        for k, _ in enumerate(friend_url):
-                            k.writelines(friend_url[k])
-                            u.write("\n")
+                    more_friends = driver.find_element_by_xpath("//div[2]/div/div/div[3]/a").get_attribute("href") # noqa E501
+                    driver.get(more_friends)
+                    scroll()
+                    friend_walker()
                 except NoSuchElementException:
                     friend_list_end = True
                     print("Did not find any more friends.")
-                    scraped_friends = "done"
         except NoSuchElementException:
             print("Friends Element Not Found")
-            scraped_friends = "done"
-            return scraped_friends
 
 # ****************************************************************************
 # *                                Get Gender                                *
@@ -500,12 +490,12 @@ def get_gender(friend_ids):
                 gender = gender_label.text
                 print(gender)
                 if gender == "Female":
-                    continue
-                else:
-                    break
+                    with p_ids as ids:
+                        get_profile_photos(ids)
+                        get_friends(ids)
         except NoSuchElementException:
             print("No Gender Found")
-            continue
+            gender = "female"
 
 
 # -------------------------------------------------------------
@@ -955,7 +945,7 @@ def scrap_profile(ids):
         scrape_complete = False
         while scrape_complete is False:
             scraper_control()
-            get_profile_photos(p_ids)
+            # get_profile_photos(p_ids)
             get_friends(p_ids)
         scrape_complete = True
 
