@@ -451,13 +451,6 @@ def get_friends(ids):
 
 def friend_gender_scraper(ids):
     for user_id in ids:
-        # current_dir = os.getcwd()
-        # print(current_dir)
-        # fuurl = furl(user_id)
-        # to_strip = str(fuurl.path)
-        # user_ident = to_strip.strip("/")
-        # dir_prefix = "../../../"
-        # friend_url_filePath = dir_prefix + "data/" + user_ident + "/" + "friend_urls.txt"  # noqa: E501
         if os.path.exists("friend_urls.txt"):
             with open("friend_urls.txt") as ofile:
                 for line in ofile:
@@ -465,13 +458,15 @@ def friend_gender_scraper(ids):
                     driver.get(friend_url)
                     print('Scraping Gender' + str(friend_url))
                     try:
-                        # find_gender = driver.find_element_by_xpath("//span[@innerstringmarker='Gender']")  # noqa: E501
-                        # gender_label = find_gender.to_right_of(find_gender)  # noqa: E501
                         gender = driver.find_element_by_xpath("//div[2]/div/div[1]/div[6]/div/div/div[1]/table/tbody/tr/td[2]/div").text  # noqa: E501
-                        # gender = gender_label.text
                         print(gender)
                         if gender == desired_gender:
-                            with friend_url as ids:
+                            friend_scrape_file = "friends_to_scrape.txt"
+                            b = open(friend_scrape_file, "a", encoding="utf-8", newline="\n")  # noqa: E501
+                            b.writelines(friend_url)
+                            b.write("\n")
+                            b.close()
+                            with open("friends_to_scrape.txt") as ids:
                                 get_profile_photos(ids)
                                 get_friends(ids)
                     except NoSuchElementException:
@@ -912,8 +907,8 @@ def scrap_profile(ids):
 
         # This defines what gets scraped
         # -------------------------------
-        # get_profile_photos(ids)
-        # get_friends(ids)
+        get_profile_photos(ids)
+        get_friends(ids)
         friend_gender_scraper(ids)
 
     print("\nProcess Completed.")
