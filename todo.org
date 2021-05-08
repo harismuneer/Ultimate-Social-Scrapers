@@ -11,7 +11,7 @@
 # ===============================================================================
 
 * Tasks
-** TODO Successfully scrape images and albums
+** DONE Successfully scrape images and albums
 *** INPROGRESS [#A] Finish setting up gender filtering
   	- [x] Write Function
   	- [x] integrate into scrypt
@@ -33,8 +33,8 @@
 *** DONE [#B] rewrite gallery_walker to walk gallery pages not images
 *** DONE [#B] Control which ID gets scraped
 *** TODO Scrape albums
-** TODO Scrape Friends
-** TODO Scrape Based on genders
+** DONE Scrape Friends
+** DONE Scrape Based on genders
 * Docs
   - https://www.scrapingbee.com/blog/web-scraping-without-getting-blocked/
   - https://selenium-python.readthedocs.io/
