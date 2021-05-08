@@ -1,3 +1,9 @@
 selenium
 pyyaml
 ratelimit
+requests
+argparse
+shutil
+furl
+json
+urllib

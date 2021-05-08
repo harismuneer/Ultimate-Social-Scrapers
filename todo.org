@@ -12,11 +12,11 @@
 
 * Tasks
 ** DONE Successfully scrape images and albums
-*** INPROGRESS [#A] Finish setting up gender filtering
+*** DONE [#A] Finish setting up gender filtering
   	- [x] Write Function
   	- [x] integrate into scrypt
   	- [ ] Test functionality
-*** TODO [#B] Find means to mitigate error of no attribute in next page functions.
+*** DONE [#B] Find means to mitigate error of no attribute in next page functions.
 *** CANCELED [#B] Rewrite scrap_profile function
   	- [ ] combine this with the scraper_control
   	- [ ] rearrage flow of script to fully complete one user at a time
@@ -32,9 +32,12 @@
 *** DONE [#B] Combine `get_fullphoto()` with gallery_walker
 *** DONE [#B] rewrite gallery_walker to walk gallery pages not images
 *** DONE [#B] Control which ID gets scraped
-*** TODO Scrape albums
+*** DONE Scrape albums
 ** DONE Scrape Friends
 ** DONE Scrape Based on genders
+** TODO Setup config.py for easier configuration by users
+  Why am I doing this? I do not know...
+** TODO Remove useless, broken, and unused bits of code.
 * Docs
   - https://www.scrapingbee.com/blog/web-scraping-without-getting-blocked/
   - https://selenium-python.readthedocs.io/

@@ -19,6 +19,7 @@ passwords.txt
 *.sublime*
 project.org
 scraper-mobile.py
+scraper.py
 
 # Custom additions
 chromedriver*
