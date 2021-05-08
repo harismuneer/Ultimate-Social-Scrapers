@@ -117,6 +117,8 @@ rhtime = 900
 tsmin = 15
 tsmax = 30
 
+# For gender scraping | Binary only, either "Male" or "Female"
+desired_gender = "Female"
 
 # CHROMEDRIVER_BINARIES_FOLDER = "bin"
 Firefox(executable_path="/usr/local/bin/geckodriver")
@@ -141,41 +143,6 @@ Firefox(executable_path="/usr/local/bin/geckodriver")
 #    |___|_| |_| |_|\__,_|\__, |\___||___/    #
 #                         |___/               #
 ###############################################
-
-
-# ****************************************************************************
-# *                              id control                                  *
-# ****************************************************************************
-
-def scraper_control():
-    global p_ids
-    global friend_ids
-    current_dir = os.getcwd()
-    print(current_dir)
-    in_file = open("../../../input.txt", newline="\n")
-    idents = in_file.readlines()
-    for line in idents:
-        user_ident = line
-        dir_prefix = "../../../"
-        friend_url_filePath = dir_prefix + "data/" + user_ident + "/" + "friend_urls.txt"  # noqa: E501
-        if os.path.exists(friend_url_filePath):
-            friend_ids = [
-                line.split("/")[-1]
-                for line in open("friend_urls.txt", newline="\n")
-            ]
-
-            if len(friend_ids) > 0:
-                print("\nStarting Scraping Friend photos...")
-
-                gender = get_gender(friend_ids)
-                if gender == "female":
-                    p_ids = friend_ids
-
-            else:
-                global scrape_complete
-                scrape_complete = True
-        else:
-            p_ids = ids
 
 
 # ****************************************************************************
@@ -357,9 +324,9 @@ def clean_file_sets():
 # DONE: prevent infinite loop of scraping photos.
 
 
-def get_profile_photos(p_ids):
+def get_profile_photos(ids):
     time.sleep(randint(tsmin, tsmax))
-    for user_id in p_ids:
+    for user_id in ids:
         # profile_imgs = []
         driver.get(user_id)
         url = driver.current_url
@@ -452,8 +419,8 @@ def friend_walker():
 # DONE: Add a loop with a limitation of redundancy
 
 
-def get_friends(p_ids):
-    for user_id in p_ids:
+def get_friends(ids):
+    for user_id in ids:
         driver.get(user_id)
         print("Getting friends of " + user_id)
         try:
@@ -482,24 +449,35 @@ def get_friends(p_ids):
 # ****************************************************************************
 
 
-def get_gender(friend_ids):
-    for user_id in friend_ids:
-        # profile_imgs = []
-        driver.get(user_id)
-        print('Scraping Gender' + str(user_id))
-        try:
-            find_gender = driver.find_elements_by_xpath("//span[@innerstringmarker='Gender']")  # noqa: E501
-            if NoSuchElementException is False:
-                gender_label = find_gender.to_right_of(find_gender)  # noqa: E501
-                gender = gender_label.text
-                print(gender)
-                if gender == "Female":
-                    with p_ids as ids:
-                        get_profile_photos(ids)
-                        get_friends(ids)
-        except NoSuchElementException:
-            print("No Gender Found")
-            gender = "female"
+def friend_gender_scraper(ids):
+    for user_id in ids:
+        # current_dir = os.getcwd()
+        # print(current_dir)
+        # fuurl = furl(user_id)
+        # to_strip = str(fuurl.path)
+        # user_ident = to_strip.strip("/")
+        # dir_prefix = "../../../"
+        # friend_url_filePath = dir_prefix + "data/" + user_ident + "/" + "friend_urls.txt"  # noqa: E501
+        if os.path.exists("friend_urls.txt"):
+            with open("friend_urls.txt") as ofile:
+                for line in ofile:
+                    friend_url = line
+                    driver.get(friend_url)
+                    print('Scraping Gender' + str(friend_url))
+                    try:
+                        # find_gender = driver.find_element_by_xpath("//span[@innerstringmarker='Gender']")  # noqa: E501
+                        # gender_label = find_gender.to_right_of(find_gender)  # noqa: E501
+                        gender = driver.find_element_by_xpath("//div[2]/div/div[1]/div[6]/div/div/div[1]/table/tbody/tr/td[2]/div").text  # noqa: E501
+                        # gender = gender_label.text
+                        print(gender)
+                        if gender == desired_gender:
+                            with friend_url as ids:
+                                get_profile_photos(ids)
+                                get_friends(ids)
+                    except NoSuchElementException:
+                        print("No Gender Found")
+        else:
+            print("File does not exist")
 
 
 # -------------------------------------------------------------
@@ -719,17 +697,6 @@ def save_to_file(name, elements, status, friends_urls, current_section):
                         print(img_links.text)
 
                     folder_names = "Friends_Photos"
-                    # folder_names = [
-                    #     "Friend's Photos",
-                    #     "Mutual Friends' Photos",
-                    #     "Following's Photos",
-                    #     "Follower's Photos",
-                    #     "Work Friends Photos",
-                    #     "High School Friends Photos",
-                    #     "College Friends Photos",
-                    #     "Current City Friends Photos",
-                    #     "Hometown Friends Photos",
-                    # ]
                     print("Downloading " + folder_names[current_section])
 
                     img_names = image_downloader(
@@ -945,9 +912,9 @@ def scrap_profile(ids):
 
         # This defines what gets scraped
         # -------------------------------
-        scraper_control()
-        get_profile_photos(p_ids)
-        get_friends(p_ids)
+        # get_profile_photos(ids)
+        # get_friends(ids)
+        friend_gender_scraper(ids)
 
     print("\nProcess Completed.")
     os.chdir("../..")
