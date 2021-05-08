@@ -455,23 +455,27 @@ def friend_walker():
 def get_friends(p_ids):
     for user_id in p_ids:
         driver.get(user_id)
+        print("Getting friends of " + user_id)
         try:
             friend_page = driver.find_element_by_xpath("//div[2]/div/div/div/div[4]/a[2]").get_attribute("href")  # noqa: E501
             driver.get(friend_page)
+            print("Getting " + friend_page)
             scroll()
             friend_walker()
             friend_list_end = False
             while friend_list_end is False:
                 try:
-                    more_friends = driver.find_element_by_xpath("//div[2]/div/div/div[3]/a").get_attribute("href") # noqa E501
-                    driver.get(more_friends)
+                    # more_friends = driver.find_element_by_xpath('//body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/a[1]').get_attribute('href') # noqa E501
+                    # driver.get(more_friends)
+                    driver.find_element_by_xpath('//span[text()="See More Friends"]').click()  # noqa: E501
                     scroll()
                     friend_walker()
                 except NoSuchElementException:
+                    print("Did not find more friends")
                     friend_list_end = True
-                    print("Did not find any more friends.")
         except NoSuchElementException:
-            print("Friends Element Not Found")
+            print("Did not find any friends")
+            friend_list_end = True
 
 # ****************************************************************************
 # *                                Get Gender                                *
@@ -941,13 +945,9 @@ def scrap_profile(ids):
 
         # This defines what gets scraped
         # -------------------------------
-        global scrape_complete
-        scrape_complete = False
-        while scrape_complete is False:
-            scraper_control()
-            # get_profile_photos(p_ids)
-            get_friends(p_ids)
-        scrape_complete = True
+        scraper_control()
+        get_profile_photos(p_ids)
+        get_friends(p_ids)
 
     print("\nProcess Completed.")
     os.chdir("../..")
