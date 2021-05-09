@@ -27,14 +27,12 @@
 import requests
 import shutil
 import argparse
-import json
 import os
 import platform
 import sys
 
 # Custom Imports for time banning.
 import time
-import urllib.request
 # from urllib.request import urlopen, Request
 from random import randint
 from furl import furl
@@ -48,8 +46,6 @@ from selenium import webdriver
 from selenium.webdriver import Firefox
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from selenium.webdriver.firefox.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 # -------------------------------------------------------------
@@ -67,11 +63,11 @@ opts = Options()
 opts.add_argument(
     '--user-agent=Mozilla/5.0 CK={} (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko'  # noqa: E501
     )
-opts.add_argument("headless")
-opts.add_argument("no-sandbox")
-opts.add_argument("lang=en-US")
-opts.add_argument("dns-prefetch-disable")
-opts.add_argument("start-maximized")
+opts.add_argument("--headless")
+opts.add_argument("--no-sandbox")
+opts.add_argument("--lang=en-US")
+opts.add_argument("--dns-prefetch-disable")
+# opts.add_argument("--start-maximized")
 
 # For requests library
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.3'}  # noqa: E501
@@ -96,7 +92,7 @@ scroll_time = 20
 
 old_height = 0
 facebook_https_prefix = "https://"
-facebook_link_body = "mbasic.facebook.com"
+facebook_link_body = "mbasic.facebook.com/"
 
 # Reducing these values now that a scroll time period has been added
 # to avoid rate limit. Actually did not change them.
@@ -122,66 +118,6 @@ desired_gender = "Female"
 
 # CHROMEDRIVER_BINARIES_FOLDER = "bin"
 Firefox(executable_path="/usr/local/bin/geckodriver")
-
-
-# ## Identify images
-
-# In[115]:
-
-
-###############################################
-#     ___    _            _   _  __           #
-#    |_ _|__| | ___ _ __ | |_(_)/ _|_   _     #
-#     | |/ _` |/ _ \ '_ \| __| | |_| | | |    #
-#     | | (_| |  __/ | | | |_| |  _| |_| |    #
-#    |___\__,_|\___|_| |_|\__|_|_|  \__, |    #
-#                                   |___/     #
-#     ___                                     #
-#    |_ _|_ __ ___   __ _  __ _  ___  ___     #
-#     | || '_ ` _ \ / _` |/ _` |/ _ \/ __|    #
-#     | || | | | | | (_| | (_| |  __/\__ \    #
-#    |___|_| |_| |_|\__,_|\__, |\___||___/    #
-#                         |___/               #
-###############################################
-
-
-# ****************************************************************************
-# *                            Get Facebook Images                           *
-# ****************************************************************************
-
-
-# TODO: Replace elements and get working again.
-@limits(calls=randint(rtqlow, rtqhigh), period=randint(rltime, rhtime))
-def get_facebook_images_url(img_links):
-    urls = []
-
-    for link in img_links:
-        if link != "None":
-            valid_url_found = False
-            time.sleep(randint(tsmin, tsmax))
-            driver.get(link)
-
-            try:
-                while not valid_url_found:
-                    WebDriverWait(driver, 30).until(
-                        EC.presence_of_element_located(
-                            (By.CLASS_NAME, selectors.get("spotlight"))
-                        )
-                    )
-                    element = driver.find_element_by_xpath(
-                        selectors.get("spotlight")
-                    )
-                    img_url = element.get_attribute("src")
-
-                    if img_url.find(".gif") == -1:
-                        valid_url_found = True
-                        urls.append(img_url)
-            except Exception:
-                urls.append("None")
-        else:
-            urls.append("None")
-
-    return urls
 
 
 # ---------------------------------------------------------
@@ -475,72 +411,6 @@ def friend_gender_scraper(ids):
             print("File does not exist")
 
 
-# -------------------------------------------------------------
-
-###################################################################
-#     ___                                                         #
-#    |_ _|_ __ ___   __ _  __ _  ___                              #
-#     | || '_ ` _ \ / _` |/ _` |/ _ \                             #
-#     | || | | | | | (_| | (_| |  __/                             #
-#    |___|_| |_| |_|\__,_|\__, |\___|                             #
-#                         |___/                                   #
-#     ____                      _                 _               #
-#    |  _ \  _____      ___ __ | | ___   __ _  __| | ___ _ __     #
-#    | | | |/ _ \ \ /\ / / '_ \| |/ _ \ / _` |/ _` |/ _ \ '__|    #
-#    | |_| | (_) \ V  V /| | | | | (_) | (_| | (_| |  __/ |       #
-#    |____/ \___/ \_/\_/ |_| |_|_|\___/ \__,_|\__,_|\___|_|       #
-#                                                                 #
-###################################################################
-
-# -------------------------------------------------------------
-
-
-# takes a url and downloads image from that url
-@limits(calls=randint(rtqlow, rtqhigh), period=randint(rltime, rhtime))
-def image_downloader(img_links, folder_name):
-    img_names = []
-    img_link = []
-    img_link = driver.find_element(By.CSS_SELECTOR, "img").get_attribute("src")
-    img_links = img_link.append(img_links)
-
-    try:
-        parent = os.getcwd()
-        try:
-            folder = os.path.join(os.getcwd(), folder_name)
-            utils.create_folder(folder)
-            os.chdir(folder)
-        except Exception:
-            print("Error in changing directory.")
-        for link in img_links:
-            img_name = "None"
-
-            if link != "None":
-                img_name = (link.split(".jpg")[0]).split("/")[-1] + ".jpg"
-
-                # this is the image id when there's no profile pic
-                if img_name == selectors.get("default_image"):
-                    img_name = "None"
-                else:
-                    try:
-                        # Requesting images too fast will get you blocked too.
-                        time.sleep(randint(tsmin, tsmax))
-                        urllib.request.urlretrieve(link, img_name)
-                    except Exception:
-                        img_name = "None"
-
-            img_names.append(img_name)
-
-        os.chdir(parent)
-    except Exception:
-        print("Exception (image_downloader):", sys.exc_info()[0])
-
-    return img_names
-
-# -------------------------------------------------------------
-
-# -------------------------------------------------------------
-
-
 # ## Page Scrolls
 
 # In[117]:
@@ -589,212 +459,6 @@ def scroll():
             current_scrolls += 1
         except TimeoutException:
             break
-
-    return
-
-
-# ## Scraping
-
-# In[118]:
-
-
-# -------------------------------------------------------------
-
-####################################################
-#     ____                       _                 #
-#    / ___|  ___ _ __ __ _ _ __ (_)_ __   __ _     #
-#    \___ \ / __| '__/ _` | '_ \| | '_ \ / _` |    #
-#     ___) | (__| | | (_| | |_) | | | | | (_| |    #
-#    |____/ \___|_|  \__,_| .__/|_|_| |_|\__, |    #
-#                         |_|            |___/     #
-####################################################
-
-# -------------------------------------------------------------
-
-
-@limits(calls=randint(rtqlow, rtqhigh), period=randint(rltime, rhtime))
-def save_to_file(name, elements, status, friends_urls, current_section):
-    """helper function used to save links to files"""
-
-    # status 0 = dealing with friends list
-    # status 1 = dealing with photos
-    # status 2 = dealing with videos
-    # status 3 = dealing with about section
-    # status 4 = dealing with posts
-
-# ****************************************************************************
-# *                             Download Friends                             *
-# ****************************************************************************
-
-    try:
-        f = None  # file pointer
-
-        if status != 4:
-            f = open(name, "w", encoding="utf-8", newline="\r\n")
-
-        results = []
-        img_names = []
-
-        # dealing with Friends
-        if status == 0:
-            # get profile links of friends
-            results = [x.get_attribute("href") for x in elements]
-            results = [create_original_link(x) for x in results]
-
-            # get names of friends
-            people_names = [
-                x.find_element(By.CLASS_NAME, "cg").get_attribute("text")
-                for x in elements
-            ]
-
-# ****************************************************************************
-# *                                Down Photos                               *
-# ****************************************************************************
-            friends_small_size = False
-            try:
-                if download_friends_photos:
-                    if friends_small_size:
-                        img_links = [
-                            x.find_element_by_css_selector("img").get_attribute("src")  # noqa: E501
-                            for x in elements
-                        ]
-                        print(img_links.text)
-                    else:
-                        links = []
-                        for friend in results:
-                            try:
-                                time.sleep(randint(tsmin, tsmax))
-                                driver.get(friend)
-                                WebDriverWait(driver, 30).until(
-                                    EC.presence_of_element_located(
-                                        (By.XPATH, selectors.get(
-                                            "profilePicThumb"))
-                                    )
-                                )
-                                profile_thumbnail = driver.find_element_by_xpath(    # noqa: E501
-                                    selectors.get("profilePicThumb"))
-                                ld = driver.find_element_by_css_selector(
-                                    "#u_0_2_No").above(
-                                    profile_thumbnail).get_attribute("href")
-                                driver.get_facebook_images_url
-                            except Exception:
-                                ld = "None"
-
-                            links.append(ld)
-
-                        for i, _ in enumerate(links):
-                            if links[i] is None:
-                                links[i] = "None"
-                            elif links[i].find("picture/view") != -1:
-                                links[i] = "None"
-
-                        img_links = get_facebook_images_url(links)
-                        print(img_links.text)
-
-                    folder_names = "Friends_Photos"
-                    print("Downloading " + folder_names[current_section])
-
-                    img_names = image_downloader(
-                        img_links, folder_names[current_section]
-                    )
-                    print(img_names.text)
-                else:
-                    img_names = ["None"] * len(results)
-            except Exception:
-                print(
-                    "Exception (Images)",
-                    str(status),
-                    "Status =",
-                    current_section,
-                    sys.exc_info()[0],
-                )
-
-# Handling Photo Links
-
-# ****************************************************************************
-# *                               Handle Photos                              *
-# ****************************************************************************
-
-        elif status == 1:
-            results = [x.get_attribute("href") for x in elements]
-            results.pop(0)
-
-            try:
-                if download_uploaded_photos:
-                    if photos_small_size:
-                        background_img_links = driver.find_elements_by_xpath(
-                            selectors.get("background_img_links")
-                        )
-                        background_img_links = [
-                            x.get_attribute(
-                                "style") for x in background_img_links
-                        ]
-                        background_img_links = [
-                            ((x.split("(")[1]).split(")")[0]).strip('"')
-                            for x in background_img_links
-                        ]
-                    else:
-                        background_img_links = get_facebook_images_url(results)
-
-                    folder_names = ["Uploaded Photos", "Tagged Photos"]
-                    print("Downloading " + folder_names[current_section])
-
-                    img_names = image_downloader(
-                        background_img_links, folder_names[current_section]
-                    )
-                else:
-                    img_names = ["None"] * len(results)
-            except Exception:
-                print(
-                    "Exception (Images)",
-                    str(status),
-                    "Status =",
-                    current_section,
-                    sys.exc_info()[0],
-                )
-
-
-# ****************************************************************************
-# *                               Write to file                              *
-# ****************************************************************************
-
-        """Write results to file"""
-        if status == 0:
-            for i, _ in enumerate(results):
-                # friend's profile link
-                f.writelines(results[i])
-                f.write(",")
-
-                # friend's name
-                # f.writelines(friend_names[i])
-                # f.write("\n")
-
-                # people's name
-                f.writelines(people_names[i])
-                f.write("\n")
-
-                # friend's downloaded picture id
-                f.writelines(img_names[i])
-                f.write("\n")
-
-        elif status == 1:
-            for i, _ in enumerate(results):
-                # image's link
-                f.writelines(results[i])
-                f.write(",")
-
-                # downloaded picture id
-                f.writelines(img_names[i])
-                f.write("\n")
-
-        elif status == 2:
-            for x in results:
-                f.writelines(x + "\n")
-
-        f.close()
-
-    except Exception:
-        print("Exception (save_to_file)", "Status =", str(status), sys.exc_info()[0])  # noqa: E501
 
     return
 
@@ -971,7 +635,7 @@ def login(email, password):
         # Facebook new design
         driver.find_element_by_xpath("//input[@value='Log In']").click()
         WebDriverWait(driver, 7)
-        driver.find_element_by_xpath(selectors.get("notNow")).click()
+        driver.find_element_by_xpath("//body[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/div[3]/a[1]").click()  # noqa: E501
 
     except Exception:
         print("There is something wrong with logging in.")
@@ -1118,15 +782,6 @@ scroll_time = int(args["scroll_time"])
 
 current_scrolls = 0
 old_height = 0
-
-with open("selectors.json") as a, open("params.json") as b:
-    selectors = json.load(a)
-    params = json.load(b)
-
-# firefox_profile_path = selectors.get("firefox_profile_path")
-facebook_https_prefix = selectors.get("facebook_https_prefix")
-facebook_link_body = selectors.get("facebook_link_body")
-
 
 # ## RUN!
 
