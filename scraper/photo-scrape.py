@@ -575,6 +575,7 @@ def scrap_profile(ids):
 
         # This defines what gets scraped
         # -------------------------------
+        clean_file_sets()
         get_profile_photos(ids)
         get_friends(ids)
         friend_gender_scraper(ids)
