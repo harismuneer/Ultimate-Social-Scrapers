@@ -211,11 +211,13 @@ def album_walker():
 
 
 def get_fullphoto():
-    full_Size_Url = driver.find_element_by_xpath(
-        "//a[text()='View Full Size']").get_attribute("href")
+    full_Size_Url = driver.find_element_by_xpath("//div[2]/div/div[1]/div/div/div[3]/div[1]/div[2]/span/div/span/a[1]").get_attribute("href")  # noqa: E501
+    driver.get(full_Size_Url)
+    time.sleep(3)
     image_number = str(randint(1, 9999))
     image_name = "photo" + image_number + ".jpg"
-    with requests.get(full_Size_Url, stream=True, allow_redirects=True) as r:  # noqa: E501
+    full_size_address = driver.current_url
+    with requests.get(full_size_address, stream=True, allow_redirects=True) as r:  # noqa: E501
         with open(image_name, "wb") as f:
             r.raw.decode_content = True
             shutil.copyfileobj(r.raw, f)
