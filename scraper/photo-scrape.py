@@ -230,6 +230,8 @@ def clean_file_sets():
         os.remove("/tmp/album_url.txt")
     elif os.path.exists("/tmp/image_url.txt"):
         os.remove("/tmp/image_url.txt")
+    elif os.path.exists("/tmp/album_image_url.txt"):
+        os.remove("/tmps/album_image_url.txt")
     else:
         print("Set files do not exist")
 
