@@ -285,15 +285,13 @@ def get_profile_photos(ids):
             try:
                 print("Generating albums page...")
                 f1 = furl(pv_link)
-                prefix = "https://"
                 int_fb_id = f1.args.popvalue('owner_id')
                 account_id = int_fb_id.strip()
                 f2 = furl(photos_url)
                 userid_path = str(f2.path)
                 userid = userid_path.strip('/')
-                front_album_url = "mbasic.facebook.com"
                 back_album_url = "albums/?owner_id="
-                album_page_url = prefix + front_album_url + "/" + userid + "/" + back_album_url + account_id  # noqa: E501
+                album_page_url = facebook_https_prefix + facebook_link_body + userid + "/" + back_album_url + account_id  # noqa: E501
                 print(album_page_url)
                 driver.get(album_page_url)
                 try:
@@ -322,6 +320,7 @@ def get_profile_photos(ids):
                 print("Unable to generate album page or find any albums")
         except NoSuchElementException:
             print("Fuck!! No Photos Found!")
+            clean_file_sets()
 
 # ****************************************************************************
 # *                               Friend Walker                              *
