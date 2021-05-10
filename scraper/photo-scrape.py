@@ -339,7 +339,7 @@ def friend_walker():
         friend_name = x.text
         friend_file = f_id + "friends" + ".txt"
         u = open(friend_file, "a", encoding="utf-8", newline="\n")
-        u.writelines(friend_name)full_size_address
+        u.writelines(friend_name)
         u.write("\t")
         u.writelines(friend_url)
         u.write("\n")
