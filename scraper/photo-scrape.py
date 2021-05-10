@@ -216,8 +216,8 @@ def get_fullphoto():
     time.sleep(3)
     image_number = str(randint(1, 9999))
     image_name = "photo" + image_number + ".jpg"
-    full_size_address = driver.current_url
-    with requests.get(full_size_address, stream=True, allow_redirects=True) as r:  # noqa: E501
+    img_url = driver.current_url
+    with requests.get(img_url, stream=True, allow_redirects=True) as r:  # noqa: E501
         with open(image_name, "wb") as f:
             r.raw.decode_content = True
             shutil.copyfileobj(r.raw, f)
@@ -339,7 +339,7 @@ def friend_walker():
         friend_name = x.text
         friend_file = f_id + "friends" + ".txt"
         u = open(friend_file, "a", encoding="utf-8", newline="\n")
-        u.writelines(friend_name)
+        u.writelines(friend_name)full_size_address
         u.write("\t")
         u.writelines(friend_url)
         u.write("\n")
