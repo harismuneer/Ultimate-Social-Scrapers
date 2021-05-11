@@ -748,6 +748,12 @@ if __name__ == "__main__":
         "-st", "--scroll_time",
         help="How much time should I take to scroll?", default=8
     )
+    ap.add_argument(
+        "-cln",
+        "--clean",
+        help="Clean scraper files",
+        default=True,
+    )
 
     args = vars(ap.parse_args())
     print(args)

@@ -19,6 +19,10 @@
 
 ----
 
+*This repository is no longer compatible with the original UFS scraper written by harismuneer.*
+
+----
+
 ### New Changes to come
 Since the last update of this repo the developer has removed the script from github and closed the source code. He now requires payment for access to this script. 
 
