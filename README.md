@@ -149,10 +149,10 @@ and many more satisfied customers..
 
 <b><i>Limited discount offer valid till May 24, 2021.</i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>TeamViewer meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installations steps incase you prefer to do the installation on your own.
 
-### Pro Version (119$) ~~169$~~
+### Pro Version (99$) ~~169$~~
 - allows you to scrape all sections for a <b>User's Profile/Account </b>
 
-### Ultimate Version (179$) ~~279$~~
+### Ultimate Version (159$) ~~279$~~
 - gives you all features of Pro version plus allows you to scrape <b>Facebook Public Pages and Facebook Groups</b>.
 
 ## Purchase 🤝
@@ -160,7 +160,7 @@ For payment, you can follow these simple steps:
 
 <b>1)</b> Free signup at <b>[TransferWise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the payment)
 
-<b>2)</b> Select the amount (119$ for Pro and 179$ for Ultimate) and choose the receiving/recipient's currency to be PKR. It supports multiple payment options (credit card, debit card, wire transfer etc)
+<b>2)</b> Select the amount (99$ for Pro and 159$ for Ultimate) and choose the receiving/recipient's currency to be PKR. It supports multiple payment options (credit card, debit card, wire transfer etc)
 
 <b>3)</b> Then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients and the IBAN number is: PK37FAYS3241307000000167
 
