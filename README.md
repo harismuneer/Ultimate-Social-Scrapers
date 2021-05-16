@@ -147,20 +147,20 @@ and many more satisfied customers..
 
 ## Price 💳  
 
-<b><i>Limited discount offer valid till March 27, 2021.</i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>TeamViewer meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. 
+<b><i>Limited discount offer valid till May 24, 2021.</i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>TeamViewer meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installations steps incase you prefer to do the installation on your own.
 
-### Basic Version (119$) ~~169$~~
+### Pro Version (119$) ~~169$~~
 - allows you to scrape all sections for a <b>User's Profile/Account </b>
 
-### Pro Version (179$) ~~279$~~
-- gives you all features of Basic version plus allows you to scrape <b>Facebook Public Pages and Facebook Groups</b>.
+### Ultimate Version (179$) ~~279$~~
+- gives you all features of Pro version plus allows you to scrape <b>Facebook Public Pages and Facebook Groups</b>.
 
 ## Purchase 🤝
 For payment, you can follow these simple steps:
 
 <b>1)</b> Free signup at <b>[TransferWise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the payment)
 
-<b>2)</b> Select the amount (119$ for Basic and 179$ for Pro) and choose the receiving/recipient's currency to be PKR. It supports multiple payment options (credit card, debit card, wire transfer etc)
+<b>2)</b> Select the amount (119$ for Pro and 179$ for Ultimate) and choose the receiving/recipient's currency to be PKR. It supports multiple payment options (credit card, debit card, wire transfer etc)
 
 <b>3)</b> Then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients and the IBAN number is: PK37FAYS3241307000000167
 
@@ -175,7 +175,7 @@ Please read these points before purchasing the tool:
 
 - The default language of Facebook should be set to English for this tool to work properly.
 - If there's any specific use case of yours which the tool doesn't support currently then feel free to send me an email at [haris.muneer5@gmail.com](haris.muneer5@gmail.com) and we will discuss it further.
-- This tool is not meant for massive scraping (thousands of posts or friends etc). It is possible but the rate of scraping would be slower in that scenario.
+- This tool is not meant for massive scraping (thousands of posts or friends etc). It might be possible but the rate of scraping would be slower in that scenario.
 - Facebook has taken aggressive measures against scraping so sometimes the account you are using to scrape data might get temporarily blocked (though there are some ways to circumvent this issue which I will share during the TeamViewer installation meeting)
 
 For more details, read the [FAQ](./FAQ.md)
