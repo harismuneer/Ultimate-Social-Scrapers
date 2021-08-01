@@ -9,7 +9,7 @@
 <hr>
 
 <p align="center">
-  Software that <b>automates</b> your social media interactions to collect posts (text, likes/reactions, comments etc), photos, interests (likes), bio data (contact details etc), videos, friends, followers and much more on Facebook.
+  Software that <b>automates</b> your social media interactions to collect posts (text, likes/reactions, comments etc), photos, interests (likes), bio data (contact details etc), videos, friends, followers and much more on Facebook. Sounds interesting? [purhcase](#Price)
 </p>
 
 <hr>
@@ -96,7 +96,8 @@
 </p>
 <hr>
 
-## Awards/Achievements 🏆
+Awards/Achievements 🏆
+------------------------------------
 * UFS got included as an official tool in the [BlackArch Linux distribution](https://blackarch.org/social.html)! 
 * UFS got listed among the [top 20 hacking tools in 2019](https://www.kitploit.com/2019/12/top-20-most-popular-hacking-tools-in.html)!
 
