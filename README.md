@@ -5,7 +5,7 @@
 </a>
 
 <h1 align="center">Ultimate Facebook Scraper - UFS</h1>
-<h3 align="center"> (One of the best Facebook Data Extraction Software for Businesses, Sales & Marketing People and Researchers)</h3>
+<h3 align="center"> (One of the best Facebook Data Extraction Software for <i>Businesses, Sales & Marketing People and Researchers</i>)</h3>
 <hr>
 
 <p align="center">
