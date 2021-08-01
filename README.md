@@ -105,7 +105,7 @@
 A Software that scrapes the following sections from Facebook:
 
 ### 1) User's Profile/Account
-- posts/statuses available on the user's timeline including text, likes/reactions/comments (total stats, comment text, user profiles of people who interacted)
+- posts/statuses available on the user's timeline including text, date posted, likes/reactions/comments (total stats, comment text, user profiles of people who interacted)
 - about/intro sections (including work and education, places lived, contact info (email, phone number, location etc)  
 - photos (uploaded and tagged)
 - videos (uploaded and tagged)
@@ -115,13 +115,13 @@ A Software that scrapes the following sections from Facebook:
 - check-ins (places visited)
 
 ### 2) Public Facebook Page
-- posts done by the Facebook page including text, likes/reactions/comments (total stats, comment text, user profiles of people who interacted)
+- posts done by the Facebook page including text, date posted, likes/reactions/comments (total stats, comment text, user profiles of people who interacted)
 - about/intro sections (including page info and contact details like email, phone number, location, total likes, followers count etc)  
 - photos
 - videos
 
 ### 3) Facebook Group
-- posts in the group (also called Discussions) including data of Post Owner, text, likes/reactions/comments (total stats, comment text, user profiles of members who interacted) 
+- posts in the group (also called Discussions) including data of post owner, text, date posted, likes/reactions/comments (total stats, comment text, user profiles of members who interacted) 
 - about/intro sections (including group info and contact details like email, phone number, location, total members/admins, posting rules etc)  
 - group members and admins list including their bio data and profile links
 - photos
@@ -144,13 +144,21 @@ UFS is a great software developed by Haris and excellent service that is worth b
 
 - Suksan S. (Cybersecurity Student)
 
-> 
+> Haris was very helpful and professional with plenty of knowledge in the field. He explained everything about his awesome software in detail including information that is necessary to know. “UFS '' is the best and easy to use with outstanding customer service, which is why Haris' tool is your best bet for scraping Facebook. A strong recommendation.
+
+- Armin M. (NLP Practitioner & Researcher)
+
+> I am a master student who was looking for a tool to scrape public Facebook user profile information including posts & photos, I found the tool Ultimate Facebook Scraper - UFS on Github and immediately realized that this is what i was looking for, a great tool developed by a great programmer which is simple to use and it helped me to achieve my goals with my thesis
+
+- Hamzeh K. (Master's Student)
 
 and many more satisfied customers.. 
 
 ## Price 💳  
 
-<b><i>Limited discount offer valid till Aug 09, 2021.</i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>TeamViewer meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installations steps incase you prefer to do the installation on your own.
+<b><i>Limited discount offer valid till Aug 09, 2021.</i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>TeamViewer meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installations steps incase you prefer to do the installation on your own. 
+
+This is a one-time payment for UFS. I will be available for any maintenance/support required without any fee to provide you the best customer service so you can solely focus on achieving your business outcomes.
 
 ### Pro Version (119$) ~~169$~~
 - allows you to scrape all sections for a <b>User's Profile/Account </b>
@@ -176,12 +184,12 @@ If you face any issue in doing payment then feel free to get in touch with me at
 ## Important Notes 📑 
 Please read these points before purchasing the tool:
 
-- The default language of Facebook should be set to English for this tool to work properly.
+- The default language of Facebook should be set to English for this tool to work properly. The interface needs to be in English, the post text and all other data can be scraped in any language :)
 - If there's any specific use case of yours which the tool doesn't support currently then feel free to send me an email at [haris.muneer5@gmail.com](haris.muneer5@gmail.com) and we will discuss it further.
 - This tool is not meant for massive scraping (thousands of posts or friends etc). It might be possible but the rate of scraping would be slower in that scenario.
 - Facebook has taken aggressive measures against scraping so sometimes the account you are using to scrape data might get temporarily blocked (though there are some ways to circumvent this issue which I will share during the TeamViewer installation meeting)
 
-For more details, read the [FAQ](./FAQ.md)
+For more details, feel free to reach me at [haris.muneer5@gmail.com](haris.muneer5@gmail.com)
 
 
 <hr>
@@ -219,10 +227,9 @@ If you liked the repo then kindly support it by giving it a star ⭐ and share i
 
 ## Important Message ⚠️
 
-The developers of this tool won't be responsible for any misuse of data collected using this tool. This tool has been used by many researchers, marketers and open source intelligence (OSINT) analysts.
+The developers of this software won't be responsible for any misuse of data collected using this tool. This tool has been used by many researchers, marketers, business owners and open source intelligence (OSINT) analysts.
 
-## Acknowledgements 📄
+## Follow 📄
 
-Copyright (c) 2018-present. Follow to stay updated about our latest projects: 
+Follow to stay updated about my latest projects: 
 - [![GitHub Follow](https://img.shields.io/badge/Connect-harismuneer-blue.svg?logo=Github&longCache=true&style=social&label=Follow)](https://github.com/harismuneer)
-- [![GitHub Follow](https://img.shields.io/badge/Connect-Hassaan--Elahi-blue.svg?logo=Github&longCache=true&style=social&label=Follow)](https://github.com/Hassaan-Elahi)
