@@ -9,12 +9,16 @@
 <hr>
 
 <p align="center">
-  Software that <b>automates</b> your social media interactions to collect posts (text, likes/reactions, comments etc), photos, interests (likes), bio data (contact details etc), videos, friends, followers and much more on Facebook. Sounds interesting? [purhcase](#Price)
+  Software that <b>automates</b> your social media interactions to collect posts (text, likes/reactions, comments etc), photos, interests (likes), bio data (contact details etc), videos, friends, followers and much more on Facebook. 
 </p>
 
 <hr>
 
+<h3 align="center">Sounds interesting? <a href="#price-">Purhcase 🤝</a></h3>
+<hr>
+
 <p align="center">
+  
   <a href="https://wander-lush.org/most-beautiful-places-in-pakistan/">
     <img src="https://media.gettyimages.com/videos/pakistan-flag-video-id1161759219?s=640x640" target="_blank" width="250">
   </a>
@@ -128,7 +132,7 @@ A Software that scrapes the following sections from Facebook:
 - photos
 - videos
 
-Data is scraped/downloaded in an organized format (CSV and JSON format) for ease of analysis and to be readily utilized in sales & marketing outreach efforts for B2B/B2C lead generation.
+Data is scraped/downloaded in an organized format (CSV and JSON format) for ease of analysis and to be readily utilized in sales & marketing outreach efforts for B2B/B2C lead generation. <b>Lets get things done? <a href="#price-">Purhcase 🤝</a></b>
 
 ## Testimonials 💯 👍
 > The best service I got!
