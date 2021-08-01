@@ -5,7 +5,7 @@
 </a>
 
 <h1 align="center">Ultimate Facebook Scraper - UFS</h1>
-<h3 align="center"> (One of the best Facebook Data Extraction Software for <i>Businesses, Sales & Marketing People and Researchers</i>)</h3>
+<h3 align="center"> (The Ultimate Facebook Data Collection Software for <i>Businesses, Sales & Marketing People and Researchers</i>)</h3>
 <hr>
 
 <p align="center">
@@ -36,7 +36,7 @@
 
 <hr>
 
-<h2 align="center">Featured by Top Security Blogs and OSINT Researchers</h2>
+<h2 align="center">Featured by Top Blogs and OSINT Researchers</h2>
 <p align="center">
   <br>
   <a href='https://blackarch.org/social.html'>
