@@ -136,6 +136,10 @@ UFS is a great software developed by Haris and excellent service that is worth b
 
 - Cristóbal V. (Civil Industrial Engineer)
 
+> It was great to e-meet Haris and go over the new functions of the Ultimate Facebook Scraper.  This tool is invaluable to me and my line of work.  Set up was easy, and Haris made sure to go over each of the pertinent functions.  I highly recommend Haris and the tools he creates!  
+
+- Tim I. (Business Owner)
+
 > Superb customer service! Haris continued to update the tool with new functionality after purchase.
 
 - Georg H. (Data Science Researcher)
@@ -158,7 +162,7 @@ and many more satisfied customers..
 
 <b><i>Limited discount offer valid till Aug 09, 2021.</i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>TeamViewer meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installations steps incase you prefer to do the installation on your own. 
 
-This is a one-time payment for UFS. I will be available for any maintenance/support required without any fee to provide you the best customer service so you can solely focus on achieving your business outcomes.
+This is a <b>one-time payment</b> for UFS. I will be available for any maintenance/support required for free in order to provide you the best customer service so you can solely focus on achieving your business outcomes.
 
 ### Pro Version (119$) ~~169$~~
 - allows you to scrape all sections for a <b>User's Profile/Account </b>
