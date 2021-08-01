@@ -234,7 +234,7 @@ Stuck with some problem? Need help in solution development, guidance, training o
 
 If you liked the repo then kindly support it by giving it a star ⭐ and share in your circles so more people can benefit from the effort.
 
-## Important Message ⚠️
+## Disclaimer ⚠️
 
 The developers of this software won't be responsible for any misuse of data collected using this tool. This tool has been used by many researchers, marketers, business owners and open source intelligence (OSINT) analysts.
 
