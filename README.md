@@ -5,11 +5,11 @@
 </a>
 
 <h1 align="center">Ultimate Facebook Scraper - UFS</h1>
-<h3 align="center"> (One of the best Facebook Data Extraction Software)</h3>
+<h3 align="center"> (One of the best Facebook Data Extraction Software for Businesses, Sales & Marketing People and Researchers)</h3>
 <hr>
 
 <p align="center">
-  Software that <b>automates</b> your social media interactions to collect posts, photos, interests (likes), videos, friends, followers and much more on Facebook.
+  Software that <b>automates</b> your social media interactions to collect posts (text, likes/reactions, comments etc), photos, interests (likes), bio data (contact details etc), videos, friends, followers and much more on Facebook.
 </p>
 
 <hr>
@@ -105,28 +105,29 @@
 A Software that scrapes the following sections from Facebook:
 
 ### 1) User's Profile/Account
+- posts/statuses available on the user's timeline including text, likes/reactions/comments (total stats, comment text, user profiles of people who interacted)
+- about/intro sections (including work and education, places lived, contact info (email, phone number, location etc)  
 - photos (uploaded and tagged)
 - videos (uploaded and tagged)
 - user likes (pages liked including movies, books, interests etc)
 - friends list and their profile photos (including Followers, Following, Work Friends, College Friends etc)
-- about sections (including work and education, places lived, contact info etc)  
 - events
 - check-ins (places visited)
-- posts/statuses available on the user's timeline
 
 ### 2) Public Facebook Page
+- posts done by the Facebook page including text, likes/reactions/comments (total stats, comment text, user profiles of people who interacted)
+- about/intro sections (including page info and contact details like email, phone number, location, total likes, followers count etc)  
 - photos
 - videos
-- about sections (including page info and contact details)  
-- posts done by the Facebook page
 
 ### 3) Facebook Group
+- posts in the group (also called Discussions) including data of Post Owner, text, likes/reactions/comments (total stats, comment text, user profiles of members who interacted) 
+- about/intro sections (including group info and contact details like email, phone number, location, total members/admins, posting rules etc)  
+- group members and admins list including their bio data and profile links
 - photos
 - videos
-- about sections (including group info, posting rules etc)  
-- posts in the group (also called Discussion)
 
-Data is scraped/downloaded in an organized format (CSV files) for ease of analysis.
+Data is scraped/downloaded in an organized format (CSV and JSON format) for ease of analysis and to be readily utilized in sales & marketing outreach efforts for B2B/B2C lead generation.
 
 ## Testimonials 💯 👍
 > The best service I got!
@@ -142,6 +143,8 @@ UFS is a great software developed by Haris and excellent service that is worth b
 > Haris was extremely helpful and patient with his instructions as well as helping me understand how his scraper works and the necessities of certain functions and libraries. Very pleased with the program and the professionalism. This inspires me to improve upon it as well as helping me understand web scrapers more. Thank you Haris!
 
 - Suksan S. (Cybersecurity Student)
+
+> 
 
 and many more satisfied customers.. 
 
