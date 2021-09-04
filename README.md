@@ -165,14 +165,14 @@ and many more satisfied customers..
 
 ## Price 💳  
 
-<b><i>Limited discount offer valid till Aug 16, 2021.</i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>TeamViewer meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installations steps incase you prefer to do the installation on your own. 
+<b><i>Limited discount offer valid till Sept 06 (Monday), 2021.</i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>TeamViewer meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installations steps incase you prefer to do the installation on your own. 
 
 This is a <b>one-time payment</b> for UFS. I will be available for any maintenance/support required for free in order to provide you the best customer service so you can solely focus on achieving your business outcomes.
 
 ### Pro Version (119$) ~~169$~~
 - allows you to scrape all sections for a <b>User's Profile/Account </b>
 
-### Ultimate Version (189$) ~~279$~~
+### Ultimate Version (189$) ~~289$~~
 - gives you all features of Pro version plus allows you to scrape <b>Facebook Public Pages and Facebook Groups</b>.
 
 ## Purchase 🤝
