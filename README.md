@@ -165,7 +165,7 @@ and many more satisfied customers..
 
 ## Price 💳  
 
-<b><i>Limited discount offer valid till Sept 27 (Monday), 2021.</i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>TeamViewer meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installations steps incase you prefer to do the installation on your own. 
+<b><i>Limited discount offer valid till Oct 29 (Friday), 2021.</i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>TeamViewer meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installations steps incase you prefer to do the installation on your own. 
 
 This is a <b>one-time payment</b> for UFS. I will be available for any maintenance/support required for free in order to provide you the best customer service so you can solely focus on achieving your business outcomes.
 
@@ -182,9 +182,9 @@ For payment, you can follow these simple steps:
 
 <b>2)</b> Select the amount (119$ for Pro and 189$ for Ultimate) and choose the receiving/recipient's currency to be PKR. It supports multiple payment options (credit card, debit card, wire transfer etc)
 
-<b>3)</b> Then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients and the IBAN number is: PK37FAYS3241307000000167
+<b>3)</b> Select 'Someone else' option, then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients and the IBAN number is: PK37FAYS3241307000000167
 
-<b>4)</b> Choose the reason for transfer to the one that suits you the most (in this case it could be 'General expenses') and in the reference section, you can mention your email.
+<b>4)</b> Choose the reason for transfer to be 'General' and in the reference section, you can mention your email.
  
 After the payment, please share a screenshot of the payment receipt at <b>haris.muneer5@gmail.com</b> and we will schedule your installation meeting which takes upto 20min.
  
