@@ -188,6 +188,12 @@ For payment, you can follow these simple steps:
  
 After the payment, please share a screenshot of the payment receipt at <b>haris.muneer5@gmail.com</b> and we will schedule your installation meeting which takes upto 20min.
  
+### Payment via Crypto is also supported
+Instructions
+1. Using the [Binance](https://www.binance.com/en) network, you can pay USDT (189USDT for Ultimate and 119USDT for Pro) and the chain is Tron (TRC20)
+2. The wallet is: TD7VYFJKzq3Lz6Hr19ftfqvwrRsFTmHPwT
+3. [Sample Screenshot](https://user-images.githubusercontent.com/30947706/138526456-0f82754f-2d4a-48f2-9898-f09721143913.png)
+
 If you face any issue in doing payment then feel free to get in touch with me at <b>haris.muneer5@gmail.com</b> Thank you for your support!
 
 ## Important Notes 📑 
