@@ -180,7 +180,7 @@ For payment, you can follow these simple steps:
 
 <b>1)</b> Free signup at <b>[Wise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the payment)
 
-<b>2)</b> Select the <b>sending currency to be USD or equivalent amount of USD in your supported currency i.e (119$ for Pro and 189$ for Ultimate)</b> and choose the receiving/recipient's currency to be <b>PKR</b>. It supports multiple payment options (credit card, debit card, wire transfer etc)
+<b>2)</b> Select the <b>sending currency to be USD or equivalent amount of USD in your supported local currency i.e (119$ for Pro and 189$ for Ultimate)</b> and choose the receiving/recipient's currency to be <b>PKR</b>. It supports multiple payment options (credit card, debit card, wire transfer etc)
 
 <b>3)</b> Select 'Someone else' option, then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients and the IBAN number is: PK37FAYS3241307000000167
 
