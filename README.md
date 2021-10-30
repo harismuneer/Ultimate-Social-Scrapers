@@ -165,7 +165,7 @@ and many more satisfied customers..
 
 ## Price 💳  
 
-<b><i>Limited discount offer valid till Oct 29 (Friday), 2021.</i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>TeamViewer meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installations steps incase you prefer to do the installation on your own. 
+<b><i>Limited discount offer valid till Nov 05 (Friday), 2021.</i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>TeamViewer meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installations steps incase you prefer to do the installation on your own. 
 
 This is a <b>one-time payment</b> for UFS. I will be available for any maintenance/support required for free in order to provide you the best customer service so you can solely focus on achieving your business outcomes.
 
@@ -178,9 +178,9 @@ This is a <b>one-time payment</b> for UFS. I will be available for any maintenan
 ## Purchase 🤝
 For payment, you can follow these simple steps:
 
-<b>1)</b> Free signup at <b>[TransferWise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the payment)
+<b>1)</b> Free signup at <b>[Wise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the payment)
 
-<b>2)</b> Select the amount (119$ for Pro and 189$ for Ultimate) and choose the receiving/recipient's currency to be PKR. It supports multiple payment options (credit card, debit card, wire transfer etc)
+<b>2)</b> Select the <b>sending currency to be USD or equivalent amount of USD in your currency i.e (119$ for Pro and 189$ for Ultimate)</b> and choose the receiving/recipient's currency to be <b>PKR</b>. It supports multiple payment options (credit card, debit card, wire transfer etc)
 
 <b>3)</b> Select 'Someone else' option, then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients and the IBAN number is: PK37FAYS3241307000000167
 
