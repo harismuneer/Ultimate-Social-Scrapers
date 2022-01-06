@@ -14,7 +14,7 @@
 
 <hr>
 
-<h3 align="center">Sounds interesting? <a href="#price-">Purhcase 🤝</a></h3>
+<h3 align="center">Sounds interesting? <a href="#price-">Purchase 🤝</a></h3>
 <hr>
 
 <p align="center">
