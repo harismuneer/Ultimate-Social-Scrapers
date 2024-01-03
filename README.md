@@ -108,10 +108,7 @@ Scrape valuable user data for lead generation, research studies, targeted market
 
 <h1>Details of Ultimate Social Scrapers </h1>
 
-<details> 
-<summary>
-<h2>Ultimate Facebook Scraper (UFS)</h2>
-</summary>
+<h2>1. Ultimate Facebook Scraper (UFS)</h2>
 
 <p align="center">
 Ultimate Facebook Scraper supports data collection from all major Facebook sections including posts (likes/comments), reels, photos/videos, contact info and a lot more from user profiles, groups, and public pages.
@@ -151,12 +148,7 @@ Ultimate Facebook Scraper (UFS) scrapes the following sections from Facebook:
 
 Data is scraped/downloaded in an organized format (CSV, JSON and XML formats) for ease of analysis and to be readily utilized. <b>Lets get things done? <a href="#price-">Purchase 🤝</a></b>
 
-</details>
-
-<details> 
-<summary>
-<h2>Ultimate Instagram Scraper (UIS)</h2>
-</summary>
+<h2>2. Ultimate Instagram Scraper (UIS)</h2>
 
 <p align="center">
 Ultimate Instagram Scraper supports data collection from all major Instagram sections including user profiles/pages, photos/videos, reels/stories, contact info and a lot more.
@@ -177,12 +169,7 @@ Ultimate Instagram Scraper (UIS) scrapes the following sections from Instagram:
 
 Data is scraped/downloaded in an organized format (CSV, JSON and XML formats) for ease of analysis and to be readily utilized. <b>Lets get things done? <a href="#price-">Purchase 🤝</a></b>
 
-</details>
-
-<details> 
-<summary>
-<h2>Ultimate Twitter Scraper (UTS)</h2>
-</summary>
+<h2>3. Ultimate Twitter Scraper (UTS)</h2>
 
 <p align="center">
 Ultimate Twitter Scraper supports data collection from Twitter including account information of user and the user's tweets.
@@ -197,9 +184,6 @@ Ultimate Twitter Scraper (UTS) scrapes the following sections from Twitter:
 - about/contact info including email, phone number, whatsapp number, location, account information like total followers, following etc
 
 Data is scraped/downloaded in an organized format (CSV, JSON and XML formats) for ease of analysis and to be readily utilized. <b>Lets get things done? <a href="#price-">Purchase 🤝</a></b>
-
-</details>
-
 
 # Testimonials 💯 👍
 > The best service I got! 
@@ -234,24 +218,24 @@ and many more satisfied customers..
 
 <b><i>Discount offer valid till Monday. Feel free to email me at haris.muneer5@gmail.com for latest updates or if you have any questions/issues. </i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>virtual meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installations steps incase you prefer to do the installation on your own. 
 
-This is a <b>one-time payment</b> for life-time access. I will be available for any maintenance/support required for free in order to provide you the best customer service so you can solely focus on achieving your business outcomes.
-
+This is a <b>one-time payment</b> for lifetime access. I will be available for any maintenance/support required for free in order to provide you the best customer service so you can solely focus on achieving your business outcomes.
+Following are the discounted prices of each scraper (you can choose to buy any one, two, or all 3 scrapers as well):
 <b>
-1. Ultimate Facebook Scraper (UFS) -> ($289) ~~$389~~
   
-2. Ultimate Instagram Scraper (UIS) -> ($289) ~~$389~~
-
-3. Ultimate Twitter Scraper (UTS) -> ($289) ~~$389~~
+  1. Ultimate Facebook Scraper (UFS) -> ($289) ~~$389~~
+  2. Ultimate Instagram Scraper (UIS) -> ($289) ~~$389~~
+  3. Ultimate Twitter Scraper (UTS) -> ($289) ~~$389~~
 </b>
-You can purchase all three scrapers together at an exclusive discounted price of ($799) ~~$1167~~
+
+> You can **purchase all 3 scrapers together** at an exclusive **discounted price of ($799) ~~$1167~~**
 
 
-# Purchase 🤝
+# Payment Method 🤝
 For payment, you can follow these simple steps:
 
 <b>1)</b> Free signup at <b>[Wise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the payment)
 
-<b>2)</b> Select the <b>sending currency to be USD or equivalent amount of USD in your supported local currency</b>. It supports multiple payment options (credit card, debit card, wire transfer etc)
+<b>2)</b> Select the <b>sending currency to be USD or an equivalent amount of USD in your supported local currency</b>. It supports multiple payment options (credit card, debit card, wire transfer etc)
 
 <b>3)</b> Select 'Someone else' option, then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients and the IBAN number is: PK37FAYS3241307000000167
 
@@ -265,15 +249,15 @@ Instructions
 2. The wallet is: TL3zjuqf2KmgSVkQnGzVq5i2Fk6VF3iauQ
 3. [Sample Screenshot](https://user-images.githubusercontent.com/30947706/138526456-0f82754f-2d4a-48f2-9898-f09721143913.png)
 
-If you face any issues in doing payment or have any questions, please feel free to contact me at <b>haris.muneer5@gmail.com</b> Thank you for your support!
+If you face any issues in making a payment or have any questions, please feel free to contact me at <b>haris.muneer5@gmail.com</b> Thank you for your support!
 
 # Important Notes 📑 
 Please read these points before purchasing the tool:
 
 - The default language of Facebook should be set to English for this tool to work properly. The interface needs to be in English, the post text and all other data can be scraped in any language :)
 - If there's any specific use case of yours which the tool doesn't support currently then feel free to send me an email at [haris.muneer5@gmail.com](haris.muneer5@gmail.com) and we will discuss it further.
-- This tool is not meant for massive scraping (thousands of posts or friends etc). It might be possible but the rate of scraping would be slower in that scenario.
-- Facebook/Instagram/Twitter have taken aggressive measures against scraping so sometimes the account you are using to scrape data might get temporarily blocked (though there are some ways to circumvent this issue which I will share during the TeamViewer installation meeting)
+- It might be a bit hard to utilize these tools for massive scraping (thousands of posts or friends etc) at a fast pace. It is possible but the rate of scraping would be slower in that scenario.
+- Facebook/Instagram/Twitter have taken aggressive measures against scraping so sometimes the account you are using to scrape data might get temporarily blocked (though there are some ways to circumvent this issue which I will share during the installation meeting)
 
 For more details, feel free to reach me at [haris.muneer5@gmail.com](haris.muneer5@gmail.com)
 
