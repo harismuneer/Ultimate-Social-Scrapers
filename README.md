@@ -117,11 +117,11 @@ Scrape valuable user data for lead generation, research studies, targeted market
 Ultimate Facebook Scraper supports data collection from all major Facebook sections including posts (likes/comments), reels, photos/videos, contact info and a lot more from user profiles, groups, and public pages.
 </p>
 
-## Features 🚀
+### Features 🚀
 
 Ultimate Facebook Scraper (UFS) scrapes the following sections from Facebook:
 
-### 1) User Profile/Account
+#### 1) User Profile/Account
 - posts available on the user's timeline including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post), comments (total count, comments text along with list of people who commented), shares count
 - about/contact info sections (including work and education, places lived, contact info (email, phone number, whatsapp number, location etc)  
 - user reels
@@ -133,7 +133,7 @@ Ultimate Facebook Scraper (UFS) scrapes the following sections from Facebook:
 - check-ins (places visited)
 - profile pic and cover photo
 
-### 2) Public Facebook Page
+#### 2) Public Facebook Page
 - posts done by the Facebook page including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post), comments (total count, comments text along with list of people who commented), shares count
 - about/intro sections (including page info and contact details like email, phone number, location, total likes, followers count etc)  
 - page reels
@@ -141,7 +141,7 @@ Ultimate Facebook Scraper (UFS) scrapes the following sections from Facebook:
 - videos
 - page profile pic and cover photo
 
-### 3) Facebook Group
+#### 3) Facebook Group
 - posts in the group (also called Discussions) including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post), comments (total count, comments text along with list of people who commented), shares count
 - about/intro sections (including group info and contact details like email, phone number, location, total members/admins, posting rules etc)  
 - group members and admins list including their bio data and profile links
@@ -162,11 +162,11 @@ Data is scraped/downloaded in an organized format (CSV, JSON and XML formats) fo
 Ultimate Instagram Scraper supports data collection from all major Instagram sections including user profiles/pages, photos/videos, reels/stories, contact info and a lot more.
 </p>
 
-## Features 🚀
+### Features 🚀
 
 Ultimate Instagram Scraper (UIS) scrapes the following sections from Instagram:
 
-### 1) User Profile / Page
+#### 1) User Profile / Page
 - posts available on the user's timeline including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post), comments (total count, comments text along with list of people who commented)
 - about/contact info including email, phone number, whatsapp number, location, account information etc  
 - user reels / stories
@@ -188,11 +188,11 @@ Data is scraped/downloaded in an organized format (CSV, JSON and XML formats) fo
 Ultimate Twitter Scraper supports data collection from Twitter including account information of user and the user's tweets.
 </p>
 
-## Features 🚀
+### Features 🚀
 
 Ultimate Twitter Scraper (UTS) scrapes the following sections from Twitter:
 
-### 1) User Profile / Page
+#### 1) User Profile / Page
 - tweets available on the user's profile including name/profile link of tweet owner, tweet text, date posted, media links, likes (total count), replies/comments (total count), reposts (total count)
 - about/contact info including email, phone number, whatsapp number, location, account information like total followers, following etc
 
@@ -201,7 +201,7 @@ Data is scraped/downloaded in an organized format (CSV, JSON and XML formats) fo
 </details>
 
 
-## Testimonials 💯 👍
+# Testimonials 💯 👍
 > The best service I got! 
 I had the pleasure to have a meeting with Haris to learn how to use a tool that he created called "UFS". He is a great professional and very friendly, with a lot of experience and knowledge to share with others. His ability to teach and explain the requirements to use the tool was very clear. I Highly recommend working with him!!.
 UFS is a great software developed by Haris and excellent service that is worth buying
@@ -230,7 +230,7 @@ UFS is a great software developed by Haris and excellent service that is worth b
 
 and many more satisfied customers.. 
 
-## Price 💳  
+# Price 💳  
 
 <b><i>Discount offer valid till Monday. Feel free to email me at haris.muneer5@gmail.com for latest updates or if you have any questions/issues. </i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>virtual meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installations steps incase you prefer to do the installation on your own. 
 
@@ -246,7 +246,7 @@ This is a <b>one-time payment</b> for life-time access. I will be available for 
 You can purchase all three scrapers together at an exclusive discounted price of ($799) ~~$1167~~
 
 
-## Purchase 🤝
+# Purchase 🤝
 For payment, you can follow these simple steps:
 
 <b>1)</b> Free signup at <b>[Wise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the payment)
@@ -267,7 +267,7 @@ Instructions
 
 If you face any issues in doing payment or have any questions, please feel free to contact me at <b>haris.muneer5@gmail.com</b> Thank you for your support!
 
-## Important Notes 📑 
+# Important Notes 📑 
 Please read these points before purchasing the tool:
 
 - The default language of Facebook should be set to English for this tool to work properly. The interface needs to be in English, the post text and all other data can be scraped in any language :)
@@ -301,11 +301,11 @@ For more details, feel free to reach me at [haris.muneer5@gmail.com](haris.munee
 
 <hr>
 
-## Disclaimer ⚠️
+# Disclaimer ⚠️
 
 The developers of this software won't be responsible for any misuse of data collected using the social scrapers. These tools have been used by many researchers, marketers, business owners and open source intelligence (OSINT) analysts.
 
-## Follow 📄
+# Follow 📄
 
 Follow to stay updated about my latest projects: 
 - [![GitHub Follow](https://img.shields.io/badge/Connect-harismuneer-blue.svg?logo=Github&longCache=true&style=social&label=Follow)](https://github.com/harismuneer)
