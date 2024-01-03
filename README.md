@@ -21,45 +21,45 @@ Scrape valuable user data for lead generation, research studies, targeted market
 <h2 align="center">Top choice for Facebook, Instagram and Twitter Scraping</h2>
 <p align="center">
   <br>
-  <a href='https://blackarch.org/social.html'>
+  <a href='#'>
     <img src = "https://user-images.githubusercontent.com/30947706/76163778-f8fd5100-616a-11ea-97f6-ce648ccbd74b.png" width="160" alt="BlackArch"/>
   </a>
 
   <img hspace="10"/>
-  <a href='https://hakin9.org/ultimate-facebook-scraper-ufs/'>
+  <a href='#'>
     <img src = "https://user-images.githubusercontent.com/30947706/76143228-5a53f000-6097-11ea-8a19-9f2eb771ba4b.png" width="120" alt="Hakin9"/>
   </a>
 
   <img hspace="10"/>
-  <a href='https://kalilinuxtutorials.com/ufs-ultimate-facebook-scraper/'>
+  <a href='#'>
     <img src = "https://user-images.githubusercontent.com/30947706/76143239-693aa280-6097-11ea-9c27-cfd365a48e55.png" width="120" alt="Kali Linux Tutorials"/>
   </a>
  
  <img hspace="10"/> 
- <a href='https://securityonline.info/ultimate-facebook-scraper/'>
+ <a href='#'>
     <img src = "https://user-images.githubusercontent.com/30947706/76143154-c84be780-6096-11ea-932f-345691310628.png" width="150" alt="Security Online"/>
   </a>
 
 <img hspace="10"/>
   <br><br>
 
-  <a href='https://www.kitploit.com/2019/11/ultimate-facebook-scraper-bot-which.html'>
+  <a href='#'>
     <img src = "https://user-images.githubusercontent.com/30947706/76143178-0a752900-6097-11ea-8f15-8c8545bb2ff6.png" width="170" alt="Kitploit"/>
   </a>
 
 
   <img hspace="5"/>  
-  <a href='https://en.kali.tools/all/?tool=2440'>
+  <a href='#'>
     <img src = "https://user-images.githubusercontent.com/30947706/76143168-f9c4b300-6096-11ea-97ce-345cddb82945.png" width="140" alt="Kali Tools"/>
   </a>
 
   <img hspace="5"/>
-  <a href='https://www.journaliststoolbox.org/2020/03/04/twitter_resources/'>
+  <a href='#'>
     <img src = "https://user-images.githubusercontent.com/30947706/76143186-19f47200-6097-11ea-91d6-3400fa3c5c32.png" width="140" alt="Journalist ToolBox"/>
   </a>
 
   <img hspace="5"/>
-  <a href='https://onehack.us/t/ultimate-facebook-scraper-a-bot-which-scrapes-almost-everything-about-a-facebook/63803'>
+  <a href='#'>
     <img src = "https://user-images.githubusercontent.com/30947706/76143245-76579180-6097-11ea-993d-98dd6db76c91.png" width="140" alt="OneHack"/>
   </a>
 
@@ -238,7 +238,7 @@ If you face any issues in making a payment or would like to use some other payme
 - It may be hard to utilize these tools for massive scraping (thousands of posts or friends etc) at a fast pace. It is possible, but the scraping rate would be slower in that scenario.
 - Facebook/Instagram/Twitter have taken aggressive measures against scraping so sometimes the account you are using to scrape data might get temporarily blocked (though there are some ways to circumvent this issue which I will share during the installation meeting)
 
-The developers of this software won't be responsible for any misuse of data collected using the social scrapers. These tools have been used by many researchers, marketers, business owners and open source intelligence (OSINT) analysts.
+The developers of this software won't be responsible for any misuse of data collected using the social scrapers. These tools have been used by many researchers, marketers, business owners, and open source intelligence (OSINT) analysts.
 
 For more details, feel free to reach me at [haris.muneer5@gmail.com](haris.muneer5@gmail.com)
 
