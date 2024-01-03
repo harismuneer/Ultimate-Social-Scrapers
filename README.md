@@ -195,8 +195,6 @@ and many more satisfied customers..
 
 You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>virtual meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installation steps in case you prefer to do the installation on your own. 
 
-This is a <b>one-time payment</b> for lifetime access. I will be available for any maintenance/support required for free to provide you with the best customer service so you can solely focus on achieving your business outcomes.
-
 <b><i>🔥 Limited Time Discount offer valid till Monday. Feel free to email me at haris.muneer5@gmail.com for the latest updates or any queries. 🔥 </i></b>
 
 Following are the discounted prices of each scraper (you can choose to buy any one, two, or all 3 scrapers as well):
@@ -209,6 +207,7 @@ Following are the discounted prices of each scraper (you can choose to buy any o
 
 You can **purchase all 3 scrapers together** at an exclusive **discounted price of ($799) ~~$1167~~**
 
+This is a <b>one-time payment</b> for lifetime access. I will be available for any maintenance/support required for free to provide you with the best customer service so you can solely focus on achieving your business outcomes.
 
 # Payment Method 🤝
 For payment, you can follow these simple steps:
