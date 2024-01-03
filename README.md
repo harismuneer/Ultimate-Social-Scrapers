@@ -4,17 +4,18 @@
   </div>
 </a>
 
-<h1 align="center">Ultimate Facebook Scraper - UFS</h1>
-<h3 align="center"> The ultimate Facebook Data Collection Software for: <i>Businesses, Sales & Marketing People and Researchers</i></h3>
-<hr>
+<div align = "center">
+<h1>Ultimate Social Scrapers - Facebook, Instagram, Twitter</h1>
+<p>Maximize your business's potential and gain a competitive edge with our Social Media Scrapers for: <br><b>Facebook, Instagram and Twitter</b>
 
-<p align="center">
-  Software that <b>automates</b> your social media interactions to collect posts (text, likes/reactions, comments etc), photos, interests (likes), bio data (contact details etc), videos, friends, followers and much more on Facebook. 
+Scrape valuable user data for lead generation, research studies, targeted marketing, sentiment analysis, data-driven decision-making, and more. 
 </p>
+</div>
 
 <hr>
 
 <h3 align="center">Sounds interesting? <a href="#price-">Purchase 🤝</a></h3>
+
 <hr>
 
 <p align="center">
@@ -40,7 +41,7 @@
 
 <hr>
 
-<h2 align="center">Featured by Top Blogs and OSINT Researchers</h2>
+<h2 align="center">Top choice for Facebook, Instagram and Twitter Scraping</h2>
 <p align="center">
   <br>
   <a href='https://blackarch.org/social.html'>
@@ -89,9 +90,9 @@
 
 <hr>
 
-<h2 align="center">2nd Spot in Top Trending Python Repositories on GitHub </h2>
+<h2 align="center">2nd Spot in Top Trending Repositories on GitHub </h2>
 <p align="center">
-  UFS trended among top Python repositories on GitHub for 3 consecutive weeks 🌟
+  Ultimate Facebook Scraper (UFS) trended among top repositories on GitHub for 3 consecutive weeks 🌟
   <br><br>
   <a href='#'>
     <img src = "https://user-images.githubusercontent.com/30947706/76143469-7bb5db80-6099-11ea-9f37-520437e0cddd.png" width="700" alt="Trending on GitHub"/>
@@ -100,46 +101,112 @@
 </p>
 <hr>
 
-Awards/Achievements 🏆
-------------------------------------
-* UFS got included as an official tool in the [BlackArch Linux distribution](https://blackarch.org/social.html)! 
-* UFS got listed among the [top 20 hacking tools in 2019](https://www.kitploit.com/2019/12/top-20-most-popular-hacking-tools-in.html)!
+<h1>Awards/Achievements 🏆</h1>
+
+* Ultimate Facebook Scraper (UFS) got included as an official tool in the [BlackArch Linux distribution](https://blackarch.org/social.html)!
+* Ultimate Facebook Scraper (UFS) got listed among the [top 20 hacking tools in 2019](https://www.kitploit.com/2019/12/top-20-most-popular-hacking-tools-in.html)!
+
+<h1>Details of Ultimate Social Scrapers </h1>
+
+<details> 
+<summary>
+<h2>Ultimate Facebook Scraper (UFS)</h2>
+</summary>
+
+<p align="center">
+Ultimate Facebook Scraper supports data collection from all major Facebook sections including posts (likes/comments), reels, photos/videos, contact info and a lot more from user profiles, groups, and public pages.
+</p>
 
 ## Features 🚀
 
-A Software that scrapes the following sections from Facebook:
+Ultimate Facebook Scraper (UFS) scrapes the following sections from Facebook:
 
-### 1) User's Profile/Account
-- posts/statuses available on the user's timeline including text, date posted, likes/reactions/comments (total stats, comment text, user profiles of people who interacted)
-- about/intro sections (including work and education, places lived, contact info (email, phone number, location etc)  
+### 1) User Profile/Account
+- posts available on the user's timeline including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post), comments (total count, comments text along with list of people who commented), shares count
+- about/contact info sections (including work and education, places lived, contact info (email, phone number, whatsapp number, location etc)  
+- user reels
 - photos (uploaded and tagged)
 - videos (uploaded and tagged)
 - user likes (pages liked including movies, books, interests etc)
-- friends list and their profile photos (including Followers, Following, Work Friends, College Friends etc)
+- friends list (including Followers, Following, Work Friends, College Friends etc)
 - events
 - check-ins (places visited)
+- profile pic and cover photo
 
 ### 2) Public Facebook Page
-- posts done by the Facebook page including text, date posted, likes/reactions/comments (total stats, comment text, user profiles of people who interacted)
+- posts done by the Facebook page including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post), comments (total count, comments text along with list of people who commented), shares count
 - about/intro sections (including page info and contact details like email, phone number, location, total likes, followers count etc)  
+- page reels
 - photos
 - videos
+- page profile pic and cover photo
 
 ### 3) Facebook Group
-- posts in the group (also called Discussions) including data of post owner, text, date posted, likes/reactions/comments (total stats, comment text, user profiles of members who interacted) 
+- posts in the group (also called Discussions) including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post), comments (total count, comments text along with list of people who commented), shares count
 - about/intro sections (including group info and contact details like email, phone number, location, total members/admins, posting rules etc)  
 - group members and admins list including their bio data and profile links
 - photos
 - videos
+- group cover pic
 
-Data is scraped/downloaded in an organized format (CSV and JSON format) for ease of analysis and to be readily utilized in sales & marketing outreach efforts for B2B/B2C lead generation. <b>Lets get things done? <a href="#price-">Purhcase 🤝</a></b>
+Data is scraped/downloaded in an organized format (CSV, JSON and XML formats) for ease of analysis and to be readily utilized. <b>Lets get things done? <a href="#price-">Purchase 🤝</a></b>
+
+</details>
+
+<details> 
+<summary>
+<h2>Ultimate Instagram Scraper (UIS)</h2>
+</summary>
+
+<p align="center">
+Ultimate Instagram Scraper supports data collection from all major Instagram sections including user profiles/pages, photos/videos, reels/stories, contact info and a lot more.
+</p>
+
+## Features 🚀
+
+Ultimate Instagram Scraper (UIS) scrapes the following sections from Instagram:
+
+### 1) User Profile / Page
+- posts available on the user's timeline including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post), comments (total count, comments text along with list of people who commented)
+- about/contact info including email, phone number, whatsapp number, location, account information etc  
+- user reels / stories
+- photos (uploaded and tagged)
+- videos (uploaded and tagged)
+- Followers and Following users list
+- profile pic and cover photo
+
+Data is scraped/downloaded in an organized format (CSV, JSON and XML formats) for ease of analysis and to be readily utilized. <b>Lets get things done? <a href="#price-">Purchase 🤝</a></b>
+
+</details>
+
+<details> 
+<summary>
+<h2>Ultimate Twitter Scraper (UTS)</h2>
+</summary>
+
+<p align="center">
+Ultimate Twitter Scraper supports data collection from Twitter including account information of user and the user's tweets.
+</p>
+
+## Features 🚀
+
+Ultimate Twitter Scraper (UTS) scrapes the following sections from Twitter:
+
+### 1) User Profile / Page
+- tweets available on the user's profile including name/profile link of tweet owner, tweet text, date posted, media links, likes (total count), replies/comments (total count), reposts (total count)
+- about/contact info including email, phone number, whatsapp number, location, account information like total followers, following etc
+
+Data is scraped/downloaded in an organized format (CSV, JSON and XML formats) for ease of analysis and to be readily utilized. <b>Lets get things done? <a href="#price-">Purchase 🤝</a></b>
+
+</details>
+
 
 ## Testimonials 💯 👍
-> The best service I got!
+> The best service I got! 
 I had the pleasure to have a meeting with Haris to learn how to use a tool that he created called "UFS". He is a great professional and very friendly, with a lot of experience and knowledge to share with others. His ability to teach and explain the requirements to use the tool was very clear. I Highly recommend working with him!!.
 UFS is a great software developed by Haris and excellent service that is worth buying
 
-- Cristóbal V. (Civil Industrial Engineer)
+- Cristóbal V. (Data Scientist)
 
 > It was great to e-meet Haris and go over the new functions of the Ultimate Facebook Scraper.  This tool is invaluable to me and my line of work.  Set up was easy, and Haris made sure to go over each of the pertinent functions.  I highly recommend Haris and the tools he creates!  
 
@@ -165,36 +232,40 @@ and many more satisfied customers..
 
 ## Price 💳  
 
-<b><i>Discount offer valid till Monday. Feel free to email me at haris.muneer5@gmail.com for latest updates or if you have any questions/issues. </i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>TeamViewer meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installations steps incase you prefer to do the installation on your own. 
+<b><i>Discount offer valid till Monday. Feel free to email me at haris.muneer5@gmail.com for latest updates or if you have any questions/issues. </i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>virtual meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installations steps incase you prefer to do the installation on your own. 
 
-This is a <b>one-time payment</b> for UFS. I will be available for any maintenance/support required for free in order to provide you the best customer service so you can solely focus on achieving your business outcomes.
+This is a <b>one-time payment</b> for life-time access. I will be available for any maintenance/support required for free in order to provide you the best customer service so you can solely focus on achieving your business outcomes.
 
-### Pro Version (119$) ~~169$~~
-- allows you to scrape all sections for a <b>User's Profile/Account </b>
+<b>
+1. Ultimate Facebook Scraper (UFS) -> ($289) ~~$389~~
+  
+2. Ultimate Instagram Scraper (UIS) -> ($289) ~~$389~~
 
-### Ultimate Version (189$) ~~289$~~
-- gives you all features of Pro version plus allows you to scrape <b>Facebook Public Pages and Facebook Groups</b>.
+3. Ultimate Twitter Scraper (UTS) -> ($289) ~~$389~~
+</b>
+You can purchase all three scrapers together at an exclusive discounted price of ($799) ~~$1167~~
+
 
 ## Purchase 🤝
 For payment, you can follow these simple steps:
 
 <b>1)</b> Free signup at <b>[Wise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the payment)
 
-<b>2)</b> Select the <b>sending currency to be USD or equivalent amount of USD in your supported local currency i.e (119$ for Pro and 189$ for Ultimate)</b>. It supports multiple payment options (credit card, debit card, wire transfer etc)
+<b>2)</b> Select the <b>sending currency to be USD or equivalent amount of USD in your supported local currency</b>. It supports multiple payment options (credit card, debit card, wire transfer etc)
 
 <b>3)</b> Select 'Someone else' option, then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients and the IBAN number is: PK37FAYS3241307000000167
 
 <b>4)</b> Choose the reason for transfer to be 'General' and in the reference section, you can mention your email.
  
-After the payment, please share a screenshot of the payment receipt at <b>haris.muneer5@gmail.com</b> and we will schedule your installation meeting which takes upto 20min.
+After the payment, please share a screenshot of the payment receipt at <b>haris.muneer5@gmail.com</b> and we will schedule your quick installation meeting.
  
 ### Payment via Crypto is also supported
 Instructions
-1. Using the [Binance](https://www.binance.com/en) network, you can pay USDT (189USDT for Ultimate and 119USDT for Pro) and the chain is Tron (TRC20)
+1. Using the [Binance](https://www.binance.com/en) network, you can pay in USDT (USD equivalent) and the chain is Tron (TRC20)
 2. The wallet is: TL3zjuqf2KmgSVkQnGzVq5i2Fk6VF3iauQ
 3. [Sample Screenshot](https://user-images.githubusercontent.com/30947706/138526456-0f82754f-2d4a-48f2-9898-f09721143913.png)
 
-If you face any issues in doing payment then feel free to contact me at <b>haris.muneer5@gmail.com</b> Thank you for your support!
+If you face any issues in doing payment or have any questions, please feel free to contact me at <b>haris.muneer5@gmail.com</b> Thank you for your support!
 
 ## Important Notes 📑 
 Please read these points before purchasing the tool:
@@ -202,7 +273,7 @@ Please read these points before purchasing the tool:
 - The default language of Facebook should be set to English for this tool to work properly. The interface needs to be in English, the post text and all other data can be scraped in any language :)
 - If there's any specific use case of yours which the tool doesn't support currently then feel free to send me an email at [haris.muneer5@gmail.com](haris.muneer5@gmail.com) and we will discuss it further.
 - This tool is not meant for massive scraping (thousands of posts or friends etc). It might be possible but the rate of scraping would be slower in that scenario.
-- Facebook has taken aggressive measures against scraping so sometimes the account you are using to scrape data might get temporarily blocked (though there are some ways to circumvent this issue which I will share during the TeamViewer installation meeting)
+- Facebook/Instagram/Twitter have taken aggressive measures against scraping so sometimes the account you are using to scrape data might get temporarily blocked (though there are some ways to circumvent this issue which I will share during the TeamViewer installation meeting)
 
 For more details, feel free to reach me at [haris.muneer5@gmail.com](haris.muneer5@gmail.com)
 
@@ -228,23 +299,16 @@ For more details, feel free to reach me at [haris.muneer5@gmail.com](haris.munee
 </p>
 
 
-## 🤝 Consulting / Coaching
-Stuck with some problem? Need help in solution development, guidance, training or capacity building? I am a Full Stack Engineer turned Project Manager with years of technical and leadership experience in a diverse range of technologies and domains. Let me know what problem you are facing at <b>haris.muneer5@gmail.com</b> and we can schedule a consultation meeting to help you get through it.
-
-## 👨‍💻 Technical Skills & Expertise
-
-- Development of Web Applications, Mobile Applications, and Desktop Applications
-- Development of Machine Learning/Deep Learning models, and deployment 
-- Web Scraping, Browser Automation, Python Scripting
 <hr>
-
-If you liked the repo then kindly support it by giving it a star ⭐ and share in your circles so more people can benefit from the effort.
 
 ## Disclaimer ⚠️
 
-The developers of this software won't be responsible for any misuse of data collected using this tool. This tool has been used by many researchers, marketers, business owners and open source intelligence (OSINT) analysts.
+The developers of this software won't be responsible for any misuse of data collected using the social scrapers. These tools have been used by many researchers, marketers, business owners and open source intelligence (OSINT) analysts.
 
 ## Follow 📄
 
 Follow to stay updated about my latest projects: 
 - [![GitHub Follow](https://img.shields.io/badge/Connect-harismuneer-blue.svg?logo=Github&longCache=true&style=social&label=Follow)](https://github.com/harismuneer)
+
+
+If you liked the repo then kindly support it by giving it a star ⭐ and share in your circles so more people can benefit from the effort.
