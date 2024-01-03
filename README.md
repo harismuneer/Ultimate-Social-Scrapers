@@ -28,9 +28,6 @@ Scrape valuable user data for lead generation, research studies, targeted market
   <a href="#">
     <img src="https://img.shields.io/badge/Build-Passing-brightgreen.svg?style=flat-square&logo=appveyor" />
   </a>
-  <a href="#">
-    <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" />
-  </a>
   <a href="https://www.github.com/harismuneer/Ultimate-Facebook-Scraper/fork">
     <img src="https://img.shields.io/github/forks/harismuneer/Ultimate-Facebook-Scraper.svg?style=social&label=Fork&maxAge=2592000" />
   </a>
@@ -220,7 +217,8 @@ You can buy the software today and schedule the installation for any other day w
 
 This is a <b>one-time payment</b> for lifetime access. I will be available for any maintenance/support required for free to provide you with the best customer service so you can solely focus on achieving your business outcomes.
 
-🔥<b><i>Discount offer valid till Monday. Feel free to email me at haris.muneer5@gmail.com for the latest updates or any questions/issues. </i></b>🔥
+<b><i>🔥 Limited Time Discount offer valid till Monday. Feel free to email me at haris.muneer5@gmail.com for the latest updates or any queries. 🔥 </i></b>
+
 Following are the discounted prices of each scraper (you can choose to buy any one, two, or all 3 scrapers as well):
 <b>
   
@@ -235,34 +233,34 @@ Following are the discounted prices of each scraper (you can choose to buy any o
 # Payment Method 🤝
 For payment, you can follow these simple steps:
 
-<b>1)</b> Free signup at <b>[Wise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the payment)
+## Method 1: Using Wise Platform
 
-<b>2)</b> Select the <b>sending currency to be USD or an equivalent amount of USD in your supported local currency</b>. It supports multiple payment options (credit card, debit card, wire transfer etc)
-
-<b>3)</b> Select 'Someone else' option, then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients and the IBAN number is: PK37FAYS3241307000000167
-
-<b>4)</b> Choose the reason for transfer to be 'General' and in the reference section, you can mention your email.
+1. Free signup at <b>[Wise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the payment)
+2. Select the <b>sending currency to be USD or an equivalent amount of USD in your supported local currency</b>. It supports multiple payment options (credit card, debit card, wire transfer etc)
+3. Select 'Someone else' option, then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients and the IBAN number is: PK37FAYS3241307000000167
+4. Choose the reason for transfer to be 'General' and in the reference section, you can mention your email.
  
 After the payment, please share a screenshot of the payment receipt at <b>haris.muneer5@gmail.com</b> and we will schedule your quick installation meeting.
  
-### Payment via Crypto is also supported
-Instructions
-1. Using the [Binance](https://www.binance.com/en) network, you can pay in USDT (USD equivalent) and the chain is Tron (TRC20)
-2. The wallet is: TL3zjuqf2KmgSVkQnGzVq5i2Fk6VF3iauQ
+## Method 2: Using Crypto
+
+1. You can pay in USDT (USD equivalent) and the chain is Tron (TRC20). 
+2. The Wallet is a Binance Wallet. Wallet address is: TL3zjuqf2KmgSVkQnGzVq5i2Fk6VF3iauQ
 3. [Sample Screenshot](https://user-images.githubusercontent.com/30947706/138526456-0f82754f-2d4a-48f2-9898-f09721143913.png)
 
 If you face any issues in making a payment or have any questions, please feel free to contact me at <b>haris.muneer5@gmail.com</b> Thank you for your support!
 
-# Important Notes 📑 
-Please read these points before purchasing the tool:
+<hr>
 
+# Some Notes
 - The default language should be set to English for this tool to work properly. The interface needs to be in English, **the post text and all other data can be scraped in any language** :)
 - If there's any specific use case of yours that the tools don't support currently then feel free to send me an email at [haris.muneer5@gmail.com](haris.muneer5@gmail.com) and we will discuss it further.
 - It may be hard to utilize these tools for massive scraping (thousands of posts or friends etc) at a fast pace. It is possible, but the scraping rate would be slower in that scenario.
 - Facebook/Instagram/Twitter have taken aggressive measures against scraping so sometimes the account you are using to scrape data might get temporarily blocked (though there are some ways to circumvent this issue which I will share during the installation meeting)
 
-For more details, feel free to reach me at [haris.muneer5@gmail.com](haris.muneer5@gmail.com)
+The developers of this software won't be responsible for any misuse of data collected using the social scrapers. These tools have been used by many researchers, marketers, business owners and open source intelligence (OSINT) analysts.
 
+For more details, feel free to reach me at [haris.muneer5@gmail.com](haris.muneer5@gmail.com)
 
 <hr>
 <h1 align="left">Hey there, I'm <a href="https://www.linkedin.com/in/harismuneer/">Haris </a><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"> 
@@ -287,10 +285,6 @@ For more details, feel free to reach me at [haris.muneer5@gmail.com](haris.munee
 
 <hr>
 
-# Disclaimer ⚠️
-
-The developers of this software won't be responsible for any misuse of data collected using the social scrapers. These tools have been used by many researchers, marketers, business owners and open source intelligence (OSINT) analysts.
-
 # Follow 📄
 
 Follow to stay updated about my latest projects: 
@@ -298,3 +292,4 @@ Follow to stay updated about my latest projects:
 
 
 If you liked the repo then kindly support it by giving it a star ⭐ and share in your circles so more people can benefit from the effort.
+
