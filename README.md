@@ -216,9 +216,11 @@ and many more satisfied customers..
 
 # Price 💳  
 
-<b><i>Discount offer valid till Monday. Feel free to email me at haris.muneer5@gmail.com for latest updates or if you have any questions/issues. </i></b> You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>virtual meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installations steps incase you prefer to do the installation on your own. 
+You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>virtual meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installation steps in case you prefer to do the installation on your own. 
 
-This is a <b>one-time payment</b> for lifetime access. I will be available for any maintenance/support required for free in order to provide you the best customer service so you can solely focus on achieving your business outcomes.
+This is a <b>one-time payment</b> for lifetime access. I will be available for any maintenance/support required for free to provide you with the best customer service so you can solely focus on achieving your business outcomes.
+
+🔥<b><i>Discount offer valid till Monday. Feel free to email me at haris.muneer5@gmail.com for the latest updates or any questions/issues. </i></b>🔥
 Following are the discounted prices of each scraper (you can choose to buy any one, two, or all 3 scrapers as well):
 <b>
   
@@ -254,9 +256,9 @@ If you face any issues in making a payment or have any questions, please feel fr
 # Important Notes 📑 
 Please read these points before purchasing the tool:
 
-- The default language of Facebook should be set to English for this tool to work properly. The interface needs to be in English, the post text and all other data can be scraped in any language :)
-- If there's any specific use case of yours which the tool doesn't support currently then feel free to send me an email at [haris.muneer5@gmail.com](haris.muneer5@gmail.com) and we will discuss it further.
-- It might be a bit hard to utilize these tools for massive scraping (thousands of posts or friends etc) at a fast pace. It is possible but the rate of scraping would be slower in that scenario.
+- The default language should be set to English for this tool to work properly. The interface needs to be in English, **the post text and all other data can be scraped in any language** :)
+- If there's any specific use case of yours that the tools don't support currently then feel free to send me an email at [haris.muneer5@gmail.com](haris.muneer5@gmail.com) and we will discuss it further.
+- It may be hard to utilize these tools for massive scraping (thousands of posts or friends etc) at a fast pace. It is possible, but the scraping rate would be slower in that scenario.
 - Facebook/Instagram/Twitter have taken aggressive measures against scraping so sometimes the account you are using to scrape data might get temporarily blocked (though there are some ways to circumvent this issue which I will share during the installation meeting)
 
 For more details, feel free to reach me at [haris.muneer5@gmail.com](haris.muneer5@gmail.com)
