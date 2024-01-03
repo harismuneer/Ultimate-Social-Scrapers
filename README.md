@@ -123,6 +123,9 @@ Ultimate Facebook Scraper (UFS) scrapes the following sections from Facebook:
 - videos
 - group cover pic
 
+#### 4) Scraping Data via Facebook Search Bar
+This option allows you to scrape Facebook data (Posts, People, Photos, Pages etc) using the Facebook search bar i.e. you can define the search keywords and it will scrape data based on those search terms. e.g. you can search for all posts containing a particular keyword etc.
+
 Data is scraped/downloaded in an organized format (CSV, JSON and XML formats) for ease of analysis and to be readily utilized. <b>Lets get things done? <a href="#price-">Purchase 🤝</a></b>
 
 <h2>2. Ultimate Instagram Scraper (UIS)</h2>
@@ -231,7 +234,14 @@ If you face any issues in making a payment or would like to use some other payme
 
 <hr>
 
-# Some Notes 🗒️
+# FAQ ❓
+1. All three scrapers are currently available for a life-time deal through one-time payment at a discounted price.
+2. All three scrapers can be run on any operating system including Windows, Mac OS, and Linux.
+3. All three scrapers are easy to setup & use and come with installation instructions.
+
+<hr>
+
+# Other Notes 🗒️
 - The default language should be set to English for this tool to work properly. The interface needs to be in English, **the post text and all other data can be scraped in any language** :)
 - If there's any specific use case of yours that the tools don't support currently then feel free to send me an email at [haris.muneer5@gmail.com](haris.muneer5@gmail.com) and we will discuss it further.
 - It may be hard to utilize these tools for massive scraping (thousands of posts or friends etc) at a fast pace. It is possible, but the scraping rate would be slower in that scenario.
