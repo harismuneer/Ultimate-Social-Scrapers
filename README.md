@@ -18,26 +18,6 @@ Scrape valuable user data for lead generation, research studies, targeted market
 
 <hr>
 
-<p align="center">
-  
-  <a href="https://wander-lush.org/most-beautiful-places-in-pakistan/">
-    <img src="https://media.gettyimages.com/videos/pakistan-flag-video-id1161759219?s=640x640" target="_blank" width="250">
-  </a>
-  <br><br>
-  <a href="https://github.com/harismuneer"><img alt="views" title="Github views" src="https://komarev.com/ghpvc/?username=harismuneer&style=flat-square" width="125"/></a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/Build-Passing-brightgreen.svg?style=flat-square&logo=appveyor" />
-  </a>
-  <a href="https://www.github.com/harismuneer/Ultimate-Facebook-Scraper/fork">
-    <img src="https://img.shields.io/github/forks/harismuneer/Ultimate-Facebook-Scraper.svg?style=social&label=Fork&maxAge=2592000" />
-  </a>
-  <a href="#">  
-    <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat&label=Contributions&colorA=red&colorB=black" />
-  </a>
-</p>
-
-<hr>
-
 <h2 align="center">Top choice for Facebook, Instagram and Twitter Scraping</h2>
 <p align="center">
   <br>
@@ -103,7 +83,7 @@ Scrape valuable user data for lead generation, research studies, targeted market
 * Ultimate Facebook Scraper (UFS) got included as an official tool in the [BlackArch Linux distribution](https://blackarch.org/social.html)!
 * Ultimate Facebook Scraper (UFS) got listed among the [top 20 hacking tools in 2019](https://www.kitploit.com/2019/12/top-20-most-popular-hacking-tools-in.html)!
 
-<h1>Details of Ultimate Social Scrapers </h1>
+<h1>Details of Ultimate Social Scrapers 📜</h1>
 
 <h2>1. Ultimate Facebook Scraper (UFS)</h2>
 
@@ -248,11 +228,11 @@ After the payment, please share a screenshot of the payment receipt at <b>haris.
 2. The Wallet is a Binance Wallet. Wallet address is: TL3zjuqf2KmgSVkQnGzVq5i2Fk6VF3iauQ
 3. [Sample Screenshot](https://user-images.githubusercontent.com/30947706/138526456-0f82754f-2d4a-48f2-9898-f09721143913.png)
 
-If you face any issues in making a payment or have any questions, please feel free to contact me at <b>haris.muneer5@gmail.com</b> Thank you for your support!
+If you face any issues in making a payment or would like to use some other payment method, please feel free to contact me at <b>haris.muneer5@gmail.com</b> Thank you for your support!
 
 <hr>
 
-# Some Notes
+# Some Notes 🗒️
 - The default language should be set to English for this tool to work properly. The interface needs to be in English, **the post text and all other data can be scraped in any language** :)
 - If there's any specific use case of yours that the tools don't support currently then feel free to send me an email at [haris.muneer5@gmail.com](haris.muneer5@gmail.com) and we will discuss it further.
 - It may be hard to utilize these tools for massive scraping (thousands of posts or friends etc) at a fast pace. It is possible, but the scraping rate would be slower in that scenario.
@@ -272,7 +252,7 @@ For more details, feel free to reach me at [haris.muneer5@gmail.com](haris.munee
 
 <hr>
 
-<h1 align="left">🌐 Connect</h1>
+<h1 align="left">Connect 🌐</h1>
 <p align="left">
   <a href="https://www.linkedin.com/in/harismuneer/"><img title="Follow on LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://www.facebook.com/harism99"><img title="Connect on Facebook" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/></a>
