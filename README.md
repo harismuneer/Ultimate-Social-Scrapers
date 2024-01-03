@@ -222,9 +222,9 @@ This is a <b>one-time payment</b> for lifetime access. I will be available for a
 Following are the discounted prices of each scraper (you can choose to buy any one, two, or all 3 scrapers as well):
 <b>
   
-  1. Ultimate Facebook Scraper (UFS) -> ($289) ~~$389~~
-  2. Ultimate Instagram Scraper (UIS) -> ($289) ~~$389~~
-  3. Ultimate Twitter Scraper (UTS) -> ($289) ~~$389~~
+  1. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#1-ultimate-facebook-scraper-ufs">Ultimate Facebook Scraper (UFS)</a> -> ($289) ~~$389~~
+  2. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#2-ultimate-instagram-scraper-uis">Ultimate Instagram Scraper (UIS)</a> -> ($289) ~~$389~~
+  3. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#3-ultimate-twitter-scraper-uts">Ultimate Twitter Scraper (UTS)</a> -> ($289) ~~$389~~
 </b>
 
 > You can **purchase all 3 scrapers together** at an exclusive **discounted price of ($799) ~~$1167~~**
