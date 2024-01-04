@@ -6,7 +6,7 @@
 
 <div align = "center">
 <h1>Ultimate Social Scrapers - Facebook, Instagram, Twitter</h1>
-<p>Maximize your business's potential and gain a competitive edge with our three separate Social Media Scrapers for: <br><b>Facebook, Instagram and Twitter</b>
+<p>Maximize your business's potential and gain a competitive edge with our **three separate** Social Media Scrapers for: <br><b>Facebook, Instagram and Twitter</b>
 
 Scrape valuable user data for lead generation, research studies, targeted marketing, sentiment analysis, data-driven decision-making, and more. 
 </p>
@@ -195,9 +195,6 @@ UFS is a great software developed by Haris and excellent service that is worth b
 and many more satisfied customers.. 
 
 # Price 💳  
-
-You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>virtual meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installation steps in case you prefer to do the installation on your own. 
-
 <b><i>🔥 Limited Time Discount offer valid till Monday. Feel free to email me at haris.muneer5@gmail.com for the latest updates or any queries. 🔥 </i></b>
 
 Following are the discounted prices of each scraper (you can choose to buy any one, two, or all 3 scrapers as well):
@@ -211,6 +208,11 @@ Following are the discounted prices of each scraper (you can choose to buy any o
 You can **purchase all 3 scrapers together** at an exclusive **discounted price of ($799) ~~$1167~~**
 
 This is a <b>one-time payment</b> for lifetime access. I will be available for any maintenance/support required for free to provide you with the best customer service so you can solely focus on achieving your business outcomes.
+
+**Ready to get the discounted offer 🤝? Check the <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#payment-method-">payment methods</a>.**
+
+**Installation Method**
+You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>virtual meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installation steps in case you prefer to do the installation on your own. 
 
 # Payment Method 🤝
 For payment, you can follow these simple steps:
@@ -235,9 +237,10 @@ If you face any issues in making a payment or would like to use some other payme
 <hr>
 
 # FAQ ❓
-1. All three scrapers are currently available for a life-time deal through one-time payment at a discounted price.
+1. All three scrapers are currently available for a lifetime deal through one-time payment at a discounted price.
 2. All three scrapers can be run on any operating system including Windows, Mac OS, and Linux.
-3. All three scrapers are easy to setup & use and come with installation instructions.
+3. All three scrapers are easy to set up & use and come with installation instructions.
+4. These are different scrapers for each social media platform separately i.e. Facebook, Instagram, and Twitter. You can choose to buy 1, 2, or all 3 scrapers.
 
 <hr>
 
