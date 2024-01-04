@@ -6,7 +6,7 @@
 
 <div align = "center">
 <h1>Ultimate Social Scrapers - Facebook, Instagram, Twitter</h1>
-<p>Maximize your business's potential and gain a competitive edge with our **three separate** Social Media Scrapers for: <br><b>Facebook, Instagram and Twitter</b>
+<p>Maximize your business's potential and gain a competitive edge with our <b>three separate</b> Social Media Scrapers for: <br><b>Facebook, Instagram and Twitter</b>
 
 Scrape valuable user data for lead generation, research studies, targeted marketing, sentiment analysis, data-driven decision-making, and more. 
 </p>
