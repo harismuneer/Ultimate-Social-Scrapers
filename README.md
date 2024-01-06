@@ -139,7 +139,7 @@ Ultimate Instagram Scraper supports data collection from all major Instagram sec
 Ultimate Instagram Scraper (UIS) scrapes the following sections from Instagram:
 
 #### 1) User Profile / Page
-- posts available on the user's timeline including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post), comments (total count, comments text along with list of people who commented)
+- posts available on the user's timeline including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post, types of reactions like sad, wow etc), comments (total count, comments text along with list of people who commented)
 - about/contact info including email, phone number, whatsapp number, location, account information etc  
 - user reels / stories
 - photos (uploaded and tagged)
