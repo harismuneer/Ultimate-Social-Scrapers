@@ -6,7 +6,7 @@
 
 <div align = "center">
 <h1>Ultimate Social Scrapers - Facebook, Instagram, Twitter</h1>
-<p>Maximize your business's potential and gain a competitive edge with our <b>three separate</b> Social Media Scrapers for: <br><b>Facebook, Instagram and Twitter</b>
+<p>Maximize your business's potential and gain a competitive edge with our <b>three separate</b> Social Media Scrapers for: <br><b>Facebook, Instagram, and Twitter</b>
 
 Scrape valuable user data for lead generation, research studies, targeted marketing, sentiment analysis, data-driven decision-making, and more. 
 </p>
@@ -80,15 +80,15 @@ Scrape valuable user data for lead generation, research studies, targeted market
 
 <h1>Awards/Achievements 🏆</h1>
 
-* Ultimate Facebook Scraper (UFS) got included as an official tool in the [BlackArch Linux distribution](https://blackarch.org/social.html)!
-* Ultimate Facebook Scraper (UFS) got listed among the [top 20 hacking tools in 2019](https://www.kitploit.com/2019/12/top-20-most-popular-hacking-tools-in.html)!
+* Ultimate Facebook Scraper (UFS) was included as an official tool in the [BlackArch Linux distribution](https://blackarch.org/social.html)!
+* Ultimate Facebook Scraper (UFS) was listed among the [top 20 hacking tools in 2019](https://www.kitploit.com/2019/12/top-20-most-popular-hacking-tools-in.html)!
 
 <h1>Details of Ultimate Social Scrapers 📜</h1>
 
 <h2>1. Ultimate Facebook Scraper (UFS)</h2>
 
 <p align="center">
-Ultimate Facebook Scraper supports data collection from all major Facebook sections including posts (likes/comments), reels, photos/videos, contact info and a lot more from user profiles, groups, and public pages.
+Ultimate Facebook Scraper supports data collection from all major Facebook sections including posts (likes/comments), reels, photos/videos, contact info, and a lot more from user profiles, groups, and public pages.
 </p>
 
 ### Features 🚀
@@ -97,19 +97,19 @@ Ultimate Facebook Scraper (UFS) scrapes the following sections from Facebook:
 
 #### 1) User Profile/Account
 - posts available on the user's timeline including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post), comments (total count, comments text along with list of people who commented), shares count
-- about/contact info sections (including work and education, places lived, contact info (email, phone number, whatsapp number, location etc)  
+- about/contact info sections (including work and education, places lived, contact info (email, phone number, WhatsApp number, location, etc)  
 - user reels
 - photos (uploaded and tagged)
 - videos (uploaded and tagged)
-- user likes (pages liked including movies, books, interests etc)
-- friends list (including Followers, Following, Work Friends, College Friends etc)
+- user likes (pages liked including movies, books, interests, etc)
+- friends list (including Followers, Following, Work Friends, College Friends, etc)
 - events
 - check-ins (places visited)
 - profile pic and cover photo
 
 #### 2) Public Facebook Page
 - posts done by the Facebook page including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post), comments (total count, comments text along with list of people who commented), shares count
-- about/intro sections (including page info and contact details like email, phone number, location, total likes, followers count etc)  
+- about/intro sections (including page info and contact details like email, phone number, location, total likes, followers count, etc)  
 - page reels
 - photos
 - videos
@@ -117,21 +117,21 @@ Ultimate Facebook Scraper (UFS) scrapes the following sections from Facebook:
 
 #### 3) Facebook Group
 - posts in the group (also called Discussions) including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post), comments (total count, comments text along with list of people who commented), shares count
-- about/intro sections (including group info and contact details like email, phone number, location, total members/admins, posting rules etc)  
-- group members and admins list including their bio data and profile links
+- about/intro sections (including group info and contact details like email, phone number, location, total members/admins, posting rules, etc)  
+- group members and admins list including their bio-data and profile links
 - photos
 - videos
 - group cover pic
 
 #### 4) Scraping Data via Facebook Search Bar
-This option allows you to scrape Facebook data (Posts, People, Photos, Pages etc) using the Facebook search bar i.e. you can define the search keywords and it will scrape data based on those search terms. e.g. you can search for all posts containing a particular keyword etc.
+This option allows you to scrape Facebook data (Posts, People, Photos, Pages, etc) using the Facebook search bar i.e. you can define the search keywords and it will scrape data based on those search terms. e.g. you can search for all posts containing a particular keyword etc.
 
-Data is scraped/downloaded in an organized format (CSV, JSON and XML formats) for ease of analysis and to be readily utilized. <b>Lets get things done? <a href="#price-">Purchase 🤝</a></b>
+Data is scraped/downloaded in an organized format (CSV, JSON, and XML formats) for ease of analysis and to be readily utilized. <b> Let's get things done? <a href="#price-">Purchase 🤝</a></b>
 
 <h2>2. Ultimate Instagram Scraper (UIS)</h2>
 
 <p align="center">
-Ultimate Instagram Scraper supports data collection from all major Instagram sections including user profiles/pages, photos/videos, reels/stories, contact info and a lot more.
+Ultimate Instagram Scraper supports data collection from all major Instagram sections including user profiles/pages, photos/videos, reels/stories, contact info, and a lot more.
 </p>
 
 ### Features 🚀
@@ -140,19 +140,19 @@ Ultimate Instagram Scraper (UIS) scrapes the following sections from Instagram:
 
 #### 1) User Profile / Page
 - posts available on the user's timeline including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post, types of reactions like sad, wow etc), comments (total count, comments text along with list of people who commented)
-- about/contact info including email, phone number, whatsapp number, location, account information etc  
-- user reels / stories
+- about/contact info including email, phone number, WhatsApp number, location, account information, etc  
+- user reels/stories
 - photos (uploaded and tagged)
 - videos (uploaded and tagged)
 - Followers and Following users list
 - profile pic and cover photo
 
-Data is scraped/downloaded in an organized format (CSV, JSON and XML formats) for ease of analysis and to be readily utilized. <b>Lets get things done? <a href="#price-">Purchase 🤝</a></b>
+Data is scraped/downloaded in an organized format (CSV, JSON, and XML formats) for ease of analysis and to be readily utilized. <b> Let's get things done? <a href="#price-">Purchase 🤝</a></b>
 
 <h2>3. Ultimate Twitter Scraper (UTS)</h2>
 
 <p align="center">
-Ultimate Twitter Scraper supports data collection from Twitter including account information of user and the user's tweets.
+Ultimate Twitter Scraper supports data collection from Twitter including account information of the user and the user's tweets.
 </p>
 
 ### Features 🚀
@@ -161,9 +161,9 @@ Ultimate Twitter Scraper (UTS) scrapes the following sections from Twitter:
 
 #### 1) User Profile / Page
 - tweets available on the user's profile including name/profile link of tweet owner, tweet text, date posted, media links, likes (total count), replies/comments (total count), reposts (total count)
-- about/contact info including email, phone number, whatsapp number, location, account information like total followers, following etc
+- about/contact info including email, phone number, WhatsApp number, location, account information like total followers, following etc
 
-Data is scraped/downloaded in an organized format (CSV, JSON and XML formats) for ease of analysis and to be readily utilized. <b>Lets get things done? <a href="#price-">Purchase 🤝</a></b>
+Data is scraped/downloaded in an organized format (CSV, JSON, and XML formats) for ease of analysis and to be readily utilized. <b> Let's get things done? <a href="#price-">Purchase 🤝</a></b>
 
 # Testimonials 💯 👍
 > The best service I got! 
@@ -195,7 +195,7 @@ UFS is a great software developed by Haris and excellent service that is worth b
 and many more satisfied customers.. 
 
 # Price 💳  
-<b><i>🔥 Limited Time Discount offer valid till Monday. Feel free to email me at haris.muneer5@gmail.com for the latest updates or any queries. 🔥 </i></b>
+<b><i>🔥 Limited Time **$200 off Discount** offer valid till Monday. Feel free to email me at haris.muneer5@gmail.com for the latest updates or any queries. 🔥 </i></b>
 
 Following are the discounted prices of each scraper (you can choose to buy any one, two, or all 3 scrapers as well):
 <b>
@@ -205,23 +205,23 @@ Following are the discounted prices of each scraper (you can choose to buy any o
   3. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#3-ultimate-twitter-scraper-uts">Ultimate Twitter Scraper (UTS)</a> -> ($289) ~~$489~~
 </b>
 
-You can **purchase all 3 scrapers together** at an exclusive **discounted price of ($799) ~~$1467~~**
+You can **purchase all 3 scrapers together** with an additional **discount of $600 at the final price ($799) ~~$1467~~**
 
 This is a <b>one-time payment</b> for lifetime access. I will be available for any maintenance/support required for free to provide you with the best customer service so you can solely focus on achieving your business outcomes.
 
 **Ready to get the discounted offer 🤝? Check the <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#payment-method-">payment methods</a>.**
 
 **Installation Method**
-You can buy the software today and schedule the installation for any other day when convenient for you.</b></i> The purchase includes a one-on-one <b>virtual meeting</b> through which I will install this Software on your computer, train you on its usage and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installation steps in case you prefer to do the installation on your own. 
+You can buy the software today and schedule the installation for any other day when it is convenient for you.</b></i> The purchase includes a one-on-one <b>virtual meeting</b> through which I will install this Software on your computer, train you on its usage, and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installation steps in case you prefer to do the installation independently. 
 
 # Payment Method 🤝
 For payment, you can follow these simple steps:
 
 ## Method 1: Using Wise Platform
 
-1. Free signup at <b>[Wise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the payment)
-2. Select the <b>sending currency to be USD or an equivalent amount of USD in your supported local currency</b>. It supports multiple payment options (credit card, debit card, wire transfer etc)
-3. Select 'Someone else' option, then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients and the IBAN number is: PK37FAYS3241307000000167
+1. Free signup at <b>[Wise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transaction fee on the payment)
+2. Select the <b>sending currency to be USD or an equivalent amount of USD in your supported local currency</b>. It supports multiple payment options (credit card, debit card, wire transfer, etc)
+3. Select the 'Someone else' option, then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients and the IBAN is: PK37FAYS3241307000000167
 4. Choose the reason for transfer to be 'General' and in the reference section, you can mention your email.
  
 After the payment, please share a screenshot of the payment receipt at <b>haris.muneer5@gmail.com</b> and we will schedule your quick installation meeting.
@@ -246,11 +246,11 @@ If you face any issues in making a payment or would like to use some other payme
 
 # Other Notes 🗒️
 - The default language should be set to English for this tool to work properly. The interface needs to be in English, **the post text and all other data can be scraped in any language** :)
-- If there's any specific use case of yours that the tools don't support currently then feel free to send me an email at [haris.muneer5@gmail.com](haris.muneer5@gmail.com) and we will discuss it further.
+- If there's any specific use case of yours that the tools don't support currently, feel free to email me at [haris.muneer5@gmail.com](haris.muneer5@gmail.com) and we will discuss it further.
 - It may be hard to utilize these tools for massive scraping (thousands of posts or friends etc) at a fast pace. It is possible, but the scraping rate would be slower in that scenario.
 - Facebook/Instagram/Twitter have taken aggressive measures against scraping so sometimes the account you are using to scrape data might get temporarily blocked (though there are some ways to circumvent this issue which I will share during the installation meeting)
 
-The developers of this software won't be responsible for any misuse of data collected using the social scrapers. These tools have been used by many researchers, marketers, business owners, and open source intelligence (OSINT) analysts.
+The developers of this software won't be responsible for any misuse of data collected using the social scrapers. These tools have been used by many researchers, marketers, business owners, and open-source intelligence (OSINT) analysts.
 
 For more details, feel free to reach me at [haris.muneer5@gmail.com](haris.muneer5@gmail.com)
 
