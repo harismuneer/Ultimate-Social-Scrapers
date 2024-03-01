@@ -223,16 +223,26 @@ For payment, you can follow these simple steps:
 2. Select the <b>sending currency to be USD or an equivalent amount of USD in your supported local currency</b>. It supports multiple payment options (credit card, debit card, wire transfer, etc)
 3. Select the 'Someone else' option, then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients and the IBAN is: PK37FAYS3241307000000167
 4. Choose the reason for transfer to be 'General' and in the reference section, you can mention your email.
- 
-After the payment, please share a screenshot of the payment receipt at <b>haris.muneer5@gmail.com</b> and we will schedule your quick installation meeting.
- 
+  
 ## Method 2: Using Crypto
 
 1. You can pay in USDT (USD equivalent) and the chain is Tron (TRC20). 
 2. The Wallet is a Binance Wallet. Wallet address is: TL3zjuqf2KmgSVkQnGzVq5i2Fk6VF3iauQ
 3. [Sample Screenshot](https://user-images.githubusercontent.com/30947706/138526456-0f82754f-2d4a-48f2-9898-f09721143913.png)
 
-If you face any issues in making a payment or would like to use some other payment method, please feel free to contact me at <b>haris.muneer5@gmail.com</b> Thank you for your support!
+## Method 3: Using Bank/Wire Transfer
+
+1. You can do a hassle-free bank transfer to the following account:
+
+Account holder: Haris Muneer
+ACH and Wire routing number: 026073150
+Swift/BIC: CMFGUS33
+Account number: 8312574362
+Account type: Checking
+Bank address: 30 W. 26th Street, Sixth Floor, New York NY 10010, United States
+
+
+After the payment, please share a screenshot of the payment receipt at <b>haris.muneer5@gmail.com</b> to receive your licensed version of the software. If you face any issues in making a payment or would like to use some other payment method, please feel free to contact me at <b>haris.muneer5@gmail.com</b> Thank you for your support!
 
 <hr>
 
