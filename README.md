@@ -205,7 +205,7 @@ Following are the discounted prices of each scraper (you can choose to buy any o
   3. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#3-ultimate-twitter-scraper-uts">Ultimate Twitter Scraper (UTS)</a> -> ($289) ~~$489~~
 </b>
 
-You can **purchase all 3 scrapers together** with an additional **discount of $600 at the final price ($799) ~~$1467~~**
+If you decide to **purchase all 3 scrapers together**, you can avail an additional $600 discount which reduces the total price from $1467 to just **$799**.
 
 This is a <b>one-time payment</b> for lifetime access. I will be available for any maintenance/support required for free to provide you with the best customer service so you can solely focus on achieving your business outcomes.
 
