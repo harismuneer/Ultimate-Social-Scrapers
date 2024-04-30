@@ -232,13 +232,18 @@ For payment, you can follow these simple steps:
 
 ## Method 3: Using Bank/Wire Transfer
 
-1. You can do a hassle-free bank transfer to the following account:
+You can do a hassle-free bank transfer to my USA account:
 
 Account holder: Haris Muneer
+
 ACH and Wire routing number: 026073150
+
 Swift/BIC: CMFGUS33
+
 Account number: 8312574362
+
 Account type: Checking
+
 Bank address: 30 W. 26th Street, Sixth Floor, New York NY 10010, United States
 
 
