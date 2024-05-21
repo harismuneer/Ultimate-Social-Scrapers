@@ -220,7 +220,7 @@ For payment, you can follow these simple steps:
 ## Method 1: Using Wise Platform
 
 1. Free signup at <b>[Wise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transaction fee on the payment)
-2. Select the <b>sending currency to be USD or an equivalent amount of USD in your supported local currency</b>. It supports multiple payment options (credit card, debit card, wire transfer, etc)
+2. Select the <b>sending currency to be USD or an equivalent amount of USD in your supported local currency if that's more convenient for you</b>. (e.g. let's say you are from China, then you can transfer the equivalent USD amount in Chinese Yuan on Wise). It supports multiple payment options (credit card, debit card, wire transfer, etc)
 3. Select the 'Someone else' option, then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients and the IBAN is: PK37FAYS3241307000000167
 4. Choose the reason for transfer to be 'General' and in the reference section, you can mention your email.
   
