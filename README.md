@@ -5,8 +5,8 @@
 </a>
 
 <div align = "center">
-<h1>Ultimate Social Scrapers - Facebook, Instagram, Twitter</h1>
-<p>Maximize your business's potential and gain a competitive edge with our <b>three separate</b> Social Media Scrapers for: <br><b>Facebook, Instagram, and Twitter</b>
+<h1>Ultimate Social Scrapers - Facebook, Instagram, X (formerly Twitter)</h1>
+<p>Maximize your business's potential and gain a competitive edge with our <b>three separate</b> Social Media Scrapers for: <br><b>Facebook, Instagram, and X (formerly Twitter)</b>
 
 Scrape valuable user data for lead generation, research studies, targeted marketing, sentiment analysis, data-driven decision-making, and more. 
 </p>
@@ -18,7 +18,7 @@ Scrape valuable user data for lead generation, research studies, targeted market
 
 <hr>
 
-<h2 align="center">Top choice for Facebook, Instagram and Twitter Scraping</h2>
+<h2 align="center">Top choice for Facebook, Instagram, and X (formerly Twitter) Scraping</h2>
 <p align="center">
   <br>
   <a href='#'>
@@ -149,15 +149,15 @@ Ultimate Instagram Scraper (UIS) scrapes the following sections from Instagram:
 
 Data is scraped/downloaded in an organized format (CSV, JSON, and XML formats) for ease of analysis and to be readily utilized. <b> Let's get things done? <a href="#price-">Purchase 🤝</a></b>
 
-<h2>3. Ultimate Twitter Scraper (UTS)</h2>
+<h2>3. Ultimate X (formerly Twitter) Scraper (UTS)</h2>
 
 <p align="center">
-Ultimate Twitter Scraper supports data collection from Twitter including account information of the user and the user's tweets.
+Ultimate X (formerly Twitter) Scraper supports data collection from X (formerly Twitter) including account information of the user and the user's tweets.
 </p>
 
 ### Features 🚀
 
-Ultimate Twitter Scraper (UTS) scrapes the following sections from Twitter:
+Ultimate X (formerly Twitter) Scraper (UTS) scrapes the following sections from X (formerly Twitter):
 
 #### 1) User Profile / Page
 - tweets available on the user's profile including name/profile link of tweet owner, tweet text, date posted, media links, likes (total count), replies/comments (total count), reposts (total count)
@@ -202,7 +202,7 @@ Following are the discounted prices of each scraper (you can choose to buy any o
   
   1. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#1-ultimate-facebook-scraper-ufs">Ultimate Facebook Scraper (UFS)</a> -> ($289) ~~$489~~
   2. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#2-ultimate-instagram-scraper-uis">Ultimate Instagram Scraper (UIS)</a> -> ($289) ~~$489~~
-  3. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#3-ultimate-twitter-scraper-uts">Ultimate Twitter Scraper (UTS)</a> -> ($289) ~~$489~~
+  3. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#3-ultimate-twitter-scraper-uts">Ultimate X (formerly Twitter) Scraper (UTS)</a> -> ($289) ~~$489~~
 </b>
 
 If you decide to **purchase all 3 scrapers together**, you can avail an additional $600 discount which reduces the total price from $1467 to just **$799**.
@@ -255,7 +255,7 @@ After the payment, please share a screenshot of the payment receipt at <b>haris.
 1. All three scrapers are currently available for a lifetime deal through one-time payment at a discounted price.
 2. All three scrapers can be run on any operating system including Windows, Mac OS, and Linux.
 3. All three scrapers are easy to set up & use and come with installation instructions.
-4. These are different scrapers for each social media platform separately i.e. Facebook, Instagram, and Twitter. You can choose to buy 1, 2, or all 3 scrapers.
+4. These are different scrapers for each social media platform separately i.e. Facebook, Instagram, and X (formerly Twitter). You can choose to buy 1, 2, or all 3 scrapers.
 
 <hr>
 
@@ -263,7 +263,7 @@ After the payment, please share a screenshot of the payment receipt at <b>haris.
 - The default language should be set to English for this tool to work properly. The interface needs to be in English, **the post text and all other data can be scraped in any language** :)
 - If there's any specific use case of yours that the tools don't support currently, feel free to email me at [haris.muneer5@gmail.com](haris.muneer5@gmail.com) and we will discuss it further.
 - It may be hard to utilize these tools for massive scraping (thousands of posts or friends etc) at a fast pace. It is possible, but the scraping rate would be slower in that scenario.
-- Facebook/Instagram/Twitter have taken aggressive measures against scraping so sometimes the account you are using to scrape data might get temporarily blocked (though there are some ways to circumvent this issue which I will share during the installation meeting)
+- Facebook/Instagram/X (formerly Twitter) have taken aggressive measures against scraping so sometimes the account you are using to scrape data might get temporarily blocked (though there are some ways to circumvent this issue which I will share during the installation meeting)
 
 The developers of this software won't be responsible for any misuse of data collected using the social scrapers. These tools have been used by many researchers, marketers, business owners, and open-source intelligence (OSINT) analysts.
 
