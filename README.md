@@ -195,17 +195,17 @@ UFS is a great software developed by Haris and excellent service that is worth b
 and many more satisfied customers.. 
 
 # Price 💳  
-<b><i>🔥 Limited Time **$200 off Discount** offer valid till Monday. Feel free to email me at haris.muneer5@gmail.com for the latest updates or any queries. 🔥 </i></b>
+<b><i>🔥 Limited Time **$200 off discount on each scraper** valid till Monday. Feel free to email me at haris.muneer5@gmail.com for the latest updates or any queries. 🔥 </i></b>
 
 Following are the discounted prices of each scraper (you can choose to buy any one, two, or all 3 scrapers as well):
 <b>
   
-  1. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#1-ultimate-facebook-scraper-ufs">Ultimate Facebook Scraper (UFS)</a> -> ($399) ~~$499~~
-  2. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#2-ultimate-instagram-scraper-uis">Ultimate Instagram Scraper (UIS)</a> -> ($399) ~~$499~~
-  3. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#3-ultimate-twitter-scraper-uts">Ultimate X (formerly Twitter) Scraper (UTS)</a> -> ($399) ~~$499~~
+  1. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#1-ultimate-facebook-scraper-ufs">Ultimate Facebook Scraper (UFS)</a> -> ($399) ~~$599~~
+  2. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#2-ultimate-instagram-scraper-uis">Ultimate Instagram Scraper (UIS)</a> -> ($399) ~~$599~~
+  3. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#3-ultimate-twitter-scraper-uts">Ultimate X (formerly Twitter) Scraper (UTS)</a> -> ($399) ~~$599~~
 </b>
 
-If you decide to **purchase all 3 scrapers together**, you can avail an additional $500 discount which reduces the total price from $1497 to just **$999**.
+If you decide to **purchase all 3 scrapers together**, you can avail an additional **$800 discount** which reduces the total price from $1799 to just **$999**.
 
 This is a <b>one-time payment</b> for lifetime access. I will be available for any maintenance/support required for free to provide you with the best customer service so you can solely focus on achieving your business outcomes.
 
