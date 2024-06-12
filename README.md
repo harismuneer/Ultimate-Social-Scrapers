@@ -89,7 +89,7 @@ Scrape valuable user data for lead generation, research studies, targeted market
 <h2>1. Ultimate Facebook Scraper (UFS)</h2>
 
 <p align="center">
-Ultimate Facebook Scraper supports data collection from all major Facebook sections including posts (likes/comments), reels, photos/videos, contact info, and a lot more from user profiles, groups, and public pages. Please refer below for detailed features list ⬇️
+Ultimate Facebook Scraper supports data collection from all major Facebook sections including posts (likes/comments), reels, photos/videos, contact info, and a lot more from user profiles, groups, and public pages. Please refer below for detailed features list⬇️
 </p>
 
 ### Features 🚀
@@ -133,7 +133,7 @@ All the data is scraped/downloaded in an organized format (CSV, JSON, and XML fo
 <h2>2. Ultimate Instagram Scraper (UIS)</h2>
 
 <p align="center">
-Ultimate Instagram Scraper (UIS) supports data collection from all major Instagram sections including user profiles/pages, photos/videos, reels/stories, contact info, and a lot more. Please refer below for detailed features list ⬇️
+Ultimate Instagram Scraper (UIS) supports data collection from all major Instagram sections including user profiles/pages, photos/videos, reels/stories, contact info, and a lot more. Please refer below for detailed features list⬇️
 </p>
 
 ### Features 🚀
@@ -154,7 +154,7 @@ All the data is scraped/downloaded in an organized format (CSV, JSON, and XML fo
 <h2>3. Ultimate TikTok Scraper (UTS)</h2>
 
 <p align="center">
-Ultimate TikTok Scraper (UTS) supports data collection from all major TikTok sections including user profiles/pages, about and contact info, followers/following list, videos (and comments), playlists, likes and a lot more. Please refer below for detailed features list ⬇️
+Ultimate TikTok Scraper (UTS) supports data collection from all major TikTok sections including user profiles/pages, about and contact info, followers/following list, videos (and comments), playlists, likes and a lot more. Please refer below for detailed features list⬇️
 </p>
 
 ### Features 🚀
@@ -176,7 +176,7 @@ All the data is scraped/downloaded in an organized format (CSV, JSON, and XML fo
 <h2>4. Ultimate X (formerly Twitter) Scraper (UXS)</h2>
 
 <p align="center">
-Ultimate X (formerly Twitter) Scraper supports data collection from X (formerly Twitter) including account information of the user and the user's tweets. Please refer below for detailed features list ⬇️
+Ultimate X (formerly Twitter) Scraper supports data collection from X (formerly Twitter) including account information of the user and the user's tweets. Please refer below for detailed features list⬇️
 </p>
 
 ### Features 🚀
@@ -240,7 +240,7 @@ This is a <b>one-time payment</b> for lifetime access. I will be available for a
 
 **Installation Method:** You can buy the software today and schedule the installation for any other day when it is convenient for you.</b></i> The purchase includes a one-on-one <b>virtual meeting</b> through which I will install this Software on your computer, train you on its usage, and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installation steps in case you prefer to do the installation independently. 
 
-# Payment Method 🤝
+# Payment Methods 🤝
 For payment, you can follow these simple steps:
 
 ## Method 1: Using Wise Platform
