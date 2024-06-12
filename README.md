@@ -5,8 +5,9 @@
 </a>
 
 <div align = "center">
-<h1>Ultimate Social Scrapers - Facebook, Instagram, X (formerly Twitter)</h1>
-<p>Maximize your business's potential and gain a competitive edge with our <b>three separate</b> Social Media Scrapers for: <br><b>Facebook, Instagram, and X (formerly Twitter)</b>
+<h1>Ultimate Social Scrapers</h1>
+<h1>Facebook, Instagram, TikTok, X (formerly Twitter)</h1>
+<p>Maximize your business's potential and gain a competitive edge with our <b>four separate</b> Social Media Scrapers for: <br><b>Facebook, Instagram, TikTok and X (formerly Twitter)</b>
 
 Scrape valuable user data for lead generation, research studies, targeted marketing, sentiment analysis, data-driven decision-making, and more. 
 </p>
@@ -18,7 +19,7 @@ Scrape valuable user data for lead generation, research studies, targeted market
 
 <hr>
 
-<h2 align="center">Top choice for Facebook, Instagram, and X (formerly Twitter) Scraping</h2>
+<h2 align="center">Top choice for Facebook, Instagram, TikTok and X (formerly Twitter) Scraping</h2>
 <p align="center">
   <br>
   <a href='#'>
@@ -88,27 +89,28 @@ Scrape valuable user data for lead generation, research studies, targeted market
 <h2>1. Ultimate Facebook Scraper (UFS)</h2>
 
 <p align="center">
-Ultimate Facebook Scraper supports data collection from all major Facebook sections including posts (likes/comments), reels, photos/videos, contact info, and a lot more from user profiles, groups, and public pages.
+Ultimate Facebook Scraper supports data collection from all major Facebook sections including posts (likes/comments), reels, photos/videos, contact info, and a lot more from user profiles, groups, and public pages. Please refer below for detailed features list.
 </p>
 
 ### Features 🚀
 
 Ultimate Facebook Scraper (UFS) scrapes the following sections from Facebook:
 
-#### 1) User Profile/Account
-- posts available on the user's timeline including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post), comments (total count, comments text along with list of people who commented), shares count
-- about/contact info sections (including work and education, places lived, contact info (email, phone number, WhatsApp number, location, etc)  
-- user reels
+#### 1) User Profile / Account
+- posts available on the user's timeline including name/profile link of post owner, post text, date posted, media links, likes (total count, breakdown by reactions like sad/happy etc, list of people who liked the post), comments (total count, comments text along with list of people who commented), shares count
+- about/contact info sections including email, phone number, WhatsApp number, location, social links etc, work and education, places lived and more
 - photos (uploaded and tagged)
 - videos (uploaded and tagged)
-- user likes (pages liked including movies, books, interests, etc)
-- friends list (including Followers, Following, Work Friends, College Friends, etc)
+- friends list (including Work Friends, College Friends, etc) with detailed about/contact info
+- followers and following list with detailed about/contact info
+- user likes (including pages liked including movies, books, interests, etc)
 - events
 - check-ins (places visited)
 - profile pic and cover photo
+- user reels/stories
 
 #### 2) Public Facebook Page
-- posts done by the Facebook page including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post), comments (total count, comments text along with list of people who commented), shares count
+- posts done by the Facebook page including name/profile link of post owner, post text, date posted, media links, likes (total count, breakdown by reactions like sad/happy etc, list of people who liked the post), comments (total count, comments text along with list of people who commented), shares count
 - about/intro sections (including page info and contact details like email, phone number, location, total likes, followers count, etc)  
 - page reels
 - photos
@@ -116,7 +118,7 @@ Ultimate Facebook Scraper (UFS) scrapes the following sections from Facebook:
 - page profile pic and cover photo
 
 #### 3) Facebook Group
-- posts in the group (also called Discussions) including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post), comments (total count, comments text along with list of people who commented), shares count
+- posts in the group (also called Discussions) including name/profile link of post owner, post text, date posted, media links, likes (total count, breakdown by reactions like sad/happy etc, list of people who liked the post), comments (total count, comments text along with list of people who commented), shares count
 - about/intro sections (including group info and contact details like email, phone number, location, total members/admins, posting rules, etc)  
 - group members and admins list including their bio-data and profile links
 - photos
@@ -124,14 +126,14 @@ Ultimate Facebook Scraper (UFS) scrapes the following sections from Facebook:
 - group cover pic
 
 #### 4) Scraping Data via Facebook Search Bar
-This option allows you to scrape Facebook data (Posts, People, Photos, Pages, etc) using the Facebook search bar i.e. you can define the search keywords and it will scrape data based on those search terms. e.g. you can search for all posts containing a particular keyword etc.
+This option allows you to scrape Facebook data (Posts, People, Photos, Pages, Groups etc) using the Facebook search bar i.e. you can define the search keywords and UFS will scrape data based on those search terms. e.g. you can search for all posts containing a particular keyword etc. Moreover, you can further search based on advanced filters like post location, post date range etc.
 
-Data is scraped/downloaded in an organized format (CSV, JSON, and XML formats) for ease of analysis and to be readily utilized. <b> Let's get things done? <a href="#price-">Purchase 🤝</a></b>
+All the data is scraped/downloaded in an organized format (CSV, JSON, and XML formats) for ease of analysis and to be readily utilized. <b> Let's get things done? <a href="#price-">Purchase 🤝</a></b>
 
 <h2>2. Ultimate Instagram Scraper (UIS)</h2>
 
 <p align="center">
-Ultimate Instagram Scraper supports data collection from all major Instagram sections including user profiles/pages, photos/videos, reels/stories, contact info, and a lot more.
+Ultimate Instagram Scraper (UIS) supports data collection from all major Instagram sections including user profiles/pages, photos/videos, reels/stories, contact info, and a lot more. Please refer below for detailed features list.
 </p>
 
 ### Features 🚀
@@ -139,31 +141,54 @@ Ultimate Instagram Scraper supports data collection from all major Instagram sec
 Ultimate Instagram Scraper (UIS) scrapes the following sections from Instagram:
 
 #### 1) User Profile / Page
-- posts available on the user's timeline including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post, types of reactions like sad, wow etc), comments (total count, comments text along with list of people who commented)
+- posts available on the user's timeline including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post), comments (total count, comments text along with list of people who commented)
 - about/contact info including email, phone number, WhatsApp number, location, account information, etc  
+- followers and following users list with detailed about/contact info
 - user reels/stories
 - photos (uploaded and tagged)
 - videos (uploaded and tagged)
-- Followers and Following users list
 - profile pic and cover photo
 
-Data is scraped/downloaded in an organized format (CSV, JSON, and XML formats) for ease of analysis and to be readily utilized. <b> Let's get things done? <a href="#price-">Purchase 🤝</a></b>
+All the data is scraped/downloaded in an organized format (CSV, JSON, and XML formats) for ease of analysis and to be readily utilized. <b> Let's get things done? <a href="#price-">Purchase 🤝</a></b>
 
-<h2>3. Ultimate X (formerly Twitter) Scraper (UTS)</h2>
+<h2>3. Ultimate TikTok Scraper (UTS)</h2>
 
 <p align="center">
-Ultimate X (formerly Twitter) Scraper supports data collection from X (formerly Twitter) including account information of the user and the user's tweets.
+Ultimate TikTok Scraper (UTS) supports data collection from all major TikTok sections including user profiles/pages, about and contact info, followers/following list, videos (and comments), playlists, likes and a lot more. Please refer below for detailed features list.
 </p>
 
 ### Features 🚀
 
-Ultimate X (formerly Twitter) Scraper (UTS) scrapes the following sections from X (formerly Twitter):
+Ultimate TikTok Scraper (UTS) scrapes the following sections from TikTok:
+
+#### 1) User Profile / Page
+- posts (videos) available on the user's timeline including name/profile link of video owner, video description, date posted, media links, likes (total count), comments (total count, comments text along with list of people who commented), shares count, favorites count, video duration, video hashtags, video views etc.
+- about/contact info including email, phone number, WhatsApp number, location, account information, websites etc  
+- followers and following users list with detailed about/contact info
+- liked videos list along with video stats
+- playlists
+
+#### 2) Scraping Data via TikTok Search Bar
+This option allows you to scrape TikTok data (Videos, Accounts/User profiles etc) using the TikTok search bar i.e. you can define the search keywords and UTS will scrape data based on those search terms. e.g. you can search for all videos containing a particular keyword or from a particular user etc. 
+
+All the data is scraped/downloaded in an organized format (CSV, JSON, and XML formats) for ease of analysis and to be readily utilized. <b> Let's get things done? <a href="#price-">Purchase 🤝</a></b>
+
+<h2>4. Ultimate X (formerly Twitter) Scraper (UXS)</h2>
+
+<p align="center">
+Ultimate X (formerly Twitter) Scraper supports data collection from X (formerly Twitter) including account information of the user and the user's tweets. Please refer below for detailed features list.
+</p>
+
+### Features 🚀
+
+Ultimate X (formerly Twitter) Scraper (UXS) scrapes the following sections from X (formerly Twitter):
 
 #### 1) User Profile / Page
 - tweets available on the user's profile including name/profile link of tweet owner, tweet text, date posted, media links, likes (total count), replies/comments (total count), reposts (total count)
 - about/contact info including email, phone number, WhatsApp number, location, account information like total followers, following etc
+- profile picture and cover photo
 
-Data is scraped/downloaded in an organized format (CSV, JSON, and XML formats) for ease of analysis and to be readily utilized. <b> Let's get things done? <a href="#price-">Purchase 🤝</a></b>
+All the data is scraped/downloaded in an organized format (CSV, JSON, and XML formats) for ease of analysis and to be readily utilized. <b> Let's get things done? <a href="#price-">Purchase 🤝</a></b>
 
 # Testimonials 💯 👍
 > The best service I got! 
@@ -197,15 +222,17 @@ and many more satisfied customers..
 # Price 💳  
 <b><i>🔥 Limited Time **35% discount on each scraper** valid till Monday. Feel free to email me at haris.muneer5@gmail.com for the latest updates or any queries. 🔥 </i></b>
 
-Following are the discounted prices of each scraper (you can choose to buy any one, two, or all 3 scrapers as well):
+Following are the discounted prices of each scraper (you can choose to buy any one, two, three or all 4 scrapers as well):
 <b>
   
-  1. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#1-ultimate-facebook-scraper-ufs">Ultimate Facebook Scraper (UFS)</a> -> ($399) ~~$599~~
-  2. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#2-ultimate-instagram-scraper-uis">Ultimate Instagram Scraper (UIS)</a> -> ($399) ~~$599~~
-  3. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#3-ultimate-twitter-scraper-uts">Ultimate X (formerly Twitter) Scraper (UTS)</a> -> ($399) ~~$599~~
+  1. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#1-ultimate-facebook-scraper-ufs">Ultimate Facebook Scraper (UFS)</a> -> ($389) ~~$589~~
+  2. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#2-ultimate-instagram-scraper-uis">Ultimate Instagram Scraper (UIS)</a> -> ($389) ~~$589~~
+  3. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#2-ultimate-tiktok-scraper-uts">Ultimate TikTok Scraper (UTS)</a> -> ($389) ~~$589~~
+  4. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#3-ultimate-twitter-scraper-uxs">Ultimate X (formerly Twitter) Scraper (UXS)</a> -> ($389) ~~$589~~
 </b>
 
-If you choose to **purchase all three scrapers** together, you can enjoy an **additional 10% discount on top of the existing 35% discount**, further lowering the total price from $1799 to just **$999**.
+## Bundle Offer 📣
+If you choose to **purchase all four scrapers bundle** together, you can enjoy an **additional 10% discount on top of the existing 35% discount making it a 45% discount**, i.e. further lowering the total price of 4 scrapers bundle from $2350 to just **$1349**.
 
 This is a <b>one-time payment</b> for lifetime access. I will be available for any maintenance/support required for free to provide you with the best customer service so you can solely focus on achieving your business outcomes.
 
@@ -252,10 +279,10 @@ After the payment, please share a screenshot of the payment receipt at <b>haris.
 <hr>
 
 # FAQ ❓
-1. All three scrapers are currently available for a lifetime deal through one-time payment at a discounted price.
-2. All three scrapers can be run on any operating system including Windows, Mac OS, and Linux.
-3. All three scrapers are easy to set up & use and come with installation instructions.
-4. These are different scrapers for each social media platform separately i.e. Facebook, Instagram, and X (formerly Twitter). You can choose to buy 1, 2, or all 3 scrapers.
+1. All scrapers are currently available for a lifetime deal through one-time payment at a discounted price.
+2. All scrapers can be run on any operating system including Windows, Mac OS, and Linux.
+3. All  scrapers are easy to set up & use and come with installation instructions.
+4. These are different scrapers for each social media platform separately i.e. Facebook, Instagram, TikTok and X (formerly Twitter). You can choose to buy 1, 2, 3 or all 4 scrapers.
 
 <hr>
 
@@ -263,7 +290,7 @@ After the payment, please share a screenshot of the payment receipt at <b>haris.
 - The default language should be set to English for this tool to work properly. The interface needs to be in English, **the post text and all other data can be scraped in any language** :)
 - If there's any specific use case of yours that the tools don't support currently, feel free to email me at [haris.muneer5@gmail.com](haris.muneer5@gmail.com) and we will discuss it further.
 - It may be hard to utilize these tools for massive scraping (thousands of posts or friends etc) at a fast pace. It is possible, but the scraping rate would be slower in that scenario.
-- Facebook/Instagram/X (formerly Twitter) have taken aggressive measures against scraping so sometimes the account you are using to scrape data might get temporarily blocked (though there are some ways to circumvent this issue which I will share during the installation meeting)
+- Facebook/Instagram/X (formerly Twitter) have taken aggressive measures against scraping so sometimes the account you are using to scrape data might get temporarily blocked (though there are some ways to circumvent this issue which I will share during the installation meeting that have allowed my customers to scrape decent amount of data)
 
 The developers of this software won't be responsible for any misuse of data collected using the social scrapers. These tools have been used by many researchers, marketers, business owners, and open-source intelligence (OSINT) analysts.
 
@@ -272,10 +299,10 @@ For more details, feel free to reach me at [haris.muneer5@gmail.com](haris.munee
 <hr>
 
 <h1 align="left">Hey there, I'm <a href="https://www.linkedin.com/in/harismuneer/">Haris </a><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"> 
- <a href="https://github.com/harismuneer/Ultimate-Facebook-Scraper"><img align="right" src="https://user-images.githubusercontent.com/30947706/79588950-17515780-80ee-11ea-8f66-e26da49fa052.png" alt="Ultimate Facebook Scraper (UFS)" width="200"/></a> - Maker of Things</h1> 
+ <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers"><img align="right" src="https://user-images.githubusercontent.com/30947706/79588950-17515780-80ee-11ea-8f66-e26da49fa052.png" alt="Ultimate Social Scrapers" width="200"/></a> - Maker of Things</h1> 
 
 
-## Creator of <a href="https://github.com/harismuneer/Ultimate-Facebook-Scraper">Ultimate Facebook Scraper</a> (one of the best software to collect Facebook data for research & analysis) 
+## Creator of <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers">Ultimate Social Scrapers</a> (leading tools to collect Facebook, Instagram, TikTok and Twitter data for research, analysis and lead generation) 
 
 <hr>
 
