@@ -238,8 +238,7 @@ This is a <b>one-time payment</b> for lifetime access. I will be available for a
 
 **Ready to get the discounted offer 🤝? Check the <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#payment-method-">payment methods</a>.**
 
-**Installation Method**
-You can buy the software today and schedule the installation for any other day when it is convenient for you.</b></i> The purchase includes a one-on-one <b>virtual meeting</b> through which I will install this Software on your computer, train you on its usage, and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installation steps in case you prefer to do the installation independently. 
+**Installation Method:** You can buy the software today and schedule the installation for any other day when it is convenient for you.</b></i> The purchase includes a one-on-one <b>virtual meeting</b> through which I will install this Software on your computer, train you on its usage, and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installation steps in case you prefer to do the installation independently. 
 
 # Payment Method 🤝
 For payment, you can follow these simple steps:
