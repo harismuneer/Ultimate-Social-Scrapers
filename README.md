@@ -231,7 +231,7 @@ Following are the discounted prices of each scraper (you can choose to buy any o
   4. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers/tree/master?tab=readme-ov-file#4-ultimate-x-formerly-twitter-scraper-uxs">Ultimate X (formerly Twitter) Scraper (UXS)</a> -> ($389) ~~$589~~
 </b>
 
-## Bundle Offer 📣
+## 🌟 Bundle Offer 🌟
 If you choose to **purchase all four scrapers bundle** together, you can enjoy an **additional 10% discount on top of the existing 35% discount making it a 45% discount**, i.e. further lowering the total price of 4 scrapers bundle from $2350 to just **$1349**.
 
 This is a <b>one-time payment</b> for lifetime access. I will be available for any maintenance/support required for free to provide you with the best customer service so you can solely focus on achieving your business outcomes.
