@@ -225,10 +225,10 @@ and many more satisfied customers..
 Following are the discounted prices of each scraper (you can choose to buy any one, two, three or all 4 scrapers as well):
 <b>
   
-  1. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#1-ultimate-facebook-scraper-ufs">Ultimate Facebook Scraper (UFS)</a> -> ($389) ~~$589~~
-  2. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#2-ultimate-instagram-scraper-uis">Ultimate Instagram Scraper (UIS)</a> -> ($389) ~~$589~~
-  3. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#2-ultimate-tiktok-scraper-uts">Ultimate TikTok Scraper (UTS)</a> -> ($389) ~~$589~~
-  4. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers?tab=readme-ov-file#3-ultimate-twitter-scraper-uxs">Ultimate X (formerly Twitter) Scraper (UXS)</a> -> ($389) ~~$589~~
+  1. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers/tree/master?tab=readme-ov-file#1-ultimate-facebook-scraper-ufs">Ultimate Facebook Scraper (UFS)</a> -> ($389) ~~$589~~
+  2. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers/tree/master?tab=readme-ov-file#2-ultimate-instagram-scraper-uis">Ultimate Instagram Scraper (UIS)</a> -> ($389) ~~$589~~
+  3. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers/tree/master?tab=readme-ov-file#3-ultimate-tiktok-scraper-uts">Ultimate TikTok Scraper (UTS)</a> -> ($389) ~~$589~~
+  4. <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers/tree/master?tab=readme-ov-file#4-ultimate-x-formerly-twitter-scraper-uxs">Ultimate X (formerly Twitter) Scraper (UXS)</a> -> ($389) ~~$589~~
 </b>
 
 ## Bundle Offer 📣
@@ -302,7 +302,7 @@ For more details, feel free to reach me at [haris.muneer5@gmail.com](haris.munee
  <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers"><img align="right" src="https://user-images.githubusercontent.com/30947706/79588950-17515780-80ee-11ea-8f66-e26da49fa052.png" alt="Ultimate Social Scrapers" width="200"/></a> - Maker of Things</h1> 
 
 
-## Creator of <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers">Ultimate Social Scrapers</a> (leading tools to collect Facebook, Instagram, TikTok and Twitter data for research, analysis and lead generation) 
+## Creator of <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers">Ultimate Social Scrapers</a> (leading tools to collect Facebook, Instagram, TikTok, and Twitter data for research, analysis and lead generation) 
 
 <hr>
 
