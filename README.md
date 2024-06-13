@@ -15,13 +15,15 @@ Scrape valuable user data for lead generation, research studies, targeted market
 
 <hr>
 
-<h3 align="center">Sounds interesting? <a href="#price-">Purchase 🤝</a></h3>
+<h3 align="center">🔥 Limited Time up to 50% discount offer valid till Monday. Details below -> <a href="#price-">Pricing 🤝</a></h3>
 
 <hr>
 
 ## Quick Links
 
   - [Awards/Achievements 🏆](#awardsachievements-)
+    - [Top choice for Facebook, Instagram, TikTok and X (formerly Twitter) Scraping](#top-choice-for-facebook-instagram-tiktok-and-x-formerly-twitter-scraping)
+    - [2nd Spot in Top Trending Repositories on GitHub](#2nd-spot-in-top-trending-repositories-on-github-)
   - [Details of Ultimate Social Scrapers 📜](#details-of-ultimate-social-scrapers-)
     - [1. Ultimate Facebook Scraper (UFS)](#1-ultimate-facebook-scraper-ufs)
     - [2. Ultimate Instagram Scraper (UIS)](#2-ultimate-instagram-scraper-uis)
