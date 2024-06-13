@@ -156,11 +156,11 @@ Ultimate Instagram Scraper (UIS) scrapes the following sections from Instagram:
 
 #### 1) User Profile / Page
 - posts available on the user's timeline including name/profile link of post owner, post text, date posted, media links, likes (total count, list of people who liked the post), comments (total count, comments text along with list of people who commented)
-- about/contact info including email, phone number, WhatsApp number, location, account information, etc  
+- about/contact info including email, phone number, WhatsApp number, location, account information, websites, etc  
 - followers and following users list with detailed about/contact info
 - user reels/stories
-- photos (uploaded and tagged)
-- videos (uploaded and tagged)
+- photos 
+- videos 
 - profile pic and cover photo
 
 All the data is scraped/downloaded in an organized format (CSV, JSON, and XML formats) for ease of analysis and to be readily utilized. <b> Let's get things done? <a href="#price-">Purchase 🤝</a></b>
@@ -234,23 +234,24 @@ UFS is a great software developed by Haris and excellent service that is worth b
 and many more satisfied customers.. 
 
 # Price 💳  
-<b><i>🔥 Limited Time **35% discount on each scraper** valid till Monday. Feel free to email me at haris.muneer5@gmail.com for the latest updates or any queries. 🔥 </i></b>
+<b><i>🔥 Limited Time upto 50% discount offer valid till Monday. Feel free to email me at haris.muneer5@gmail.com for the latest updates or any queries. 🔥 </i></b>
 
 Following are the discounted prices of each scraper (you can choose to buy any one, two, three or all 4 scrapers as well):
-<b>
   
-  1. <a href="#1-ultimate-facebook-scraper-ufs">Ultimate Facebook Scraper (UFS)</a> -> ($389) ~~$589~~
-  2. <a href="#2-ultimate-instagram-scraper-uis">Ultimate Instagram Scraper (UIS)</a> -> ($389) ~~$589~~
-  3. <a href="#3-ultimate-tiktok-scraper-uts">Ultimate TikTok Scraper (UTS)</a> -> ($389) ~~$589~~
-  4. <a href="#4-ultimate-x-formerly-twitter-scraper-uxs">Ultimate X (formerly Twitter) Scraper (UXS)</a> -> ($389) ~~$589~~
-</b>
+  1. <a href="#1-ultimate-facebook-scraper-ufs">Ultimate Facebook Scraper (UFS)</a> -> **($389)** ~~$589~~ -> **_35% discount_**
+  2. <a href="#2-ultimate-instagram-scraper-uis">Ultimate Instagram Scraper (UIS)</a> -> **($389)** ~~$589~~ -> **_35% discount_**
+  3. <a href="#3-ultimate-tiktok-scraper-uts">Ultimate TikTok Scraper (UTS)</a> -> **($389)** ~~$589~~ -> **_35% discount_**
+  4. <a href="#4-ultimate-x-formerly-twitter-scraper-uxs">Ultimate X (formerly Twitter) Scraper (UXS)</a> -> **($389)** ~~$589~~ -> **_35% discount_**
 
-## 🌟 Bundle Offer 🌟
-If you choose to **purchase all four scrapers bundle** together, you can enjoy an **additional 10% discount on top of the existing 35% discount making it a 45% discount**, i.e. further lowering the total price of 4 scrapers bundle from $2350 to just **$1349**.
+**🌟 Bundle Offers 🌟**
+  1. Buy any 2 scrapers for -> **($699)** ~~$1179~~ -> **_🌟 40% discount 🌟_**
+  2. Buy any 3 scrapers for -> **($979)** ~~$1769~~ -> **_🌟 45% discount 🌟_**
+  3. Buy all 4 scrapers for -> **($1179)** ~~$2359~~ -> **_🌟 50% discount 🌟_**
+
 
 This is a <b>one-time payment</b> for lifetime access. I will be available for any maintenance/support required for free to provide you with the best customer service so you can solely focus on achieving your business outcomes.
 
-**Ready to get the discounted offer 🤝? Check the <a href="#payment-method-">payment methods</a> below ⬇️**
+<b>Ready to get the discounted offer 🤝? Check the <a href="#payment-methods-">payment methods</a> below ⬇️</b>
 
 **Installation Method:** You can buy the software today and schedule the installation for any other day when it is convenient for you.</b></i> The purchase includes a one-on-one <b>virtual meeting</b> through which I will install this Software on your computer, train you on its usage, and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installation steps in case you prefer to do the installation independently. 
 
