@@ -271,10 +271,10 @@ For payment, you can follow any of these supported methods:
 
 There are separate product purchase links for each bundle offer:
 
-1. Buy any 1 scraper -> [Link](https://buy.paddle.com/checkout/che_01j1pqrh98tadp4zsjn5cj2h2r)
-2. Buy any 2 scrapers -> [Link](https://buy.paddle.com/checkout/che_01j1pqz3fzygjnttv2fysyce47)
-3. Buy any 3 scrapers -> [Link](https://buy.paddle.com/checkout/che_01j1pr0947mrfe1g2fxvfe7e51) 
-4. Buy all 4 scrapers -> [Link](https://buy.paddle.com/checkout/che_01j1pr1acw1t4hmecn70km84cw) 
+1. Buy any 1 scraper -> [Click here](https://buy.paddle.com/checkout/che_01j1pqrh98tadp4zsjn5cj2h2r)
+2. Buy any 2 scrapers -> [Click here](https://buy.paddle.com/checkout/che_01j1pqz3fzygjnttv2fysyce47)
+3. Buy any 3 scrapers -> [Click here](https://buy.paddle.com/checkout/che_01j1pr0947mrfe1g2fxvfe7e51) 
+4. Buy all 4 scrapers -> [Click here](https://buy.paddle.com/checkout/che_01j1pr1acw1t4hmecn70km84cw) 
 
 <hr>
 
