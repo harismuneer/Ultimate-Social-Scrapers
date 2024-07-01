@@ -237,6 +237,7 @@ and many more satisfied customers..
 
 # Price 💳  
 <b><i>🔥 Limited Time upto 50% discount offer valid till Monday. Feel free to email me at haris.muneer5@gmail.com for the latest updates or any queries. 🔥 </i></b>
+<hr>
 
 **🌟 Bundle Offers 🌟**
 
@@ -247,11 +248,15 @@ We have developed a separate scraper for each of these four platforms: Facebook,
   3. Buy any 3 scrapers for -> **($979)** ~~$1769~~ -> **_🌟 45% discount 🌟_**
   4. Buy all 4 scrapers for -> **($1179)** ~~$2359~~ -> **_🌟 50% discount 🌟_**
 
-**Important Note:** This is a <b>one-time payment</b> for lifetime access. I will be available for any maintenance/support required for free to provide you with the best customer service so you can solely focus on achieving your business outcomes.
-
 <b>Ready to get the discounted offer 🤝? Check the <a href="#payment-methods-">payment methods</a> below ⬇️</b>
 
-**Installation Method:** You can buy the software today and schedule the installation for any other day when it is convenient for you.</b></i> The purchase includes a one-on-one <b>virtual meeting</b> through which I will install this Software on your computer, train you on its usage, and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installation steps in case you prefer to do the installation independently. 
+<hr>
+
+**Important Notes** 
+
+1. **Free Support:** Unlike other tools in the market that charge you monthly or based on the volume of data scraped, this is a <b>one-time payment</b> for lifetime access. I will be available for any maintenance/support required for free to provide you with the best customer service so you can solely focus on achieving your business outcomes.
+
+2. **Installation Method:** You can buy the software today and schedule the installation for any other day when it is convenient for you.</b></i> The purchase includes a one-on-one <b>virtual meeting</b> through which I will install this Software on your computer, train you on its usage, and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installation steps in case you prefer to do the installation independently. 
 
 # Payment Methods 🤝
 Note: After the payment, please share a screenshot of the payment receipt at haris.muneer5@gmail.com to receive your licensed version of the software. If you face any issues in making a payment or would like to use some other payment method, please feel free to contact me at haris.muneer5@gmail.com Thank you for your support!
