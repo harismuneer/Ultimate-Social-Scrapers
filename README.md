@@ -276,7 +276,7 @@ There are separate product purchase links for each bundle offer:
 ## Method 2: Using Wise Platform
 <a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/d4f82cc5-4cac-4c08-af84-7f0331fe2143" width="60" al style="margin:4px 4px"/></a>
 
-1. Free signup at <b>[Wise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transaction fee on the payment)
+1. Free signup at <b>[Wise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95. (Signing up through this link will save you from any transaction fee on the payment)
 2. Select the <b>sending currency to be USD or an equivalent amount of USD in your supported local currency if that's more convenient for you</b>. (e.g. let's say you are from China, then you can transfer the equivalent USD amount in Chinese Yuan on Wise). It supports multiple payment options (credit card, debit card, wire transfer, etc)
 3. Select the 'Someone else' option, then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients and the IBAN is: PK37FAYS3241307000000167
 4. Choose the reason for transfer to be 'General' and in the reference section, you can mention your email.
