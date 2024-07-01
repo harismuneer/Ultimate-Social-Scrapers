@@ -268,10 +268,10 @@ For payment, you can follow any of these supported methods:
 
 There are separate product purchase links for each bundle offer:
 
-1. Buy any 1 scraper -> <a href="https://buy.paddle.com/checkout/che_01j1ptz3b61q2yc9tab2ckqwcz" target="_blank">Click here</a>
-2. Buy any 2 scrapers -> <a href="https://buy.paddle.com/checkout/che_01j1pqz3fzygjnttv2fysyce47" target="_blank">Click here</a>
-3. Buy any 3 scrapers -> <a href="https://buy.paddle.com/checkout/che_01j1pr0947mrfe1g2fxvfe7e51" target="_blank">Click here</a>
-4. Buy all 4 scrapers -> <a href="https://buy.paddle.com/checkout/che_01j1pr1acw1t4hmecn70km84cw" target="_blank">Click here</a>
+1. Buy any 1 scraper -> <a href="https://www.cyfylabs.com/purchase?priceId=pri_01j1g38sa4ge6w0py8tzkstndm&quantity=1&discountCode=1SCRAPER" target="_blank">Click here</a>
+2. Buy any 2 scrapers -> <a href="https://www.cyfylabs.com/purchase?priceId=pri_01j1pg8770xg90gca9q3z3awdz&quantity=1&discountCode=2SCRAPERS" target="_blank">Click here</a>
+3. Buy any 3 scrapers -> <a href="https://www.cyfylabs.com/purchase?priceId=pri_01j1pgafwfz5f16pgsb9t9q9r3&quantity=1&discountCode=3SCRAPERS" target="_blank">Click here</a>
+4. Buy all 4 scrapers -> <a href="https://www.cyfylabs.com/purchase?priceId=pri_01j1pgba399v2pxar6wsmakhx1&quantity=1&discountCode=4SCRAPERS" target="_blank">Click here</a>
 
 <hr>
 
