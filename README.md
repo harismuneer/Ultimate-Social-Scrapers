@@ -278,6 +278,7 @@ There are separate product purchase links for each bundle offer:
 ## Method 2: Using Wise Platform
 <a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/d4f82cc5-4cac-4c08-af84-7f0331fe2143" width="60" style="margin:4px 4px" alt = "Pay with Wise"/></a>
 <a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/e8f7fedb-b6df-48df-8eed-8f67f7497760" width="50" style="margin:4px 4px" alt = "Pay with Wire Transfer"/></a>
+<a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/f6b32fba-872a-4e0e-9465-f2558a99fd55" width="60" style="margin:4px 4px" alt = "Pay with Bank Transfer"/></a>
 <a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/e3a07d8d-2c46-4787-b041-8ae5aa0f58cb" width="30" style="margin:4px 4px" alt = "Pay with Card"/></a>
 
 
@@ -299,6 +300,7 @@ There are separate product purchase links for each bundle offer:
 
 ## Method 4: Using Bank/Wire Transfer
 <a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/e8f7fedb-b6df-48df-8eed-8f67f7497760" width="60" style="margin:4px 4px" alt = "Pay with Wire Transfer"/></a>
+<a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/f6b32fba-872a-4e0e-9465-f2558a99fd55" width="60" style="margin:4px 4px" alt = "Pay with Bank Transfer"/></a>
 
 You can do a hassle-free bank transfer to my USA account:
 
