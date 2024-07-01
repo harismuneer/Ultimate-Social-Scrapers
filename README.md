@@ -238,42 +238,62 @@ and many more satisfied customers..
 # Price 💳  
 <b><i>🔥 Limited Time upto 50% discount offer valid till Monday. Feel free to email me at haris.muneer5@gmail.com for the latest updates or any queries. 🔥 </i></b>
 
-Following are the discounted prices of each scraper (you can choose to buy any one, two, three or all 4 scrapers as well):
-  
-  1. <a href="#1-ultimate-facebook-scraper-ufs">Ultimate Facebook Scraper (UFS)</a> -> **($389)** ~~$589~~ -> **_35% discount_**
-  2. <a href="#2-ultimate-instagram-scraper-uis">Ultimate Instagram Scraper (UIS)</a> -> **($389)** ~~$589~~ -> **_35% discount_**
-  3. <a href="#3-ultimate-tiktok-scraper-uts">Ultimate TikTok Scraper (UTS)</a> -> **($389)** ~~$589~~ -> **_35% discount_**
-  4. <a href="#4-ultimate-x-formerly-twitter-scraper-uxs">Ultimate X (formerly Twitter) Scraper (UXS)</a> -> **($389)** ~~$589~~ -> **_35% discount_**
-
 **🌟 Bundle Offers 🌟**
-  1. Buy any 2 scrapers for -> **($699)** ~~$1179~~ -> **_🌟 40% discount 🌟_**
-  2. Buy any 3 scrapers for -> **($979)** ~~$1769~~ -> **_🌟 45% discount 🌟_**
-  3. Buy all 4 scrapers for -> **($1179)** ~~$2359~~ -> **_🌟 50% discount 🌟_**
 
+We have developed a separate scraper for each of these four platforms: Facebook, Instagram, Twitter (X), TikTok. Therefore, you can choose to buy any one, two, three or all 4 scrapers as well:
 
-This is a <b>one-time payment</b> for lifetime access. I will be available for any maintenance/support required for free to provide you with the best customer service so you can solely focus on achieving your business outcomes.
+  1. Buy any 1 scraper for -> **($389)** ~~$589~~ -> **_🌟 35% discount 🌟_**
+  2. Buy any 2 scrapers for -> **($699)** ~~$1179~~ -> **_🌟 40% discount 🌟_**
+  3. Buy any 3 scrapers for -> **($979)** ~~$1769~~ -> **_🌟 45% discount 🌟_**
+  4. Buy all 4 scrapers for -> **($1179)** ~~$2359~~ -> **_🌟 50% discount 🌟_**
+
+**Important Note:** This is a <b>one-time payment</b> for lifetime access. I will be available for any maintenance/support required for free to provide you with the best customer service so you can solely focus on achieving your business outcomes.
 
 <b>Ready to get the discounted offer 🤝? Check the <a href="#payment-methods-">payment methods</a> below ⬇️</b>
 
 **Installation Method:** You can buy the software today and schedule the installation for any other day when it is convenient for you.</b></i> The purchase includes a one-on-one <b>virtual meeting</b> through which I will install this Software on your computer, train you on its usage, and share best practices for scraping. The software also comes with an instructions file with easy-to-follow installation steps in case you prefer to do the installation independently. 
 
 # Payment Methods 🤝
-For payment, you can follow these simple steps:
+Note: After the payment, please share a screenshot of the payment receipt at haris.muneer5@gmail.com to receive your licensed version of the software. If you face any issues in making a payment or would like to use some other payment method, please feel free to contact me at haris.muneer5@gmail.com Thank you for your support!
 
-## Method 1: Using Wise Platform
+For payment, you can follow any of these supported methods:
+
+## Method 1: Using PayPal, Visa, Mastercard, American Express
+<a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/345e9f34-e18f-4c47-9eca-5856a05e9a3f" width="40" style="margin:4px 4px" alt = "Pay with PayPal"/></a>
+<a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/2470128c-342f-4e26-b040-91e20cc93474" width="40" style="margin:4px 4px" alt = "Pay with Visa"/></a>
+<a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/0fcea07d-25f1-4aa3-842a-a25dc59bf6a9" width="40" style="margin:4px 4px" alt = "Pay with Mastercard"/></a>
+<a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/fec7e9f6-7769-44fc-b620-1593a2fb9e6f" width="40" style="margin:4px 4px" alt = "Pay with American Express"/></a>
+
+There are separate product purchase links for each bundle offer:
+
+1. Buy any 1 scraper -> [Link](https://buy.paddle.com/checkout/che_01j1pqrh98tadp4zsjn5cj2h2r)
+2. Buy any 2 scrapers -> [Link](https://buy.paddle.com/checkout/che_01j1pqz3fzygjnttv2fysyce47)
+3. Buy any 3 scrapers -> [Link](https://buy.paddle.com/checkout/che_01j1pr0947mrfe1g2fxvfe7e51) 
+4. Buy all 4 scrapers -> [Link](https://buy.paddle.com/checkout/che_01j1pr1acw1t4hmecn70km84cw) 
+
+<hr>
+
+## Method 2: Using Wise Platform
+<a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/d4f82cc5-4cac-4c08-af84-7f0331fe2143" width="60" al style="margin:4px 4px"/></a>
 
 1. Free signup at <b>[Wise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transaction fee on the payment)
 2. Select the <b>sending currency to be USD or an equivalent amount of USD in your supported local currency if that's more convenient for you</b>. (e.g. let's say you are from China, then you can transfer the equivalent USD amount in Chinese Yuan on Wise). It supports multiple payment options (credit card, debit card, wire transfer, etc)
 3. Select the 'Someone else' option, then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients and the IBAN is: PK37FAYS3241307000000167
 4. Choose the reason for transfer to be 'General' and in the reference section, you can mention your email.
-  
-## Method 2: Using Crypto
 
-1. You can pay in USDT (USD equivalent) and the chain is Tron (TRC20). 
-2. The Wallet is a Binance Wallet. Wallet address is: TL3zjuqf2KmgSVkQnGzVq5i2Fk6VF3iauQ
+<hr>
+
+## Method 3: Using Crypto
+<a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/f966047b-3011-43d4-8384-0591e3590028" width="60" al style="margin:4px 4px" alt = "Pay with Crypto"/></a>
+
+1. You can pay in USDT (USD equivalent) and the chain is Tron (TRC20). Incase you would like to pay with some other crypto coin, please send me an email at haris.muneer5@gmail.com.
+2. The Wallet is a Binance Wallet. My wallet address for USDT coin is: TL3zjuqf2KmgSVkQnGzVq5i2Fk6VF3iauQ
 3. [Sample Screenshot](https://user-images.githubusercontent.com/30947706/138526456-0f82754f-2d4a-48f2-9898-f09721143913.png)
 
-## Method 3: Using Bank/Wire Transfer
+<hr>
+
+## Method 4: Using Bank/Wire Transfer
+<a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/e8f7fedb-b6df-48df-8eed-8f67f7497760" width="60" style="margin:4px 4px" alt = "Pay with Wire Transfer"/></a>
 
 You can do a hassle-free bank transfer to my USA account:
 
@@ -290,9 +310,6 @@ Account type: Checking
 Bank address: 89-16 Jamaica Ave, Woodhaven NY 11421, United States
 
 Bank name: COMMUNITY FEDERAL SAVINGS BANK
-
-
-After the payment, please share a screenshot of the payment receipt at <b>haris.muneer5@gmail.com</b> to receive your licensed version of the software. If you face any issues in making a payment or would like to use some other payment method, please feel free to contact me at <b>haris.muneer5@gmail.com</b> Thank you for your support!
 
 <hr>
 
