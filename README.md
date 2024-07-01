@@ -287,7 +287,9 @@ Account number: 8312574362
 
 Account type: Checking
 
-Bank address: 30 W. 26th Street, Sixth Floor, New York NY 10010, United States
+Bank address: 89-16 Jamaica Ave, Woodhaven NY 11421, United States
+
+Bank name: COMMUNITY FEDERAL SAVINGS BANK
 
 
 After the payment, please share a screenshot of the payment receipt at <b>haris.muneer5@gmail.com</b> to receive your licensed version of the software. If you face any issues in making a payment or would like to use some other payment method, please feel free to contact me at <b>haris.muneer5@gmail.com</b> Thank you for your support!
