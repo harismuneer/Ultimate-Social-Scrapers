@@ -263,25 +263,25 @@ Note: After the payment, please share a screenshot of the payment receipt at har
 
 For payment, you can follow any of these supported methods:
 
-## Method 1: Using PayPal, Visa, Mastercard, American Express
-<a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/345e9f34-e18f-4c47-9eca-5856a05e9a3f" width="40" style="margin:4px 4px" alt = "Pay with PayPal"/></a>
-<a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/2470128c-342f-4e26-b040-91e20cc93474" width="40" style="margin:4px 4px" alt = "Pay with Visa"/></a>
-<a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/0fcea07d-25f1-4aa3-842a-a25dc59bf6a9" width="40" style="margin:4px 4px" alt = "Pay with Mastercard"/></a>
-<a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/fec7e9f6-7769-44fc-b620-1593a2fb9e6f" width="40" style="margin:4px 4px" alt = "Pay with American Express"/></a>
+## Method 1: Using PayPal, Google Pay, Apple Pay, Ali Pay, Visa, Mastercard, American Express, iDEAL, Bancontact
+<a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/27a08b37-916a-440d-be9a-15efe5790c9f" height="50" alt = "Paddle Payment Options"/></a>
 
 There are separate product purchase links for each bundle offer:
 
-1. Buy any 1 scraper -> [Click here](https://buy.paddle.com/checkout/che_01j1pqrh98tadp4zsjn5cj2h2r)
-2. Buy any 2 scrapers -> [Click here](https://buy.paddle.com/checkout/che_01j1pqz3fzygjnttv2fysyce47)
-3. Buy any 3 scrapers -> [Click here](https://buy.paddle.com/checkout/che_01j1pr0947mrfe1g2fxvfe7e51) 
-4. Buy all 4 scrapers -> [Click here](https://buy.paddle.com/checkout/che_01j1pr1acw1t4hmecn70km84cw) 
+1. Buy any 1 scraper -> <a href="https://buy.paddle.com/checkout/che_01j1pqrh98tadp4zsjn5cj2h2r" target="_blank">Click here</a>
+2. Buy any 2 scrapers -> <a href="https://buy.paddle.com/checkout/che_01j1pqz3fzygjnttv2fysyce47" target="_blank">Click here</a>
+3. Buy any 3 scrapers -> <a href="https://buy.paddle.com/checkout/che_01j1pr0947mrfe1g2fxvfe7e51" target="_blank">Click here</a>
+4. Buy all 4 scrapers -> <a href="https://buy.paddle.com/checkout/che_01j1pr1acw1t4hmecn70km84cw" target="_blank">Click here</a>
 
 <hr>
 
 ## Method 2: Using Wise Platform
-<a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/d4f82cc5-4cac-4c08-af84-7f0331fe2143" width="60" al style="margin:4px 4px"/></a>
+<a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/d4f82cc5-4cac-4c08-af84-7f0331fe2143" width="60" style="margin:4px 4px" alt = "Pay with Wise"/></a>
+<a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/e8f7fedb-b6df-48df-8eed-8f67f7497760" width="50" style="margin:4px 4px" alt = "Pay with Wire Transfer"/></a>
+<a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/e3a07d8d-2c46-4787-b041-8ae5aa0f58cb" width="30" style="margin:4px 4px" alt = "Pay with Card"/></a>
 
-1. Free signup at <b>[Wise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95. (Signing up through this link will save you from any transaction fee on the payment)
+
+1. Free signup at <b><a href="https://transferwise.com/invite/u/harism95" target="_blank">Wise</a></b> using this link: https://transferwise.com/invite/u/harism95. (Signing up through this link will save you from any transaction fee on the payment)
 2. Select the <b>sending currency to be USD or an equivalent amount of USD in your supported local currency if that's more convenient for you</b>. (e.g. let's say you are from China, then you can transfer the equivalent USD amount in Chinese Yuan on Wise). It supports multiple payment options (credit card, debit card, wire transfer, etc)
 3. Select the 'Someone else' option, then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients and the IBAN is: PK37FAYS3241307000000167
 4. Choose the reason for transfer to be 'General' and in the reference section, you can mention your email.
