@@ -241,7 +241,7 @@ and many more satisfied customers..
 
 **🌟 Bundle Offers 🌟**
 
-We have developed a separate scraper for each of these four platforms: Facebook, Instagram, Twitter (X), TikTok. Therefore, you can choose to buy any one, two, three or all 4 scrapers as well:
+We have developed a separate scraper for each of these four platforms: Facebook, Instagram, Twitter (X), TikTok. You have the flexibility to purchase any combination: one, two, three, or all four scrapers, based on your needs:
 
   1. Buy any 1 scraper for -> **($389)** ~~$589~~ -> **_🌟 35% discount 🌟_**
   2. Buy any 2 scrapers for -> **($699)** ~~$1179~~ -> **_🌟 40% discount 🌟_**
