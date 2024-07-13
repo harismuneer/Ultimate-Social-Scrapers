@@ -202,7 +202,11 @@ Ultimate X (formerly Twitter) Scraper (UXS) scrapes the following sections from 
 #### 1) User Profile / Page
 - tweets available on the user's profile including name/profile link of tweet owner, tweet text, date posted, media links, likes (total count), replies/comments (total count), reposts (total count)
 - about/contact info including email, phone number, WhatsApp number, location, account information like total followers, following etc
+- followers and following accounts list
 - profile picture and cover photo
+
+#### 2) Scraping Data via Twitter Search Bar
+This option allows you to scrape Twitter data (Posts, People etc) using the Twitter search bar i.e. you can define the search keywords and the software will scrape data based on those search terms. e.g. you can search for all posts containing a particular keyword etc. Moreover, you can further search based on advanced filters like post location, post date range, etc.
 
 All the data is scraped/downloaded in an organized format (CSV, JSON, and XML formats) for ease of analysis and to be readily utilized. <b> Let's get things done? <a href="#price-">Purchase 🤝</a></b>
 
