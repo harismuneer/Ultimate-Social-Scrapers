@@ -267,19 +267,7 @@ We have developed a separate scraper for each of these four platforms: Facebook,
 
 **Payment Steps:** For payment, you can follow any of these supported methods:
 
-## Method 1: Using PayPal, Google Pay, Apple Pay, Ali Pay, Visa, Mastercard, American Express, iDEAL, Bancontact
-<a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/27a08b37-916a-440d-be9a-15efe5790c9f" height="50" alt = "Paddle Payment Options"/></a>
-
-There are separate product purchase links for each bundle offer:
-
-1. Buy any 1 scraper -> <a href="https://www.cyfylabs.com/purchase?priceId=pri_01j1g38sa4ge6w0py8tzkstndm&quantity=1&discountCode=1SCRAPER" target="_blank">Click here</a>
-2. Buy any 2 scrapers -> <a href="https://www.cyfylabs.com/purchase?priceId=pri_01j1pg8770xg90gca9q3z3awdz&quantity=1&discountCode=2SCRAPERS" target="_blank">Click here</a>
-3. Buy any 3 scrapers -> <a href="https://www.cyfylabs.com/purchase?priceId=pri_01j1pgafwfz5f16pgsb9t9q9r3&quantity=1&discountCode=3SCRAPERS" target="_blank">Click here</a>
-4. Buy all 4 scrapers -> <a href="https://www.cyfylabs.com/purchase?priceId=pri_01j1pgba399v2pxar6wsmakhx1&quantity=1&discountCode=4SCRAPERS" target="_blank">Click here</a>
-
-<hr>
-
-## Method 2: Using Wise Platform
+## Method 1: Using Wise Platform
 <a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/d4f82cc5-4cac-4c08-af84-7f0331fe2143" width="60" style="margin:4px 4px" alt = "Pay with Wise"/></a>
 <a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/e8f7fedb-b6df-48df-8eed-8f67f7497760" width="50" style="margin:4px 4px" alt = "Pay with Wire Transfer"/></a>
 <a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/f6b32fba-872a-4e0e-9465-f2558a99fd55" width="60" style="margin:4px 4px" alt = "Pay with Bank Transfer"/></a>
@@ -293,7 +281,7 @@ There are separate product purchase links for each bundle offer:
 
 <hr>
 
-## Method 3: Using Crypto
+## Method 2: Using Crypto
 <a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/f966047b-3011-43d4-8384-0591e3590028" width="60" al style="margin:4px 4px" alt = "Pay with Crypto"/></a>
 
 1. You can pay in USDT (USD equivalent) and the chain is Tron (TRC20). Incase you would like to pay with some other crypto coin, please send me an email at haris.muneer5@gmail.com.
@@ -302,7 +290,7 @@ There are separate product purchase links for each bundle offer:
 
 <hr>
 
-## Method 4: Using Bank/Wire Transfer
+## Method 3: Using Bank/Wire Transfer
 <a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/e8f7fedb-b6df-48df-8eed-8f67f7497760" width="60" style="margin:4px 4px" alt = "Pay with Wire Transfer"/></a>
 <a href='#'><img src = "https://github.com/harismuneer/ultimate-social-scrapers-code/assets/30947706/f6b32fba-872a-4e0e-9465-f2558a99fd55" width="60" style="margin:4px 4px" alt = "Pay with Bank Transfer"/></a>
 
