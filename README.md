@@ -323,7 +323,6 @@ Bank name: COMMUNITY FEDERAL SAVINGS BANK
 # Other Notes 🗒️
 - The default language should be set to English for this tool to work properly. The interface needs to be in English, **the post text and all other data can be scraped in any language** :)
 - If there's any specific use case of yours that the tools don't support currently, feel free to email me at [haris.muneer5@gmail.com](haris.muneer5@gmail.com) and we will discuss it further.
-- It may be hard to utilize these tools for massive scraping (thousands of posts or friends etc) at a fast pace. It is possible, but the scraping rate would be slower in that scenario.
 - Although Facebook/Instagram/X (formerly Twitter) have taken aggressive measures against scraping so sometimes the account you are using to scrape data might get temporarily blocked but there are ways to circumvent this issue which I will share during the installation meeting that have allowed my customers to scrape decent amount of data without any such issues.
 
 The developers of this software won't be responsible for any misuse of data collected using the social scrapers. These tools have been used by many researchers, marketers, business owners, and open-source intelligence (OSINT) analysts.
