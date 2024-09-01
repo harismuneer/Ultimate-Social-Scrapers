@@ -6,8 +6,8 @@
 
 <div align = "center">
 <h1>Ultimate Social Scrapers</h1>
-<h1>Facebook, Instagram, TikTok, X (formerly Twitter)</h1>
-<p>Maximize your business's potential and gain a competitive edge with our <b>four separate</b> Social Media Scrapers for: <br><b>Facebook, Instagram, TikTok and X (formerly Twitter)</b>
+<h1>Facebook, Instagram, X (formerly Twitter)</h1>
+<p>Maximize your business's potential and gain a competitive edge with our <b>three separate</b> Social Media Scrapers for: <br><b>Facebook, Instagram, and X (formerly Twitter)</b>
 
 Scrape valuable user data for lead generation, research studies, targeted marketing, sentiment analysis, data-driven decision-making, and more. 
 </p>
@@ -22,13 +22,12 @@ Scrape valuable user data for lead generation, research studies, targeted market
 ## Quick Links
 
   - [Awards/Achievements 🏆](#awardsachievements-)
-    - [Top choice for Facebook, Instagram, TikTok and X (formerly Twitter) Scraping](#top-choice-for-facebook-instagram-tiktok-and-x-formerly-twitter-scraping)
+    - [Top choice for Facebook, Instagram, and X (formerly Twitter) Scraping](#top-choice-for-facebook-instagram-and-x-formerly-twitter-scraping)
     - [2nd Spot in Top Trending Repositories on GitHub](#2nd-spot-in-top-trending-repositories-on-github-)
   - [Details of Ultimate Social Scrapers 📜](#details-of-ultimate-social-scrapers-)
     - [1. Ultimate Facebook Scraper (UFS)](#1-ultimate-facebook-scraper-ufs)
     - [2. Ultimate Instagram Scraper (UIS)](#2-ultimate-instagram-scraper-uis)
-    - [3. Ultimate TikTok Scraper (UTS)](#3-ultimate-tiktok-scraper-uts)
-    - [4. Ultimate X (formerly Twitter) Scraper (UXS)](#4-ultimate-x-formerly-twitter-scraper-uxs)
+    - [3. Ultimate X (formerly Twitter) Scraper (UXS)](#3-ultimate-x-formerly-twitter-scraper-uxs)
   - [Testimonials 💯 👍](#testimonials--)
   - [Price 💳](#price-)
   - [Payment Methods 🤝](#payment-methods-)
@@ -36,7 +35,7 @@ Scrape valuable user data for lead generation, research studies, targeted market
   
 ---
 
-<h2 align="center">Top choice for Facebook, Instagram, TikTok and X (formerly Twitter) Scraping</h2>
+<h2 align="center">Top choice for Facebook, Instagram and X (formerly Twitter) Scraping</h2>
 <p align="center">
   <br>
   <a href='#'>
@@ -167,29 +166,7 @@ Ultimate Instagram Scraper (UIS) scrapes the following sections from Instagram:
 
 All the data is scraped/downloaded in an organized format (CSV, JSON, and XML formats) for ease of analysis and to be readily utilized. <b> Let's get things done? <a href="#price-">Purchase 🤝</a></b>
 
-<h2>3. Ultimate TikTok Scraper (UTS)</h2>
-
-<p align="center">
-Ultimate TikTok Scraper (UTS) supports data collection from all major TikTok sections including user profiles/pages, about and contact info, followers/following list, videos (and comments), playlists, likes, and a lot more. Please refer below for detailed features list.
-</p>
-
-### Features 🚀
-
-Ultimate TikTok Scraper (UTS) scrapes the following sections from TikTok:
-
-#### 1) User Profile / Page
-- posts (videos) available on the user's timeline including name/profile link of video owner, video description, date posted, media links, likes (total count), comments (total count, comments text along with list of people who commented), shares count, favorites count, video duration, video hashtags, video views, etc.
-- about/contact info including email, phone number, WhatsApp number, location, account information, websites, etc  
-- followers and following users list with detailed about/contact info
-- liked videos list along with video stats
-- playlists
-
-#### 2) Scraping Data via TikTok Search Bar
-This option allows you to scrape TikTok data (Videos, Accounts/User profiles, etc) using the TikTok search bar i.e. you can define the search keywords and UTS will scrape data based on those search terms. e.g. you can search for all videos containing a particular keyword or from a particular user etc. 
-
-All the data is scraped/downloaded in an organized format (CSV, JSON, and XML formats) for ease of analysis and to be readily utilized. <b> Let's get things done? <a href="#price-">Purchase 🤝</a></b>
-
-<h2>4. Ultimate X (formerly Twitter) Scraper (UXS)</h2>
+<h2>3. Ultimate X (formerly Twitter) Scraper (UXS)</h2>
 
 <p align="center">
 Ultimate X (formerly Twitter) Scraper supports data collection from X (formerly Twitter) including account information of the user and the user's tweets. Please refer below for detailed features list.
@@ -245,12 +222,11 @@ and many more satisfied customers..
 
 **🌟 Bundle Offers 🌟**
 
-We have developed a separate scraper for each of these four platforms: Facebook, Instagram, Twitter (X), TikTok. You have the flexibility to purchase any combination: one, two, three, or all four scrapers, based on your needs:
+We have developed a separate scraper for each of these four platforms: Facebook, Instagram, Twitter (X). You have the flexibility to purchase any combination: one, two, or all three scrapers, based on your needs:
 
   1. Buy any 1 scraper for -> **($389)** ~~$589~~ -> **_🌟 35% discount 🌟_**
   2. Buy any 2 scrapers for -> **($699)** ~~$1179~~ -> **_🌟 40% discount 🌟_**
   3. Buy any 3 scrapers for -> **($979)** ~~$1769~~ -> **_🌟 45% discount 🌟_**
-  4. Buy all 4 scrapers for -> **($1179)** ~~$2359~~ -> **_🌟 50% discount 🌟_**
 
 <b>Ready to get the discounted offer 🤝? Check the <a href="#payment-methods-">payment methods</a> below ⬇️</b>
 
@@ -316,7 +292,7 @@ Bank name: COMMUNITY FEDERAL SAVINGS BANK
 1. All scrapers are currently available for a lifetime deal through one-time payment at a discounted price.
 2. All scrapers can be run on any operating system including Windows, Mac OS, and Linux.
 3. All  scrapers are easy to set up & use and come with installation instructions.
-4. These are different scrapers for each social media platform separately i.e. Facebook, Instagram, TikTok, and X (formerly Twitter). You can choose to buy 1, 2, 3 or all 4 scrapers.
+4. These are different scrapers for each social media platform separately i.e. Facebook, Instagram, and X (formerly Twitter). You can choose to buy 1, 2, or all 3 scrapers.
 
 <hr>
 
@@ -335,7 +311,7 @@ For more details, feel free to reach me at [haris.muneer5@gmail.com](haris.munee
  <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers"><img align="right" src="https://user-images.githubusercontent.com/30947706/79588950-17515780-80ee-11ea-8f66-e26da49fa052.png" alt="Ultimate Social Scrapers" width="200"/></a> - Maker of Things</h1> 
 
 
-## Creator of <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers">Ultimate Social Scrapers</a> (leading tools to collect Facebook, Instagram, TikTok, and Twitter data for research, analysis and lead generation) 
+## Creator of <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers">Ultimate Social Scrapers</a> (leading tools to collect Facebook, Instagram, and Twitter data for research, analysis and lead generation) 
 
 <hr>
 
