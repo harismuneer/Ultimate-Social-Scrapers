@@ -217,7 +217,7 @@ UFS is a great software developed by Haris and excellent service that is worth b
 and many more satisfied customers.. 
 
 # Price 💳  
-<b><i>🔥 Limited Time upto 45% discount offer valid till Monday. **Update:** It has expired. Feel free to email me at haris.muneer5@gmail.com for the latest updates or any queries. 🔥 </i></b>
+<b><i>🔥 Limited Time upto 45% discount offer valid till Monday. Feel free to email me at haris.muneer5@gmail.com for the latest updates or any queries. 🔥 </i></b>
 <hr>
 
 **🌟 Bundle Offers 🌟**
