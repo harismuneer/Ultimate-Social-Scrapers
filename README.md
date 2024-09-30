@@ -15,7 +15,7 @@ Scrape valuable user data for lead generation, research studies, targeted market
 
 <hr>
 
-<h3 align="center">ℹ️ All details about the scrapers, features, and updates are now available at 👉 <a href="https://cyfylabs.com" target="_blank"><b>Cyfy Labs Website</b></a> 📌</h3>
+<h3 align="center">ℹ️ All details about the scrapers, features, and updates are now available at 👉 <a href="https://www.cyfylabs.com" target="_blank"><b>Cyfy Labs Website</b></a> 📌</h3>
 
 <hr>
 
@@ -72,7 +72,7 @@ Scrape valuable user data for lead generation, research studies, targeted market
 
 <h1 align="center">📢 Now Available at Cyfy Labs Website 📢</h1>
 
-All details about the scrapers, including features, updates, and purchase information, are now available at our official website 👉 <a href="https://cyfylabs.com" target="_blank"><b>cyfylabs.com</b></a>.
+All details about the scrapers, including features, updates, and purchase information, are now available at our official website 👉 <a href="https://www.cyfylabs.com" target="_blank"><b>cyfylabs.com</b></a>
 
 <hr>
 <hr>
@@ -83,7 +83,7 @@ All details about the scrapers, including features, updates, and purchase inform
  <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers"><img align="right" src="https://user-images.githubusercontent.com/30947706/79588950-17515780-80ee-11ea-8f66-e26da49fa052.png" alt="Ultimate Social Scrapers" width="200"/></a> - Maker of Things</h1> 
 
 
-## Creator of <a href="cyfylabs.com">Ultimate Social Scrapers</a> (leading tools to collect Facebook, Instagram, and Twitter data for research, analysis and lead generation) 
+## Creator of <a href="https://www.cyfylabs.com">Ultimate Social Scrapers</a> (leading tools to collect Facebook, Instagram, and Twitter data for research, analysis and lead generation) 
 
 <hr>
 
