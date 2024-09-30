@@ -83,7 +83,7 @@ All details about the scrapers, including features, updates, and purchase inform
  <a href="https://github.com/harismuneer/Ultimate-Social-Scrapers"><img align="right" src="https://user-images.githubusercontent.com/30947706/79588950-17515780-80ee-11ea-8f66-e26da49fa052.png" alt="Ultimate Social Scrapers" width="200"/></a> - Maker of Things</h1> 
 
 
-## Creator of <a href="https://www.cyfylabs.com">Ultimate Social Scrapers</a> (leading tools to collect Facebook, Instagram, and Twitter data for research, analysis and lead generation) 
+<p></p> Creator of <a href="https://www.cyfylabs.com">Ultimate Social Scrapers</a> (leading tools to collect Facebook, Instagram, and Twitter data for research, analysis and lead generation) </p>
 
 <hr>
 
