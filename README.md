@@ -67,3 +67,24 @@ For latest details, visit our official website: 👉 [Cyfy Labs](https://www.cyf
 
 ---
 
+<h2 align="left">🌐 Cyfy Labs Socials</h2>
+<p align="left">
+  <a href="https://www.cyfylabs.com"><img title="Visit Cyfy Labs" src="https://img.shields.io/badge/Website-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white"/></a>
+  <a href="https://www.linkedin.com/company/cyfylabs"><img title="Follow Cyfy Labs on LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="https://www.facebook.com/cyfylabs"><img title="Follow Cyfy Labs on Facebook" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/></a>
+  <a href="https://www.instagram.com/cyfy_labs"><img title="Follow Cyfy Labs on Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
+  <a href="https://x.com/cyfylabs"><img title="Follow Cyfy Labs on Twitter(X)" src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/></a>
+  <a href="https://www.youtube.com/@CyfyLabs"><img title="Subscribe to Cyfy Labs on YouTube" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/></a>
+  <a href="https://www.tiktok.com/@cyfylabs"><img title="Follow Cyfy Labs on TikTok" src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white"/></a>
+
+  
+</p>
+
+---
+
+## 🌟 **Support This Project**  
+If you found this repository helpful, please give it a ⭐️ and share it with your circle so others can benefit!  
+
+Your support helps others discover this project and motivates me to keep improving and sharing. 🚀
+
+
