@@ -1,6 +1,6 @@
 <a href="https://www.cyfylabs.com" target="_blank">
   <div align="center">
-    <img src="https://github.com/user-attachments/assets/04eb9b04-d69c-4e2c-ba0f-ed227558e67a" alt="Cyfy Labs Banner"/>
+    <img src="https://github.com/user-attachments/assets/af26e079-f7fe-4b2d-b403-cc477b7327fb" alt="Cyfy Labs Banner"/>
   </div>
 </a>
 
@@ -27,7 +27,7 @@
 
 <a href="https://www.cyfylabs.com" target="_blank">
   <div align="center">
-    <img width="893" alt="Cyfy Labs Clients" src="https://github.com/user-attachments/assets/e60982c6-70a8-419c-a961-c2b670c48b02">
+    <img width="893" alt="Cyfy Labs Clients" src="https://github.com/user-attachments/assets/d3075c01-7b5f-4a6c-aeec-2a5f442cd395">
   </div>
 </a>
 
