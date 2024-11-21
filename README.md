@@ -31,7 +31,7 @@
 
 ## 🌟 Our Products 
 
-### <a href="https://www.cyfylabs.com/products/ultimate-facebook-scraper">**Ultimate Facebook Scraper**</a>
+### 1. <a href="https://www.cyfylabs.com/products/ultimate-facebook-scraper">**Ultimate Facebook Scraper**</a>
 
 - Ultimate Facebook Scraper gathers **hundreds of data points** from key Facebook sections, including **profiles, pages, posts, groups, media** (photos, videos, reels), and **interactions**.
 - It captures detailed **account information**, **engagement metrics** (reactions, comments, shares), and **media content**, while also extracting insights from associated accounts like **followers, friends, reactors and commenters**.
@@ -41,7 +41,7 @@
 
 ---
 
-### <a href="https://www.cyfylabs.com/products/ultimate-instagram-scraper">**Ultimate Instagram Scraper**</a>
+### 2. <a href="https://www.cyfylabs.com/products/ultimate-instagram-scraper">**Ultimate Instagram Scraper**</a>
 
 - Ultimate Instagram Scraper offers **comprehensive data extraction** across key Instagram sections, including **profiles, posts, reels, stories,** and **interactions**.
 - It captures detailed **account information**, **engagement metrics** (reactions, comments), and **media content** from **photos, videos,** and **reels**.
@@ -51,7 +51,7 @@
 
 ---
 
-### <a href="https://www.cyfylabs.com/products/ultimate-twitter-scraper">**Ultimate X (Twitter) Scraper**</a>
+### 3. <a href="https://www.cyfylabs.com/products/ultimate-twitter-scraper">**Ultimate X (Twitter) Scraper**</a>
 
 - Ultimate Twitter Scraper allows for **comprehensive data extraction** across all major Twitter sections, including **user profiles, tweets, replies, retweets, quotes,** and **trends**.
 - It collects detailed **account information**, **engagement metrics**, **tweet content**, **media files**, and **interactions**, providing a **complete dataset** for analysis.
