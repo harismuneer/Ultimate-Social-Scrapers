@@ -82,9 +82,6 @@ For latest details, visit our official website: 👉 [Cyfy Labs](https://www.cyf
 
 ---
 
-## 🌟 **Support This Project**  
-If you found this repository helpful, please give it a ⭐️ and share it with your circle so others can benefit!  
-
-Your support helps others discover this project and motivates me to keep improving and sharing. 🚀
-
+## 🌟 **Spread the Word**  
+If you found our products useful, please give this repository a ⭐️ and share it with your circle so others can also benefit! 🚀
 
