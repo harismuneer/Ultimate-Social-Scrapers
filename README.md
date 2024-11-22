@@ -73,7 +73,7 @@ For latest details, visit our official website: 👉 [Cyfy Labs](https://www.cyf
   <a href="https://www.linkedin.com/company/cyfylabs"><img title="Follow Cyfy Labs on LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://www.facebook.com/cyfylabs"><img title="Follow Cyfy Labs on Facebook" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/></a>
   <a href="https://www.instagram.com/cyfy_labs"><img title="Follow Cyfy Labs on Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
-  <a href="https://x.com/cyfylabs"><img title="Follow Cyfy Labs on Twitter(X)" src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/</a>
+  <a href="https://x.com/cyfylabs"><img title="Follow Cyfy Labs on Twitter(X)" src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/></a>
   <a href="https://www.youtube.com/@CyfyLabs?sub_confirmation=1"><img title="Subscribe to Cyfy Labs on YouTube" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/></a>
   <a href="https://www.tiktok.com/@cyfylabs"><img title="Follow Cyfy Labs on TikTok" src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white"/></a>  
 </p>
