@@ -86,6 +86,7 @@ For latest details, visit our official website: 👉 [Cyfy Labs](https://www.cyf
 If you found our products useful, please give this repository a ⭐️ and share it with your circle so others can also benefit! 🚀
 
 <!-- PROFILE_INTRO_START -->
+
 <hr>
 
 <h1> <a href="#"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" alt="Waving hand" width="28"></a>
@@ -98,11 +99,11 @@ Hey there, I'm <a href="https://www.linkedin.com/in/harismuneer/">Haris Muneer</
 
 <hr>
 
-- <b>🕸️ Founder of Cyfy Labs:</b> At <a href="https://www.cyfylabs.com">Cyfy Labs</a>, we provide advanced social media scraping tools to help businesses, researchers, and marketers extract actionable data from platforms like Facebook, Instagram, and X (formerly Twitter). Our tools support lead generation, sentiment analysis, market research, and various other use cases. To learn more, visit: <a href="https://www.cyfylabs.com">www.cyfylabs.com</a>
+- <b>🕸️ Founder of Cyfy Labs:</b> At <a href="https://www.cyfylabs.com">Cyfy Labs</a>, we provide advanced social media scraping tools that enable businesses, researchers, and marketers to extract actionable insights from platforms like Facebook, Instagram, and X (formerly Twitter). Our tools are designed for use cases such as lead generation, market research, social listening, and more. Learn more at <a href="https://www.cyfylabs.com">www.cyfylabs.com</a>
 
-- <b>🌟 Open Source Advocate:</b> I’m passionate about making tech accessible. I’ve open-sourced several projects that you can explore on my <a href="https://github.com/harismuneer">GitHub</a> profile and on the <a href="https://github.com/OSSpk">Open Source Software PK</a> page.
+- <b>🌟 Open Source Advocate:</b> Passionate about making technology accessible, I’ve developed and open-sourced several software projects for web, mobile, desktop, and AI on my <a href="https://github.com/harismuneer">GitHub profile</a>. These projects have been used by thousands of learners worldwide to enhance their skills and knowledge.
 
-- <b>📫 How to Reach Me:</b> You can learn more about my skills/work at <a href="https://www.linkedin.com/in/harismuneer">LinkedIn</a>. You can also reach out via <a href="mailto:haris.muneer5@gmail.com">email</a> for collaboration or inquiries. For Cyfy Labs related queries, please reach out through the <a href="https://www.cyfylabs.com">company website</a>.
+- <b>📫 How to Reach Me:</b> To learn more about my skills and work, visit my <a href="https://www.linkedin.com/in/harismuneer">LinkedIn profile</a>. For collaboration or inquiries, feel free to reach out via <a href="mailto:haris.muneer5@gmail.com">email</a>. For Cyfy Labs related queries, please contact us through our <a href="https://www.cyfylabs.com">company website</a>.
 
 <hr>
 
@@ -121,5 +122,6 @@ Hey there, I'm <a href="https://www.linkedin.com/in/harismuneer/">Haris Muneer</
 
 
 <!-- PROFILE_INTRO_END -->
+
 
 
