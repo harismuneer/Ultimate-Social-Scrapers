@@ -58,7 +58,7 @@ Hey there, I'm <a href="https://www.linkedin.com/in/harismuneer/">Haris Muneer</
  
 - <b>🌟 Open Source Advocate:</b> Passionate about making technology accessible, I’ve developed and open-sourced several software projects for web, mobile, desktop, and AI on my <a href="https://github.com/harismuneer">GitHub profile</a>. These projects have been used by thousands of learners worldwide to enhance their skills and knowledge.
 
-- <b>📫 How to Reach Me:</b> To learn more about my skills and work, visit my <a href="https://www.linkedin.com/in/harismuneer">LinkedIn profile</a>. For collaboration or inquiries, feel free to reach out via <a href="mailto:haris.muneer5@gmail.com">email</a>. For Cyfy Labs related queries, please contact us through our <a href="https://www.cyfylabs.com">company website</a>.
+- <b>📫 How to Reach Me:</b> To learn more about my skills and work, visit my <a href="https://www.linkedin.com/in/harismuneer">LinkedIn profile</a>. For collaboration or inquiries, feel free to reach out via <a href="mailto:haris.muneer5@gmail.com">email</a>.
 
 <hr>
 
@@ -73,6 +73,7 @@ Hey there, I'm <a href="https://www.linkedin.com/in/harismuneer/">Haris Muneer</
 
 
 <!-- PROFILE_INTRO_END -->
+
 
 
 
