@@ -5,10 +5,15 @@
 </a>
 
 <div align="center">
-  <h1><a href="https://www.cyfylabs.com">Ultimate Social Scrapers by Cyfy Labs</a></h1>
-    <h2>Top Social Media Scrapers</h2>
+  <h1><a href="https://www.cyfylabs.com">Ultimate Social Scrapers by Cyfy Labs - (Now Acquired) 🚀</a></h1>
 
-  **Cyfy Labs** provides **modern social media scraping tools**. Our products enable businesses and researchers to collect **hundreds of data points** for use cases such as lead generation, sentiment analysis, market research, and more. 
+  <h2>📢 Important Update 📢</h2>
+
+  We’re excited to announce that **Cyfy Labs has been acquired!** 🎉 Thank you for all your support on this journey!  
+
+---
+
+  **Cyfy Labs** provides **modern social media scraping tools**. Our products enable businesses and researchers to collect **hundreds of public data points** for use cases such as lead generation, sentiment analysis, market research, and more. 
 
 🌐 Trusted globally, our scrapers provide the **most comprehensive social media data coverage** across all major platforms, helping you to stay ahead with **actionable**, **data-driven insights**.
 </div>
@@ -29,36 +34,6 @@
 
 ---
 
-## 🌟 Our Products 
-
-### 1. <a href="https://www.cyfylabs.com/products/ultimate-twitter-scraper">**Ultimate X (Twitter) Scraper**</a>
-
-- Ultimate Twitter Scraper allows for **comprehensive data extraction** across all major Twitter sections, including **user profiles, tweets, replies, retweets, quotes,** and **trends**.
-- It collects detailed **account information**, **engagement metrics**, **tweet content**, **media files**, and **interactions**, providing a **complete dataset** for analysis.
-- The scraper also supports **advanced search filters**, enabling precise data collection based on **keywords, hashtags, location,** and more.
-
-👉 [Explore All Features of Twitter Scraper](https://www.cyfylabs.com/products/ultimate-twitter-scraper)
-
----
-
-## 📌 Explore All Features, Updates, and Pricing
-
-For latest details, visit our official website: 👉 [Cyfy Labs](https://www.cyfylabs.com)
-
----
-
-<h2 align="left">🌐 Cyfy Labs Socials</h2>
-<p align="left">
-  <a href="https://www.cyfylabs.com"><img title="Visit Cyfy Labs" src="https://img.shields.io/badge/Website-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white"/></a>
-  <a href="https://www.linkedin.com/company/cyfylabs"><img title="Follow Cyfy Labs on LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="https://www.facebook.com/cyfylabs"><img title="Follow Cyfy Labs on Facebook" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/></a>
-  <a href="https://www.instagram.com/cyfy_labs"><img title="Follow Cyfy Labs on Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
-  <a href="https://x.com/cyfylabs"><img title="Follow Cyfy Labs on Twitter(X)" src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/></a>
-  <a href="https://www.youtube.com/@CyfyLabs?sub_confirmation=1"><img title="Subscribe to Cyfy Labs on YouTube" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/></a>
-  <a href="https://www.tiktok.com/@cyfylabs"><img title="Follow Cyfy Labs on TikTok" src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white"/></a>  
-</p>
-
----
 
 ## 🌟 **Spread the Word**  
 <a href="https://github.com/harismuneer"><img alt="views" title="Github views" src="https://komarev.com/ghpvc/?username=harismuneer&style=flat-square" width="125"/></a>
