@@ -5,7 +5,7 @@
 </a>
 
 <div align="center">
-  <h1><a href="https://www.cyfylabs.com">Ultimate Social Scrapers by Cyfy Labs - (Now Acquired) 🚀</a></h1>
+  <h1><a href="https://www.cyfylabs.com">Ultimate Social Scrapers by Cyfy Labs - (Now Acquired)</a></h1>
 
   <h2>📢 Important Update 📢</h2>
 
