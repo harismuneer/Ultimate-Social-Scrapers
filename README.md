@@ -6,9 +6,9 @@
 
 <div align="center">
   <h1><a href="https://www.cyfylabs.com">Ultimate Social Scrapers by Cyfy Labs</a></h1>
-    <h2>Top Scrapers for Facebook, Instagram, X (formerly Twitter)</h2>
+    <h2>Top Social Media Scrapers</h2>
 
-  **Cyfy Labs** provides **modern social media scraping tools** for platforms like **Facebook**, **Instagram**, and **X (Twitter)**. Our products enable businesses and researchers to collect **hundreds of data points** for use cases such as lead generation, sentiment analysis, market research, and more. 
+  **Cyfy Labs** provides **modern social media scraping tools**. Our products enable businesses and researchers to collect **hundreds of data points** for use cases such as lead generation, sentiment analysis, market research, and more. 
 
 🌐 Trusted globally, our scrapers provide the **most comprehensive social media data coverage** across all major platforms, helping you to stay ahead with **actionable**, **data-driven insights**.
 </div>
@@ -31,27 +31,7 @@
 
 ## 🌟 Our Products 
 
-### 1. <a href="https://www.cyfylabs.com/products/ultimate-facebook-scraper">**Ultimate Facebook Scraper**</a>
-
-- Ultimate Facebook Scraper gathers **hundreds of data points** from key Facebook sections, including **profiles, pages, posts, groups, media** (photos, videos, reels), and **interactions**.
-- It captures detailed **account information**, **engagement metrics** (reactions, comments, shares), and **media content**, while also extracting insights from associated accounts like **followers, friends, reactors and commenters**.
-- Additionally, the scraper supports **advanced search filters**, allowing you to precisely target data (such as posts) based on **keywords, locations**, and more—providing a **complete view** of **user behavior** and **engagement** across Facebook.
-
-👉 [Explore All Features of Facebook Scraper](https://www.cyfylabs.com/products/ultimate-facebook-scraper)
-
----
-
-### 2. <a href="https://www.cyfylabs.com/products/ultimate-instagram-scraper">**Ultimate Instagram Scraper**</a>
-
-- Ultimate Instagram Scraper offers **comprehensive data extraction** across key Instagram sections, including **profiles, posts, reels, stories,** and **interactions**.
-- It captures detailed **account information**, **engagement metrics** (reactions, comments), and **media content** from **photos, videos,** and **reels**.
-- Additionally, it gathers data from associated accounts such as **followers, commenters,** and **reactors**, giving you a **complete view** of **user activity** and **engagement** on Instagram.
-
-👉 [Explore All Features of Instagram Scraper](https://www.cyfylabs.com/products/ultimate-instagram-scraper)
-
----
-
-### 3. <a href="https://www.cyfylabs.com/products/ultimate-twitter-scraper">**Ultimate X (Twitter) Scraper**</a>
+### 1. <a href="https://www.cyfylabs.com/products/ultimate-twitter-scraper">**Ultimate X (Twitter) Scraper**</a>
 
 - Ultimate Twitter Scraper allows for **comprehensive data extraction** across all major Twitter sections, including **user profiles, tweets, replies, retweets, quotes,** and **trends**.
 - It collects detailed **account information**, **engagement metrics**, **tweet content**, **media files**, and **interactions**, providing a **complete dataset** for analysis.
@@ -99,7 +79,7 @@ Hey there, I'm <a href="https://www.linkedin.com/in/harismuneer/">Haris Muneer</
 
 <hr>
 
-- <b>🕸️ Founder of Cyfy Labs:</b> At <a href="https://www.cyfylabs.com">Cyfy Labs</a>, we provide advanced social media scraping tools that enable businesses, researchers, and marketers to extract actionable insights from platforms like Facebook, Instagram, and X (formerly Twitter). Our tools are designed for use cases such as lead generation, market research, social listening, and more. Learn more at <a href="https://www.cyfylabs.com">www.cyfylabs.com</a>
+- <b>🕸️ Founder of Cyfy Labs:</b> At <a href="https://www.cyfylabs.com">Cyfy Labs</a>, we provide advanced social media scraping tools that enable businesses, researchers, and marketers to extract actionable insights from platforms like X (formerly Twitter). Our tools are designed for use cases such as lead generation, market research, social listening, and more. Learn more at <a href="https://www.cyfylabs.com">www.cyfylabs.com</a>
 
 - <b>🌟 Open Source Advocate:</b> Passionate about making technology accessible, I’ve developed and open-sourced several software projects for web, mobile, desktop, and AI on my <a href="https://github.com/harismuneer">GitHub profile</a>. These projects have been used by thousands of learners worldwide to enhance their skills and knowledge.
 
